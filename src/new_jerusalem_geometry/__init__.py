@@ -42,9 +42,15 @@ from .wall_geometry import (
     build_ordered_moon_circles,
     build_radial_support_wall,
 )
+
 from .wall_verification import (
     WallVerificationReport,
     verify_outer_wall,
+)
+
+from .wall_svg import (
+    michell_outer_wall_to_svg,
+    write_michell_outer_wall_svg,
 )
 
 __all__ = [
@@ -77,6 +83,8 @@ __all__ = [
     "build_ordered_moon_circles",
     "build_radial_support_wall",
     "verify_outer_wall",
+    "michell_outer_wall_to_svg",
+    "write_michell_outer_wall_svg",
 ]
 
 __version__ = "0.1.0"

@@ -113,3 +113,30 @@ The figure compares:
 Each panel contains the same verified Earth-Moon core. Only the placement rule
 for the eight oblique Moon circles changes. The residual bars use a common
 scale across all three panels.
+
+## Visualise the inferred Michell outer wall
+
+Generate the source-comparison SVG:
+
+```bash
+python scripts/generate_michell_outer_wall.py
+````
+
+The default output is:
+
+```text
+figures/generated/michell_outer_wall.svg
+```
+
+The figure combines:
+
+* the verified Earth-Moon cardinal core;
+* the source-supported `NJG_INC` placement of twelve Moon circles;
+* the eight square-construction-circle incidence points;
+* twelve inferred outward radial support tangents;
+* the resulting nonregular twelve-sided wall;
+* the four-short/eight-long side classification;
+* comparison with Michell's approximate wall dimensions.
+
+The Moon-circle placement is supported directly by Michell's description.
+The radial-support wall remains explicitly labelled as a project inference.

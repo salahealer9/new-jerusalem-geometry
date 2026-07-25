@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid meet" role="img" shape-rendering="geometricPrecision">
+  <title>Inferred Michell outer wall</title>
+  <desc>Source-supported exact-incidence Moon placement with the project's inferred radial-support outer wall, compared with the approximate dimensions reported by John Michell.</desc>
+  <metadata>
+    Project: New Jerusalem Geometry
+    Geometry model: NJG_INC
+    Wall model: inferred radial support tangents
+    Source figure: City of Revelation, Figure 12
+  </metadata>
+  <style>
+    text {
+      font-family: system-ui, sans-serif;
+      fill: #171717;
+    }
+    .title {
+      font-size: 25px;
+      font-weight: 600;
+      text-anchor: middle;
+    }
+    .subtitle {
+      font-size: 14px;
+      text-anchor: middle;
+      fill: #555555;
+    }
+    .geometry {
+      fill: none;
+      vector-effect: non-scaling-stroke;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .wall-fill {
+      fill: #eef3f8;
+      fill-opacity: 0.55;
+      stroke: none;
+    }
+    .wall-outline {
+      stroke: #0d3658;
+      stroke-width: 2.3;
+    }
+    .construction-circle {
+      stroke: #8b8b8b;
+      stroke-width: 1.2;
+      stroke-dasharray: 6 5;
+    }
+    .earth-square {
+      stroke: #333333;
+      stroke-width: 1.4;
+    }
+    .earth-circle {
+      stroke: #111111;
+      stroke-width: 1.8;
+    }
+    .moon-circle {
+      stroke: #555555;
+      stroke-width: 1.3;
+      fill: #ffffff;
+      fill-opacity: 0.58;
+    }
+    .support-guide {
+      stroke: #1769aa;
+      stroke-width: 0.9;
+      stroke-dasharray: 3 3;
+      opacity: 0.65;
+    }
+    .incidence-point {
+      fill: #111111;
+      stroke: none;
+    }
+    .tangency-point {
+      fill: #1769aa;
+      stroke: #ffffff;
+      stroke-width: 0.025;
+      vector-effect: non-scaling-stroke;
+    }
+    .side-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-anchor: middle;
+      dominant-baseline: central;
+    }
+    .side-label-short {
+      fill: #9a4f00;
+    }
+    .side-label-long {
+      fill: #0d5f45;
+    }
+    .panel-rule {
+      stroke: #d0d0d0;
+      stroke-width: 1;
+    }
+    .panel-heading {
+      font-size: 17px;
+      font-weight: 600;
+    }
+    .metric-label {
+      font-size: 13px;
+      fill: #555555;
+    }
+    .metric-value {
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .comparison-value {
+      font-size: 13px;
+    }
+    .note {
+      font-size: 12px;
+      fill: #555555;
+    }
+    .status-box {
+      fill: #f4f7fa;
+      stroke: #cad4de;
+      stroke-width: 1;
+    }
+  </style>
+  <text class="title" x="600" y="31">Inferred Michell outer wall</text>
+  <text class="subtitle" x="600" y="53">Exact-incidence Moon placement with inferred radial support tangents</text>
+  <line class="panel-rule" x1="832" y1="72" x2="832" y2="868" />
+  <g id="wall-geometry" transform="translate(425 460) scale(38.1720430108,-38.1720430108)">
+    <polygon class="wall-fill" points="8.5,1.95550000687 6.36010510693,6.36010510693 1.95550000687,8.5 -1.95550000687,8.5 -6.36010510693,6.36010510693 -8.5,1.95550000687 -8.5,-1.95550000687 -6.36010510693,-6.36010510693 -1.95550000687,-8.5 1.95550000687,-8.5 6.36010510693,-6.36010510693 8.5,-1.95550000687" />
+    <circle class="geometry construction-circle" cx="0" cy="0" r="7" />
+    <rect class="geometry earth-square" x="-5.5" y="-5.5" width="11" height="11" />
+    <circle class="geometry earth-circle" cx="0" cy="0" r="5.5" />
+    <circle id="moon-east" class="geometry moon-circle" cx="7" cy="0" r="1.5" />
+    <circle id="moon-q1-a" class="geometry moon-circle" cx="6.29626761106" cy="3.05892369468" r="1.5" />
+    <circle id="moon-q1-b" class="geometry moon-circle" cx="3.05892369468" cy="6.29626761106" r="1.5" />
+    <circle id="moon-north" class="geometry moon-circle" cx="0" cy="7" r="1.5" />
+    <circle id="moon-q2-a" class="geometry moon-circle" cx="-3.05892369468" cy="6.29626761106" r="1.5" />
+    <circle id="moon-q2-b" class="geometry moon-circle" cx="-6.29626761106" cy="3.05892369468" r="1.5" />
+    <circle id="moon-west" class="geometry moon-circle" cx="-7" cy="0" r="1.5" />
+    <circle id="moon-q3-a" class="geometry moon-circle" cx="-6.29626761106" cy="-3.05892369468" r="1.5" />
+    <circle id="moon-q3-b" class="geometry moon-circle" cx="-3.05892369468" cy="-6.29626761106" r="1.5" />
+    <circle id="moon-south" class="geometry moon-circle" cx="0" cy="-7" r="1.5" />
+    <circle id="moon-q4-a" class="geometry moon-circle" cx="3.05892369468" cy="-6.29626761106" r="1.5" />
+    <circle id="moon-q4-b" class="geometry moon-circle" cx="6.29626761106" cy="-3.05892369468" r="1.5" />
+    <circle class="incidence-point" cx="5.5" cy="4.33012701892" r="0.075" />
+    <circle class="incidence-point" cx="4.33012701892" cy="5.5" r="0.075" />
+    <circle class="incidence-point" cx="-4.33012701892" cy="5.5" r="0.075" />
+    <circle class="incidence-point" cx="-5.5" cy="4.33012701892" r="0.075" />
+    <circle class="incidence-point" cx="-5.5" cy="-4.33012701892" r="0.075" />
+    <circle class="incidence-point" cx="-4.33012701892" cy="-5.5" r="0.075" />
+    <circle class="incidence-point" cx="4.33012701892" cy="-5.5" r="0.075" />
+    <circle class="incidence-point" cx="5.5" cy="-4.33012701892" r="0.075" />
+    <line class="geometry support-guide" x1="7" y1="0" x2="8.5" y2="0" />
+    <circle class="tangency-point" cx="8.5" cy="0" r="0.095" />
+    <line class="geometry support-guide" x1="6.29626761106" y1="3.05892369468" x2="7.64546781344" y2="3.71440734354" />
+    <circle class="tangency-point" cx="7.64546781344" cy="3.71440734354" r="0.095" />
+    <line class="geometry support-guide" x1="3.05892369468" y1="6.29626761106" x2="3.71440734354" y2="7.64546781344" />
+    <circle class="tangency-point" cx="3.71440734354" cy="7.64546781344" r="0.095" />
+    <line class="geometry support-guide" x1="0" y1="7" x2="0" y2="8.5" />
+    <circle class="tangency-point" cx="0" cy="8.5" r="0.095" />
+    <line class="geometry support-guide" x1="-3.05892369468" y1="6.29626761106" x2="-3.71440734354" y2="7.64546781344" />
+    <circle class="tangency-point" cx="-3.71440734354" cy="7.64546781344" r="0.095" />
+    <line class="geometry support-guide" x1="-6.29626761106" y1="3.05892369468" x2="-7.64546781344" y2="3.71440734354" />
+    <circle class="tangency-point" cx="-7.64546781344" cy="3.71440734354" r="0.095" />
+    <line class="geometry support-guide" x1="-7" y1="0" x2="-8.5" y2="0" />
+    <circle class="tangency-point" cx="-8.5" cy="0" r="0.095" />
+    <line class="geometry support-guide" x1="-6.29626761106" y1="-3.05892369468" x2="-7.64546781344" y2="-3.71440734354" />
+    <circle class="tangency-point" cx="-7.64546781344" cy="-3.71440734354" r="0.095" />
+    <line class="geometry support-guide" x1="-3.05892369468" y1="-6.29626761106" x2="-3.71440734354" y2="-7.64546781344" />
+    <circle class="tangency-point" cx="-3.71440734354" cy="-7.64546781344" r="0.095" />
+    <line class="geometry support-guide" x1="0" y1="-7" x2="0" y2="-8.5" />
+    <circle class="tangency-point" cx="0" cy="-8.5" r="0.095" />
+    <line class="geometry support-guide" x1="3.05892369468" y1="-6.29626761106" x2="3.71440734354" y2="-7.64546781344" />
+    <circle class="tangency-point" cx="3.71440734354" cy="-7.64546781344" r="0.095" />
+    <line class="geometry support-guide" x1="6.29626761106" y1="-3.05892369468" x2="7.64546781344" y2="-3.71440734354" />
+    <circle class="tangency-point" cx="7.64546781344" cy="-3.71440734354" r="0.095" />
+    <polygon class="geometry wall-outline" points="8.5,1.95550000687 6.36010510693,6.36010510693 1.95550000687,8.5 -1.95550000687,8.5 -6.36010510693,6.36010510693 -8.5,1.95550000687 -8.5,-1.95550000687 -6.36010510693,-6.36010510693 -1.95550000687,-8.5 1.95550000687,-8.5 6.36010510693,-6.36010510693 8.5,-1.95550000687" />
+  </g>
+  <g id="side-class-labels">
+    <text class="side-label side-label-short" data-side-index="0" data-side-class="short" x="762.440860215" y="460">S</text>
+    <text class="side-label side-label-long" data-side-index="1" data-side-class="long" x="720.294010692" y="295.616721293">L</text>
+    <text class="side-label side-label-long" data-side-index="2" data-side-class="long" x="589.383278707" y="164.705989308">L</text>
+    <text class="side-label side-label-short" data-side-index="3" data-side-class="short" x="425" y="122.559139785">S</text>
+    <text class="side-label side-label-long" data-side-index="4" data-side-class="long" x="260.616721293" y="164.705989308">L</text>
+    <text class="side-label side-label-long" data-side-index="5" data-side-class="long" x="129.705989308" y="295.616721293">L</text>
+    <text class="side-label side-label-short" data-side-index="6" data-side-class="short" x="87.5591397849" y="460">S</text>
+    <text class="side-label side-label-long" data-side-index="7" data-side-class="long" x="129.705989308" y="624.383278707">L</text>
+    <text class="side-label side-label-long" data-side-index="8" data-side-class="long" x="260.616721293" y="755.294010692">L</text>
+    <text class="side-label side-label-short" data-side-index="9" data-side-class="short" x="425" y="797.440860215">S</text>
+    <text class="side-label side-label-long" data-side-index="10" data-side-class="long" x="589.383278707" y="755.294010692">L</text>
+    <text class="side-label side-label-long" data-side-index="11" data-side-class="long" x="720.294010692" y="624.383278707">L</text>
+  </g>
+  <g id="information-panel" transform="translate(850 92)">
+    <text class="panel-heading" x="0" y="0">Geometric reconstruction</text>
+    <text class="metric-label" x="0" y="31">Model</text>
+    <text class="metric-value" x="0" y="51">NJG_INC + radial support wall</text>
+    <text class="metric-label" x="0" y="82">Verification</text>
+    <text class="metric-value" x="0" y="102">PASS</text>
+    <text class="metric-label" x="0" y="133">Wall structure</text>
+    <text class="metric-value" x="0" y="153">4 short + 8 long sides</text>
+    <text class="metric-label" x="0" y="184">Short side</text>
+    <text class="metric-value" x="0" y="204">3.911000014 u</text>
+    <text class="metric-label" x="0" y="235">Long side</text>
+    <text class="metric-value" x="0" y="255">4.896906803 u</text>
+    <line class="panel-rule" x1="0" y1="281" x2="320" y2="281" />
+    <text class="panel-heading" x="0" y="313">Comparison with Michell</text>
+    <text class="metric-label" x="0" y="344">Mean side</text>
+    <text class="comparison-value" x="0" y="364">Computed: 3289.155 ft</text>
+    <text class="comparison-value" x="0" y="384">Michell: 3264 ft</text>
+    <text class="comparison-value" x="0" y="404">Difference: +0.771%</text>
+    <text class="metric-label" x="0" y="439">Perimeter</text>
+    <text class="comparison-value" x="0" y="459">Computed: 14510.979 MY</text>
+    <text class="comparison-value" x="0" y="479">Michell: 14400 MY</text>
+    <text class="comparison-value" x="0" y="499">Difference: +0.771%</text>
+    <text class="metric-label" x="0" y="534">Area</text>
+    <text class="comparison-value" x="0" y="554">Computed: 120.778 million ft²</text>
+    <text class="comparison-value" x="0" y="574">Michell: 120 million ft²</text>
+    <text class="comparison-value" x="0" y="594">Difference: +0.648%</text>
+    <rect class="status-box" x="0" y="625" width="320" height="104" rx="8" />
+    <text class="note" x="14" y="650">Source status:</text>
+    <text class="note" x="14" y="672">Moon placement is source-supported.</text>
+    <text class="note" x="14" y="694">The radial support-wall algorithm is</text>
+    <text class="note" x="14" y="716">a tested project inference.</text>
+  </g>
+  <text class="note" x="36" y="881">S = short side; L = long side; blue points = wall tangencies; black points = square-circle incidences</text>
+  <text class="note" text-anchor="end" x="1170" y="881">Scale-free Euclidean reconstruction</text>
+</svg>
