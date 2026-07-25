@@ -189,3 +189,48 @@ After division by 720 this becomes:
     44 = 12 x 3 + 4 x (5/3) + 8 x (1/6)
 
 This arithmetic is exact within Michell's pi = 22/7 convention.
+
+### 10. Figure 14 seven-pointed star
+
+City of Revelation states that a seven-pointed star is placed within the
+zodiac circle of the New Jerusalem diagram. Michell identifies among its
+extremities the centres of three circles and two junctions of the construction
+circle and Earth square.
+
+The printed plate identifies the five source-described extremities as:
+
+- the upper cardinal Moon centre;
+- the upper-left square-circle junction;
+- the lower-left Moon centre of the bottom group;
+- the lower-right Moon centre of the bottom group;
+- the upper-right square-circle junction.
+
+The remaining two extremities are not named in the accompanying text. The
+present project identifies them provisionally as points on the zodiac circle in
+the small gaps between the lower oblique Moon circles and the adjacent cardinal
+Moon circles. This is a plate-based project inference, supported by their
+positions and by Michell's later 28-point scaffold.
+
+The line traversal shown in Figure 14 is consistent with the deep heptagram
+{7/3}, whose traversal from the upper vertex is:
+
+    0, 3, 6, 2, 5, 1, 4
+
+Three vertex systems are compared:
+
+- an exact regular heptagram;
+- the corresponding seven points of Michell's approximate 28-point scaffold;
+- a Figure-14-aligned heptagram using the stated and inferred anchors.
+
+Relative to the Figure-14-aligned anchors:
+
+- the exact regular candidate has maximum residual about
+  0.043764497580 normalized units and RMS residual about
+  0.027485963021 normalized units;
+- the Michell scaffold candidate has maximum residual about
+  0.039588332660 normalized units and RMS residual about
+  0.029576548097 normalized units.
+
+The regular candidate therefore has the lower RMS residual while the Michell
+scaffold candidate has the lower maximum residual. Neither approximate
+candidate strictly dominates the other.

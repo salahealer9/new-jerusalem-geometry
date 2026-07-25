@@ -185,3 +185,35 @@ The SVG background is transparent. The inset magnification may be changed with:
 python scripts/generate_michell_28_point_scaffold.py \
   --displacement-magnification 60
 ```
+
+## Analyse Michell's Figure 14 heptagram
+
+Run:
+
+```bash
+python scripts/analyze_figure14_heptagram.py
+````
+
+The analysis reconstructs the seven endpoint roles visible in Figure 14,
+compares exact-regular, Michell-28-point, and Figure-14-aligned vertex systems,
+and verifies the deep heptagram `{7/3}` traversal.
+
+Five endpoints are supported by Michell's text and printed plate. The two
+inter-Moon-gap endpoints remain explicitly labelled as plate-based project
+inferences.
+
+## Analyse Michell's Figure 14 heptagram
+
+Run:
+
+```bash
+python scripts/analyze_figure14_heptagram.py
+````
+
+The analysis reconstructs the seven endpoint roles visible in Figure 14,
+compares exact-regular, Michell-28-point, and Figure-14-aligned vertex systems,
+and verifies the deep heptagram `{7/3}` traversal.
+
+Five endpoints are supported by Michell's text and printed plate. The two
+inter-Moon-gap endpoints remain explicitly labelled as plate-based project
+inferences.

@@ -74,6 +74,25 @@ from .septenary_svg import (
     write_michell_28_point_scaffold_svg,
 )
 
+from .heptagram_geometry import (
+    AnchorEvidence,
+    Figure14Anchor,
+    Figure14AnchorRole,
+    HeptagramFamily,
+    HeptagramGeometry,
+    build_figure14_aligned_heptagram,
+    build_figure14_anchor_set,
+    build_regular_heptagram,
+    build_scaffold_heptagram,
+)
+
+from .heptagram_verification import (
+    Figure14VerificationReport,
+    HeptagramFit,
+    compare_heptagram_to_anchors,
+    verify_figure14_heptagrams,
+)
+
 __all__ = [
     "AxisAlignedSquare",
     "Check",
@@ -118,6 +137,19 @@ __all__ = [
     "verify_michell_28_point_scaffold",
     "michell_28_point_scaffold_to_svg",
     "write_michell_28_point_scaffold_svg",
+    "AnchorEvidence",
+    "Figure14Anchor",
+    "Figure14AnchorRole",
+    "Figure14VerificationReport",
+    "HeptagramFamily",
+    "HeptagramFit",
+    "HeptagramGeometry",
+    "build_figure14_aligned_heptagram",
+    "build_figure14_anchor_set",
+    "build_regular_heptagram",
+    "build_scaffold_heptagram",
+    "compare_heptagram_to_anchors",
+    "verify_figure14_heptagrams",
 ]
 
 __version__ = "0.1.0"
