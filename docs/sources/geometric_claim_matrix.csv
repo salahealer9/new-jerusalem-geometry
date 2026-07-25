@@ -1,0 +1,18 @@
+claim_id,claim,book,printed_page,pdf_page,figure,source_status,mathematical_implication,implemented_model,notes
+CORE-001,Earth radius is 3960 miles,City of Revelation,61,63,11,stated_exact,Earth radius normalizes to 5.5 after division by 720,core_geometry,Also repeated in How the World Is Made
+CORE-002,Moon radius is 1080 miles,City of Revelation,61,63,11,stated_exact,Moon radius normalizes to 1.5 after division by 720,core_geometry,Also repeated in How the World Is Made
+CORE-003,Combined Earth and Moon radii equal 5040 miles,City of Revelation,61,63,11,stated_exact,Construction-circle radius normalizes to 7,core_geometry,
+CORE-004,Earth diameter is 7920 miles,City of Revelation,61,63,11,stated_exact,Earth-square side normalizes to 11,core_geometry,
+CORE-005,Square perimeter and construction-circle circumference are both 31680 under pi equals 22 over 7,City of Revelation,61,63,11,conventional_exact,Normalized nominal perimeter is 44,verification,Not exact under Euclidean pi
+CORE-006,Normalized dimensions are Earth diameter 11 Moon diameter 3 construction radius 7 and perimeter 44,How the World Is Made,25,43,19,stated_exact,Defines the scale-free core model,core_geometry,
+MOON-001,Twelve Moon circles are arranged in four groups of three,City of Revelation,63,65,12,stated_exact,Three Moon circles per cardinal side,not_yet_complete,
+MOON-002,The two outer circles in each group touch the square-circle intersection points,City of Revelation,63,65,12,stated_exact,Supports exact-incidence oblique placement,NJG_INC,
+MOON-003,The twelve Moon circles are not evenly spaced,City of Revelation,62-63,64-65,12,stated_exact,Rules out a regular twelvefold Moon-centre arrangement,NJG_INC,
+WALL-001,The enclosing twelve-sided figure is not quite a regular dodecagon,City of Revelation,62-63,64-65,12,stated_exact,Outer wall must be modelled as nonregular,not_yet_implemented,
+WALL-002,Four pairs of wall sides opposite square corners are drawn inward to touch the Moon circles,City of Revelation,63,65,12,stated_exact,Defines tangent adjustment of eight wall sides,not_yet_implemented,
+SEVEN-001,Exact septenary division is impossible by the shown construction,How the World Is Made,221,239,194,stated_exact,Sevenfold layer must be treated as approximate,NJG_MICHELL,
+SEVEN-002,The first septenary approximation is accurate to better than one part in one thousand,How the World Is Made,221,239,194,stated_approximate,Provides a quantitative approximation claim,not_yet_verified,
+SEVEN-003,The reciprocal triangle gives fourteen divisions,How the World Is Made,221,239,194,stated_approximate,Fourteenfold layer derives from approximate septenary geometry,not_yet_implemented,
+SEVEN-004,Four triangles procure the twenty-eight-part division,How the World Is Made,221,239,194,stated_approximate,Twenty-eightfold layer is approximate rather than regular,NJG_MICHELL,
+MODEL-001,Exact regular twenty-eightfold division,Present project,,,,"project_idealisation",beta equals pi over 7,NJG_28,Not Michell's source-faithful construction
+MODEL-002,Wikimedia oblique placement formula,2008 Wikimedia reconstruction,,,,"external_reconstruction",beta equals theta minus asin of r over R,NJG_SVG,Not a Michell primary source
