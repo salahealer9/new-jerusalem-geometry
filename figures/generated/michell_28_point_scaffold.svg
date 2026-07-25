@@ -305,13 +305,13 @@
     <text class="note" x="0" y="609">+ 8 small gaps</text>
   </g>
   <g id="displacement-inset" data-magnification="40">
-    <rect class="inset-frame" x="970" y="650" width="402" height="142" rx="7" />
-    <text class="panel-heading" x="984" y="676">Oblique displacement inset</text>
-    <text class="note" x="984" y="698">One centre shift magnified 40×</text>
-    <line class="inset-vector" x1="1175" y1="744" x2="1146.02357645" y2="683.925424274" />
-    <circle class="inset-origin" cx="1175" cy="744" r="5" />
-    <circle class="inset-target" cx="1146.02357645" cy="683.925424274" r="5" />
-    <text class="note" x="984" y="777">blue = scaffold; black = NJG_INC</text>
+    <rect class="inset-frame" x="970" y="710" width="402" height="90" rx="7" />
+    <text class="panel-heading" x="984" y="733">Oblique displacement inset</text>
+    <text class="note" x="984" y="753">One centre shift magnified 40×</text>
+    <line class="inset-vector" x1="1340" y1="785" x2="1311.02357645" y2="724.925424274" />
+    <circle class="inset-origin" cx="1340" cy="785" r="5" />
+    <circle class="inset-target" cx="1311.02357645" cy="724.925424274" r="5" />
+    <text class="note" x="984" y="783">blue = scaffold; black = NJG_INC</text>
   </g>
   <rect class="status-box" x="970" y="815" width="402" height="56" rx="7" />
   <text class="note" x="983" y="838">Angular scaffold: approximate.</text>

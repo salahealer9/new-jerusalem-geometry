@@ -684,8 +684,10 @@ def michell_28_point_scaffold_to_svg(
     example_scaffold = scaffold_moons[1].point
     example_incidence = incidence_moons[1][1].centre
 
-    inset_start_x = information_left + 205.0
-    inset_start_y = 744.0
+    inset_start_x = (
+        information_left + information_width - 32.0
+    )
+    inset_start_y = 785.0
 
     inset_end_x = (
         inset_start_x
@@ -716,18 +718,18 @@ def michell_28_point_scaffold_to_svg(
             ),
             (
                 f'    <rect class="inset-frame" '
-                f'x="{information_left:.6g}" y="650" '
+                f'x="{information_left:.6g}" y="710" '
                 f'width="{information_width:.6g}" '
-                'height="142" rx="7" />'
+                'height="90" rx="7" />'
             ),
             (
                 f'    <text class="panel-heading" '
-                f'x="{information_left + 14:.6g}" y="676">'
+                f'x="{information_left + 14:.6g}" y="733">'
                 "Oblique displacement inset</text>"
             ),
             (
                 f'    <text class="note" '
-                f'x="{information_left + 14:.6g}" y="698">'
+                f'x="{information_left + 14:.6g}" y="753">'
                 f"One centre shift magnified "
                 f"{displacement_magnification:g}×"
                 "</text>"
@@ -753,7 +755,7 @@ def michell_28_point_scaffold_to_svg(
             ),
             (
                 f'    <text class="note" '
-                f'x="{information_left + 14:.6g}" y="777">'
+                f'x="{information_left + 14:.6g}" y="783">'
                 "blue = scaffold; black = NJG_INC"
                 "</text>"
             ),
