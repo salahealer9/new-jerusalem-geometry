@@ -140,3 +140,16 @@ The figure combines:
 
 The Moon-circle placement is supported directly by Michell's description.
 The radial-support wall remains explicitly labelled as a project inference.
+
+## Analyse Michell's approximate 28-point scaffold
+
+Run:
+
+```bash
+python scripts/analyze_septenary_scaffold.py
+````
+
+This reconstructs the approximate sevenfold step described in Figure 194,
+repeats it through four quadrants to obtain twenty-eight points, classifies the
+points into Michell's stated 12 + 8 + 8 roles, and compares the resulting Moon
+centres with the exact-incidence `NJG_INC` model.

@@ -136,3 +136,56 @@ For the exact-incidence Moon placement, the inferred wall predicts:
 
 These differ from Michell's approximate values of 3264 feet and 120 million
 square feet by less than one percent.
+
+### 8. Michell's approximate twenty-eight-point scaffold
+
+In Figure 194 of How the World Is Made Michell gives an approximate
+construction of sevenfold division. A circle is enclosed in a square and an
+equilateral triangle is erected on one side. The relevant triangle-circle
+intersections determine an approximate heptagonal step. Repetition on all four
+sides produces a twenty-eight-point division.
+
+The present project derives the central step angle analytically as
+
+    alpha = acos((1 - sqrt(3) + sqrt(6 sqrt(3))) / 4)
+
+which gives approximately 51.470701432440 degrees. The exact regular
+heptagonal step is approximately 51.428571428571 degrees. Interpreting
+Michell's accuracy statement as relative central-angle error gives approximately
+0.081919 percent which is better than one part in one thousand.
+
+Within each quadrant the seven unique points have the source-described role
+pattern:
+
+    Moon centre
+    inter-Moon gap
+    Moon centre
+    square-circle-intersection positioner
+    square-circle-intersection positioner
+    Moon centre
+    inter-Moon gap
+
+Four repetitions therefore give exactly twelve Moon-centre points eight
+inter-Moon-gap points and eight intersection-positioner points.
+
+The scaffold predicts a first oblique Moon-centre angle of approximately
+25.587895702680 degrees. This differs from the exact-incidence angle by
+approximately 0.324035343176 degrees and gives a maximum Moon-centre
+displacement of approximately 0.039588332660 normalized units.
+
+The approximate twenty-eight-point scaffold and the exact-incidence model are
+therefore close but mathematically distinct constructions.
+
+### 9. Circumference gap arithmetic
+
+Figure 28 divides the conventional circumference 31680 into:
+
+- twelve Moon diameters totalling 25920;
+- four large gaps of 1200 totalling 4800;
+- eight small gaps of 120 totalling 960.
+
+After division by 720 this becomes:
+
+    44 = 12 x 3 + 4 x (5/3) + 8 x (1/6)
+
+This arithmetic is exact within Michell's pi = 22/7 convention.

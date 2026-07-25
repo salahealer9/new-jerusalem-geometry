@@ -53,6 +53,22 @@ from .wall_svg import (
     write_michell_outer_wall_svg,
 )
 
+from .septenary_geometry import (
+    MichellGapArithmetic,
+    MichellSeptenaryScaffold,
+    ScaffoldRole,
+    SeptenaryPoint,
+    build_michell_28_point_scaffold,
+    build_michell_gap_arithmetic,
+    michell_heptagon_step_angle,
+    michell_scaffold_local_offsets,
+)
+
+from .septenary_verification import (
+    SeptenaryVerificationReport,
+    verify_michell_28_point_scaffold,
+)
+
 __all__ = [
     "AxisAlignedSquare",
     "Check",
@@ -85,6 +101,16 @@ __all__ = [
     "verify_outer_wall",
     "michell_outer_wall_to_svg",
     "write_michell_outer_wall_svg",
+    "MichellGapArithmetic",
+    "MichellSeptenaryScaffold",
+    "ScaffoldRole",
+    "SeptenaryPoint",
+    "SeptenaryVerificationReport",
+    "build_michell_28_point_scaffold",
+    "build_michell_gap_arithmetic",
+    "michell_heptagon_step_angle",
+    "michell_scaffold_local_offsets",
+    "verify_michell_28_point_scaffold",
 ]
 
 __version__ = "0.1.0"
