@@ -23,6 +23,7 @@ def _format_number(value: float) -> str:
 def core_diagram_to_svg(
     diagram: CoreDiagram,
     *,
+    canvas_size: int = 900,
     title: str = "New Jerusalem cardinal core geometry",
     description: str = (
         "Verified normalized geometry containing the Earth circle, "
@@ -36,6 +37,8 @@ def core_diagram_to_svg(
     A vertical reflection is applied only at rendering time because SVG's
     native y-axis points downward.
     """
+    if canvas_size <= 0:
+    raise ValueError("SVG canvas size must be positive.")
 
     dimensions = diagram.dimensions
     unit = dimensions.unit
@@ -58,10 +61,13 @@ def core_diagram_to_svg(
         '<?xml version="1.0" encoding="UTF-8"?>',
         (
             f'<svg xmlns="{SVG_NAMESPACE}" '
+            f'width="{canvas_size}" '
+            f'height="{canvas_size}" '
             f'viewBox="{_format_number(view_box_min)} '
             f'{_format_number(view_box_min)} '
             f'{_format_number(view_box_size)} '
             f'{_format_number(view_box_size)}" '
+            'preserveAspectRatio="xMidYMid meet" '
             'role="img" '
             'shape-rendering="geometricPrecision">'
         ),
@@ -151,6 +157,8 @@ def core_diagram_to_svg(
 def write_core_svg(
     diagram: CoreDiagram,
     output_path: str | Path,
+    *,
+    canvas_size: int = 900,
 ) -> Path:
     """Write the verified core geometry to a standalone SVG file."""
 
@@ -158,7 +166,10 @@ def write_core_svg(
     path.parent.mkdir(parents=True, exist_ok=True)
 
     path.write_text(
-        core_diagram_to_svg(diagram),
+        core_diagram_to_svg(
+            diagram,
+            canvas_size=canvas_size,
+        ),
         encoding="utf-8",
     )
 

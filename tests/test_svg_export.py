@@ -1,5 +1,6 @@
 from pathlib import Path
 from xml.etree import ElementTree
+import pytest
 
 from new_jerusalem_geometry import (
     build_core_geometry,
@@ -28,6 +29,9 @@ def test_svg_is_valid_xml() -> None:
 
     assert root.tag == "{http://www.w3.org/2000/svg}svg"
     assert root.attrib["viewBox"] == "-9 -9 18 18"
+    assert root.attrib["width"] == "900"
+    assert root.attrib["height"] == "900"
+    assert root.attrib["preserveAspectRatio"] == "xMidYMid meet"
 
 
 def test_svg_contains_expected_objects() -> None:
@@ -123,3 +127,27 @@ def test_write_core_svg_creates_parent_directories(
     assert output.read_text(encoding="utf-8").startswith(
         '<?xml version="1.0" encoding="UTF-8"?>'
     )
+
+def test_svg_accepts_custom_canvas_size() -> None:
+    diagram = build_core_geometry()
+    root = ElementTree.fromstring(
+        core_diagram_to_svg(
+            diagram,
+            canvas_size=1200,
+        )
+    )
+
+    assert root.attrib["width"] == "1200"
+    assert root.attrib["height"] == "1200"
+
+
+def test_svg_rejects_invalid_canvas_size() -> None:
+    diagram = build_core_geometry()
+
+    import pytest
+
+    with pytest.raises(ValueError):
+        core_diagram_to_svg(
+            diagram,
+            canvas_size=0,
+        )

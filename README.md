@@ -89,4 +89,3 @@ python scripts/generate_core_diagram.py \
   --unit 720 \
   --output figures/generated/cardinal_core_u720.svg
 ```
-

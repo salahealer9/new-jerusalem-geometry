@@ -45,6 +45,13 @@ def parse_args() -> argparse.Namespace:
         help="Verification tolerance. Default: 1e-12.",
     )
 
+    parser.add_argument(
+        "--size",
+        type=int,
+        default=900,
+        help="Square SVG canvas size in pixels. Default: 900.",
+    )
+
     return parser.parse_args()
 
 
@@ -70,6 +77,7 @@ def main() -> int:
     output_path = write_core_svg(
         diagram,
         args.output,
+        canvas_size=args.size,
     )
 
     print("New Jerusalem cardinal core SVG")
@@ -84,6 +92,7 @@ def main() -> int:
     print("  - Earth square")
     print("  - construction circle")
     print("  - four cardinal Moon circles")
+    print(f"Canvas:       {args.size} × {args.size} px")
 
     return 0
 
