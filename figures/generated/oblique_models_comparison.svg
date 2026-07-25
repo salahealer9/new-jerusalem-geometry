@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="720" viewBox="0 0 1800 720" preserveAspectRatio="xMidYMid meet" role="img" shape-rendering="geometricPrecision">
+  <title>New Jerusalem oblique Moon models</title>
+  <desc>Side-by-side comparison of the exact-incidence, exact 28-fold-division, and Wikimedia SVG placements of the eight oblique Moon circles.</desc>
+  <metadata>
+    Project: New Jerusalem Geometry
+    Figure: Oblique Moon model comparison
+    Geometry: Scale-free Euclidean coordinates
+  </metadata>
+  <style>
+    text {
+      font-family: system-ui, sans-serif;
+      fill: #161616;
+    }
+    .figure-title {
+      font-size: 24px;
+      font-weight: 600;
+      text-anchor: middle;
+    }
+    .panel-title {
+      font-size: 19px;
+      font-weight: 600;
+      text-anchor: middle;
+    }
+    .panel-subtitle {
+      font-size: 14px;
+      text-anchor: middle;
+      fill: #444444;
+    }
+    .metric-label {
+      font-size: 13px;
+      text-anchor: middle;
+      fill: #333333;
+    }
+    .constraint-label {
+      font-size: 12px;
+      text-anchor: middle;
+      fill: #555555;
+    }
+    .geometry {
+      fill: none;
+      vector-effect: non-scaling-stroke;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .construction-circle {
+      stroke: #8a8a8a;
+      stroke-width: 1.25;
+      stroke-dasharray: 5 4;
+    }
+    .earth-square, .earth-circle {
+      stroke: #151515;
+      stroke-width: 1.55;
+    }
+    .cardinal-moon {
+      stroke: #5d5d5d;
+      stroke-width: 1.25;
+    }
+    .oblique-moon {
+      stroke-width: 1.55;
+    }
+    .incidence-guide {
+      stroke-width: 0.9;
+      stroke-dasharray: 3 3;
+      opacity: 0.65;
+    }
+    .target-point {
+      fill: #111111;
+      stroke: none;
+    }
+    .moon-centre {
+      stroke: none;
+    }
+    .separator {
+      stroke: #d2d2d2;
+      stroke-width: 1;
+    }
+    .residual-track {
+      fill: #e5e5e5;
+    }
+  </style>
+  <text class="figure-title" x="900" y="32">New Jerusalem oblique Moon models</text>
+  <line class="separator" x1="600" y1="48" x2="600" y2="696" />
+  <line class="separator" x1="1200" y1="48" x2="1200" y2="696" />
+  <g id="panel-NJG_INC" data-model="NJG_INC">
+    <text class="panel-title" style="fill: #1769aa;" x="300" y="62">NJG_INC</text>
+    <text class="panel-subtitle" x="300" y="84">Exact incidence</text>
+    <text class="metric-label" x="300" y="104">beta = 25.911931045856 deg</text>
+    <g id="geometry-NJG_INC" transform="translate(300 370) scale(28.6666666667,-28.6666666667)">
+      <circle class="geometry construction-circle" cx="0" cy="0" r="7" />
+      <rect class="geometry earth-square" x="-5.5" y="-5.5" width="11" height="11" />
+      <circle class="geometry earth-circle" cx="0" cy="0" r="5.5" />
+      <circle id="NJG_INC-moon-east" class="geometry cardinal-moon" cx="7" cy="0" r="1.5" />
+      <circle id="NJG_INC-moon-north" class="geometry cardinal-moon" cx="0" cy="7" r="1.5" />
+      <circle id="NJG_INC-moon-west" class="geometry cardinal-moon" cx="-7" cy="0" r="1.5" />
+      <circle id="NJG_INC-moon-south" class="geometry cardinal-moon" cx="0" cy="-7" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #1769aa;" x1="6.29626761106" y1="3.05892369468" x2="5.5" y2="4.33012701892" />
+      <circle class="target-point" cx="5.5" cy="4.33012701892" r="0.09" />
+      <circle class="moon-centre" style="fill: #1769aa;" cx="6.29626761106" cy="3.05892369468" r="0.075" />
+      <circle id="NJG_INC-moon-q1-a" class="geometry oblique-moon" style="stroke: #1769aa;" cx="6.29626761106" cy="3.05892369468" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #1769aa;" x1="3.05892369468" y1="6.29626761106" x2="4.33012701892" y2="5.5" />
+      <circle class="target-point" cx="4.33012701892" cy="5.5" r="0.09" />
+      <circle class="moon-centre" style="fill: #1769aa;" cx="3.05892369468" cy="6.29626761106" r="0.075" />
+      <circle id="NJG_INC-moon-q1-b" class="geometry oblique-moon" style="stroke: #1769aa;" cx="3.05892369468" cy="6.29626761106" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #1769aa;" x1="-3.05892369468" y1="6.29626761106" x2="-4.33012701892" y2="5.5" />
+      <circle class="target-point" cx="-4.33012701892" cy="5.5" r="0.09" />
+      <circle class="moon-centre" style="fill: #1769aa;" cx="-3.05892369468" cy="6.29626761106" r="0.075" />
+      <circle id="NJG_INC-moon-q2-a" class="geometry oblique-moon" style="stroke: #1769aa;" cx="-3.05892369468" cy="6.29626761106" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #1769aa;" x1="-6.29626761106" y1="3.05892369468" x2="-5.5" y2="4.33012701892" />
+      <circle class="target-point" cx="-5.5" cy="4.33012701892" r="0.09" />
+      <circle class="moon-centre" style="fill: #1769aa;" cx="-6.29626761106" cy="3.05892369468" r="0.075" />
+      <circle id="NJG_INC-moon-q2-b" class="geometry oblique-moon" style="stroke: #1769aa;" cx="-6.29626761106" cy="3.05892369468" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #1769aa;" x1="-6.29626761106" y1="-3.05892369468" x2="-5.5" y2="-4.33012701892" />
+      <circle class="target-point" cx="-5.5" cy="-4.33012701892" r="0.09" />
+      <circle class="moon-centre" style="fill: #1769aa;" cx="-6.29626761106" cy="-3.05892369468" r="0.075" />
+      <circle id="NJG_INC-moon-q3-a" class="geometry oblique-moon" style="stroke: #1769aa;" cx="-6.29626761106" cy="-3.05892369468" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #1769aa;" x1="-3.05892369468" y1="-6.29626761106" x2="-4.33012701892" y2="-5.5" />
+      <circle class="target-point" cx="-4.33012701892" cy="-5.5" r="0.09" />
+      <circle class="moon-centre" style="fill: #1769aa;" cx="-3.05892369468" cy="-6.29626761106" r="0.075" />
+      <circle id="NJG_INC-moon-q3-b" class="geometry oblique-moon" style="stroke: #1769aa;" cx="-3.05892369468" cy="-6.29626761106" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #1769aa;" x1="3.05892369468" y1="-6.29626761106" x2="4.33012701892" y2="-5.5" />
+      <circle class="target-point" cx="4.33012701892" cy="-5.5" r="0.09" />
+      <circle class="moon-centre" style="fill: #1769aa;" cx="3.05892369468" cy="-6.29626761106" r="0.075" />
+      <circle id="NJG_INC-moon-q4-a" class="geometry oblique-moon" style="stroke: #1769aa;" cx="3.05892369468" cy="-6.29626761106" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #1769aa;" x1="6.29626761106" y1="-3.05892369468" x2="5.5" y2="-4.33012701892" />
+      <circle class="target-point" cx="5.5" cy="-4.33012701892" r="0.09" />
+      <circle class="moon-centre" style="fill: #1769aa;" cx="6.29626761106" cy="-3.05892369468" r="0.075" />
+      <circle id="NJG_INC-moon-q4-b" class="geometry oblique-moon" style="stroke: #1769aa;" cx="6.29626761106" cy="-3.05892369468" r="1.5" />
+    </g>
+    <text class="metric-label" x="300" y="644">Maximum incidence residual: numerical zero</text>
+    <rect class="residual-track" x="90" y="654" width="420" height="8" rx="4" />
+    <rect style="fill: #1769aa;" x="90" y="654" width="3.10788752054e-11" height="8" rx="4" />
+    <text class="constraint-label" x="300" y="692">Moon circumference passes exactly through each target</text>
+  </g>
+  <g id="panel-NJG_28" data-model="NJG_28">
+    <text class="panel-title" style="fill: #b45f06;" x="900" y="62">NJG_28</text>
+    <text class="panel-subtitle" x="900" y="84">Exact 28-fold division</text>
+    <text class="metric-label" x="900" y="104">beta = 25.714285714286 deg</text>
+    <g id="geometry-NJG_28" transform="translate(900 370) scale(28.6666666667,-28.6666666667)">
+      <circle class="geometry construction-circle" cx="0" cy="0" r="7" />
+      <rect class="geometry earth-square" x="-5.5" y="-5.5" width="11" height="11" />
+      <circle class="geometry earth-circle" cx="0" cy="0" r="5.5" />
+      <circle id="NJG_28-moon-east" class="geometry cardinal-moon" cx="7" cy="0" r="1.5" />
+      <circle id="NJG_28-moon-north" class="geometry cardinal-moon" cx="0" cy="7" r="1.5" />
+      <circle id="NJG_28-moon-west" class="geometry cardinal-moon" cx="-7" cy="0" r="1.5" />
+      <circle id="NJG_28-moon-south" class="geometry cardinal-moon" cx="0" cy="-7" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #b45f06;" x1="6.30678207532" y1="3.03718617382" x2="5.5" y2="4.33012701892" />
+      <circle class="target-point" cx="5.5" cy="4.33012701892" r="0.09" />
+      <circle class="moon-centre" style="fill: #b45f06;" cx="6.30678207532" cy="3.03718617382" r="0.075" />
+      <circle id="NJG_28-moon-q1-a" class="geometry oblique-moon" style="stroke: #b45f06;" cx="6.30678207532" cy="3.03718617382" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #b45f06;" x1="3.03718617382" y1="6.30678207532" x2="4.33012701892" y2="5.5" />
+      <circle class="target-point" cx="4.33012701892" cy="5.5" r="0.09" />
+      <circle class="moon-centre" style="fill: #b45f06;" cx="3.03718617382" cy="6.30678207532" r="0.075" />
+      <circle id="NJG_28-moon-q1-b" class="geometry oblique-moon" style="stroke: #b45f06;" cx="3.03718617382" cy="6.30678207532" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #b45f06;" x1="-3.03718617382" y1="6.30678207532" x2="-4.33012701892" y2="5.5" />
+      <circle class="target-point" cx="-4.33012701892" cy="5.5" r="0.09" />
+      <circle class="moon-centre" style="fill: #b45f06;" cx="-3.03718617382" cy="6.30678207532" r="0.075" />
+      <circle id="NJG_28-moon-q2-a" class="geometry oblique-moon" style="stroke: #b45f06;" cx="-3.03718617382" cy="6.30678207532" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #b45f06;" x1="-6.30678207532" y1="3.03718617382" x2="-5.5" y2="4.33012701892" />
+      <circle class="target-point" cx="-5.5" cy="4.33012701892" r="0.09" />
+      <circle class="moon-centre" style="fill: #b45f06;" cx="-6.30678207532" cy="3.03718617382" r="0.075" />
+      <circle id="NJG_28-moon-q2-b" class="geometry oblique-moon" style="stroke: #b45f06;" cx="-6.30678207532" cy="3.03718617382" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #b45f06;" x1="-6.30678207532" y1="-3.03718617382" x2="-5.5" y2="-4.33012701892" />
+      <circle class="target-point" cx="-5.5" cy="-4.33012701892" r="0.09" />
+      <circle class="moon-centre" style="fill: #b45f06;" cx="-6.30678207532" cy="-3.03718617382" r="0.075" />
+      <circle id="NJG_28-moon-q3-a" class="geometry oblique-moon" style="stroke: #b45f06;" cx="-6.30678207532" cy="-3.03718617382" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #b45f06;" x1="-3.03718617382" y1="-6.30678207532" x2="-4.33012701892" y2="-5.5" />
+      <circle class="target-point" cx="-4.33012701892" cy="-5.5" r="0.09" />
+      <circle class="moon-centre" style="fill: #b45f06;" cx="-3.03718617382" cy="-6.30678207532" r="0.075" />
+      <circle id="NJG_28-moon-q3-b" class="geometry oblique-moon" style="stroke: #b45f06;" cx="-3.03718617382" cy="-6.30678207532" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #b45f06;" x1="3.03718617382" y1="-6.30678207532" x2="4.33012701892" y2="-5.5" />
+      <circle class="target-point" cx="4.33012701892" cy="-5.5" r="0.09" />
+      <circle class="moon-centre" style="fill: #b45f06;" cx="3.03718617382" cy="-6.30678207532" r="0.075" />
+      <circle id="NJG_28-moon-q4-a" class="geometry oblique-moon" style="stroke: #b45f06;" cx="3.03718617382" cy="-6.30678207532" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #b45f06;" x1="6.30678207532" y1="-3.03718617382" x2="5.5" y2="-4.33012701892" />
+      <circle class="target-point" cx="5.5" cy="-4.33012701892" r="0.09" />
+      <circle class="moon-centre" style="fill: #b45f06;" cx="6.30678207532" cy="-3.03718617382" r="0.075" />
+      <circle id="NJG_28-moon-q4-b" class="geometry oblique-moon" style="stroke: #b45f06;" cx="6.30678207532" cy="-3.03718617382" r="1.5" />
+    </g>
+    <text class="metric-label" x="900" y="644">Maximum incidence residual: 0.0240056909273 u</text>
+    <rect class="residual-track" x="690" y="654" width="420" height="8" rx="4" />
+    <rect style="fill: #b45f06;" x="690" y="654" width="420" height="8" rx="4" />
+    <text class="constraint-label" x="900" y="692">Oblique centre angle is exactly beta = pi/7</text>
+  </g>
+  <g id="panel-NJG_SVG" data-model="NJG_SVG">
+    <text class="panel-title" style="fill: #6a3d9a;" x="1500" y="62">NJG_SVG</text>
+    <text class="panel-subtitle" x="1500" y="84">Wikimedia reconstruction</text>
+    <text class="metric-label" x="1500" y="104">beta = 25.839585585550 deg</text>
+    <g id="geometry-NJG_SVG" transform="translate(1500 370) scale(28.6666666667,-28.6666666667)">
+      <circle class="geometry construction-circle" cx="0" cy="0" r="7" />
+      <rect class="geometry earth-square" x="-5.5" y="-5.5" width="11" height="11" />
+      <circle class="geometry earth-circle" cx="0" cy="0" r="5.5" />
+      <circle id="NJG_SVG-moon-east" class="geometry cardinal-moon" cx="7" cy="0" r="1.5" />
+      <circle id="NJG_SVG-moon-north" class="geometry cardinal-moon" cx="0" cy="7" r="1.5" />
+      <circle id="NJG_SVG-moon-west" class="geometry cardinal-moon" cx="-7" cy="0" r="1.5" />
+      <circle id="NJG_SVG-moon-south" class="geometry cardinal-moon" cx="0" cy="-7" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #6a3d9a;" x1="6.3001249913" y1="3.05097117226" x2="5.5" y2="4.33012701892" />
+      <circle class="target-point" cx="5.5" cy="4.33012701892" r="0.09" />
+      <circle class="moon-centre" style="fill: #6a3d9a;" cx="6.3001249913" cy="3.05097117226" r="0.075" />
+      <circle id="NJG_SVG-moon-q1-a" class="geometry oblique-moon" style="stroke: #6a3d9a;" cx="6.3001249913" cy="3.05097117226" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #6a3d9a;" x1="3.05097117226" y1="6.3001249913" x2="4.33012701892" y2="5.5" />
+      <circle class="target-point" cx="4.33012701892" cy="5.5" r="0.09" />
+      <circle class="moon-centre" style="fill: #6a3d9a;" cx="3.05097117226" cy="6.3001249913" r="0.075" />
+      <circle id="NJG_SVG-moon-q1-b" class="geometry oblique-moon" style="stroke: #6a3d9a;" cx="3.05097117226" cy="6.3001249913" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #6a3d9a;" x1="-3.05097117226" y1="6.3001249913" x2="-4.33012701892" y2="5.5" />
+      <circle class="target-point" cx="-4.33012701892" cy="5.5" r="0.09" />
+      <circle class="moon-centre" style="fill: #6a3d9a;" cx="-3.05097117226" cy="6.3001249913" r="0.075" />
+      <circle id="NJG_SVG-moon-q2-a" class="geometry oblique-moon" style="stroke: #6a3d9a;" cx="-3.05097117226" cy="6.3001249913" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #6a3d9a;" x1="-6.3001249913" y1="3.05097117226" x2="-5.5" y2="4.33012701892" />
+      <circle class="target-point" cx="-5.5" cy="4.33012701892" r="0.09" />
+      <circle class="moon-centre" style="fill: #6a3d9a;" cx="-6.3001249913" cy="3.05097117226" r="0.075" />
+      <circle id="NJG_SVG-moon-q2-b" class="geometry oblique-moon" style="stroke: #6a3d9a;" cx="-6.3001249913" cy="3.05097117226" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #6a3d9a;" x1="-6.3001249913" y1="-3.05097117226" x2="-5.5" y2="-4.33012701892" />
+      <circle class="target-point" cx="-5.5" cy="-4.33012701892" r="0.09" />
+      <circle class="moon-centre" style="fill: #6a3d9a;" cx="-6.3001249913" cy="-3.05097117226" r="0.075" />
+      <circle id="NJG_SVG-moon-q3-a" class="geometry oblique-moon" style="stroke: #6a3d9a;" cx="-6.3001249913" cy="-3.05097117226" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #6a3d9a;" x1="-3.05097117226" y1="-6.3001249913" x2="-4.33012701892" y2="-5.5" />
+      <circle class="target-point" cx="-4.33012701892" cy="-5.5" r="0.09" />
+      <circle class="moon-centre" style="fill: #6a3d9a;" cx="-3.05097117226" cy="-6.3001249913" r="0.075" />
+      <circle id="NJG_SVG-moon-q3-b" class="geometry oblique-moon" style="stroke: #6a3d9a;" cx="-3.05097117226" cy="-6.3001249913" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #6a3d9a;" x1="3.05097117226" y1="-6.3001249913" x2="4.33012701892" y2="-5.5" />
+      <circle class="target-point" cx="4.33012701892" cy="-5.5" r="0.09" />
+      <circle class="moon-centre" style="fill: #6a3d9a;" cx="3.05097117226" cy="-6.3001249913" r="0.075" />
+      <circle id="NJG_SVG-moon-q4-a" class="geometry oblique-moon" style="stroke: #6a3d9a;" cx="3.05097117226" cy="-6.3001249913" r="1.5" />
+      <line class="geometry incidence-guide" style="stroke: #6a3d9a;" x1="6.3001249913" y1="-3.05097117226" x2="5.5" y2="-4.33012701892" />
+      <circle class="target-point" cx="5.5" cy="-4.33012701892" r="0.09" />
+      <circle class="moon-centre" style="fill: #6a3d9a;" cx="6.3001249913" cy="-3.05097117226" r="0.075" />
+      <circle id="NJG_SVG-moon-q4-b" class="geometry oblique-moon" style="stroke: #6a3d9a;" cx="6.3001249913" cy="-3.05097117226" r="1.5" />
+    </g>
+    <text class="metric-label" x="1500" y="644">Maximum incidence residual: 0.00878748727533 u</text>
+    <rect class="residual-track" x="1290" y="654" width="420" height="8" rx="4" />
+    <rect style="fill: #6a3d9a;" x="1290" y="654" width="153.744571103" height="8" rx="4" />
+    <text class="constraint-label" x="1500" y="692">beta = theta - asin(r/R), as encoded in the SVG</text>
+  </g>
+</svg>

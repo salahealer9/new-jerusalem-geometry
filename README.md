@@ -89,3 +89,27 @@ python scripts/generate_core_diagram.py \
   --unit 720 \
   --output figures/generated/cardinal_core_u720.svg
 ```
+
+## Compare the oblique Moon models
+
+Generate the three-panel model comparison:
+
+```bash
+python scripts/generate_oblique_comparison.py
+````
+
+The default output is:
+
+```text
+figures/generated/oblique_models_comparison.svg
+```
+
+The figure compares:
+
+* `NJG_INC`: exact square-circle incidence;
+* `NJG_28`: exact 28-fold angular division;
+* `NJG_SVG`: the 2008 Wikimedia reconstruction.
+
+Each panel contains the same verified Earth-Moon core. Only the placement rule
+for the eight oblique Moon circles changes. The residual bars use a common
+scale across all three panels.

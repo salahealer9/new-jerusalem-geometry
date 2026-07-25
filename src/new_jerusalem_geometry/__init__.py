@@ -31,6 +31,11 @@ from .oblique_verification import (
     verify_oblique_placement,
 )
 
+from .comparison_svg import (
+    oblique_models_comparison_to_svg,
+    write_oblique_models_comparison_svg,
+)
+
 __all__ = [
     "AxisAlignedSquare",
     "Check",
@@ -53,6 +58,8 @@ __all__ = [
     "model_beta_radians",
     "square_intersection_angle",
     "verify_oblique_placement",
+    "oblique_models_comparison_to_svg",
+    "write_oblique_models_comparison_svg",
 ]
 
 __version__ = "0.1.0"
