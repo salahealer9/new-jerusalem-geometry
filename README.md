@@ -217,3 +217,30 @@ and verifies the deep heptagram `{7/3}` traversal.
 Five endpoints are supported by Michell's text and printed plate. The two
 inter-Moon-gap endpoints remain explicitly labelled as plate-based project
 inferences.
+
+## Visualise Michell's Figure 14 heptagram candidates
+
+Generate the three-panel comparison SVG:
+
+```bash
+python scripts/generate_michell_figure14_heptagram.py
+````
+
+The default output is:
+
+```text
+figures/generated/michell_figure14_heptagram.svg
+```
+
+The figure compares:
+
+* an exact regular `{7/3}` heptagram;
+* a `{7/3}` heptagram selected from Michell's approximate 28-point scaffold;
+* a Figure-14-aligned `{7/3}` heptagram.
+
+Black circular markers identify the five text-and-plate anchors. Open orange
+diamonds identify the two inter-Moon-gap anchors inferred from the printed
+plate. Dashed orange segments show candidate-to-anchor residuals.
+
+The SVG is a transparent-background computational reconstruction and is not
+a facsimile of Michell's printed plate.

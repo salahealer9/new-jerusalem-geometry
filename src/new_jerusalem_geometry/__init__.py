@@ -93,6 +93,11 @@ from .heptagram_verification import (
     verify_figure14_heptagrams,
 )
 
+from .heptagram_svg import (
+    michell_figure14_heptagram_to_svg,
+    write_michell_figure14_heptagram_svg,
+)
+
 __all__ = [
     "AxisAlignedSquare",
     "Check",
@@ -150,6 +155,8 @@ __all__ = [
     "build_scaffold_heptagram",
     "compare_heptagram_to_anchors",
     "verify_figure14_heptagrams",
+    "michell_figure14_heptagram_to_svg",
+    "write_michell_figure14_heptagram_svg",
 ]
 
 __version__ = "0.1.0"
