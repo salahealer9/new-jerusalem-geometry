@@ -35,3 +35,26 @@ Early formalisation stage. No scientific conclusions have yet been established.
 Salah-Eddin Gherbi  
 Independent Researcher, United Kingdom  
 ORCID: 0009-0005-4017-1095
+
+## Development
+
+Create an isolated environment and install the package:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -e ".[dev]"
+
+Run the core verification:
+
+python scripts/verify_core_geometry.py
+
+Run the automated tests:
+
+pytest
+
+The initial executable model contains only the Earth circle, Earth square,
+radius-7 construction circle, and four cardinal Moon circles. The eight
+non-cardinal Moon circles will be introduced only after the competing geometric
+definitions have been formally separated.
