@@ -38,7 +38,7 @@ def core_diagram_to_svg(
     native y-axis points downward.
     """
     if canvas_size <= 0:
-    raise ValueError("SVG canvas size must be positive.")
+        raise ValueError("SVG canvas size must be positive.")
 
     dimensions = diagram.dimensions
     unit = dimensions.unit
