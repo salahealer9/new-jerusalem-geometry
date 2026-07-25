@@ -111,3 +111,28 @@ The proposed `NJG_MICHELL` model will combine:
 4. Which parts of the later twenty-eightfold construction correspond directly
    to the earlier New Jerusalem plate?
 5. Does Michell specify a unique construction order for the complete diagram?
+
+### 7. Candidate analytic construction of the outer wall
+
+Figure 12 appears to assign one outward wall side to each Moon circle. The
+cardinal Moon circles correspond to horizontal and vertical wall sides, while
+the non-cardinal Moon circles correspond to oblique sides.
+
+The present project therefore tests the following inferred construction:
+
+1. draw the outward support tangent to each Moon circle perpendicular to the
+   radius joining its centre to the common origin;
+2. intersect consecutive support tangents;
+3. use the twelve intersections as the wall vertices.
+
+This construction is not explicitly stated by Michell and must remain labelled
+as a project inference.
+
+For the exact-incidence Moon placement, the inferred wall predicts:
+
+- four shorter and eight longer wall sides;
+- mean side length approximately 3289.16 feet;
+- total area approximately 120.778 million square feet.
+
+These differ from Michell's approximate values of 3264 feet and 120 million
+square feet by less than one percent.

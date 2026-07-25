@@ -16,3 +16,6 @@ SEVEN-003,The reciprocal triangle gives fourteen divisions,How the World Is Made
 SEVEN-004,Four triangles procure the twenty-eight-part division,How the World Is Made,221,239,194,stated_approximate,Twenty-eightfold layer is approximate rather than regular,NJG_MICHELL,
 MODEL-001,Exact regular twenty-eightfold division,Present project,,,,"project_idealisation",beta equals pi over 7,NJG_28,Not Michell's source-faithful construction
 MODEL-002,Wikimedia oblique placement formula,2008 Wikimedia reconstruction,,,,"external_reconstruction",beta equals theta minus asin of r over R,NJG_SVG,Not a Michell primary source
+WALL-003,Average wall side is stated very close to 3264 feet or 1200 MY,City of Revelation,63,65,12,stated_approximate,Provides a numerical target for candidate wall reconstructions,radial_support_wall,
+WALL-004,Area of the complete figure is stated as 120 million square feet,City of Revelation,63,65,12,stated_approximate,Provides an area target for candidate wall reconstructions,radial_support_wall,
+WALL-005,One outward radial support tangent is assigned to each Moon circle,Present project,,,,project_inference,Consecutive support-line intersections define twelve wall vertices,radial_support_wall,Inferred from Figure 12 and not explicitly specified by Michell

@@ -36,6 +36,17 @@ from .comparison_svg import (
     write_oblique_models_comparison_svg,
 )
 
+from .wall_geometry import (
+    OuterWall,
+    WallLine,
+    build_ordered_moon_circles,
+    build_radial_support_wall,
+)
+from .wall_verification import (
+    WallVerificationReport,
+    verify_outer_wall,
+)
+
 __all__ = [
     "AxisAlignedSquare",
     "Check",
@@ -60,6 +71,12 @@ __all__ = [
     "verify_oblique_placement",
     "oblique_models_comparison_to_svg",
     "write_oblique_models_comparison_svg",
+    "OuterWall",
+    "WallLine",
+    "WallVerificationReport",
+    "build_ordered_moon_circles",
+    "build_radial_support_wall",
+    "verify_outer_wall",
 ]
 
 __version__ = "0.1.0"
