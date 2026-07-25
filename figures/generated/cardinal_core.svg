@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-9 -9 18 18" role="img" shape-rendering="geometricPrecision">
+  <title>New Jerusalem cardinal core geometry</title>
+  <desc>Verified normalized geometry containing the Earth circle, Earth square, radius-7 construction circle, and four cardinal Moon circles.</desc>
+  <metadata>
+    Model: New Jerusalem cardinal core
+    Geometry: scale-free Euclidean coordinates
+    Status: computationally verified
+  </metadata>
+  <style>
+    .geometry {
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .construction-circle {
+      stroke: #777777;
+      stroke-width: 0.045;
+      stroke-dasharray: 0.2 0.13;
+    }
+    .earth-square {
+      stroke: #111111;
+      stroke-width: 0.045;
+    }
+    .earth-circle {
+      stroke: #111111;
+      stroke-width: 0.045;
+    }
+    .moon-circle {
+      stroke: #444444;
+      stroke-width: 0.045;
+    }
+  </style>
+
+  <g id="new-jerusalem-cardinal-core" transform="scale(1,-1)">
+    <circle id="construction-circle" class="geometry construction-circle" cx="0" cy="0" r="7" />
+    <rect id="earth-square" class="geometry earth-square" x="-5.5" y="-5.5" width="11" height="11" />
+    <circle id="earth-circle" class="geometry earth-circle" cx="0" cy="0" r="5.5" />
+    <circle id="moon-east" class="geometry moon-circle" cx="7" cy="0" r="1.5" />
+    <circle id="moon-north" class="geometry moon-circle" cx="0" cy="7" r="1.5" />
+    <circle id="moon-west" class="geometry moon-circle" cx="-7" cy="0" r="1.5" />
+    <circle id="moon-south" class="geometry moon-circle" cx="0" cy="-7" r="1.5" />
+  </g>
+</svg>

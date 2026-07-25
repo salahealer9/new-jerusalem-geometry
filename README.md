@@ -45,16 +45,48 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -e ".[dev]"
+````
 
 Run the core verification:
 
+```bash
 python scripts/verify_core_geometry.py
+```
 
 Run the automated tests:
 
+```bash
 pytest
+```
 
 The initial executable model contains only the Earth circle, Earth square,
 radius-7 construction circle, and four cardinal Moon circles. The eight
 non-cardinal Moon circles will be introduced only after the competing geometric
 definitions have been formally separated.
+
+## Generate the verified core diagram
+
+Generate the standalone SVG:
+
+```bash
+python scripts/generate_core_diagram.py
+````
+
+The default output is:
+
+```text
+figures/generated/cardinal_core.svg
+```
+
+The graphic is generated directly from the same coordinate objects used by the
+verification and test suite. It introduces no manually positioned elements.
+
+A different scale or output path may be selected without changing the
+scale-free geometry:
+
+```bash
+python scripts/generate_core_diagram.py \
+  --unit 720 \
+  --output figures/generated/cardinal_core_u720.svg
+```
+
