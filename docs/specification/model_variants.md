@@ -24,3 +24,43 @@ Exact reproduction of the constants and construction choices encoded in the
 The project will determine which constraints are primary in Michell's published
 construction and whether the three models are equivalent, approximately
 equivalent, or mathematically distinct.
+
+## Analytic definitions
+
+Let
+
+- `R = 7u` be the construction-circle radius;
+- `r = 3u/2` be the Moon radius;
+- `h = 11u/2` be the Earth-square half-side.
+
+The first-quadrant square-circle intersection angle is
+
+    theta = arccos(h / R) = arccos(11 / 14).
+
+### NJG_INC
+
+The centre-to-intersection chord must equal the Moon radius:
+
+    2R sin(delta / 2) = r.
+
+Therefore
+
+    delta = 2 arcsin(r / 2R)
+
+and
+
+    beta_INC = theta - 2 arcsin(r / 2R).
+
+### NJG_28
+
+Two steps of an exact 28-fold angular division give
+
+    beta_28 = 2(2pi / 28) = pi / 7.
+
+### NJG_SVG
+
+The Wikimedia implementation uses
+
+    beta_SVG = theta - arcsin(r / R).
+
+The three definitions are close but not identical.
