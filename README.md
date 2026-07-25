@@ -153,3 +153,35 @@ This reconstructs the approximate sevenfold step described in Figure 194,
 repeats it through four quadrants to obtain twenty-eight points, classifies the
 points into Michell's stated 12 + 8 + 8 roles, and compares the resulting Moon
 centres with the exact-incidence `NJG_INC` model.
+
+## Visualise Michell's approximate 28-point scaffold
+
+Generate the comparison SVG:
+
+```bash
+python scripts/generate_michell_28_point_scaffold.py
+````
+
+The default output is:
+
+```text
+figures/generated/michell_28_point_scaffold.svg
+```
+
+The figure shows:
+
+* the twenty-eight approximate scaffold points;
+* Michell's 12 + 8 + 8 role classification;
+* twelve Moon circles positioned by the scaffold;
+* the source-supported `NJG_INC` Moon circles;
+* the displacement between the two centre systems;
+* the eight square-circle incidence points;
+* a magnified oblique-centre displacement inset;
+* the exact circumference accounting under the pi = 22/7 convention.
+
+The SVG background is transparent. The inset magnification may be changed with:
+
+```bash
+python scripts/generate_michell_28_point_scaffold.py \
+  --displacement-magnification 60
+```

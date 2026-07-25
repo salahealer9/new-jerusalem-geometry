@@ -69,6 +69,11 @@ from .septenary_verification import (
     verify_michell_28_point_scaffold,
 )
 
+from .septenary_svg import (
+    michell_28_point_scaffold_to_svg,
+    write_michell_28_point_scaffold_svg,
+)
+
 __all__ = [
     "AxisAlignedSquare",
     "Check",
@@ -111,6 +116,8 @@ __all__ = [
     "michell_heptagon_step_angle",
     "michell_scaffold_local_offsets",
     "verify_michell_28_point_scaffold",
+    "michell_28_point_scaffold_to_svg",
+    "write_michell_28_point_scaffold_svg",
 ]
 
 __version__ = "0.1.0"
