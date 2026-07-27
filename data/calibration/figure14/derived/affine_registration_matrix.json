@@ -1,0 +1,73 @@
+{
+  "coordinate_systems": {
+    "cartesian_pixel": "Rendered pixel coordinates with positive y upward.",
+    "model": "Normalised diagram coordinates in units u, with positive y upward.",
+    "rendered_pixel": "Original PNG coordinates with positive y downward."
+  },
+  "forward_model_to_cartesian_pixel": [
+    [
+      70.66362654597894,
+      -0.3374907664564901,
+      754.9821019444444
+    ],
+    [
+      0.21486224500093076,
+      72.29125339278457,
+      879.5458859722224
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "independent_pass_ids": [
+    "pass-01",
+    "pass-02",
+    "pass-03"
+  ],
+  "inverse_cartesian_pixel_to_model": [
+    [
+      0.01415135132343756,
+      6.606539768500816e-05,
+      -10.74212451626215
+    ],
+    [
+      -4.206029045630256e-05,
+      0.01383273574753299,
+      -12.134771051986442
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "linear_scale_diagnostics": {
+    "mean_pixels_per_unit": 71.47797351659383,
+    "pixels_per_unit_maximum": 72.29409343834503,
+    "pixels_per_unit_minimum": 70.66185359484263,
+    "units_per_pixel_maximum": 0.014151907275653276
+  },
+  "schema_version": 1,
+  "selected_model": "affine",
+  "selection_basis": {
+    "anisotropy_ratio": 1.0230993069168728,
+    "centroid_loo_maximum_pixels": 4.245118135420448,
+    "centroid_loo_rms_pixels": 2.545169618134926,
+    "centroid_training_rms_pixels": 1.919266292958678,
+    "criterion": "Lowest centroid leave-one-landmark-out RMS with stable performance across all three independent passes."
+  },
+  "selection_status": "primary",
+  "source_image": {
+    "filename": "city_of_revelation_page_069.png",
+    "height_pixels": 2327,
+    "sha256": "d2ba830db44db6b0a6db8a6d41be780e2f9ef6391d6d832355d0531c282563fa",
+    "width_pixels": 1512
+  },
+  "uncertainty": {
+    "overall_click_rms_normalized": 0.012484891349875536,
+    "overall_click_rms_pixels": 0.8957218824300748,
+    "overall_pass_registered_rms_normalized": 0.012375768294974198
+  }
+}
