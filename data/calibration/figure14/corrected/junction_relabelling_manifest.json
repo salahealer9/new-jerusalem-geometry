@@ -1,0 +1,71 @@
+{
+  "coordinate_mapping": [
+    {
+      "raw_coordinate_source_landmark_id": "junction_top_right",
+      "target_landmark_id": "junction_top_left"
+    },
+    {
+      "raw_coordinate_source_landmark_id": "junction_right_upper",
+      "target_landmark_id": "junction_top_right"
+    },
+    {
+      "raw_coordinate_source_landmark_id": "junction_right_lower",
+      "target_landmark_id": "junction_right_upper"
+    },
+    {
+      "raw_coordinate_source_landmark_id": "junction_bottom_right",
+      "target_landmark_id": "junction_right_lower"
+    },
+    {
+      "raw_coordinate_source_landmark_id": "junction_bottom_left",
+      "target_landmark_id": "junction_bottom_right"
+    },
+    {
+      "raw_coordinate_source_landmark_id": "junction_left_lower",
+      "target_landmark_id": "junction_bottom_left"
+    },
+    {
+      "raw_coordinate_source_landmark_id": "junction_left_upper",
+      "target_landmark_id": "junction_left_lower"
+    },
+    {
+      "raw_coordinate_source_landmark_id": "junction_top_left",
+      "target_landmark_id": "junction_left_upper"
+    }
+  ],
+  "coordinate_mapping_semantics": "Each target landmark receives pixel_x and pixel_y from the named raw source landmark. All other fields remain attached to the target landmark.",
+  "correction_id": "figure14-junction-cyclic-shift-plus-one",
+  "correction_type": "coordinate_reassignment",
+  "passes": [
+    {
+      "corrected_filename": "figure14_digitisation_pass-01.csv",
+      "corrected_sha256": "29dfee722e7e229e2c4e7a893eb21fadb6a1de97387ee6c0ac6a66bbe7d92661",
+      "pass_id": "pass-01",
+      "raw_filename": "figure14_digitisation_pass-01.csv",
+      "raw_sha256": "03093fe03737cdd1fb9da3b7c4ade84aa205c8864a1081827e1e39ac6ab8b3cc"
+    },
+    {
+      "corrected_filename": "figure14_digitisation_pass-02.csv",
+      "corrected_sha256": "a20eec7f0c3da67bed47fe83911f547b79adffd223888f127959d90fa715c7f1",
+      "pass_id": "pass-02",
+      "raw_filename": "figure14_digitisation_pass-02.csv",
+      "raw_sha256": "ef4b9c8863d2a6260e1452dd61a65cd702593e2b0f6a0de6407abb5594b07234"
+    },
+    {
+      "corrected_filename": "figure14_digitisation_pass-03.csv",
+      "corrected_sha256": "6f2fec67d46bbc734daa2eed96014cc2e89df5e74712750fd2f331507da9b199",
+      "pass_id": "pass-03",
+      "raw_filename": "figure14_digitisation_pass-03.csv",
+      "raw_sha256": "42ce1acba3f2975d17b870405a30d3aa6ae71298acfca920f4164f505eadd952"
+    }
+  ],
+  "raw_files_modified": false,
+  "reason": "The eight square/construction-circle junctions were digitised consistently across all three passes using a landmark sequence displaced backward by one cyclic position. Registration against the independently digitised square corners identified the unique corrected cyclic correspondence.",
+  "schema_version": 1,
+  "source_image": {
+    "filename": "city_of_revelation_page_069.png",
+    "height_pixels": 2327,
+    "sha256": "d2ba830db44db6b0a6db8a6d41be780e2f9ef6391d6d832355d0531c282563fa",
+    "width_pixels": 1512
+  }
+}
