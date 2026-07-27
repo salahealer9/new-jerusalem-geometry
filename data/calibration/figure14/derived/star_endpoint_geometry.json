@@ -1,0 +1,81 @@
+{
+  "analysis_id": "figure14-source-derived-star-endpoint-geometry",
+  "canonical_origin_radius7_fit": {
+    "angular_maximum_degrees": 0.4700511784651413,
+    "angular_rms_degrees": 0.22405878857322398,
+    "centre_x": 0.0,
+    "centre_y": 0.0,
+    "fit_id": "canonical_origin_radius7_top",
+    "maximum_residual": 0.05925880295224698,
+    "phase_degrees": 90.0,
+    "radial_rms": 0.01643699565702408,
+    "radius": 7.0,
+    "rms_residual": 0.03195384739299556
+  },
+  "chord_statistics": {
+    "spatial_side": {
+      "exact_radius7": 6.074372347645814,
+      "mean": 6.083745958822391,
+      "standard_deviation": 0.021123687640892
+    },
+    "step_2": {
+      "exact_radius7": 10.945640754552418,
+      "mean": 10.962528720551557,
+      "standard_deviation": 0.019509975260202723
+    },
+    "step_3": {
+      "exact_radius7": 13.648990770545531,
+      "mean": 13.670038349594213,
+      "standard_deviation": 0.017338950299659317
+    }
+  },
+  "endpoint_count": 7,
+  "endpoint_order": [
+    "star_endpoint_00_top",
+    "star_endpoint_01_upper_left",
+    "star_endpoint_02_lower_left",
+    "star_endpoint_03_bottom_left",
+    "star_endpoint_04_bottom_right",
+    "star_endpoint_05_lower_right",
+    "star_endpoint_06_upper_right"
+  ],
+  "fit_residual_fraction_of_registration_loo": {
+    "canonical_origin_radius7": 0.8973846935134745,
+    "free_regular": 0.5041398259645543,
+    "origin_radius7_free_phase": 0.6747544582880791
+  },
+  "free_regular_fit": {
+    "angular_maximum_degrees": 0.20182646506078866,
+    "angular_rms_degrees": 0.11841890616594962,
+    "centre_x": 0.0035400838606443686,
+    "centre_y": -0.011232014579969678,
+    "fit_id": "free_regular_seven_vertices",
+    "maximum_residual": 0.025103753884083226,
+    "phase_degrees": 90.17229492714199,
+    "radial_rms": 0.010596849820235907,
+    "radius": 7.010785783024739,
+    "rms_residual": 0.017951283524272443
+  },
+  "origin_radius7_free_phase_fit": {
+    "angular_maximum_degrees": 0.2977562513231195,
+    "angular_rms_degrees": 0.1432979200212431,
+    "centre_x": 0.0,
+    "centre_y": 0.0,
+    "fit_id": "origin_radius7_free_phase",
+    "maximum_residual": 0.03915328313137666,
+    "phase_degrees": 90.17229492714199,
+    "radial_rms": 0.01643699565702408,
+    "radius": 7.0,
+    "rms_residual": 0.02402648623687153
+  },
+  "registration_scale": {
+    "loo_rms_equivalent_normalized": 0.03560774729496293,
+    "loo_rms_pixels": 2.545169618134926,
+    "mean_pixels_per_unit": 71.47797351659383
+  },
+  "schema_version": 1,
+  "topology_identifiability": {
+    "statement": "The seven endpoint coordinates determine a vertex set but do not distinguish a regular {7/2} from a regular {7/3}, because both topologies use the same seven vertices. Edge adjacency must be established from the printed line connections or an independent line-tracing audit.",
+    "vertex_set_distinguishes_7_2_from_7_3": false
+  }
+}
