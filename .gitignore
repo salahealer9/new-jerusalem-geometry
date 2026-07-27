@@ -34,3 +34,7 @@ data/derived/*
 
 figures/generated/*
 !figures/generated/.gitkeep
+
+# Local copyrighted source material and temporary plate renders
+data/source_private/
+data/working/figure14/
