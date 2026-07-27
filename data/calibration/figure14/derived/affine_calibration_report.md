@@ -36,16 +36,16 @@ left materially larger systematic residuals.
 
 | Rank | Landmark | Role | Residual (u) |
 |---:|---|---|---:|
-| 1 | `moon_centre_04` | validation | 13.664687966 |
-| 2 | `moon_centre_09` | validation | 13.656230855 |
-| 3 | `moon_centre_03` | validation | 13.652001809 |
-| 4 | `moon_centre_10` | validation | 13.651334491 |
-| 5 | `moon_centre_05` | validation | 9.920219797 |
-| 6 | `moon_centre_02` | validation | 9.895027208 |
-| 7 | `moon_centre_08` | validation | 9.890003779 |
-| 8 | `moon_centre_11` | validation | 9.877054840 |
-| 9 | `moon_centre_07` | validation | 3.174540615 |
-| 10 | `moon_centre_00` | validation | 3.172558286 |
+| 1 | `moon_centre_02` | validation | 0.058075363 |
+| 2 | `moon_centre_10` | validation | 0.056209827 |
+| 3 | `moon_centre_09` | validation | 0.056031542 |
+| 4 | `moon_centre_05` | validation | 0.051478479 |
+| 5 | `junction_right_upper` | registration | 0.044791761 |
+| 6 | `moon_centre_08` | validation | 0.038509860 |
+| 7 | `junction_left_upper` | registration | 0.038064296 |
+| 8 | `square_corner_top_right` | registration | 0.036389765 |
+| 9 | `moon_centre_06` | validation | 0.035851477 |
+| 10 | `moon_centre_01` | validation | 0.033736634 |
 
 ## Interpretation boundary
 

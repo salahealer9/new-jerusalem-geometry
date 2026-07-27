@@ -20,7 +20,8 @@ DEFAULT_SCHEMA = Path(
 )
 
 DEFAULT_INPUT_DIRECTORY = Path(
-    "data/calibration/figure14/corrected"
+    "data/calibration/figure14/"
+    "correspondence_resolved"
 )
 
 DEFAULT_OUTPUT_DIRECTORY = Path(
@@ -48,7 +49,7 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=DEFAULT_INPUT_DIRECTORY,
         help=(
-            "Corrected digitisation directory. "
+            "Correspondence-resolved digitisation directory. "
             f"Default: {DEFAULT_INPUT_DIRECTORY}"
         ),
     )

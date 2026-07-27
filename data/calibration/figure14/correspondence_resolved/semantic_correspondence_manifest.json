@@ -1,0 +1,170 @@
+{
+  "coordinate_only_reassignment": true,
+  "input_layer": "junction-corrected",
+  "moon_correspondence": {
+    "best_direction": "reversed",
+    "best_shift": 1,
+    "coordinate_mapping": [
+      {
+        "input_coordinate_source_landmark_id": "moon_centre_01",
+        "residual_normalized": 0.01710465145527285,
+        "target_landmark_id": "moon_centre_00"
+      },
+      {
+        "input_coordinate_source_landmark_id": "moon_centre_00",
+        "residual_normalized": 0.03373663368250697,
+        "target_landmark_id": "moon_centre_01"
+      },
+      {
+        "input_coordinate_source_landmark_id": "moon_centre_11",
+        "residual_normalized": 0.05807536300338853,
+        "target_landmark_id": "moon_centre_02"
+      },
+      {
+        "input_coordinate_source_landmark_id": "moon_centre_10",
+        "residual_normalized": 0.015276127680816822,
+        "target_landmark_id": "moon_centre_03"
+      },
+      {
+        "input_coordinate_source_landmark_id": "moon_centre_09",
+        "residual_normalized": 0.015521943263777383,
+        "target_landmark_id": "moon_centre_04"
+      },
+      {
+        "input_coordinate_source_landmark_id": "moon_centre_08",
+        "residual_normalized": 0.0514784787335009,
+        "target_landmark_id": "moon_centre_05"
+      },
+      {
+        "input_coordinate_source_landmark_id": "moon_centre_07",
+        "residual_normalized": 0.03585147699033811,
+        "target_landmark_id": "moon_centre_06"
+      },
+      {
+        "input_coordinate_source_landmark_id": "moon_centre_06",
+        "residual_normalized": 0.008898294114302773,
+        "target_landmark_id": "moon_centre_07"
+      },
+      {
+        "input_coordinate_source_landmark_id": "moon_centre_05",
+        "residual_normalized": 0.038509859752985855,
+        "target_landmark_id": "moon_centre_08"
+      },
+      {
+        "input_coordinate_source_landmark_id": "moon_centre_04",
+        "residual_normalized": 0.056031542290157964,
+        "target_landmark_id": "moon_centre_09"
+      },
+      {
+        "input_coordinate_source_landmark_id": "moon_centre_03",
+        "residual_normalized": 0.056209827272080785,
+        "target_landmark_id": "moon_centre_10"
+      },
+      {
+        "input_coordinate_source_landmark_id": "moon_centre_02",
+        "residual_normalized": 0.016913536411076673,
+        "target_landmark_id": "moon_centre_11"
+      }
+    ],
+    "maximum_normalized": 0.05807536300338853,
+    "rms_normalized": 0.038035581346020794,
+    "search_space": "All twelve forward cyclic shifts and all twelve reversed cyclic shifts.",
+    "second_best_rms_normalized": 3.672783231939582
+  },
+  "numerical_coordinate_values_modified": false,
+  "output_layer": "correspondence-resolved",
+  "passes": [
+    {
+      "input_filename": "figure14_digitisation_pass-01.csv",
+      "input_sha256": "29dfee722e7e229e2c4e7a893eb21fadb6a1de97387ee6c0ac6a66bbe7d92661",
+      "output_filename": "figure14_digitisation_pass-01.csv",
+      "output_sha256": "646dd1a7ef8651833ad0a4f8ed0461d10346c07a919e5c5826ec9d2c118b55bf",
+      "pass_id": "pass-01"
+    },
+    {
+      "input_filename": "figure14_digitisation_pass-02.csv",
+      "input_sha256": "a20eec7f0c3da67bed47fe83911f547b79adffd223888f127959d90fa715c7f1",
+      "output_filename": "figure14_digitisation_pass-02.csv",
+      "output_sha256": "acb997ada50e107aa36c2b01fc8b4d478086569aadd22df634642d1a149444a9",
+      "pass_id": "pass-02"
+    },
+    {
+      "input_filename": "figure14_digitisation_pass-03.csv",
+      "input_sha256": "6f2fec67d46bbc734daa2eed96014cc2e89df5e74712750fd2f331507da9b199",
+      "output_filename": "figure14_digitisation_pass-03.csv",
+      "output_sha256": "489bb8f3af107d19c96f7219c8235c7327fa183d58335de2d2adeb7199f18095",
+      "pass_id": "pass-03"
+    }
+  ],
+  "preceding_layers_modified": false,
+  "registration_landmarks_modified": false,
+  "registration_reference": {
+    "anisotropy_ratio": 1.0230993069168728,
+    "centroid_loo_maximum_pixels": 4.245118135420448,
+    "centroid_loo_rms_pixels": 2.545169618134926,
+    "centroid_training_rms_pixels": 1.919266292958678,
+    "model": "affine"
+  },
+  "resolution_id": "figure14-moon-star-semantic-correspondence-v1",
+  "schema_version": 1,
+  "source_image": {
+    "filename": "city_of_revelation_page_069.png",
+    "height_pixels": 2327,
+    "sha256": "d2ba830db44db6b0a6db8a6d41be780e2f9ef6391d6d832355d0531c282563fa",
+    "width_pixels": 1512
+  },
+  "star_correspondence": {
+    "circle": {
+      "centre_displacement": 0.010772859268147974,
+      "centre_x": -0.0022372447448253388,
+      "centre_y": -0.010537989977366324,
+      "fitted_radius": 7.010811180115889,
+      "mean_radius": 7.010804382923018,
+      "radial_rms": 0.009762564803355028,
+      "radial_standard_deviation": 0.00976256243707949,
+      "radius_maximum": 7.026455624914331,
+      "radius_minimum": 6.9987324960782935
+    },
+    "recorded_sequence_consistency": {
+      "angular_maximum_degrees": 0.2181347485211911,
+      "angular_rms_degrees": 0.13198728984473207,
+      "best_direction": "clockwise",
+      "best_notation": "{7/2}",
+      "best_step_size": 2,
+      "interpretation_boundary": "The digitiser used spatial endpoint descriptions rather than an explicit connected-line tracing instruction.",
+      "phase_degrees": 90.17231707979462,
+      "second_best_angular_rms_degrees": 103.00164999343366,
+      "status": "sequence-consistency evidence; not independent topology proof"
+    },
+    "spatial_coordinate_mapping": [
+      {
+        "input_coordinate_source_landmark_id": "star_endpoint_00_top",
+        "target_landmark_id": "star_endpoint_00_top"
+      },
+      {
+        "input_coordinate_source_landmark_id": "star_endpoint_03_bottom_left",
+        "target_landmark_id": "star_endpoint_01_upper_left"
+      },
+      {
+        "input_coordinate_source_landmark_id": "star_endpoint_06_upper_right",
+        "target_landmark_id": "star_endpoint_02_lower_left"
+      },
+      {
+        "input_coordinate_source_landmark_id": "star_endpoint_02_lower_left",
+        "target_landmark_id": "star_endpoint_03_bottom_left"
+      },
+      {
+        "input_coordinate_source_landmark_id": "star_endpoint_05_lower_right",
+        "target_landmark_id": "star_endpoint_04_bottom_right"
+      },
+      {
+        "input_coordinate_source_landmark_id": "star_endpoint_01_upper_left",
+        "target_landmark_id": "star_endpoint_05_lower_right"
+      },
+      {
+        "input_coordinate_source_landmark_id": "star_endpoint_04_bottom_right",
+        "target_landmark_id": "star_endpoint_06_upper_right"
+      }
+    ]
+  }
+}
