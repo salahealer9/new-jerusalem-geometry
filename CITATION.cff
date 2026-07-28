@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "New Jerusalem Geometry"
+type: software
+version: "0.2.0"
+date-released: "2026-07-28"
+authors:
+  - family-names: "Gherbi"
+    given-names: "Salah-Eddin"
+    orcid: "https://orcid.org/0009-0005-4017-1095"
+repository-code: "https://github.com/salahealer9/new-jerusalem-geometry"
+abstract: >-
+  A reproducible Euclidean geometry audit of John Michell's New Jerusalem
+  diagram, including source-plate calibration of Figure 14 and a
+  source-supported {7/2} heptagram topology.
