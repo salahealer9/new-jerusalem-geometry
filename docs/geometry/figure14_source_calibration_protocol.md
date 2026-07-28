@@ -149,8 +149,31 @@ The calibrated plate endpoints will be compared against:
 - the current Figure-14-aligned reconstruction;
 - unconstrained seven-point plate measurements.
 
-Both heptagram families remain candidates until the plate line topology and
-endpoint fits have been tested numerically.
+Both heptagram families were retained as candidates during data collection.
+The completed source-plate audit independently selected `{7/2}` from the
+printed near-endpoint line directions.
+
+## Protocol outcome
+
+The protocol was completed using three independent landmark-digitisation passes
+and three independent near-endpoint line-tracing passes.
+
+The calibrated endpoint set is close to a regular seven-vertex system centred
+on the radius-7 construction circle. Endpoint coordinates alone do not
+distinguish `{7/2}` from `{7/3}`; topology was therefore tested independently
+from the two printed stroke directions immediately inside every endpoint.
+
+The topology audit produced:
+
+- `{7/2}` angular RMS: 1.248033670 degrees;
+- `{7/3}` angular RMS: 24.993300526 degrees;
+- perimeter angular RMS: 26.476050606 degrees;
+- `{7/2}` endpoint/pass wins: 21 of 21;
+- RMS margin over the second candidate: 23.745266856 degrees.
+
+The canonical Figure 14 reconstruction is consequently `{7/2}`. The earlier
+project-level `{7/3}` assignment is superseded rather than treated as source
+evidence.
 
 ## Error reporting
 

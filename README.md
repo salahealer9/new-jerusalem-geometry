@@ -196,27 +196,19 @@ python scripts/analyze_figure14_heptagram.py
 
 The analysis reconstructs the seven endpoint roles visible in Figure 14,
 compares exact-regular, Michell-28-point, and Figure-14-aligned vertex systems,
-and verifies the deep heptagram `{7/3}` traversal.
+and uses the source-supported heptagram `{7/2}` traversal.
 
 Five endpoints are supported by Michell's text and printed plate. The two
 inter-Moon-gap endpoints remain explicitly labelled as plate-based project
 inferences.
 
-## Analyse Michell's Figure 14 heptagram
+Three independent near-endpoint line-tracing passes sampled 42 printed-stroke
+directions. The `{7/2}` candidate won all 21 endpoint/pass comparisons, with an
+angular RMS residual of 1.248033670 degrees, compared with 24.993300526 degrees
+for `{7/3}`.
 
-Run:
-
-```bash
-python scripts/analyze_figure14_heptagram.py
-````
-
-The analysis reconstructs the seven endpoint roles visible in Figure 14,
-compares exact-regular, Michell-28-point, and Figure-14-aligned vertex systems,
-and verifies the deep heptagram `{7/3}` traversal.
-
-Five endpoints are supported by Michell's text and printed plate. The two
-inter-Moon-gap endpoints remain explicitly labelled as plate-based project
-inferences.
+The full calibration result is documented in
+[`docs/geometry/figure14_source_calibration_results.md`](docs/geometry/figure14_source_calibration_results.md).
 
 ## Visualise Michell's Figure 14 heptagram candidates
 
@@ -234,9 +226,9 @@ figures/generated/michell_figure14_heptagram.svg
 
 The figure compares:
 
-* an exact regular `{7/3}` heptagram;
-* a `{7/3}` heptagram selected from Michell's approximate 28-point scaffold;
-* a Figure-14-aligned `{7/3}` heptagram.
+* an exact regular `{7/2}` heptagram;
+* a `{7/2}` heptagram selected from Michell's approximate 28-point scaffold;
+* a Figure-14-aligned `{7/2}` heptagram.
 
 Black circular markers identify the five text-and-plate anchors. Open orange
 diamonds identify the two inter-Moon-gap anchors inferred from the printed

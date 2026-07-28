@@ -211,10 +211,20 @@ the small gaps between the lower oblique Moon circles and the adjacent cardinal
 Moon circles. This is a plate-based project inference, supported by their
 positions and by Michell's later 28-point scaffold.
 
-The line traversal shown in Figure 14 is consistent with the deep heptagram
-{7/3}, whose traversal from the upper vertex is:
+The project's initial reconstruction provisionally classified the printed
+line traversal as `{7/3}`. That classification was subsequently tested against
+the source plate rather than retained as an interpretive assumption.
 
-    0, 3, 6, 2, 5, 1, 4
+Three independent near-endpoint tracing passes sampled both printed strokes at
+each of the seven calibrated endpoints. The direct line-direction audit selects
+the `{7/2}` heptagram, whose traversal from the upper vertex is:
+
+    0, 2, 4, 6, 1, 3, 5
+
+The `{7/2}` candidate has an angular RMS residual of 1.248033670 degrees and
+wins all 21 endpoint/pass comparisons. The `{7/3}` candidate has an angular RMS
+residual of 24.993300526 degrees and wins none. The earlier `{7/3}` project
+inference is therefore superseded by the calibrated source result.
 
 Three vertex systems are compared:
 
