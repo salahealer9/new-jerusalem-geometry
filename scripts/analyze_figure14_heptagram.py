@@ -78,7 +78,7 @@ def main() -> int:
         f"Verification:             "
         f"{'PASS' if report.passed else 'FAIL'}"
     )
-    print("Family:                   {7/3}")
+    print("Family:                   {7/2}")
     print(
         f"Traversal:                "
         f"{regular.traversal_indices()}"
@@ -122,15 +122,15 @@ def main() -> int:
     print()
     print("Candidate fits")
     print("--------------")
-    print_fit("Exact regular {7/3}", report.regular_fit)
+    print_fit("Exact regular {7/2}", report.regular_fit)
     print()
     print_fit(
-        "Michell 28-point {7/3}",
+        "Michell 28-point {7/2}",
         report.scaffold_fit,
     )
     print()
     print_fit(
-        "Figure-14-aligned {7/3}",
+        "Figure-14-aligned {7/2}",
         report.aligned_fit,
     )
 

@@ -170,3 +170,29 @@ def test_figure14_svg_validation_and_file_output(
     ).startswith(
         '<?xml version="1.0" encoding="UTF-8"?>'
     )
+
+
+def test_figure14_svg_uses_source_supported_step2_labels() -> None:
+    diagram = build_core_geometry()
+
+    svg = michell_figure14_heptagram_to_svg(
+        diagram
+    )
+
+    assert "Heptagram family: {7/2}" in svg
+    assert "Exact regular {7/2}" in svg
+    assert "Michell 28-point {7/2}" in svg
+    assert "Figure-14-aligned {7/2}" in svg
+    assert "candidate {7/2}" in svg
+
+
+def test_figure14_svg_does_not_present_step3_as_canonical() -> None:
+    diagram = build_core_geometry()
+
+    svg = michell_figure14_heptagram_to_svg(
+        diagram
+    )
+
+    assert "Heptagram family: {7/3}" not in svg
+    assert "Exact regular {7/3}" not in svg
+    assert "Figure-14-aligned {7/3}" not in svg

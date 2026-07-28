@@ -330,7 +330,7 @@ def verify_figure14_heptagrams(
                     name=f"{candidate.name}_family",
                     residual=float(
                         candidate.family.value
-                        - HeptagramFamily.STEP_3.value
+                        - HeptagramFamily.STEP_2.value
                     ),
                     tolerance=0.0,
                 ),
@@ -339,17 +339,17 @@ def verify_figure14_heptagrams(
 
     expected_traversal = (
         0,
-        3,
-        6,
         2,
-        5,
-        1,
         4,
+        6,
+        1,
+        3,
+        5,
     )
 
     checks.append(
         Check(
-            name="figure14_step3_traversal",
+            name="figure14_step2_traversal",
             residual=float(
                 regular.traversal_indices()
                 != expected_traversal

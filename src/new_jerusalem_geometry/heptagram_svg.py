@@ -2,9 +2,9 @@
 
 The SVG compares three vertex systems:
 
-- an exact regular {7/3} heptagram;
-- a {7/3} heptagram selected from Michell's approximate 28-point scaffold;
-- a Figure-14-aligned {7/3} heptagram built from the seven stated and
+- an exact regular {7/2} heptagram;
+- a {7/2} heptagram selected from Michell's approximate 28-point scaffold;
+- a Figure-14-aligned {7/2} heptagram built from the seven stated and
   inferred endpoint constraints.
 
 The SVG is a computational reconstruction, not a facsimile of Michell's
@@ -277,19 +277,19 @@ def michell_figure14_heptagram_to_svg(
     ] = (
         (
             "A",
-            "Exact regular {7/3}",
+            "Exact regular {7/2}",
             regular,
             report.regular_fit,
         ),
         (
             "B",
-            "Michell 28-point {7/3}",
+            "Michell 28-point {7/2}",
             scaffold,
             report.scaffold_fit,
         ),
         (
             "C",
-            "Figure-14-aligned {7/3}",
+            "Figure-14-aligned {7/2}",
             aligned,
             report.aligned_fit,
         ),
@@ -342,7 +342,7 @@ def michell_figure14_heptagram_to_svg(
         "  <metadata>",
         "    Project: New Jerusalem Geometry",
         "    Source: City of Revelation, Figure 14",
-        "    Heptagram family: {7/3}",
+        "    Heptagram family: {7/2}",
         "    Endpoint evidence: 5 text-and-plate, 2 plate inference",
         "    Background: transparent",
         "  </metadata>",
@@ -601,7 +601,7 @@ def michell_figure14_heptagram_to_svg(
                 f'    <text class="legend-text" '
                 f'x="{outer_margin + 33.0:.6g}" '
                 f'y="{legend_y + 4.0:.6g}">'
-                "candidate {7/3}</text>"
+                "candidate {7/2}</text>"
             ),
             (
                 f'    <circle class="stated-anchor" '

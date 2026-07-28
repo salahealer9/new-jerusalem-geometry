@@ -5,7 +5,7 @@
   <metadata>
     Project: New Jerusalem Geometry
     Source: City of Revelation, Figure 14
-    Heptagram family: {7/3}
+    Heptagram family: {7/2}
     Endpoint evidence: 5 text-and-plate, 2 plate inference
     Background: transparent
   </metadata>
@@ -113,10 +113,10 @@
   </style>
   <text class="title" x="800" y="30">Michell Figure 14 heptagram comparison</text>
   <text class="subtitle" x="800" y="53">Computational reconstruction — not a facsimile of the printed plate</text>
-  <g id="panel-0" data-candidate="REGULAR_7_3">
+  <g id="panel-0" data-candidate="REGULAR_7_2">
     <rect class="panel-frame" x="26" y="82" width="501.333333333" height="748" rx="7" />
     <text class="panel-letter" x="40" y="111">A</text>
-    <text class="panel-title" x="276.666666667" y="111">Exact regular {7/3}</text>
+    <text class="panel-title" x="276.666666667" y="111">Exact regular {7/2}</text>
     <g id="panel-0-geometry" transform="translate(276.666666667 398) scale(24.5787545788,-24.5787545788)">
       <circle class="geometry construction-circle" cx="0" cy="0" r="7" />
       <rect class="geometry earth-square" x="-5.5" y="-5.5" width="11" height="11" />
@@ -133,13 +133,13 @@
       <circle class="geometry incidence-moon" data-panel="0" data-moon-index="9" cx="0" cy="-7" r="1.5" />
       <circle class="geometry incidence-moon" data-panel="0" data-moon-index="10" cx="3.05892369468" cy="-6.29626761106" r="1.5" />
       <circle class="geometry incidence-moon" data-panel="0" data-moon-index="11" cx="6.29626761106" cy="-3.05892369468" r="1.5" />
-      <line class="geometry star-edge" data-panel="0" data-edge-index="0" x1="0" y1="7" x2="-3.03718617382" y2="-6.30678207532" />
-      <line class="geometry star-edge" data-panel="0" data-edge-index="1" x1="-3.03718617382" y1="-6.30678207532" x2="5.47282037728" y2="4.36442861301" />
-      <line class="geometry star-edge" data-panel="0" data-edge-index="2" x1="5.47282037728" y1="4.36442861301" x2="-6.82449538527" y2="-1.55764653769" />
-      <line class="geometry star-edge" data-panel="0" data-edge-index="3" x1="-6.82449538527" y1="-1.55764653769" x2="6.82449538527" y2="-1.55764653769" />
-      <line class="geometry star-edge" data-panel="0" data-edge-index="4" x1="6.82449538527" y1="-1.55764653769" x2="-5.47282037728" y2="4.36442861301" />
-      <line class="geometry star-edge" data-panel="0" data-edge-index="5" x1="-5.47282037728" y1="4.36442861301" x2="3.03718617382" y2="-6.30678207532" />
-      <line class="geometry star-edge" data-panel="0" data-edge-index="6" x1="3.03718617382" y1="-6.30678207532" x2="0" y2="7" />
+      <line class="geometry star-edge" data-panel="0" data-edge-index="0" x1="0" y1="7" x2="-6.82449538527" y2="-1.55764653769" />
+      <line class="geometry star-edge" data-panel="0" data-edge-index="1" x1="-6.82449538527" y1="-1.55764653769" x2="3.03718617382" y2="-6.30678207532" />
+      <line class="geometry star-edge" data-panel="0" data-edge-index="2" x1="3.03718617382" y1="-6.30678207532" x2="5.47282037728" y2="4.36442861301" />
+      <line class="geometry star-edge" data-panel="0" data-edge-index="3" x1="5.47282037728" y1="4.36442861301" x2="-5.47282037728" y2="4.36442861301" />
+      <line class="geometry star-edge" data-panel="0" data-edge-index="4" x1="-5.47282037728" y1="4.36442861301" x2="-3.03718617382" y2="-6.30678207532" />
+      <line class="geometry star-edge" data-panel="0" data-edge-index="5" x1="-3.03718617382" y1="-6.30678207532" x2="6.82449538527" y2="-1.55764653769" />
+      <line class="geometry star-edge" data-panel="0" data-edge-index="6" x1="6.82449538527" y1="-1.55764653769" x2="0" y2="7" />
       <line class="geometry residual-vector" data-panel="0" data-vertex-index="0" data-residual="0" x1="0" y1="7" x2="0" y2="7" />
       <line class="geometry residual-vector" data-panel="0" data-vertex-index="1" data-residual="0.0437644975802" x1="-5.47282037728" y1="4.36442861301" x2="-5.5" y2="4.33012701892" />
       <line class="geometry residual-vector" data-panel="0" data-vertex-index="2" data-residual="0.0120734647583" x1="-6.82449538527" y1="-1.55764653769" x2="-6.82179863663" y2="-1.56941497421" />
@@ -170,12 +170,12 @@
     <text class="metric-value" x="48" y="757">0.358217870°</text>
     <text class="metric-label" x="282.666666667" y="737">Edge-length coefficient of variation</text>
     <text class="metric-value" x="282.666666667" y="757">0.000000000000</text>
-    <text class="panel-note" x="276.666666667" y="797">REGULAR_7_3</text>
+    <text class="panel-note" x="276.666666667" y="797">REGULAR_7_2</text>
   </g>
-  <g id="panel-1" data-candidate="MICHELL_28_7_3">
+  <g id="panel-1" data-candidate="MICHELL_28_7_2">
     <rect class="panel-frame" x="549.333333333" y="82" width="501.333333333" height="748" rx="7" />
     <text class="panel-letter" x="563.333333333" y="111">B</text>
-    <text class="panel-title" x="800" y="111">Michell 28-point {7/3}</text>
+    <text class="panel-title" x="800" y="111">Michell 28-point {7/2}</text>
     <g id="panel-1-geometry" transform="translate(800 398) scale(24.5787545788,-24.5787545788)">
       <circle class="geometry construction-circle" cx="0" cy="0" r="7" />
       <rect class="geometry earth-square" x="-5.5" y="-5.5" width="11" height="11" />
@@ -192,13 +192,13 @@
       <circle class="geometry incidence-moon" data-panel="1" data-moon-index="9" cx="0" cy="-7" r="1.5" />
       <circle class="geometry incidence-moon" data-panel="1" data-moon-index="10" cx="3.05892369468" cy="-6.29626761106" r="1.5" />
       <circle class="geometry incidence-moon" data-panel="1" data-moon-index="11" cx="6.29626761106" cy="-3.05892369468" r="1.5" />
-      <line class="geometry star-edge" data-panel="1" data-edge-index="0" x1="0" y1="7" x2="-3.02326652715" y2="-6.31346652053" />
-      <line class="geometry star-edge" data-panel="1" data-edge-index="1" x1="-3.02326652715" y1="-6.31346652053" x2="5.47602809361" y2="4.36040322883" />
-      <line class="geometry star-edge" data-panel="1" data-edge-index="2" x1="5.47602809361" y1="4.36040322883" x2="-6.82219730873" y2="-1.56768105201" />
-      <line class="geometry star-edge" data-panel="1" data-edge-index="3" x1="-6.82219730873" y1="-1.56768105201" x2="6.82219730873" y2="-1.56768105201" />
-      <line class="geometry star-edge" data-panel="1" data-edge-index="4" x1="6.82219730873" y1="-1.56768105201" x2="-5.47602809361" y2="4.36040322883" />
-      <line class="geometry star-edge" data-panel="1" data-edge-index="5" x1="-5.47602809361" y1="4.36040322883" x2="3.02326652715" y2="-6.31346652053" />
-      <line class="geometry star-edge" data-panel="1" data-edge-index="6" x1="3.02326652715" y1="-6.31346652053" x2="0" y2="7" />
+      <line class="geometry star-edge" data-panel="1" data-edge-index="0" x1="0" y1="7" x2="-6.82219730873" y2="-1.56768105201" />
+      <line class="geometry star-edge" data-panel="1" data-edge-index="1" x1="-6.82219730873" y1="-1.56768105201" x2="3.02326652715" y2="-6.31346652053" />
+      <line class="geometry star-edge" data-panel="1" data-edge-index="2" x1="3.02326652715" y1="-6.31346652053" x2="5.47602809361" y2="4.36040322883" />
+      <line class="geometry star-edge" data-panel="1" data-edge-index="3" x1="5.47602809361" y1="4.36040322883" x2="-5.47602809361" y2="4.36040322883" />
+      <line class="geometry star-edge" data-panel="1" data-edge-index="4" x1="-5.47602809361" y1="4.36040322883" x2="-3.02326652715" y2="-6.31346652053" />
+      <line class="geometry star-edge" data-panel="1" data-edge-index="5" x1="-3.02326652715" y1="-6.31346652053" x2="6.82219730873" y2="-1.56768105201" />
+      <line class="geometry star-edge" data-panel="1" data-edge-index="6" x1="6.82219730873" y1="-1.56768105201" x2="0" y2="7" />
       <line class="geometry residual-vector" data-panel="1" data-vertex-index="0" data-residual="0" x1="0" y1="7" x2="0" y2="7" />
       <line class="geometry residual-vector" data-panel="1" data-vertex-index="1" data-residual="0.038617368918" x1="-5.47602809361" y1="4.36040322883" x2="-5.5" y2="4.33012701892" />
       <line class="geometry residual-vector" data-panel="1" data-vertex-index="2" data-residual="0.00177916431069" x1="-6.82219730873" y1="-1.56768105201" x2="-6.82179863663" y2="-1.56941497421" />
@@ -228,13 +228,13 @@
     <text class="metric-label" x="571.333333333" y="737">Maximum angular residual</text>
     <text class="metric-value" x="571.333333333" y="757">0.324035343°</text>
     <text class="metric-label" x="806" y="737">Edge-length coefficient of variation</text>
-    <text class="metric-value" x="806" y="757">0.000290922779</text>
-    <text class="panel-note" x="800" y="797">MICHELL_28_7_3</text>
+    <text class="metric-value" x="806" y="757">0.000927802213</text>
+    <text class="panel-note" x="800" y="797">MICHELL_28_7_2</text>
   </g>
-  <g id="panel-2" data-candidate="FIGURE14_ALIGNED_7_3">
+  <g id="panel-2" data-candidate="FIGURE14_ALIGNED_7_2">
     <rect class="panel-frame" x="1072.66666667" y="82" width="501.333333333" height="748" rx="7" />
     <text class="panel-letter" x="1086.66666667" y="111">C</text>
-    <text class="panel-title" x="1323.33333333" y="111">Figure-14-aligned {7/3}</text>
+    <text class="panel-title" x="1323.33333333" y="111">Figure-14-aligned {7/2}</text>
     <g id="panel-2-geometry" transform="translate(1323.33333333 398) scale(24.5787545788,-24.5787545788)">
       <circle class="geometry construction-circle" cx="0" cy="0" r="7" />
       <rect class="geometry earth-square" x="-5.5" y="-5.5" width="11" height="11" />
@@ -251,13 +251,13 @@
       <circle class="geometry incidence-moon" data-panel="2" data-moon-index="9" cx="0" cy="-7" r="1.5" />
       <circle class="geometry incidence-moon" data-panel="2" data-moon-index="10" cx="3.05892369468" cy="-6.29626761106" r="1.5" />
       <circle class="geometry incidence-moon" data-panel="2" data-moon-index="11" cx="6.29626761106" cy="-3.05892369468" r="1.5" />
-      <line class="geometry star-edge" data-panel="2" data-edge-index="0" x1="0" y1="7" x2="-3.05892369468" y2="-6.29626761106" />
-      <line class="geometry star-edge" data-panel="2" data-edge-index="1" x1="-3.05892369468" y1="-6.29626761106" x2="5.5" y2="4.33012701892" />
-      <line class="geometry star-edge" data-panel="2" data-edge-index="2" x1="5.5" y1="4.33012701892" x2="-6.82179863663" y2="-1.56941497421" />
-      <line class="geometry star-edge" data-panel="2" data-edge-index="3" x1="-6.82179863663" y1="-1.56941497421" x2="6.82179863663" y2="-1.56941497421" />
-      <line class="geometry star-edge" data-panel="2" data-edge-index="4" x1="6.82179863663" y1="-1.56941497421" x2="-5.5" y2="4.33012701892" />
-      <line class="geometry star-edge" data-panel="2" data-edge-index="5" x1="-5.5" y1="4.33012701892" x2="3.05892369468" y2="-6.29626761106" />
-      <line class="geometry star-edge" data-panel="2" data-edge-index="6" x1="3.05892369468" y1="-6.29626761106" x2="0" y2="7" />
+      <line class="geometry star-edge" data-panel="2" data-edge-index="0" x1="0" y1="7" x2="-6.82179863663" y2="-1.56941497421" />
+      <line class="geometry star-edge" data-panel="2" data-edge-index="1" x1="-6.82179863663" y1="-1.56941497421" x2="3.05892369468" y2="-6.29626761106" />
+      <line class="geometry star-edge" data-panel="2" data-edge-index="2" x1="3.05892369468" y1="-6.29626761106" x2="5.5" y2="4.33012701892" />
+      <line class="geometry star-edge" data-panel="2" data-edge-index="3" x1="5.5" y1="4.33012701892" x2="-5.5" y2="4.33012701892" />
+      <line class="geometry star-edge" data-panel="2" data-edge-index="4" x1="-5.5" y1="4.33012701892" x2="-3.05892369468" y2="-6.29626761106" />
+      <line class="geometry star-edge" data-panel="2" data-edge-index="5" x1="-3.05892369468" y1="-6.29626761106" x2="6.82179863663" y2="-1.56941497421" />
+      <line class="geometry star-edge" data-panel="2" data-edge-index="6" x1="6.82179863663" y1="-1.56941497421" x2="0" y2="7" />
       <line class="geometry residual-vector" data-panel="2" data-vertex-index="0" data-residual="0" x1="0" y1="7" x2="0" y2="7" />
       <line class="geometry residual-vector" data-panel="2" data-vertex-index="1" data-residual="0" x1="-5.5" y1="4.33012701892" x2="-5.5" y2="4.33012701892" />
       <line class="geometry residual-vector" data-panel="2" data-vertex-index="2" data-residual="0" x1="-6.82179863663" y1="-1.56941497421" x2="-6.82179863663" y2="-1.56941497421" />
@@ -287,13 +287,13 @@
     <text class="metric-label" x="1094.66666667" y="737">Maximum angular residual</text>
     <text class="metric-value" x="1094.66666667" y="757">0.000000000°</text>
     <text class="metric-label" x="1329.33333333" y="737">Edge-length coefficient of variation</text>
-    <text class="metric-value" x="1329.33333333" y="757">0.000573560111</text>
-    <text class="panel-note" x="1323.33333333" y="797">FIGURE14_ALIGNED_7_3</text>
+    <text class="metric-value" x="1329.33333333" y="757">0.002845183909</text>
+    <text class="panel-note" x="1323.33333333" y="797">FIGURE14_ALIGNED_7_2</text>
   </g>
   <g id="figure14-legend">
     <line class="star-edge" x1="26" y1="858" x2="49" y2="858" />
     <circle class="candidate-vertex" cx="37.5" cy="858" r="4.3" />
-    <text class="legend-text" x="59" y="862">candidate {7/3}</text>
+    <text class="legend-text" x="59" y="862">candidate {7/2}</text>
     <circle class="stated-anchor" cx="201" cy="858" r="5" />
     <text class="legend-text" x="214" y="862">text-and-plate anchor</text>
     <polygon class="inferred-anchor" points="413,852 419,858 413,864 407,858" />

@@ -20,7 +20,7 @@ Three candidate vertex systems are represented:
   scaffold;
 - a Figure-14-aligned system built from the stated and inferred anchors.
 
-The printed star has the topology of the deep heptagram {7/3}.
+The promoted near-endpoint source audit supports the heptagram topology {7/2}.
 """
 
 from __future__ import annotations
@@ -321,7 +321,7 @@ def build_figure14_anchor_set(
 
 def build_regular_heptagram(
     diagram: CoreDiagram,
-    family: HeptagramFamily = HeptagramFamily.STEP_3,
+    family: HeptagramFamily = HeptagramFamily.STEP_2,
 ) -> HeptagramGeometry:
     """Build an exact regular heptagram with its first point at the top."""
 
@@ -345,7 +345,7 @@ def build_regular_heptagram(
 def build_scaffold_heptagram(
     diagram: CoreDiagram,
     scaffold: MichellSeptenaryScaffold | None = None,
-    family: HeptagramFamily = HeptagramFamily.STEP_3,
+    family: HeptagramFamily = HeptagramFamily.STEP_2,
 ) -> HeptagramGeometry:
     """Select the Figure 14-like vertices of the 28-point scaffold."""
 
@@ -385,7 +385,7 @@ def build_scaffold_heptagram(
 
 def build_figure14_aligned_heptagram(
     diagram: CoreDiagram,
-    family: HeptagramFamily = HeptagramFamily.STEP_3,
+    family: HeptagramFamily = HeptagramFamily.STEP_2,
 ) -> HeptagramGeometry:
     """Build a heptagram whose vertices are the Figure 14 anchors."""
 

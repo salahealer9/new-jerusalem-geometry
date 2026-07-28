@@ -128,28 +128,29 @@ def test_figure14_anchor_system_is_reflection_symmetric() -> None:
         )
 
 
-def test_figure14_uses_deep_heptagram_traversal() -> None:
+def test_figure14_uses_source_supported_step2_traversal() -> None:
     _, _, regular, _, _, _ = _report()
 
-    assert regular.family is HeptagramFamily.STEP_3
+    assert regular.family is HeptagramFamily.STEP_2
+
     assert regular.traversal_indices() == (
         0,
-        3,
-        6,
         2,
-        5,
-        1,
         4,
+        6,
+        1,
+        3,
+        5,
     )
 
     assert regular.edge_index_pairs() == (
-        (0, 3),
-        (3, 6),
-        (6, 2),
-        (2, 5),
-        (5, 1),
-        (1, 4),
-        (4, 0),
+        (0, 2),
+        (2, 4),
+        (4, 6),
+        (6, 1),
+        (1, 3),
+        (3, 5),
+        (5, 0),
     )
 
 
@@ -260,13 +261,13 @@ def test_aligned_star_has_small_nonregularity() -> None:
     assert coefficient_of_variation(
         scaffold.edge_lengths()
     ) == pytest.approx(
-        0.0002909227791837609,
+        0.0009278022133903409,
         abs=1.0e-15,
     )
 
     assert coefficient_of_variation(
         aligned.edge_lengths()
     ) == pytest.approx(
-        0.0005735601114405457,
+        0.002845183908818653,
         abs=1.0e-15,
     )

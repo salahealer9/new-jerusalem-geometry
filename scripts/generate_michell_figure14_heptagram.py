@@ -112,7 +112,7 @@ def main() -> int:
         f"Canvas:                  "
         f"{args.width} × {args.height} px"
     )
-    print("Heptagram family:        {7/3}")
+    print("Heptagram family:        {7/2}")
     print(
         f"Endpoint evidence:       "
         f"{report.stated_anchor_count} stated + "
