@@ -1,0 +1,102 @@
+{
+  "calibration_references": {
+    "affine_matrix": {
+      "filename": "affine_registration_matrix.json",
+      "sha256": "afa55cce578adaf6315ee2f27b54f5cf1e369cc0165925ff71929471b60357dc"
+    },
+    "registered_landmarks": {
+      "filename": "registered_landmark_centroids.csv",
+      "sha256": "9549c5d416e903781a3ff227e84c278465f9d729259d1a5985c316773814ebd0"
+    }
+  },
+  "candidate_ranking": [
+    {
+      "angular_rms_degrees": 1.2480336703341703,
+      "endpoint_pass_count": 21,
+      "endpoint_pass_wins": 21,
+      "maximum_residual_degrees": 2.7659534177125744,
+      "notation": "{7/2}",
+      "rank": 1,
+      "step": 2
+    },
+    {
+      "angular_rms_degrees": 24.993300526194528,
+      "endpoint_pass_count": 21,
+      "endpoint_pass_wins": 0,
+      "maximum_residual_degrees": 27.188061375108827,
+      "notation": "{7/3}",
+      "rank": 2,
+      "step": 3
+    },
+    {
+      "angular_rms_degrees": 26.47605060566704,
+      "endpoint_pass_count": 21,
+      "endpoint_pass_wins": 0,
+      "maximum_residual_degrees": 28.61510463571583,
+      "notation": "perimeter",
+      "rank": 3,
+      "step": 1
+    }
+  ],
+  "coordinate_values_modified": false,
+  "derived_outputs": {
+    "details": {
+      "filename": "edge_topology_details.csv",
+      "sha256": "75831974d760dab5714ccef6f2973b467fe9186cc76964067747b4201291a8cd"
+    },
+    "report": {
+      "filename": "edge_topology_report.md",
+      "sha256": "180e123fd9bceeffba86b146d72fb4a6e4ef9a8ad7c2d6dce002465ad0d727bd"
+    },
+    "summary": {
+      "filename": "edge_topology_summary.json",
+      "sha256": "ed2cedcef9138e283a6a42b1238b9d1744b4fc0a42ab53757fd104fa9a94a1d1"
+    }
+  },
+  "endpoint_count_per_pass": 7,
+  "evidence_id": "figure14-near-endpoint-edge-topology-v1",
+  "independent_pass_count": 3,
+  "interpretation_boundary": "The selected topology is supported by direct near-endpoint printed-line direction evidence. The result remains subject to source reproduction, printed-line thickness, affine registration, and manual sampling uncertainty.",
+  "method": "Two manually sampled printed-stroke directions immediately inside each of seven calibrated endpoints, compared against unordered direction pairs for connection steps 1, 2, and 3.",
+  "raw_files_modified": false,
+  "raw_trace_passes": [
+    {
+      "filename": "figure14_edge_trace_pass-01.csv",
+      "pass_id": "pass-01",
+      "preserved_byte_for_byte": true,
+      "sha256": "d9cba92ab9cbb335df48b4b4a0a322d58b51c526d5b620274cf332f4c3401a06"
+    },
+    {
+      "filename": "figure14_edge_trace_pass-02.csv",
+      "pass_id": "pass-02",
+      "preserved_byte_for_byte": true,
+      "sha256": "feec511b6c5527a60b36bdb436d7df1df62212af7b68b4aa2717432e3be7f0ec"
+    },
+    {
+      "filename": "figure14_edge_trace_pass-03.csv",
+      "pass_id": "pass-03",
+      "preserved_byte_for_byte": true,
+      "sha256": "a82223673efd3d43073ab2e9f8c963f0f5da10721c281cb8f69ae5a7b69eccca"
+    }
+  ],
+  "ray_count_per_endpoint": 2,
+  "schema_version": 1,
+  "selected_topology": {
+    "angular_rms_degrees": 1.2480336703341703,
+    "endpoint_pass_count": 21,
+    "endpoint_pass_wins": 21,
+    "maximum_residual_degrees": 2.7659534177125744,
+    "notation": "{7/2}",
+    "rms_margin_degrees": 23.745266855860358,
+    "second_best_rms_degrees": 24.993300526194528,
+    "step": 2,
+    "unanimous_endpoint_passes": true
+  },
+  "source_image": {
+    "filename": "city_of_revelation_page_069.png",
+    "height_pixels": 2327,
+    "sha256": "d2ba830db44db6b0a6db8a6d41be780e2f9ef6391d6d832355d0531c282563fa",
+    "width_pixels": 1512
+  },
+  "total_ray_samples": 42
+}

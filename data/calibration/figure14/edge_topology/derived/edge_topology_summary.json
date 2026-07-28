@@ -1,0 +1,47 @@
+{
+  "analysis_id": "figure14-near-endpoint-line-topology-audit",
+  "candidate_summaries": [
+    {
+      "endpoint_pass_count": 21,
+      "endpoint_pass_wins": 0,
+      "maximum_degrees": 28.61510463571583,
+      "notation": "perimeter",
+      "rms_degrees": 26.47605060566704,
+      "step": 1
+    },
+    {
+      "endpoint_pass_count": 21,
+      "endpoint_pass_wins": 21,
+      "maximum_degrees": 2.7659534177125744,
+      "notation": "{7/2}",
+      "rms_degrees": 1.2480336703341703,
+      "step": 2
+    },
+    {
+      "endpoint_pass_count": 21,
+      "endpoint_pass_wins": 0,
+      "maximum_degrees": 27.188061375108827,
+      "notation": "{7/3}",
+      "rms_degrees": 24.993300526194528,
+      "step": 3
+    }
+  ],
+  "endpoint_pass_count": 21,
+  "independent_pass_ids": [
+    "pass-01",
+    "pass-02",
+    "pass-03"
+  ],
+  "interpretation_boundary": "This is direct manual line-direction evidence near the endpoints. It avoids internal crossings but remains subject to printed-line thickness and manual sampling.",
+  "method": "At each endpoint, compare the unordered pair of two near-endpoint printed-stroke directions against the expected chord-direction pair for steps 1, 2, and 3.",
+  "schema_version": 1,
+  "selected": {
+    "maximum_degrees": 2.7659534177125744,
+    "notation": "{7/2}",
+    "rms_degrees": 1.2480336703341703,
+    "rms_margin_degrees": 23.745266855860358,
+    "second_best_rms_degrees": 24.993300526194528,
+    "step": 2,
+    "unanimous_endpoint_passes": true
+  }
+}
