@@ -16,15 +16,27 @@ system. Its goals are to:
 - provide a rigorous mathematical foundation for later historical, symbolic,
   harmonic, graph-theoretic, and information-theoretic analysis.
 
-## Initial geometric models
+## Geometric model distinctions
 
-The project will initially distinguish three related constructions:
+The project keeps visually similar but mathematically distinct constructions
+separate.
 
-- `NJG_INC`: exact square-circle incidence model;
-- `NJG_28`: exact 28-fold angular-division model;
-- `NJG_SVG`: reproduction of the 2008 Wikimedia SVG implementation.
+For the twelve Moon circles:
 
-These names are provisional until the primary sources have been fully audited.
+- `NJG_INC`: source-supported exact square-circle incidence model;
+- `NJG_28`: exact regular 28-fold angular idealisation;
+- `NJG_SVG`: reproduction of the independent 2008 Wikimedia SVG;
+- `NJG_MICHELL_28`: Michell's approximate 28-point scaffold construction.
+
+For the Figure 12 outer wall:
+
+- `RADIAL_SUPPORT`: historical project inference;
+- `REGULAR_DIRECTION_TANGENT`: fixed regular-direction tangent comparison;
+- `POLAR_PIVOT_TANGENT`: current preferred source-supported reconstruction.
+
+The preferred wall model is selected from combined source-plate and historical
+dimensional evidence; it is not claimed to be an explicitly stated construction
+algorithm in Michell's text.
 
 ## Repository status
 
@@ -59,10 +71,13 @@ Run the automated tests:
 pytest
 ```
 
-The initial executable model contains only the Earth circle, Earth square,
-radius-7 construction circle, and four cardinal Moon circles. The eight
-non-cardinal Moon circles will be introduced only after the competing geometric
-definitions have been formally separated.
+The executable model now includes the normalized Earth-Moon core, competing
+oblique Moon-circle placements, Michell's approximate 28-point scaffold,
+source-calibrated Figure 12 Moon and wall geometry, the preferred polar-pivot
+outer-wall reconstruction, and the source-calibrated Figure 14 heptagram.
+
+Competing constructions remain explicitly separated rather than being merged
+into a single model without evidential justification.
 
 ## Generate the verified core diagram
 
@@ -114,32 +129,62 @@ Each panel contains the same verified Earth-Moon core. Only the placement rule
 for the eight oblique Moon circles changes. The residual bars use a common
 scale across all three panels.
 
-## Visualise the inferred Michell outer wall
+## Figure 12 outer-wall evidence comparison
 
-Generate the source-comparison SVG:
+Generate the three-model source comparison:
 
 ```bash
-python scripts/generate_michell_outer_wall.py
-````
+python scripts/generate_figure12_wall_evidence.py
+```
 
-The default output is:
+The default SVG output is:
+
+```text
+figures/generated/figure12_wall_evidence_comparison.svg
+```
+
+The comparison holds the exact `NJG_INC` Moon geometry fixed and tests three
+outer-wall rules against the affine-calibrated Figure 12 wall:
+
+| Wall model                  |    Angle RMS | Support RMS |
+| --------------------------- | -----------: | ----------: |
+| `POLAR_PIVOT_TANGENT`       | 1.019836 deg |  0.038999 u |
+| `REGULAR_DIRECTION_TANGENT` | 1.458882 deg |  0.036819 u |
+| `RADIAL_SUPPORT`            | 4.755396 deg |  0.032822 u |
+
+The angular ranking is reproduced across all three independent Figure 12
+digitisation passes.
+
+`POLAR_PIVOT_TANGENT` is the current preferred combined reconstruction because
+it gives the best wall-direction agreement and independently reproduces
+Michell's later Sommerville dimensions:
+
+* four polar sides: approximately 3279.698 ft versus 3280 ft;
+* eight oblique sides: approximately 3271.121 ft versus 3270 ft;
+* area: approximately 120,002,600 ft^2 versus 120,000,000 ft^2;
+* old-English-foot perimeter: approximately 36,013.8 ft versus 36,000 ft.
+
+The support-distance metric by itself instead favours `RADIAL_SUPPORT`. This
+counter-evidence is retained explicitly; the polar-pivot construction is
+therefore described as a source-supported project reconstruction rather than
+as a uniquely established historical construction.
+
+### Historical radial-support artifact
+
+The earlier figure remains preserved at:
 
 ```text
 figures/generated/michell_outer_wall.svg
 ```
 
-The figure combines:
+and can still be regenerated with:
 
-* the verified Earth-Moon cardinal core;
-* the source-supported `NJG_INC` placement of twelve Moon circles;
-* the eight square-construction-circle incidence points;
-* twelve inferred outward radial support tangents;
-* the resulting nonregular twelve-sided wall;
-* the four-short/eight-long side classification;
-* comparison with Michell's approximate wall dimensions.
+```bash
+python scripts/generate_michell_outer_wall.py
+```
 
-The Moon-circle placement is supported directly by Michell's description.
-The radial-support wall remains explicitly labelled as a project inference.
+It records the project's earlier radial-support inference and is retained for
+reproducibility. It is no longer the preferred Figure 12 wall reconstruction.
 
 ## Analyse Michell's approximate 28-point scaffold
 
