@@ -1,0 +1,121 @@
+sequence_index,observation_id,category,object_id,sample_index,description,model_x,model_y,registration_default
+0,square_corner_top_left,square_corner,square_corner_top_left,1,Earth-square corner: top left,-5.5,5.5,true
+1,square_corner_top_right,square_corner,square_corner_top_right,1,Earth-square corner: top right,5.5,5.5,true
+2,square_corner_bottom_right,square_corner,square_corner_bottom_right,1,Earth-square corner: bottom right,5.5,-5.5,true
+3,square_corner_bottom_left,square_corner,square_corner_bottom_left,1,Earth-square corner: bottom left,-5.5,-5.5,true
+4,junction_top_left,square_circle_junction,junction_top_left,1,Earth-square / construction-circle junction: top left,-4.3301270189221936,5.5,true
+5,junction_top_right,square_circle_junction,junction_top_right,1,Earth-square / construction-circle junction: top right,4.3301270189221936,5.5,true
+6,junction_right_upper,square_circle_junction,junction_right_upper,1,Earth-square / construction-circle junction: right upper,5.5,4.3301270189221936,true
+7,junction_right_lower,square_circle_junction,junction_right_lower,1,Earth-square / construction-circle junction: right lower,5.5,-4.3301270189221936,true
+8,junction_bottom_right,square_circle_junction,junction_bottom_right,1,Earth-square / construction-circle junction: bottom right,4.3301270189221936,-5.5,true
+9,junction_bottom_left,square_circle_junction,junction_bottom_left,1,Earth-square / construction-circle junction: bottom left,-4.3301270189221936,-5.5,true
+10,junction_left_lower,square_circle_junction,junction_left_lower,1,Earth-square / construction-circle junction: left lower,-5.5,-4.3301270189221936,true
+11,junction_left_upper,square_circle_junction,junction_left_upper,1,Earth-square / construction-circle junction: left upper,-5.5,4.3301270189221936,true
+12,moon_north_west_arc_01,moon_circumference,moon_north_west,1,Visible circumference sample 1/6 for north west Moon.,,,false
+13,moon_north_west_arc_02,moon_circumference,moon_north_west,2,Visible circumference sample 2/6 for north west Moon.,,,false
+14,moon_north_west_arc_03,moon_circumference,moon_north_west,3,Visible circumference sample 3/6 for north west Moon.,,,false
+15,moon_north_west_arc_04,moon_circumference,moon_north_west,4,Visible circumference sample 4/6 for north west Moon.,,,false
+16,moon_north_west_arc_05,moon_circumference,moon_north_west,5,Visible circumference sample 5/6 for north west Moon.,,,false
+17,moon_north_west_arc_06,moon_circumference,moon_north_west,6,Visible circumference sample 6/6 for north west Moon.,,,false
+18,moon_north_arc_01,moon_circumference,moon_north,1,Visible circumference sample 1/6 for north Moon.,,,false
+19,moon_north_arc_02,moon_circumference,moon_north,2,Visible circumference sample 2/6 for north Moon.,,,false
+20,moon_north_arc_03,moon_circumference,moon_north,3,Visible circumference sample 3/6 for north Moon.,,,false
+21,moon_north_arc_04,moon_circumference,moon_north,4,Visible circumference sample 4/6 for north Moon.,,,false
+22,moon_north_arc_05,moon_circumference,moon_north,5,Visible circumference sample 5/6 for north Moon.,,,false
+23,moon_north_arc_06,moon_circumference,moon_north,6,Visible circumference sample 6/6 for north Moon.,,,false
+24,moon_north_east_arc_01,moon_circumference,moon_north_east,1,Visible circumference sample 1/6 for north east Moon.,,,false
+25,moon_north_east_arc_02,moon_circumference,moon_north_east,2,Visible circumference sample 2/6 for north east Moon.,,,false
+26,moon_north_east_arc_03,moon_circumference,moon_north_east,3,Visible circumference sample 3/6 for north east Moon.,,,false
+27,moon_north_east_arc_04,moon_circumference,moon_north_east,4,Visible circumference sample 4/6 for north east Moon.,,,false
+28,moon_north_east_arc_05,moon_circumference,moon_north_east,5,Visible circumference sample 5/6 for north east Moon.,,,false
+29,moon_north_east_arc_06,moon_circumference,moon_north_east,6,Visible circumference sample 6/6 for north east Moon.,,,false
+30,moon_east_north_arc_01,moon_circumference,moon_east_north,1,Visible circumference sample 1/6 for east north Moon.,,,false
+31,moon_east_north_arc_02,moon_circumference,moon_east_north,2,Visible circumference sample 2/6 for east north Moon.,,,false
+32,moon_east_north_arc_03,moon_circumference,moon_east_north,3,Visible circumference sample 3/6 for east north Moon.,,,false
+33,moon_east_north_arc_04,moon_circumference,moon_east_north,4,Visible circumference sample 4/6 for east north Moon.,,,false
+34,moon_east_north_arc_05,moon_circumference,moon_east_north,5,Visible circumference sample 5/6 for east north Moon.,,,false
+35,moon_east_north_arc_06,moon_circumference,moon_east_north,6,Visible circumference sample 6/6 for east north Moon.,,,false
+36,moon_east_arc_01,moon_circumference,moon_east,1,Visible circumference sample 1/6 for east Moon.,,,false
+37,moon_east_arc_02,moon_circumference,moon_east,2,Visible circumference sample 2/6 for east Moon.,,,false
+38,moon_east_arc_03,moon_circumference,moon_east,3,Visible circumference sample 3/6 for east Moon.,,,false
+39,moon_east_arc_04,moon_circumference,moon_east,4,Visible circumference sample 4/6 for east Moon.,,,false
+40,moon_east_arc_05,moon_circumference,moon_east,5,Visible circumference sample 5/6 for east Moon.,,,false
+41,moon_east_arc_06,moon_circumference,moon_east,6,Visible circumference sample 6/6 for east Moon.,,,false
+42,moon_east_south_arc_01,moon_circumference,moon_east_south,1,Visible circumference sample 1/6 for east south Moon.,,,false
+43,moon_east_south_arc_02,moon_circumference,moon_east_south,2,Visible circumference sample 2/6 for east south Moon.,,,false
+44,moon_east_south_arc_03,moon_circumference,moon_east_south,3,Visible circumference sample 3/6 for east south Moon.,,,false
+45,moon_east_south_arc_04,moon_circumference,moon_east_south,4,Visible circumference sample 4/6 for east south Moon.,,,false
+46,moon_east_south_arc_05,moon_circumference,moon_east_south,5,Visible circumference sample 5/6 for east south Moon.,,,false
+47,moon_east_south_arc_06,moon_circumference,moon_east_south,6,Visible circumference sample 6/6 for east south Moon.,,,false
+48,moon_south_east_arc_01,moon_circumference,moon_south_east,1,Visible circumference sample 1/6 for south east Moon.,,,false
+49,moon_south_east_arc_02,moon_circumference,moon_south_east,2,Visible circumference sample 2/6 for south east Moon.,,,false
+50,moon_south_east_arc_03,moon_circumference,moon_south_east,3,Visible circumference sample 3/6 for south east Moon.,,,false
+51,moon_south_east_arc_04,moon_circumference,moon_south_east,4,Visible circumference sample 4/6 for south east Moon.,,,false
+52,moon_south_east_arc_05,moon_circumference,moon_south_east,5,Visible circumference sample 5/6 for south east Moon.,,,false
+53,moon_south_east_arc_06,moon_circumference,moon_south_east,6,Visible circumference sample 6/6 for south east Moon.,,,false
+54,moon_south_arc_01,moon_circumference,moon_south,1,Visible circumference sample 1/6 for south Moon.,,,false
+55,moon_south_arc_02,moon_circumference,moon_south,2,Visible circumference sample 2/6 for south Moon.,,,false
+56,moon_south_arc_03,moon_circumference,moon_south,3,Visible circumference sample 3/6 for south Moon.,,,false
+57,moon_south_arc_04,moon_circumference,moon_south,4,Visible circumference sample 4/6 for south Moon.,,,false
+58,moon_south_arc_05,moon_circumference,moon_south,5,Visible circumference sample 5/6 for south Moon.,,,false
+59,moon_south_arc_06,moon_circumference,moon_south,6,Visible circumference sample 6/6 for south Moon.,,,false
+60,moon_south_west_arc_01,moon_circumference,moon_south_west,1,Visible circumference sample 1/6 for south west Moon.,,,false
+61,moon_south_west_arc_02,moon_circumference,moon_south_west,2,Visible circumference sample 2/6 for south west Moon.,,,false
+62,moon_south_west_arc_03,moon_circumference,moon_south_west,3,Visible circumference sample 3/6 for south west Moon.,,,false
+63,moon_south_west_arc_04,moon_circumference,moon_south_west,4,Visible circumference sample 4/6 for south west Moon.,,,false
+64,moon_south_west_arc_05,moon_circumference,moon_south_west,5,Visible circumference sample 5/6 for south west Moon.,,,false
+65,moon_south_west_arc_06,moon_circumference,moon_south_west,6,Visible circumference sample 6/6 for south west Moon.,,,false
+66,moon_west_south_arc_01,moon_circumference,moon_west_south,1,Visible circumference sample 1/6 for west south Moon.,,,false
+67,moon_west_south_arc_02,moon_circumference,moon_west_south,2,Visible circumference sample 2/6 for west south Moon.,,,false
+68,moon_west_south_arc_03,moon_circumference,moon_west_south,3,Visible circumference sample 3/6 for west south Moon.,,,false
+69,moon_west_south_arc_04,moon_circumference,moon_west_south,4,Visible circumference sample 4/6 for west south Moon.,,,false
+70,moon_west_south_arc_05,moon_circumference,moon_west_south,5,Visible circumference sample 5/6 for west south Moon.,,,false
+71,moon_west_south_arc_06,moon_circumference,moon_west_south,6,Visible circumference sample 6/6 for west south Moon.,,,false
+72,moon_west_arc_01,moon_circumference,moon_west,1,Visible circumference sample 1/6 for west Moon.,,,false
+73,moon_west_arc_02,moon_circumference,moon_west,2,Visible circumference sample 2/6 for west Moon.,,,false
+74,moon_west_arc_03,moon_circumference,moon_west,3,Visible circumference sample 3/6 for west Moon.,,,false
+75,moon_west_arc_04,moon_circumference,moon_west,4,Visible circumference sample 4/6 for west Moon.,,,false
+76,moon_west_arc_05,moon_circumference,moon_west,5,Visible circumference sample 5/6 for west Moon.,,,false
+77,moon_west_arc_06,moon_circumference,moon_west,6,Visible circumference sample 6/6 for west Moon.,,,false
+78,moon_west_north_arc_01,moon_circumference,moon_west_north,1,Visible circumference sample 1/6 for west north Moon.,,,false
+79,moon_west_north_arc_02,moon_circumference,moon_west_north,2,Visible circumference sample 2/6 for west north Moon.,,,false
+80,moon_west_north_arc_03,moon_circumference,moon_west_north,3,Visible circumference sample 3/6 for west north Moon.,,,false
+81,moon_west_north_arc_04,moon_circumference,moon_west_north,4,Visible circumference sample 4/6 for west north Moon.,,,false
+82,moon_west_north_arc_05,moon_circumference,moon_west_north,5,Visible circumference sample 5/6 for west north Moon.,,,false
+83,moon_west_north_arc_06,moon_circumference,moon_west_north,6,Visible circumference sample 6/6 for west north Moon.,,,false
+84,wall_north_west_line_01,wall_line,wall_north_west,1,Printed wall-line sample 1/3 for north west side.,,,false
+85,wall_north_west_line_02,wall_line,wall_north_west,2,Printed wall-line sample 2/3 for north west side.,,,false
+86,wall_north_west_line_03,wall_line,wall_north_west,3,Printed wall-line sample 3/3 for north west side.,,,false
+87,wall_north_line_01,wall_line,wall_north,1,Printed wall-line sample 1/3 for north side.,,,false
+88,wall_north_line_02,wall_line,wall_north,2,Printed wall-line sample 2/3 for north side.,,,false
+89,wall_north_line_03,wall_line,wall_north,3,Printed wall-line sample 3/3 for north side.,,,false
+90,wall_north_east_line_01,wall_line,wall_north_east,1,Printed wall-line sample 1/3 for north east side.,,,false
+91,wall_north_east_line_02,wall_line,wall_north_east,2,Printed wall-line sample 2/3 for north east side.,,,false
+92,wall_north_east_line_03,wall_line,wall_north_east,3,Printed wall-line sample 3/3 for north east side.,,,false
+93,wall_east_north_line_01,wall_line,wall_east_north,1,Printed wall-line sample 1/3 for east north side.,,,false
+94,wall_east_north_line_02,wall_line,wall_east_north,2,Printed wall-line sample 2/3 for east north side.,,,false
+95,wall_east_north_line_03,wall_line,wall_east_north,3,Printed wall-line sample 3/3 for east north side.,,,false
+96,wall_east_line_01,wall_line,wall_east,1,Printed wall-line sample 1/3 for east side.,,,false
+97,wall_east_line_02,wall_line,wall_east,2,Printed wall-line sample 2/3 for east side.,,,false
+98,wall_east_line_03,wall_line,wall_east,3,Printed wall-line sample 3/3 for east side.,,,false
+99,wall_east_south_line_01,wall_line,wall_east_south,1,Printed wall-line sample 1/3 for east south side.,,,false
+100,wall_east_south_line_02,wall_line,wall_east_south,2,Printed wall-line sample 2/3 for east south side.,,,false
+101,wall_east_south_line_03,wall_line,wall_east_south,3,Printed wall-line sample 3/3 for east south side.,,,false
+102,wall_south_east_line_01,wall_line,wall_south_east,1,Printed wall-line sample 1/3 for south east side.,,,false
+103,wall_south_east_line_02,wall_line,wall_south_east,2,Printed wall-line sample 2/3 for south east side.,,,false
+104,wall_south_east_line_03,wall_line,wall_south_east,3,Printed wall-line sample 3/3 for south east side.,,,false
+105,wall_south_line_01,wall_line,wall_south,1,Printed wall-line sample 1/3 for south side.,,,false
+106,wall_south_line_02,wall_line,wall_south,2,Printed wall-line sample 2/3 for south side.,,,false
+107,wall_south_line_03,wall_line,wall_south,3,Printed wall-line sample 3/3 for south side.,,,false
+108,wall_south_west_line_01,wall_line,wall_south_west,1,Printed wall-line sample 1/3 for south west side.,,,false
+109,wall_south_west_line_02,wall_line,wall_south_west,2,Printed wall-line sample 2/3 for south west side.,,,false
+110,wall_south_west_line_03,wall_line,wall_south_west,3,Printed wall-line sample 3/3 for south west side.,,,false
+111,wall_west_south_line_01,wall_line,wall_west_south,1,Printed wall-line sample 1/3 for west south side.,,,false
+112,wall_west_south_line_02,wall_line,wall_west_south,2,Printed wall-line sample 2/3 for west south side.,,,false
+113,wall_west_south_line_03,wall_line,wall_west_south,3,Printed wall-line sample 3/3 for west south side.,,,false
+114,wall_west_line_01,wall_line,wall_west,1,Printed wall-line sample 1/3 for west side.,,,false
+115,wall_west_line_02,wall_line,wall_west,2,Printed wall-line sample 2/3 for west side.,,,false
+116,wall_west_line_03,wall_line,wall_west,3,Printed wall-line sample 3/3 for west side.,,,false
+117,wall_west_north_line_01,wall_line,wall_west_north,1,Printed wall-line sample 1/3 for west north side.,,,false
+118,wall_west_north_line_02,wall_line,wall_west_north,2,Printed wall-line sample 2/3 for west north side.,,,false
+119,wall_west_north_line_03,wall_line,wall_west_north,3,Printed wall-line sample 3/3 for west north side.,,,false
