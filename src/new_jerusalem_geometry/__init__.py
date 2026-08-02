@@ -43,6 +43,13 @@ from .wall_geometry import (
     build_radial_support_wall,
 )
 
+from .polar_pivot_wall import (
+    POLAR_INDICES,
+    POLAR_PIVOT_WALL_IDS,
+    build_polar_pivot_tangent_wall,
+    wall_normal_angle_degrees,
+)
+
 from .wall_verification import (
     WallVerificationReport,
     verify_outer_wall,
@@ -127,6 +134,10 @@ __all__ = [
     "WallVerificationReport",
     "build_ordered_moon_circles",
     "build_radial_support_wall",
+    "POLAR_INDICES",
+    "POLAR_PIVOT_WALL_IDS",
+    "build_polar_pivot_tangent_wall",
+    "wall_normal_angle_degrees",
     "verify_outer_wall",
     "michell_outer_wall_to_svg",
     "write_michell_outer_wall_svg",
@@ -159,4 +170,4 @@ __all__ = [
     "write_michell_figure14_heptagram_svg",
 ]
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"

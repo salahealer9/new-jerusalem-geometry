@@ -38,3 +38,6 @@ figures/generated/*
 # Local copyrighted source material and temporary plate renders
 data/source_private/
 data/working/figure14/
+
+# Local source-plate working data
+data/working/

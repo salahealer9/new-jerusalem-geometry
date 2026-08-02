@@ -1,0 +1,3 @@
+dataset_id,hypothesis,angle_rms_degrees,angle_maximum_degrees,support_rms_u,support_maximum_u
+primary,REGULAR_DIRECTION_TANGENT,1.458881984452,2.633865499491,0.022477370658,0.043559544064
+primary,RADIAL_SUPPORT,4.798069905300,6.981669599842,0.030353825019,0.047530050762

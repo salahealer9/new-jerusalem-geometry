@@ -1,0 +1,30 @@
+{
+  "evidence_class": "source_plate_measurement",
+  "figure": 12,
+  "inputs": {
+    "pass-01": "54c325b1729be92dd278004faee1d73b6524c8e022799368a974d8e456db07d2",
+    "pass-02": "218892c33d991cd9c010bbefca6c17ee632a55fa5eee645d2eb81f2c945edae8",
+    "pass-03": "d28f48f47a962742fe9bb1ad62b2322816bb5895a07270e04b6661cd42a04551"
+  },
+  "layer": "source_derived_normalized_geometry",
+  "outputs": {
+    "figure12_affine_calibration.json": "136af6aa26548423effc039bfb11fa892b5f9c25342b61478b796b4857097983",
+    "figure12_moon_geometry.csv": "a4bad4cc782a567de32e6f4c44a808d04d235d07bf04319291292f4a2c0973fc",
+    "figure12_moon_pass_fits.csv": "10584f37e7e748c8de98417cff2967ff3ceff415154e49949ac2fc492aee5019",
+    "figure12_source_geometry_report.md": "60d7807bd5a27afbb8f6d2e33f8f8764aa140bb91bd510f1aa807157ae9a45d4",
+    "figure12_source_geometry_summary.json": "0c0cb10f996478b5b9efc90d0324a5ff30ea52fc3347f24f5c143add65554602",
+    "figure12_wall_geometry.csv": "c763cf325c4470ea29b966c814604b03d30d2db68b90f32289bb9e5f5079cf6b",
+    "figure12_wall_pass_fits.csv": "de6f040557416f30bbd324068c6ff13efcc8fc412881f656900f0bc3559ccded",
+    "figure12_wall_side_lengths.csv": "30c3caed82da4bd1db235db0000e0d50bf17df3a3de11efdcc1444c9b0158896",
+    "figure12_wall_vertices.csv": "8c2a30b79dcf58e7352abe5ac680b4b332e7469055dc6f754547a52fb2c356ec"
+  },
+  "review": {
+    "excluded_observations": [],
+    "interpretation_boundary": "No Moon-placement or wall-construction candidate was fitted in this layer.",
+    "raw_observations_modified": false,
+    "status": "accepted_for_candidate_comparison"
+  },
+  "schema_version": 1,
+  "selected_registration": "centroid_affine",
+  "source_image_sha256": "4f9ab63b94ac4c1a2ce2fe5217c2cb0542a6df77e30eb1f272f5c6f2c3d650d6"
+}

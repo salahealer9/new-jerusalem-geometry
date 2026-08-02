@@ -1,0 +1,114 @@
+{
+  "coordinate_systems": {
+    "cartesian_pixel": "Rendered pixel coordinates with positive y upward.",
+    "normalized": "New Jerusalem project coordinates in units u with positive y upward.",
+    "source_pixel": "Rendered image coordinates with positive y downward."
+  },
+  "figure": 12,
+  "forward_model_to_cartesian_pixel": [
+    [
+      71.39010460976803,
+      0.9732183165162596,
+      755.6736237747715
+    ],
+    [
+      -0.8627785214046805,
+      72.32041134576897,
+      1557.930110650316
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "inverse_cartesian_pixel_to_model": [
+    [
+      0.014005265829969258,
+      -0.0001884693543602583,
+      -10.28978789956918
+    ],
+    [
+      0.00016708204944920158,
+      0.013825106551300186,
+      -21.6648092769945
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "linear_scale_diagnostics": {
+    "mean_pixels_per_unit": 71.86112175682257,
+    "pixels_per_unit_maximum": 72.32954132606393,
+    "pixels_per_unit_minimum": 71.39270218758121
+  },
+  "pass_inverse_cartesian_pixel_to_model": {
+    "pass-01": [
+      [
+        0.013997306093651176,
+        -0.00018800173478511305,
+        -10.285928565862005
+      ],
+      [
+        0.0001828270326967351,
+        0.013814532861317407,
+        -21.659152899165964
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "pass-02": [
+      [
+        0.013996509278844398,
+        -0.00017970604549489286,
+        -10.297975961005134
+      ],
+      [
+        0.00015746726190776707,
+        0.013820925974713304,
+        -21.64899553707329
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "pass-03": [
+      [
+        0.014022010715498431,
+        -0.00019772974774217583,
+        -10.28542688969707
+      ],
+      [
+        0.00016092590311880519,
+        0.013839884453491828,
+        -21.686303365731586
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "schema_version": 1,
+  "selected_registration": {
+    "anisotropy_ratio": 1.0131223375748017,
+    "dataset": "centroid",
+    "loo_maximum_pixels": 2.541469463323299,
+    "loo_rms_pixels": 1.7909242669504306,
+    "model": "affine",
+    "training_rms_pixels": 1.3422284453025322
+  },
+  "source_image": {
+    "height_pixels": 2327,
+    "sha256": "4f9ab63b94ac4c1a2ce2fe5217c2cb0542a6df77e30eb1f272f5c6f2c3d650d6",
+    "width_pixels": 1512
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "analysis_id": "figure12-wall-model-interpretation-v1",
+  "figure": 12,
+  "historically_unique_construction_established": false,
+  "independent_pass_consistency": {
+    "pass-01": {
+      "angle": "REGULAR_DIRECTION_TANGENT",
+      "support": "REGULAR_DIRECTION_TANGENT"
+    },
+    "pass-02": {
+      "angle": "REGULAR_DIRECTION_TANGENT",
+      "support": "REGULAR_DIRECTION_TANGENT"
+    },
+    "pass-03": {
+      "angle": "REGULAR_DIRECTION_TANGENT",
+      "support": "REGULAR_DIRECTION_TANGENT"
+    }
+  },
+  "interpretation": "The source-calibrated Figure 12 plate strongly favors a wall whose twelve normals retain regular-dodecagon directions and whose support positions are determined by Moon tangency over the earlier project inference in which every wall normal points radially through its Moon centre. This is a source-supported project reconstruction, not a claim that Michell explicitly specified the complete analytic construction.",
+  "preferred_plate_reconstruction": "REGULAR_DIRECTION_TANGENT",
+  "primary": {
+    "RADIAL_SUPPORT": {
+      "angle_rms_degrees": 4.798069905,
+      "support_rms_u": 0.030353825
+    },
+    "REGULAR_DIRECTION_TANGENT": {
+      "angle_rms_degrees": 1.458881984,
+      "support_rms_u": 0.022477371
+    }
+  },
+  "relative_performance": {
+    "radial_over_regular_angle_rms": 3.288867747,
+    "radial_over_regular_support_rms": 1.35041707
+  },
+  "schema_version": 1,
+  "superseded_project_inference": "RADIAL_SUPPORT"
+}

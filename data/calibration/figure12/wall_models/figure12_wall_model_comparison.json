@@ -1,0 +1,47 @@
+{
+  "analysis_id": "figure12-fixed-wall-model-comparison-v1",
+  "angle_ranking": [
+    "REGULAR_DIRECTION_TANGENT",
+    "RADIAL_SUPPORT"
+  ],
+  "candidate_parameters_fitted": false,
+  "interpretation_boundary": "This comparison tests two project-level wall construction rules against the source-derived plate. It does not establish that Michell explicitly stated the regular-direction tangent construction.",
+  "moon_geometry_input": "source_plate_measurement",
+  "pass_rankings": {
+    "pass-01": {
+      "angle": [
+        "REGULAR_DIRECTION_TANGENT",
+        "RADIAL_SUPPORT"
+      ],
+      "support": [
+        "REGULAR_DIRECTION_TANGENT",
+        "RADIAL_SUPPORT"
+      ]
+    },
+    "pass-02": {
+      "angle": [
+        "REGULAR_DIRECTION_TANGENT",
+        "RADIAL_SUPPORT"
+      ],
+      "support": [
+        "REGULAR_DIRECTION_TANGENT",
+        "RADIAL_SUPPORT"
+      ]
+    },
+    "pass-03": {
+      "angle": [
+        "REGULAR_DIRECTION_TANGENT",
+        "RADIAL_SUPPORT"
+      ],
+      "support": [
+        "REGULAR_DIRECTION_TANGENT",
+        "RADIAL_SUPPORT"
+      ]
+    }
+  },
+  "schema_version": 1,
+  "support_ranking": [
+    "REGULAR_DIRECTION_TANGENT",
+    "RADIAL_SUPPORT"
+  ]
+}

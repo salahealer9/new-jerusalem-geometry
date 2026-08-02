@@ -1,0 +1,39 @@
+{
+  "acquisition": {
+    "independent_passes": 3,
+    "moon_circumference_samples_per_pass": 72,
+    "observations_per_pass": 120,
+    "raw_observations_total": 360,
+    "registration_observations_per_pass": 12,
+    "wall_line_samples_per_pass": 36
+  },
+  "figure": 12,
+  "qc_files": {
+    "figure12_digitisation_qc_report.md": "4c6633823667fc25cea7ec3872a4a784bb7f52ae6af994d06f20c6bc10dee69d",
+    "figure12_digitisation_qc_summary.json": "ff9fbc3ebd342c03729565ce97bbb2ee9968aeea314b72e007e96f08bd9e6998",
+    "moon_circle_fits.csv": "5079d05ac46eec183a9cd6e289a9c070b54993174c7d290724eb7d7b9009e6e8",
+    "moon_repeatability.csv": "55df41532f3fd2bd5b69ee6d36af7d35dbaceeb6cc6b25ca07bbf3b41ea0b723",
+    "registration_repeatability.csv": "94fe8d3beb721724dcd138cbfe786a5131c6b0caecbaf0164c11c405e7d76ee8",
+    "wall_line_fits.csv": "0d3767ac6a589e98e1be39e5a95d5d1aaaffce1e2be9f5f7b3976573e76ec555",
+    "wall_repeatability.csv": "1ffe6340d2a88302a938bce988e28c12b156ca4a3ad903acefd74afed1d87fdd"
+  },
+  "raw_files": {
+    "figure12_observations_pass-01.csv": "54c325b1729be92dd278004faee1d73b6524c8e022799368a974d8e456db07d2",
+    "figure12_observations_pass-02.csv": "218892c33d991cd9c010bbefca6c17ee632a55fa5eee645d2eb81f2c945edae8",
+    "figure12_observations_pass-03.csv": "d28f48f47a962742fe9bb1ad62b2322816bb5895a07270e04b6661cd42a04551"
+  },
+  "review": {
+    "excluded_observations": [],
+    "note": "Three-pass source-only QC found no observation requiring replacement. wall_west remains the largest wall-line repeatability diagnostic and is retained unchanged.",
+    "raw_observations_modified_after_qc": false,
+    "status": "accepted_for_registration"
+  },
+  "source": {
+    "image_height_pixels": 2327,
+    "image_width_pixels": 1512,
+    "pdf_page": 65,
+    "pdf_sha256": "ce161c0703c3080948fb437bebab7b283ff28621492440357f9b13c80ab3fdbd",
+    "rendered_png_sha256": "4f9ab63b94ac4c1a2ce2fe5217c2cb0542a6df77e30eb1f272f5c6f2c3d650d6",
+    "resolution_dpi": 300
+  }
+}
