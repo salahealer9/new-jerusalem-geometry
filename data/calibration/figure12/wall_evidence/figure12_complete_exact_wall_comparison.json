@@ -1,0 +1,31 @@
+{
+  "analysis_id": "figure12-complete-exact-wall-comparison-v1",
+  "candidate_parameters_fitted": false,
+  "fits": [
+    {
+      "angle_maximum_degrees": 2.062522194886469,
+      "angle_rms_degrees": 1.0198357932332167,
+      "candidate": "POLAR_PIVOT_TANGENT",
+      "support_maximum_u": 0.07246786234763469,
+      "support_rms_u": 0.03899940563859738
+    },
+    {
+      "angle_maximum_degrees": 2.633865499491378,
+      "angle_rms_degrees": 1.458881984452336,
+      "candidate": "REGULAR_DIRECTION_TANGENT",
+      "support_maximum_u": 0.07246786234763469,
+      "support_rms_u": 0.03681921890776131
+    },
+    {
+      "angle_maximum_degrees": 6.721934453635242,
+      "angle_rms_degrees": 4.755395950064689,
+      "candidate": "RADIAL_SUPPORT",
+      "support_maximum_u": 0.07246786234763469,
+      "support_rms_u": 0.032822023886513514
+    }
+  ],
+  "interpretation_boundary": "POLAR_PIVOT_TANGENT has the lowest source-wall angle RMS. RADIAL_SUPPORT has the lowest exact-model support-distance RMS. Historical dimensional evidence independently favors POLAR_PIVOT_TANGENT. The preferred construction remains a source-supported project reconstruction rather than an explicitly stated historical algorithm.",
+  "moon_model": "NJG_INC",
+  "preferred_combined_reconstruction": "POLAR_PIVOT_TANGENT",
+  "schema_version": 1
+}
