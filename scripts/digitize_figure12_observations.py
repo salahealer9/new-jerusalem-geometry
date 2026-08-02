@@ -8,6 +8,7 @@ from pathlib import Path
 
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
+from matplotlib.backend_bases import MouseButton
 
 from new_jerusalem_geometry.figure12_digitisation import (
     Figure12DigitisedObservation,
@@ -94,10 +95,126 @@ def _instruction(
         f"{category}\n"
         f"{object_id}  |  sample {sample_index}\n"
         f"{description}\n\n"
-        "LEFT CLICK = record point\n"
-        "Use toolbar zoom/pan before clicking when needed.\n"
+        "LEFT CLICK = record point when toolbar mode is OFF\n"
+        "Zoom/Pan toolbar clicks are ignored by the digitiser.\n"
+        "Deactivate Zoom/Pan before recording the source point.\n"
         "Close window to abort; rerun with --resume."
     )
+
+
+def _get_source_click(
+    fig,
+    ax,
+) -> tuple[float, float] | None:
+    """Wait for one deliberate source-image click.
+
+    Zoom and pan operations performed while a Matplotlib toolbar
+    navigation mode is active are ignored.
+
+    Returns None if the figure is closed or the process is
+    interrupted with Ctrl+C.
+    """
+
+    result: list[tuple[float, float]] = []
+    closed = [False]
+
+    def toolbar_is_active() -> bool:
+        toolbar = getattr(
+            fig.canvas,
+            "toolbar",
+            None,
+        )
+
+        if toolbar is None:
+            return False
+
+        mode = getattr(
+            toolbar,
+            "mode",
+            None,
+        )
+
+        if mode is None:
+            return False
+
+        # Modern Matplotlib may expose toolbar.mode as an enum.
+        # Its NONE member has value "", but the enum object itself
+        # is truthy, so inspect .value when present.
+        mode_value = getattr(
+            mode,
+            "value",
+            mode,
+        )
+
+        return bool(mode_value)
+
+    def on_click(event) -> None:
+        if toolbar_is_active():
+            return
+
+        if event.button != MouseButton.LEFT:
+            return
+
+        if event.inaxes is not ax:
+            return
+
+        if (
+            event.xdata is None
+            or event.ydata is None
+        ):
+            return
+
+        result.append(
+            (
+                float(event.xdata),
+                float(event.ydata),
+            )
+        )
+
+    def on_close(_event) -> None:
+        closed[0] = True
+
+    click_id = fig.canvas.mpl_connect(
+        "button_press_event",
+        on_click,
+    )
+
+    close_id = fig.canvas.mpl_connect(
+        "close_event",
+        on_close,
+    )
+
+    try:
+        # Keep the normal Matplotlib GUI event loop responsive.
+        # Unlike canvas.start_event_loop(), this works reliably
+        # with the Linux desktop backends used by this project and
+        # still allows KeyboardInterrupt to reach Python.
+        while (
+            not result
+            and not closed[0]
+            and plt.fignum_exists(fig.number)
+        ):
+            plt.pause(0.05)
+
+    except KeyboardInterrupt:
+        print()
+        print(
+            "Keyboard interrupt received."
+        )
+        return None
+
+    finally:
+        fig.canvas.mpl_disconnect(
+            click_id
+        )
+        fig.canvas.mpl_disconnect(
+            close_id
+        )
+
+    if closed[0] or not result:
+        return None
+
+    return result[0]
 
 
 def main() -> int:
@@ -255,6 +372,16 @@ def main() -> int:
         "pixel y"
     )
 
+    # Explicitly create and display the GUI window before entering
+    # the custom acquisition loop. plt.ginput() used to do this
+    # implicitly; our toolbar-aware click handler must do it here.
+    plt.show(
+        block=False,
+    )
+
+    fig.canvas.draw()
+    fig.canvas.flush_events()
+
     for index in range(
         start_index,
         len(schema),
@@ -275,13 +402,14 @@ def main() -> int:
 
         fig.canvas.draw_idle()
 
-        points = plt.ginput(
-            1,
-            timeout=-1,
-            show_clicks=True,
+        point = _get_source_click(
+            fig,
+            ax,
         )
 
-        if len(points) != 1:
+        if point is None:
+            plt.close(fig)
+
             print()
             print(
                 "Digitisation interrupted."
@@ -294,7 +422,7 @@ def main() -> int:
             )
             return 1
 
-        pixel_x, pixel_y = points[0]
+        pixel_x, pixel_y = point
 
         completed.append(
             Figure12DigitisedObservation(
