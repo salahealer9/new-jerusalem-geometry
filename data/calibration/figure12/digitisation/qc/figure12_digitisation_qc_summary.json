@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "moon_circle_fits": 36,
+    "moon_objects": 12,
+    "registration_landmarks": 12,
+    "wall_line_fits": 36,
+    "wall_objects": 12
+  },
+  "maxima": {
+    "moon_centre_pairwise_pixels": 1.5334385458810944,
+    "moon_centre_rms_pixels": 0.6617690158931634,
+    "moon_radial_fit_rms_pixels": 1.2802226967604837,
+    "registration_pairwise_pixels": 3.6411450237954135,
+    "registration_rms_pixels": 1.63048520622048,
+    "wall_fit_rms_pixels": 1.1392569344687258,
+    "wall_pairwise_angle_degrees": 0.7017236708291557,
+    "wall_pairwise_offset_pixels": 2.482368984438324
+  },
+  "raw_pass_sha256": {
+    "pass-01": "54c325b1729be92dd278004faee1d73b6524c8e022799368a974d8e456db07d2",
+    "pass-02": "218892c33d991cd9c010bbefca6c17ee632a55fa5eee645d2eb81f2c945edae8",
+    "pass-03": "d28f48f47a962742fe9bb1ad62b2322816bb5895a07270e04b6661cd42a04551"
+  },
+  "source_image_sha256": "4f9ab63b94ac4c1a2ce2fe5217c2cb0542a6df77e30eb1f272f5c6f2c3d650d6"
+}
