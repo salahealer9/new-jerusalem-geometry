@@ -1,0 +1,18 @@
+{
+  "analysis_id": "figure12-source-derived-normalized-geometry-v1",
+  "evidence_class": "source_plate_measurement",
+  "interpretation_boundary": "No Moon-placement candidate or outer-wall construction hypothesis is tested in this stage.",
+  "moon_centre_origin_radius_mean_u": 7.015679572789463,
+  "moon_centre_origin_radius_std_u": 0.010705284793790876,
+  "moon_count": 12,
+  "moon_radius_mean_u": 1.5202347000085554,
+  "moon_radius_std_u": 0.011581056324764721,
+  "schema_version": 1,
+  "selected_registration": "centroid_affine",
+  "wall_area_u2": 233.14023443980977,
+  "wall_perimeter_u": 54.77399703826629,
+  "wall_side_count": 12,
+  "wall_support_mean_u": 8.51257496967729,
+  "wall_support_std_u": 0.03031757558945178,
+  "wall_vertex_count": 12
+}
