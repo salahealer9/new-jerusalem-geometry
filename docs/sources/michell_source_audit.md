@@ -67,7 +67,59 @@ regular dodecagon because the Moon circles are not evenly spaced.
 The four pairs of sides opposite the corners of the Earth square are drawn
 slightly inward so that they touch the corresponding Moon circles.
 
-This wall has not yet been implemented.
+The Figure 12 source-calibration programme now provides direct plate
+measurements of all twelve wall side-lines. Three wall constructions have been
+kept mathematically distinct:
+
+- `RADIAL_SUPPORT`: the project's original inference in which each wall normal
+  follows the radius through its Moon centre;
+- `REGULAR_DIRECTION_TANGENT`: regular-dodecagon normal directions retained
+  while each line is translated to Moon tangency;
+- `POLAR_PIVOT_TANGENT`: the four polar sides remain fixed while the eight
+  oblique sides pivot inward about their polar-side endpoints until tangent to
+  the corresponding Moon circles.
+
+Against the affine-calibrated Figure 12 plate, the primary wall-normal RMS
+residuals are approximately:
+
+    POLAR_PIVOT_TANGENT        1.019835793 degrees
+    REGULAR_DIRECTION_TANGENT  1.458881984 degrees
+    RADIAL_SUPPORT              4.755395950 degrees
+
+The same angular ordering occurs independently in all three digitisation
+passes.
+
+Support-distance residuals give a different ordering for the complete exact
+NJG_INC constructions:
+
+    RADIAL_SUPPORT              0.032822024 u
+    REGULAR_DIRECTION_TANGENT  0.036819219 u
+    POLAR_PIVOT_TANGENT        0.038999406 u
+
+The plate therefore does not uniquely identify a construction rule from every
+metric.
+
+A second source constraint comes from Michell's later Figure 30 discussion of
+Ian Sommerville's analysis. Michell reports that the dodecagon is regular at
+its four polar sides, that the other eight sides are slightly shorter, and
+quotes approximate dimensions of 3280 feet for the four longer sides and
+3270 feet for the eight shorter sides. He also gives an area close to
+120,000,000 square feet and a perimeter virtually equal to 36,000 old English
+feet, with a stated working tolerance of 1:2500.
+
+The exact NJG_INC polar-pivot reconstruction gives:
+
+- four polar sides of 3279.698115 feet;
+- eight oblique sides of 3271.120651 feet;
+- area 120,002,599.573 square feet;
+- old-English-foot perimeter approximately 36,013.778 feet.
+
+Those discrepancies are all approximately 0.04 percent or smaller.
+
+The polar-pivot construction is therefore the project's present preferred
+source-supported reconstruction of the Figure 12 wall. It remains a project
+reconstruction rather than a claim that Michell explicitly states the complete
+analytic construction.
 
 ### 5. Sevenfold, fourteenfold, and twenty-eightfold geometry
 
@@ -91,20 +143,30 @@ The present computational models should be understood as follows:
 - `NJG_28`: exact regular idealisation of a twenty-eightfold angular division;
 - `NJG_SVG`: exact reproduction of the independent 2008 Wikimedia
   reconstruction;
-- `NJG_MICHELL`: proposed source-faithful composite model, not yet implemented.
+- `RADIAL_SUPPORT`: retained historical project inference for the outer wall;
+- `REGULAR_DIRECTION_TANGENT`: intermediate Figure 12 wall reconstruction;
+- `POLAR_PIVOT_TANGENT`: present preferred source-supported Figure 12 wall
+  reconstruction;
+- `NJG_MICHELL`: proposed source-faithful composite model whose individual
+  geometric layers are being resolved separately.
 
-The proposed `NJG_MICHELL` model will combine:
+The developing `NJG_MICHELL` composite will combine:
 
 - exact normalized Earth–Moon dimensions;
 - the pi = 22/7 perimeter convention;
 - exact Moon-circle incidence at the square–construction-circle intersections;
 - nonuniform Moon-centre spacing;
-- a nonregular outer twelve-sided wall;
+- the source-calibrated nonregular outer wall;
 - approximate septenary, fourteenfold, and twenty-eightfold scaffolding.
+
+The outer-wall layer is therefore now implemented and source-tested even
+though the full composite model remains incomplete.
 
 ## Open questions
 
-1. What exact tangent construction defines every side of the outer wall?
+1. Does a primary source specify the exact construction sequence of the outer
+   wall, or is the polar-pivot tangent geometry recoverable only as the best
+   source-supported reconstruction?
 2. Which internal lines in the published New Jerusalem plate are generative,
    and which are illustrative?
 3. How are the seven stars located?
@@ -112,27 +174,44 @@ The proposed `NJG_MICHELL` model will combine:
    to the earlier New Jerusalem plate?
 5. Does Michell specify a unique construction order for the complete diagram?
 
-### 7. Candidate analytic construction of the outer wall
+### 7. Figure 12 wall-reconstruction audit
 
-Figure 12 appears to assign one outward wall side to each Moon circle. The
-cardinal Moon circles correspond to horizontal and vertical wall sides, while
-the non-cardinal Moon circles correspond to oblique sides.
+The project's first analytic wall construction assigned one outward radial
+support tangent to each Moon circle. In that model each wall normal is parallel
+to the radius through its Moon centre and consecutive support lines define the
+wall vertices.
 
-The present project therefore tests the following inferred construction:
+That construction remains implemented as `RADIAL_SUPPORT` for historical
+reproducibility, but Figure 12 source calibration shows that it is not the
+preferred reconstruction of the printed wall.
 
-1. draw the outward support tangent to each Moon circle perpendicular to the
-   radius joining its centre to the common origin;
-2. intersect consecutive support tangents;
-3. use the twelve intersections as the wall vertices.
+A regular-direction tangent model was therefore tested next. It retains
+regular-dodecagon normal directions at thirty-degree intervals and translates
+each side to Moon tangency. This substantially improves the plate-direction
+fit over radial support.
 
-This construction is not explicitly stated by Michell and must remain labelled
-as a project inference.
+The source wording and Michell's later Figure 30 discussion motivate a third
+construction. Begin with the regular dodecagon of apothem 8.5 normalized units.
+Retain the four polar sides. For each of the eight oblique sides, hold fixed
+the endpoint shared with its neighbouring polar side and pivot the side inward
+until it becomes tangent to the corresponding NJG_INC Moon circle. Intersections
+of consecutive lines define the twelve wall vertices.
 
-For the exact-incidence Moon placement, the inferred wall predicts:
+This `POLAR_PIVOT_TANGENT` construction gives the best Figure 12 wall-direction
+fit and reproduces the later Michell/Sommerville four-long/eight-short numerical
+structure within approximately the stated 1:2500 working tolerance.
 
-- four shorter and eight longer wall sides;
-- mean side length approximately 3289.16 feet;
-- total area approximately 120.778 million square feet.
+The evidence boundary remains explicit:
+
+- Figure 12 directly supports a nonregular wall and inward adjustment of the
+  eight corner-facing sides;
+- Figure 30 directly supports four regular polar sides and eight slightly
+  shorter sides;
+- source-calibrated plate measurements favor the polar-pivot rule for wall
+  direction;
+- the exact pivot operation itself remains a project reconstruction because
+  no currently audited primary-source passage states that construction
+  algorithm explicitly.
 
 These differ from Michell's approximate values of 3264 feet and 120 million
 square feet by less than one percent.
