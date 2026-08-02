@@ -1,0 +1,50 @@
+{
+  "centroid_models": {
+    "affine": {
+      "anisotropy_ratio": 1.0131223375748017,
+      "loo_maximum_pixels": 2.541469463323299,
+      "loo_rms_pixels": 1.7909242669504306,
+      "perspective_magnitude": 0.0,
+      "training_rms_pixels": 1.3422284453025322
+    },
+    "projective": {
+      "anisotropy_ratio": 1.0139500891857065,
+      "loo_maximum_pixels": 3.3340612310414914,
+      "loo_rms_pixels": 1.9565979549612984,
+      "perspective_magnitude": 0.00018797317806385055,
+      "training_rms_pixels": 1.292473331298985
+    },
+    "similarity": {
+      "anisotropy_ratio": 1.0000000000000002,
+      "loo_maximum_pixels": 5.751442066246588,
+      "loo_rms_pixels": 4.386620451568755,
+      "perspective_magnitude": 0.0,
+      "training_rms_pixels": 3.659795491307717
+    }
+  },
+  "figure": 12,
+  "files": {
+    "figure12_registration_report.md": "4df8adba328803f5ef8820241d094e78bf2de1ea485a9dbc17048e831f20cf3e",
+    "figure12_registration_summary.csv": "d1865d93cea412e00996f3c7f543d05e4bec4851869a7fbf72d7ac5c3ea3ff3b"
+  },
+  "registration_landmark_classes": {
+    "earth_square_corners": 4,
+    "square_construction_circle_junctions": 8
+  },
+  "registration_landmarks": 12,
+  "schema_version": 1,
+  "selected_model": "affine",
+  "selection_id": "figure12-centroid-affine-registration-v1",
+  "selection_rationale": [
+    "Affine has the smallest centroid leave-one-landmark-out RMS.",
+    "Affine has the smallest centroid leave-one-landmark-out maximum residual.",
+    "Affine has lower leave-one-out RMS than projective on all three independent passes.",
+    "Projective lowers training error slightly but worsens out-of-sample prediction.",
+    "Similarity substantially underfits the plate.",
+    "Affine anisotropy is mild and geometrically plausible for source-page distortion."
+  ],
+  "source_geometry_excluded_from_fit": [
+    "moon_circumference",
+    "wall_line"
+  ]
+}
