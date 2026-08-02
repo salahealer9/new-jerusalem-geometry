@@ -1,0 +1,43 @@
+{
+  "analysis_id": "figure12-fixed-moon-model-comparison-v1",
+  "candidate_parameters_fitted": false,
+  "interpretation_boundary": "Candidate ranking is descriptive source-plate agreement. Closely separated candidates must not be declared distinguishable unless their margins are large relative to independent-pass variation.",
+  "observed_beta": {
+    "mean_degrees": 25.86287342382083,
+    "pass_mean_std_degrees": 0.006435901744953072,
+    "pass_means_degrees": {
+      "pass-01": 25.857591061337835,
+      "pass-02": 25.858113503548758,
+      "pass-03": 25.871497392604827
+    },
+    "spatial_std_degrees": 0.1888423222407038
+  },
+  "pass_rankings": {
+    "pass-01": [
+      "NJG_SVG",
+      "NJG_INC",
+      "NJG_28",
+      "NJG_MICHELL_28"
+    ],
+    "pass-02": [
+      "NJG_SVG",
+      "NJG_INC",
+      "NJG_28",
+      "NJG_MICHELL_28"
+    ],
+    "pass-03": [
+      "NJG_SVG",
+      "NJG_INC",
+      "NJG_28",
+      "NJG_MICHELL_28"
+    ]
+  },
+  "primary_ranking": [
+    "NJG_SVG",
+    "NJG_INC",
+    "NJG_28",
+    "NJG_MICHELL_28"
+  ],
+  "primary_ranking_metric": "oblique_eight_centre_rms_u",
+  "schema_version": 1
+}

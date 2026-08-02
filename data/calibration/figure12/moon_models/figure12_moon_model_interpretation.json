@@ -1,0 +1,23 @@
+{
+  "analysis_id": "figure12-moon-model-interpretation-v1",
+  "candidate_beta_degrees": {
+    "NJG_28": 25.714285714,
+    "NJG_INC": 25.911931046,
+    "NJG_MICHELL_28": 25.587895703,
+    "NJG_SVG": 25.839585586
+  },
+  "figure": 12,
+  "independent_pass_ranking_stable": true,
+  "interpretation": "NJG_SVG gives the smallest fixed-coordinate residual against the printed Figure 12 plate in all three independent digitisation passes. The SVG-versus-INC margin is small relative to spatial variation across the eight oblique Moon positions, so this does not uniquely identify NJG_SVG as the underlying construction. Michell's textual incidence constraint remains represented by NJG_INC.",
+  "oblique_rms_u": {
+    "NJG_28": 0.034811987,
+    "NJG_INC": 0.030299159,
+    "NJG_MICHELL_28": 0.044859702,
+    "NJG_SVG": 0.029832828
+  },
+  "observed_beta_degrees": 25.862873424,
+  "plate_best_fixed_candidate": "NJG_SVG",
+  "schema_version": 1,
+  "source_defined_constraint_model": "NJG_INC",
+  "unique_plate_identification": false
+}
