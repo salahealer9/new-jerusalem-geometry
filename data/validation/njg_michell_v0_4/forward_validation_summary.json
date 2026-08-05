@@ -1,0 +1,612 @@
+{
+  "analysis_id": "njg-michell-v0.4-frozen-forward-validation",
+  "figure12": {
+    "angle_maximum_degrees": 2.0625221948860997,
+    "angle_rms_degrees": 1.0198357932332474,
+    "area_relative_residual": -0.007093320268729609,
+    "area_residual_u2": -1.6537383504082754,
+    "line_residuals": [
+      {
+        "angle_residual_degrees": 0.2100298925320203,
+        "predicted_angle_degrees": 0.0,
+        "predicted_support_u": 8.5,
+        "source_angle_degrees": 359.789970107468,
+        "source_line_fit_rms_u": 0.011412603445,
+        "source_pass_angle_rms_degrees": 0.110571058521,
+        "source_pass_support_rms_u": 0.007422598328,
+        "source_support_u": 8.558789748733,
+        "support_residual_u": -0.058789748733000025,
+        "wall_id": "wall_east"
+      },
+      {
+        "angle_residual_degrees": 0.7069127930451486,
+        "predicted_angle_degrees": 30.571343304604838,
+        "predicted_support_u": 8.476866268023054,
+        "source_angle_degrees": 31.27825609765,
+        "source_line_fit_rms_u": 0.00819192277,
+        "source_pass_angle_rms_degrees": 0.195656635996,
+        "source_pass_support_rms_u": 0.006132190829,
+        "source_support_u": 8.493286890541,
+        "support_residual_u": -0.016420622517946626,
+        "wall_id": "wall_east_north"
+      },
+      {
+        "angle_residual_degrees": 0.9445891643972004,
+        "predicted_angle_degrees": 59.4286566953952,
+        "predicted_support_u": 8.476866268023054,
+        "source_angle_degrees": 58.484067530998,
+        "source_line_fit_rms_u": 0.009448967522,
+        "source_pass_angle_rms_degrees": 0.205522924327,
+        "source_pass_support_rms_u": 0.009169510069,
+        "source_support_u": 8.50804585328,
+        "support_residual_u": -0.03117958525694675,
+        "wall_id": "wall_north_east"
+      },
+      {
+        "angle_residual_degrees": 0.2944538511080168,
+        "predicted_angle_degrees": 90.0,
+        "predicted_support_u": 8.5,
+        "source_angle_degrees": 89.705546148892,
+        "source_line_fit_rms_u": 0.005630291604,
+        "source_pass_angle_rms_degrees": 0.048951462051,
+        "source_pass_support_rms_u": 0.003504780308,
+        "source_support_u": 8.496731930657,
+        "support_residual_u": 0.003268069342999169,
+        "wall_id": "wall_north"
+      },
+      {
+        "angle_residual_degrees": 2.0625221948860997,
+        "predicted_angle_degrees": 120.5713433046049,
+        "predicted_support_u": 8.476866268023052,
+        "source_angle_degrees": 122.633865499491,
+        "source_line_fit_rms_u": 0.006139457692,
+        "source_pass_angle_rms_degrees": 0.127815381244,
+        "source_pass_support_rms_u": 0.005766994485,
+        "source_support_u": 8.472543874099,
+        "support_residual_u": 0.004322393924052648,
+        "wall_id": "wall_north_west"
+      },
+      {
+        "angle_residual_degrees": 1.5824589924411896,
+        "predicted_angle_degrees": 149.42865669539518,
+        "predicted_support_u": 8.476866268023054,
+        "source_angle_degrees": 147.846197702954,
+        "source_line_fit_rms_u": 0.009700835613,
+        "source_pass_angle_rms_degrees": 0.199088824112,
+        "source_pass_support_rms_u": 0.004082708982,
+        "source_support_u": 8.489260340942,
+        "support_residual_u": -0.012394072918946009,
+        "wall_id": "wall_west_north"
+      },
+      {
+        "angle_residual_degrees": 0.25214740782200806,
+        "predicted_angle_degrees": 180.0,
+        "predicted_support_u": 8.5,
+        "source_angle_degrees": 180.252147407822,
+        "source_line_fit_rms_u": 0.019769251464,
+        "source_pass_angle_rms_degrees": 0.318314659924,
+        "source_pass_support_rms_u": 0.011907452448,
+        "source_support_u": 8.500374512636,
+        "support_residual_u": -0.00037451263600019047,
+        "wall_id": "wall_west"
+      },
+      {
+        "angle_residual_degrees": 0.5271401034441681,
+        "predicted_angle_degrees": 210.57134330460482,
+        "predicted_support_u": 8.476866268023054,
+        "source_angle_degrees": 211.098483408049,
+        "source_line_fit_rms_u": 0.013687929924,
+        "source_pass_angle_rms_degrees": 0.114530487889,
+        "source_pass_support_rms_u": 0.007255525054,
+        "source_support_u": 8.481762031041,
+        "support_residual_u": -0.004895763017946919,
+        "wall_id": "wall_west_south"
+      },
+      {
+        "angle_residual_degrees": 1.4456976046280943,
+        "predicted_angle_degrees": 239.4286566953951,
+        "predicted_support_u": 8.476866268023052,
+        "source_angle_degrees": 237.982959090767,
+        "source_line_fit_rms_u": 0.010808974334,
+        "source_pass_angle_rms_degrees": 0.158682987177,
+        "source_pass_support_rms_u": 0.003179398376,
+        "source_support_u": 8.502020244385,
+        "support_residual_u": -0.025153976361947272,
+        "wall_id": "wall_south_west"
+      },
+      {
+        "angle_residual_degrees": 0.11237523695399432,
+        "predicted_angle_degrees": 270.0,
+        "predicted_support_u": 8.5,
+        "source_angle_degrees": 269.887624763046,
+        "source_line_fit_rms_u": 0.008274980694,
+        "source_pass_angle_rms_degrees": 0.113947110721,
+        "source_pass_support_rms_u": 0.006546019866,
+        "source_support_u": 8.572467862348,
+        "support_residual_u": -0.07246786234800062,
+        "wall_id": "wall_south"
+      },
+      {
+        "angle_residual_degrees": 0.9346818079291097,
+        "predicted_angle_degrees": 300.5713433046049,
+        "predicted_support_u": 8.476866268023054,
+        "source_angle_degrees": 301.506025112534,
+        "source_line_fit_rms_u": 0.006742039572,
+        "source_pass_angle_rms_degrees": 0.060553499125,
+        "source_pass_support_rms_u": 0.013854372206,
+        "source_support_u": 8.541941890999,
+        "support_residual_u": -0.0650756229759466,
+        "wall_id": "wall_south_east"
+      },
+      {
+        "angle_residual_degrees": 0.9391812488501046,
+        "predicted_angle_degrees": 329.4286566953951,
+        "predicted_support_u": 8.476866268023054,
+        "source_angle_degrees": 328.489475446545,
+        "source_line_fit_rms_u": 0.007554522604,
+        "source_pass_angle_rms_degrees": 0.203990404366,
+        "source_pass_support_rms_u": 0.012819689705,
+        "source_support_u": 8.533674456466,
+        "support_residual_u": -0.05680818844294677,
+        "wall_id": "wall_east_south"
+      }
+    ],
+    "oblique_side_count": 8,
+    "perimeter_relative_residual": -0.0037913417335093767,
+    "perimeter_residual_u": -0.20766694088229798,
+    "polar_side_count": 4,
+    "predicted_area_u2": 231.4864960894015,
+    "predicted_perimeter_u": 54.56633009738399,
+    "side_length_maximum_u": 0.30730712997291754,
+    "side_length_rms_u": 0.14249511710949322,
+    "side_residuals": [
+      {
+        "length_residual_u": -0.08174848137290969,
+        "predicted_length_u": 4.55513627132909,
+        "source_length_u": 4.636884752702,
+        "wall_id": "wall_east"
+      },
+      {
+        "length_residual_u": -0.06408109639654302,
+        "predicted_length_u": 4.543223126508457,
+        "source_length_u": 4.607304222905,
+        "wall_id": "wall_east_north"
+      },
+      {
+        "length_residual_u": 0.1613541990144567,
+        "predicted_length_u": 4.543223126508456,
+        "source_length_u": 4.381868927494,
+        "wall_id": "wall_north_east"
+      },
+      {
+        "length_residual_u": -0.30730712997291754,
+        "predicted_length_u": 4.555136271329083,
+        "source_length_u": 4.862443401302,
+        "wall_id": "wall_north"
+      },
+      {
+        "length_residual_u": 0.0607699234264647,
+        "predicted_length_u": 4.543223126508464,
+        "source_length_u": 4.482453203082,
+        "wall_id": "wall_north_west"
+      },
+      {
+        "length_residual_u": 0.19635746165944656,
+        "predicted_length_u": 4.543223126508447,
+        "source_length_u": 4.346865664849,
+        "wall_id": "wall_west_north"
+      },
+      {
+        "length_residual_u": -0.2029821112709156,
+        "predicted_length_u": 4.555136271329085,
+        "source_length_u": 4.7581183826,
+        "wall_id": "wall_west"
+      },
+      {
+        "length_residual_u": 0.09491675559844825,
+        "predicted_length_u": 4.543223126508448,
+        "source_length_u": 4.44830637091,
+        "wall_id": "wall_west_south"
+      },
+      {
+        "length_residual_u": -0.007625837014540338,
+        "predicted_length_u": 4.54322312650846,
+        "source_length_u": 4.550848963523,
+        "wall_id": "wall_south_west"
+      },
+      {
+        "length_residual_u": -0.13099135459991018,
+        "predicted_length_u": 4.55513627132909,
+        "source_length_u": 4.686127625929,
+        "wall_id": "wall_south"
+      },
+      {
+        "length_residual_u": 0.03517568555745143,
+        "predicted_length_u": 4.543223126508451,
+        "source_length_u": 4.508047440951,
+        "wall_id": "wall_south_east"
+      },
+      {
+        "length_residual_u": 0.03849504448845309,
+        "predicted_length_u": 4.543223126508453,
+        "source_length_u": 4.50472808202,
+        "wall_id": "wall_east_south"
+      }
+    ],
+    "source_area_u2": 233.14023443980977,
+    "source_perimeter_u": 54.77399703826629,
+    "support_maximum_u": 0.07246786234800062,
+    "support_rms_u": 0.038999405638603823,
+    "vertex_maximum_u": 0.16269886988955864,
+    "vertex_residuals": [
+      {
+        "point_residual_u": 0.14559970235311068,
+        "predicted_x_u": -2.277568135664543,
+        "predicted_y_u": 8.500000000000002,
+        "source_x_u": -2.422870787837,
+        "source_y_u": 8.509295837615,
+        "vertex_id": "wall_vertex_00",
+        "wall_a": "wall_north_west",
+        "wall_b": "wall_north"
+      },
+      {
+        "point_residual_u": 0.16269886988955864,
+        "predicted_x_u": 2.277568135664539,
+        "predicted_y_u": 8.499999999999998,
+        "source_x_u": 2.439508401964,
+        "source_y_u": 8.484306931014,
+        "vertex_id": "wall_vertex_01",
+        "wall_a": "wall_north",
+        "wall_b": "wall_north_east"
+      },
+      {
+        "point_residual_u": 0.014926685180147309,
+        "predicted_x_u": 6.189267429337257,
+        "predicted_y_u": 6.189267429337259,
+        "source_x_u": 6.175029043896,
+        "source_y_u": 6.193747865755,
+        "vertex_id": "wall_vertex_02",
+        "wall_a": "wall_north_east",
+        "wall_b": "wall_east_north"
+      },
+      {
+        "point_residual_u": 0.0704709146853692,
+        "predicted_x_u": 8.5,
+        "predicted_y_u": 2.2775681356645423,
+        "source_x_u": 8.567117461727,
+        "source_y_u": 2.256088001868,
+        "vertex_id": "wall_vertex_03",
+        "wall_a": "wall_east_north",
+        "wall_b": "wall_east"
+      },
+      {
+        "point_residual_u": 0.11472458954770517,
+        "predicted_x_u": 8.5,
+        "predicted_y_u": -2.277568135664547,
+        "source_x_u": 8.550120010371,
+        "source_y_u": -2.380765596909,
+        "vertex_id": "wall_vertex_04",
+        "wall_a": "wall_east",
+        "wall_b": "wall_east_south"
+      },
+      {
+        "point_residual_u": 0.03261851966492282,
+        "predicted_x_u": 6.1892674293372565,
+        "predicted_y_u": -6.189267429337259,
+        "source_x_u": 6.195700562909,
+        "source_y_u": -6.221245275068,
+        "vertex_id": "wall_vertex_05",
+        "wall_a": "wall_east_south",
+        "wall_b": "wall_south_east"
+      },
+      {
+        "point_residual_u": 0.10730737923791836,
+        "predicted_x_u": 2.277568135664545,
+        "predicted_y_u": -8.5,
+        "source_x_u": 2.352205967547,
+        "source_y_u": -8.577097780064,
+        "vertex_id": "wall_vertex_06",
+        "wall_a": "wall_south_east",
+        "wall_b": "wall_south"
+      },
+      {
+        "point_residual_u": 0.08823852470845604,
+        "predicted_x_u": -2.277568135664545,
+        "predicted_y_u": -8.499999999999998,
+        "source_x_u": -2.333912645162,
+        "source_y_u": -8.567906800044,
+        "vertex_id": "wall_vertex_07",
+        "wall_a": "wall_south",
+        "wall_b": "wall_south_west"
+      },
+      {
+        "point_residual_u": 0.03424704633769445,
+        "predicted_x_u": -6.189267429337264,
+        "predicted_y_u": -6.189267429337252,
+        "source_x_u": -6.192534021074,
+        "source_y_u": -6.155176527893,
+        "vertex_id": "wall_vertex_08",
+        "wall_a": "wall_south_west",
+        "wall_b": "wall_west_south"
+      },
+      {
+        "point_residual_u": 0.06931530978005716,
+        "predicted_x_u": -8.5,
+        "predicted_y_u": -2.2775681356645414,
+        "source_x_u": -8.490131697073,
+        "source_y_u": -2.346177382616,
+        "vertex_id": "wall_vertex_09",
+        "wall_a": "wall_west_south",
+        "wall_b": "wall_west"
+      },
+      {
+        "point_residual_u": 0.1347822578037039,
+        "predicted_x_u": -8.5,
+        "predicted_y_u": 2.2775681356645427,
+        "source_x_u": -8.511071168599,
+        "source_y_u": 2.41189492467,
+        "vertex_id": "wall_vertex_10",
+        "wall_a": "wall_west",
+        "wall_b": "wall_west_north"
+      },
+      {
+        "point_residual_u": 0.09758270694825308,
+        "predicted_x_u": -6.189267429337264,
+        "predicted_y_u": 6.189267429337251,
+        "source_x_u": -6.19769614424,
+        "source_y_u": 6.092049419378,
+        "vertex_id": "wall_vertex_11",
+        "wall_a": "wall_west_north",
+        "wall_b": "wall_north_west"
+      }
+    ],
+    "vertex_rms_u": 0.10002161247956347,
+    "wall_side_count": 12
+  },
+  "figure14": {
+    "canonical_regular": {
+      "angular_maximum_degrees": 0.4700511784652406,
+      "angular_rms_degrees": 0.22405878857368647,
+      "candidate_name": "REGULAR_7_2",
+      "inferred_point_maximum_u": 0.05925880295225917,
+      "inferred_point_rms_u": 0.04689027993437212,
+      "point_maximum_u": 0.05925880295225917,
+      "point_rms_fraction_of_registration_loo": 0.8973846935144653,
+      "point_rms_u": 0.03195384739303084,
+      "radial_maximum_u": 0.03470311091918177,
+      "radial_rms_u": 0.01643699565699999,
+      "registration_loo_equivalent_u": 0.03560774729496293,
+      "source_supported_point_maximum_u": 0.0434311298871737,
+      "source_supported_point_rms_u": 0.023451830793659426,
+      "vertex_residuals": [
+        {
+          "angular_residual_degrees": 0.11798604029314674,
+          "evidence_class": "source_text_and_plate",
+          "landmark_id": "star_endpoint_00_top",
+          "point_residual_u": 0.016227796109717346,
+          "predicted_x_u": 4.286263797015736e-16,
+          "predicted_y_u": 7.0,
+          "radial_residual_u": -0.007468543947293682,
+          "sequence_index": 0,
+          "source_x_u": -0.014399324384,
+          "source_y_u": 6.99251663018
+        },
+        {
+          "angular_residual_degrees": 0.07802231724164699,
+          "evidence_class": "source_text_and_plate",
+          "landmark_id": "star_endpoint_01_upper_left",
+          "point_residual_u": 0.009902591477537772,
+          "predicted_x_u": -5.472820377276209,
+          "predicted_y_u": 4.364428613011135,
+          "radial_residual_u": 0.0026764324973109765,
+          "sequence_index": 1,
+          "source_x_u": -5.480853335429,
+          "source_y_u": 4.358637853019
+        },
+        {
+          "angular_residual_degrees": 0.4700511784652406,
+          "evidence_class": "plate_inference",
+          "landmark_id": "star_endpoint_02_lower_left",
+          "point_residual_u": 0.05925880295225917,
+          "predicted_x_u": -6.8244953852727654,
+          "predicted_y_u": -1.5576465376942,
+          "radial_residual_u": 0.014384701623004759,
+          "sequence_index": 2,
+          "source_x_u": -6.825484345444,
+          "source_y_u": -1.616897087777
+        },
+        {
+          "angular_residual_degrees": 0.21322077390900063,
+          "evidence_class": "source_text_and_plate",
+          "landmark_id": "star_endpoint_03_bottom_left",
+          "point_residual_u": 0.0434311298871737,
+          "predicted_x_u": -3.0371861738229082,
+          "predicted_y_u": -6.306782075316933,
+          "radial_residual_u": 0.03470311091918177,
+          "sequence_index": 3,
+          "source_x_u": -3.028635766336,
+          "source_y_u": -6.34936321639
+        },
+        {
+          "angular_residual_degrees": 0.08996988431266573,
+          "evidence_class": "source_text_and_plate",
+          "landmark_id": "star_endpoint_04_bottom_right",
+          "point_residual_u": 0.013168287504206412,
+          "predicted_x_u": 3.0371861738229056,
+          "predicted_y_u": -6.306782075316935,
+          "radial_residual_u": 0.007242724249053367,
+          "sequence_index": 4,
+          "source_x_u": 3.050238523596,
+          "source_y_u": -6.308525623766
+        },
+        {
+          "angular_residual_degrees": 0.23853323815961858,
+          "evidence_class": "plate_inference",
+          "landmark_id": "star_endpoint_05_lower_right",
+          "point_residual_u": 0.029762240797911742,
+          "predicted_x_u": 6.824495385272765,
+          "predicted_y_u": -1.5576465376942026,
+          "radial_residual_u": 0.005982542863568696,
+          "sequence_index": 5,
+          "source_x_u": 6.836759043778,
+          "source_y_u": -1.530528395107
+        },
+        {
+          "angular_residual_degrees": 0.002074337214850175,
+          "evidence_class": "source_text_and_plate",
+          "landmark_id": "star_endpoint_06_upper_right",
+          "point_residual_u": 0.018134837034079185,
+          "predicted_x_u": 5.47282037727621,
+          "predicted_y_u": 4.364428613011134,
+          "radial_residual_u": 0.01813306157487382,
+          "sequence_index": 6,
+          "source_x_u": 5.487155791243,
+          "source_y_u": 4.375535737781
+        }
+      ]
+    },
+    "endpoint_count": 7,
+    "inferred_endpoint_count": 2,
+    "scaffold_candidate": {
+      "angular_maximum_degrees": 0.38579117072819713,
+      "angular_rms_degrees": 0.2152058526642746,
+      "candidate_name": "MICHELL_28_7_2",
+      "inferred_point_maximum_u": 0.049325680808962526,
+      "inferred_point_rms_u": 0.044863051778571826,
+      "point_maximum_u": 0.049325680808962526,
+      "point_rms_fraction_of_registration_loo": 0.8712599922432704,
+      "point_rms_u": 0.03102360563200974,
+      "radial_maximum_u": 0.03470311091918177,
+      "radial_rms_u": 0.01643699565700003,
+      "registration_loo_equivalent_u": 0.03560774729496293,
+      "source_supported_point_maximum_u": 0.03629602599912673,
+      "source_supported_point_rms_u": 0.023288889690578348,
+      "vertex_residuals": [
+        {
+          "angular_residual_degrees": 0.11798604029314674,
+          "evidence_class": "source_text_and_plate",
+          "landmark_id": "star_endpoint_00_top",
+          "point_residual_u": 0.016227796109717346,
+          "predicted_x_u": 4.286263797015736e-16,
+          "predicted_y_u": 7.0,
+          "radial_residual_u": -0.007468543947293682,
+          "sequence_index": 0,
+          "source_x_u": -0.014399324384,
+          "source_y_u": 6.99251663018
+        },
+        {
+          "angular_residual_degrees": 0.03589231337312526,
+          "evidence_class": "source_text_and_plate",
+          "landmark_id": "star_endpoint_01_upper_left",
+          "point_residual_u": 0.0051380453814221525,
+          "predicted_x_u": -5.476028093611812,
+          "predicted_y_u": 4.36040322882806,
+          "radial_residual_u": 0.002676432497312753,
+          "sequence_index": 1,
+          "source_x_u": -5.480853335429,
+          "source_y_u": 4.358637853019
+        },
+        {
+          "angular_residual_degrees": 0.38579117072819713,
+          "evidence_class": "plate_inference",
+          "landmark_id": "star_endpoint_02_lower_left",
+          "point_residual_u": 0.049325680808962526,
+          "predicted_x_u": -6.822197308725177,
+          "predicted_y_u": -1.5676810520073774,
+          "radial_residual_u": 0.014384701623004759,
+          "sequence_index": 2,
+          "source_x_u": -6.825484345444,
+          "source_y_u": -1.616897087777
+        },
+        {
+          "angular_residual_degrees": 0.08683076230343545,
+          "evidence_class": "source_text_and_plate",
+          "landmark_id": "star_endpoint_03_bottom_left",
+          "point_residual_u": 0.03629602599912673,
+          "predicted_x_u": -3.0232665271502897,
+          "predicted_y_u": -6.313466520526788,
+          "radial_residual_u": 0.03470311091918177,
+          "sequence_index": 3,
+          "source_x_u": -3.028635766336,
+          "source_y_u": -6.34936321639
+        },
+        {
+          "angular_residual_degrees": 0.21635989591828775,
+          "evidence_class": "source_text_and_plate",
+          "landmark_id": "star_endpoint_04_bottom_right",
+          "point_residual_u": 0.0274208142305862,
+          "predicted_x_u": 3.0232665271502874,
+          "predicted_y_u": -6.31346652052679,
+          "radial_residual_u": 0.007242724249053367,
+          "sequence_index": 4,
+          "source_x_u": 3.050238523596,
+          "source_y_u": -6.308525623766
+        },
+        {
+          "angular_residual_degrees": 0.32279324589666203,
+          "evidence_class": "plate_inference",
+          "landmark_id": "star_endpoint_05_lower_right",
+          "point_residual_u": 0.03990443637624743,
+          "predicted_x_u": 6.822197308725176,
+          "predicted_y_u": -1.5676810520073798,
+          "radial_residual_u": 0.005982542863568696,
+          "sequence_index": 5,
+          "source_x_u": 6.836759043778,
+          "source_y_u": -1.530528395107
+        },
+        {
+          "angular_residual_degrees": 0.04005566665364313,
+          "evidence_class": "source_text_and_plate",
+          "landmark_id": "star_endpoint_06_upper_right",
+          "point_residual_u": 0.01878346298694463,
+          "predicted_x_u": 5.476028093611813,
+          "predicted_y_u": 4.36040322882806,
+          "radial_residual_u": 0.01813306157487382,
+          "sequence_index": 6,
+          "source_x_u": 5.487155791243,
+          "source_y_u": 4.375535737781
+        }
+      ]
+    },
+    "scaffold_minus_canonical_point_maximum_u": -0.009933122143296641,
+    "scaffold_minus_canonical_point_rms_u": -0.0009302417610210986,
+    "source_supported_endpoint_count": 5
+  },
+  "frozen_predictor_commit": "43096326d5c1862fc7e33f9d90eb1df861c3b642",
+  "input_sha256": [
+    [
+      "figure12_wall_geometry",
+      "c763cf325c4470ea29b966c814604b03d30d2db68b90f32289bb9e5f5079cf6b"
+    ],
+    [
+      "figure12_wall_vertices",
+      "8c2a30b79dcf58e7352abe5ac680b4b332e7469055dc6f754547a52fb2c356ec"
+    ],
+    [
+      "figure12_wall_side_lengths",
+      "30c3caed82da4bd1db235db0000e0d50bf17df3a3de11efdcc1444c9b0158896"
+    ],
+    [
+      "figure12_source_summary",
+      "0c0cb10f996478b5b9efc90d0324a5ff30ea52fc3347f24f5c143add65554602"
+    ],
+    [
+      "figure14_registered_landmarks",
+      "9549c5d416e903781a3ff227e84c278465f9d729259d1a5985c316773814ebd0"
+    ],
+    [
+      "figure14_endpoint_geometry_csv",
+      "ca9a9dde2dc43f44d64f9dbe78fdfd6a9e773be22ddc37bdb0a79381fa9b2e65"
+    ],
+    [
+      "figure14_endpoint_geometry_json",
+      "3b4eaffb33b5984441a88039d6e5a972343b6b6ef43dbe980bfa7dc28bde98a0"
+    ],
+    [
+      "figure14_semantic_correspondence",
+      "0c605726b7b55c96033a275a7ae3373840b02374c07cd55f9ce970d2cae75ffc"
+    ]
+  ],
+  "schema_version": 1,
+  "validation_mode": "frozen_forward_no_refitting"
+}

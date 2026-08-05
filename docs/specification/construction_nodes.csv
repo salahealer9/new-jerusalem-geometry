@@ -1,0 +1,22 @@
+node_id,label,node_type,implementation_reference,claim_ids,notes
+CORE_DIMENSIONS,Normalized Earth-Moon dimensions,source_geometry,core_geometry,CORE-001;CORE-002;CORE-003;CORE-004;CORE-006,Scale-free 11/3/7 dimensional system
+EARTH_CIRCLE,Earth circle,source_geometry,core_geometry,CORE-001;CORE-004,Radius 5.5 normalized units
+EARTH_SQUARE,Earth square,source_geometry,core_geometry,CORE-004;CORE-006,Side 11 normalized units
+CONSTRUCTION_CIRCLE,Construction circle,source_geometry,core_geometry,CORE-003;CORE-005;CORE-006,Radius 7 normalized units
+CARDINAL_MOONS,Four cardinal Moon circles,source_geometry,core_geometry,CORE-001;CORE-002;CORE-003,Centres lie at cardinal points of construction circle
+SQUARE_CIRCLE_INTERSECTIONS,Eight square-construction-circle intersections,derived_geometry,oblique_geometry,MOON-002,Exact intersections used by NJG_INC
+NJG_INC_MOONS,Twelve exact-incidence Moon circles,construction,NJG_INC,MOON-001;MOON-002;MOON-003,Source-supported nonuniform Moon placement
+MOON_GROUPS_4X3,Four cardinal Moon groups of three,construction,michell_moon_groups,MOON-001,Each cardinal Moon is grouped with its immediate clockwise and counter-clockwise oblique neighbours
+REGULAR_DODECAGON_BASELINE,Regular dodecagon baseline,auxiliary_geometry,polar_pivot_tangent_wall,,Project auxiliary with apothem 8.5
+POLAR_PIVOT_WALL,Polar-pivot outer wall,project_reconstruction,polar_pivot_tangent_wall,WALL-001;WALL-002;WALL-004;WALL-006;WALL-007;WALL-008;WALL-011,Preferred Figure 12 wall reconstruction
+SEPTENARY_METHOD_1,Michell approximate sevenfold Method 1,construction,michell_28_point_scaffold,SEVEN-001;SEVEN-002;SEVEN-009,Approximate heptagonal step from Figure 194
+RECIPROCAL_TRIANGLE_14,Michell reciprocal-triangle fourteenfold division,construction,michell_reciprocal_triangle,SEVEN-003,Primary Method-1 triangle plus reciprocal triangle on opposite square side gives 14 distinct approximate division marks
+SCAFFOLD_28,Michell approximate 28-point scaffold,construction,michell_28_point_scaffold,SEVEN-004;SEVEN-005;SEVEN-006;SEVEN-007;SEVEN-008,12 Moon centres + 8 gaps + 8 intersection positioners
+GAP_ARITHMETIC,Figure 28 circumference gap arithmetic,bookkeeping,michell_gap_arithmetic,GAP-001;GAP-002;GAP-003,Exact only within pi equals 22/7 convention
+FIG14_TEXT_ANCHORS,Five text-and-plate Figure 14 anchors,source_geometry,figure14_heptagram,STAR-002;STAR-003;STAR-004,Three Moon centres plus two square-circle junctions
+FIG14_GAP_ANCHORS,Two inferred Figure 14 gap anchors,project_inference,figure14_heptagram,STAR-005,Plate-derived inter-Moon-gap inference
+FIG14_ALIGNED_VERTICES,Seven Figure 14 aligned vertices,composite_geometry,figure14_heptagram,STAR-001;STAR-003;STAR-004;STAR-005,Five source-supported plus two inferred vertices
+FIG14_SCAFFOLD_VERTICES,Seven vertices selected from 28-point scaffold,project_candidate,figure14_heptagram,STAR-007,"Current implementation selects scaffold indices 7,11,15,19,23,27,3"
+FIG14_HEPTAGRAM_7_2,Figure 14 seven-over-two topology,source_calibrated_result,figure14_edge_topology,STAR-006,Topology selected by independent edge-tracing audit
+NJG_MICHELL_COMPOSITE,Forward integrated NJG_MICHELL construction,composite_geometry,michell_composite,,Unit-only forward composition with no Figure 12 or Figure 14 plate-calibration inputs; scaffold-derived Figure 14 star remains a project candidate
+FROZEN_FORWARD_VALIDATION,Frozen no-refit forward validation,validation_result,forward_validation,,Downstream evaluation of the frozen NJG_MICHELL composite against promoted Figure 12 and Figure 14 source-derived geometry; no geometric refitting

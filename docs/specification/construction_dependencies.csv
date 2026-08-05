@@ -1,0 +1,32 @@
+edge_id,parent_node,child_node,relation_type,evidence_status,claim_ids,implementation_reference,notes
+DEP-001,CORE_DIMENSIONS,EARTH_CIRCLE,parameterizes,stated_exact,CORE-001;CORE-004,core_geometry,Earth-circle radius follows normalized dimensions
+DEP-002,CORE_DIMENSIONS,EARTH_SQUARE,parameterizes,stated_exact,CORE-004;CORE-006,core_geometry,Earth-square side follows normalized dimensions
+DEP-003,CORE_DIMENSIONS,CONSTRUCTION_CIRCLE,parameterizes,stated_exact,CORE-003;CORE-006,core_geometry,Construction radius equals 7
+DEP-004,CORE_DIMENSIONS,CARDINAL_MOONS,parameterizes,stated_exact,CORE-001;CORE-002;CORE-003,core_geometry,Moon radius and radial centre distance
+DEP-005,EARTH_SQUARE,SQUARE_CIRCLE_INTERSECTIONS,intersects,project_derivation,MOON-002,oblique_geometry,Exact Euclidean intersection
+DEP-006,CONSTRUCTION_CIRCLE,SQUARE_CIRCLE_INTERSECTIONS,intersects,project_derivation,MOON-002,oblique_geometry,Exact Euclidean intersection
+DEP-007,CARDINAL_MOONS,NJG_INC_MOONS,extends,stated_exact,MOON-001;MOON-003,NJG_INC,Four cardinal members belong to twelve-Moon system
+DEP-008,SQUARE_CIRCLE_INTERSECTIONS,NJG_INC_MOONS,constrains,stated_exact,MOON-002,NJG_INC,Oblique Moon circumferences pass through square-circle intersections
+DEP-009,CONSTRUCTION_CIRCLE,NJG_INC_MOONS,constrains,stated_exact,MOON-002;MOON-003,NJG_INC,Moon centres lie on construction circle
+DEP-010,CORE_DIMENSIONS,REGULAR_DODECAGON_BASELINE,parameterizes,project_derivation,,polar_pivot_tangent_wall,Baseline apothem is construction radius plus Moon radius = 8.5
+DEP-011,REGULAR_DODECAGON_BASELINE,POLAR_PIVOT_WALL,constructs_from,project_inference,WALL-001;WALL-002;WALL-006,polar_pivot_tangent_wall,Four polar sides fixed; eight oblique sides pivot inward
+DEP-012,NJG_INC_MOONS,POLAR_PIVOT_WALL,tangent_constraint,project_inference,WALL-002;WALL-006;WALL-011,polar_pivot_tangent_wall,Each relevant wall side is tangent to its corresponding Moon
+DEP-013,CONSTRUCTION_CIRCLE,SEPTENARY_METHOD_1,construction_domain,stated_approximate,SEVEN-001;SEVEN-002,michell_28_point_scaffold,Method 1 produces approximate sevenfold step on the circle
+DEP-014,SEPTENARY_METHOD_1,RECIPROCAL_TRIANGLE_14,extends,stated_approximate,SEVEN-003,michell_reciprocal_triangle,Reciprocal triangle on the opposite square side extends the first approximate sevenfold construction to fourteen marks
+DEP-015,CONSTRUCTION_CIRCLE,SCAFFOLD_28,locates_on,stated_approximate,SEVEN-005,michell_28_point_scaffold,Twenty-eight scaffold points lie on construction circle
+DEP-016,SCAFFOLD_28,GAP_ARITHMETIC,role_correspondence,stated_approximate,SEVEN-006;SEVEN-007;GAP-001;GAP-002;GAP-003,michell_gap_arithmetic,Role counts correspond to 12 Moon positions and 12 gaps
+DEP-017,NJG_INC_MOONS,FIG14_TEXT_ANCHORS,selects_moon_centres,stated_approximate,STAR-002;STAR-003,figure14_heptagram,Three source-described extremities are Moon centres
+DEP-018,SQUARE_CIRCLE_INTERSECTIONS,FIG14_TEXT_ANCHORS,selects_junctions,stated_approximate,STAR-002;STAR-004,figure14_heptagram,Two source-described extremities are square-circle junctions
+DEP-019,NJG_INC_MOONS,FIG14_GAP_ANCHORS,defines_gap_bisectors,project_inference,STAR-005,figure14_heptagram,Two remaining anchors inferred as inter-Moon-gap bisectors
+DEP-020,FIG14_TEXT_ANCHORS,FIG14_ALIGNED_VERTICES,combines,project_derivation,STAR-003;STAR-004,figure14_heptagram,Five source-supported vertices
+DEP-021,FIG14_GAP_ANCHORS,FIG14_ALIGNED_VERTICES,combines,project_inference,STAR-005,figure14_heptagram,Two inferred vertices complete seven-point set
+DEP-022,SCAFFOLD_28,FIG14_SCAFFOLD_VERTICES,selects,implementation_only,STAR-007,figure14_heptagram,Current code selects seven scaffold indices; historical dependency not established
+DEP-023,FIG14_ALIGNED_VERTICES,FIG14_HEPTAGRAM_7_2,connects,project_result,STAR-006,figure14_edge_topology,Independent plate tracing establishes step-2 traversal
+DEP-024,FIG14_SCAFFOLD_VERTICES,FIG14_HEPTAGRAM_7_2,candidate_correspondence,hypothesis_to_test,STAR-007,figure14_heptagram,Tests whether the later scaffold predicts the earlier Figure 14 vertex system
+DEP-025,RECIPROCAL_TRIANGLE_14,SCAFFOLD_28,extends,stated_approximate,SEVEN-004,michell_reciprocal_triangle,Adding corresponding triangles on the remaining two square sides completes the 28-part construction
+DEP-026,NJG_INC_MOONS,MOON_GROUPS_4X3,groups_as,stated_exact,MOON-001,michell_moon_groups,The twelve-circle system is partitioned into four cardinal groups of three
+DEP-027,CORE_DIMENSIONS,NJG_MICHELL_COMPOSITE,parameterizes,implementation_only,,michell_composite,The caller supplies only the scale unit; all normalized dimensions follow from the core geometry
+DEP-028,MOON_GROUPS_4X3,NJG_MICHELL_COMPOSITE,combines,implementation_only,,michell_composite,Forward composite includes the complete four-by-three incidence-Moon system
+DEP-029,POLAR_PIVOT_WALL,NJG_MICHELL_COMPOSITE,combines,implementation_only,,michell_composite,Forward composite includes the preferred polar-pivot outer-wall reconstruction
+DEP-030,SCAFFOLD_28,NJG_MICHELL_COMPOSITE,combines,implementation_only,,michell_composite,Forward composite includes the independently generated 28-point scaffold and its Figure 14 heptagram candidate
+DEP-031,NJG_MICHELL_COMPOSITE,FROZEN_FORWARD_VALIDATION,validated_by,project_result,,forward_validation,The frozen unit-only composite is evaluated downstream against promoted source-derived geometry under the preregistered no-refitting protocol

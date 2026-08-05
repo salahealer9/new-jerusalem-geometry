@@ -78,3 +78,187 @@ def test_claim_matrix_rows_match_header() -> None:
         assert set(row) == set(
             EXPECTED_FIELDS
         )
+
+
+def test_seven_002_is_verified_by_scaffold_model() -> None:
+    rows = {
+        row["claim_id"]: row
+        for row in _rows()
+    }
+
+    claim = rows["SEVEN-002"]
+
+    assert (
+        claim["source_status"]
+        == "stated_approximate"
+    )
+
+    assert (
+        claim["implemented_model"]
+        == "michell_28_point_scaffold"
+    )
+
+    assert (
+        "0.0008191945196658335"
+        in claim["notes"]
+    )
+
+    assert (
+        "below 0.001"
+        in claim["notes"]
+    )
+
+
+def test_seven_003_is_implemented_by_reciprocal_triangle() -> None:
+    rows = {
+        row["claim_id"]: row
+        for row in _rows()
+    }
+
+    claim = rows["SEVEN-003"]
+
+    assert (
+        claim["source_status"]
+        == "stated_approximate"
+    )
+
+    assert (
+        claim["implemented_model"]
+        == "michell_reciprocal_triangle"
+    )
+
+    assert (
+        "14 distinct approximate division marks"
+        in claim["notes"]
+    )
+
+    assert (
+        "2.220e-16 rad"
+        in claim["notes"]
+    )
+
+
+def test_seven_003_is_implemented_by_reciprocal_triangle() -> None:
+    rows = {
+        row["claim_id"]: row
+        for row in _rows()
+    }
+
+    claim = rows["SEVEN-003"]
+
+    assert (
+        claim["source_status"]
+        == "stated_approximate"
+    )
+
+    assert (
+        claim["implemented_model"]
+        == "michell_reciprocal_triangle"
+    )
+
+    assert (
+        "14 distinct approximate division marks"
+        in claim["notes"]
+    )
+
+    assert (
+        "2.220e-16 rad"
+        in claim["notes"]
+    )
+
+
+def test_moon_001_is_implemented_by_four_by_three_grouping() -> None:
+    rows = {
+        row["claim_id"]: row
+        for row in _rows()
+    }
+
+    claim = rows["MOON-001"]
+
+    assert (
+        claim["source_status"]
+        == "stated_exact"
+    )
+
+    assert (
+        claim["implemented_model"]
+        == "michell_moon_groups"
+    )
+
+    assert (
+        "four cardinal groups of three"
+        in claim["notes"]
+    )
+
+    assert (
+        "partition"
+        in claim["notes"]
+    )
+
+
+def test_star_001_is_implemented_by_figure14_heptagram() -> None:
+    rows = {
+        row["claim_id"]: row
+        for row in _rows()
+    }
+
+    claim = rows["STAR-001"]
+
+    assert (
+        claim["source_status"]
+        == "stated_approximate"
+    )
+
+    assert (
+        claim["implemented_model"]
+        == "figure14_heptagram"
+    )
+
+    assert (
+        "seven-anchor"
+        in claim["notes"]
+    )
+
+    assert (
+        "zodiac/construction circle"
+        in claim["notes"]
+    )
+
+    assert (
+        "independently calibrated as {7/2}"
+        in claim["notes"]
+    )
+
+
+def test_star_002_is_implemented_by_source_anchor_roles() -> None:
+    rows = {
+        row["claim_id"]: row
+        for row in _rows()
+    }
+
+    claim = rows["STAR-002"]
+
+    assert (
+        claim["source_status"]
+        == "stated_approximate"
+    )
+
+    assert (
+        claim["implemented_model"]
+        == "figure14_heptagram"
+    )
+
+    assert (
+        "three Moon-circle centres"
+        in claim["notes"]
+    )
+
+    assert (
+        "two square-circle junctions"
+        in claim["notes"]
+    )
+
+    assert (
+        "plate-inferred inter-Moon-gap anchors"
+        in claim["notes"]
+    )

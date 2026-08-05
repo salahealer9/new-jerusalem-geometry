@@ -36,6 +36,12 @@ from .comparison_svg import (
     write_oblique_models_comparison_svg,
 )
 
+from .moon_geometry import (
+    CARDINAL_DIRECTIONS,
+    MichellMoonGroup,
+    build_michell_moon_groups,
+)
+
 from .wall_geometry import (
     OuterWall,
     WallLine,
@@ -61,12 +67,18 @@ from .wall_svg import (
 )
 
 from .septenary_geometry import (
+    MichellFourteenfoldDivision,
     MichellGapArithmetic,
     MichellSeptenaryScaffold,
+    MichellSevenfoldDivision,
+    MichellTriangleBase,
     ScaffoldRole,
     SeptenaryPoint,
     build_michell_28_point_scaffold,
+    build_michell_fourteenfold_division,
     build_michell_gap_arithmetic,
+    build_michell_sevenfold_division,
+    michell_four_triangle_division_angles,
     michell_heptagon_step_angle,
     michell_scaffold_local_offsets,
 )
@@ -105,7 +117,16 @@ from .heptagram_svg import (
     write_michell_figure14_heptagram_svg,
 )
 
+from .michell_composite import (
+    COMPOSITE_MODEL_NAME,
+    MichellComposite,
+    build_michell_composite,
+)
+
 __all__ = [
+    "COMPOSITE_MODEL_NAME",
+    "MichellComposite",
+    "build_michell_composite",
     "AxisAlignedSquare",
     "Check",
     "Circle",
@@ -137,17 +158,26 @@ __all__ = [
     "POLAR_INDICES",
     "POLAR_PIVOT_WALL_IDS",
     "build_polar_pivot_tangent_wall",
+    "CARDINAL_DIRECTIONS",
+    "MichellMoonGroup",
+    "build_michell_moon_groups",
     "wall_normal_angle_degrees",
     "verify_outer_wall",
     "michell_outer_wall_to_svg",
     "write_michell_outer_wall_svg",
+    "MichellFourteenfoldDivision",
     "MichellGapArithmetic",
     "MichellSeptenaryScaffold",
+    "MichellSevenfoldDivision",
+    "MichellTriangleBase",
     "ScaffoldRole",
     "SeptenaryPoint",
     "SeptenaryVerificationReport",
     "build_michell_28_point_scaffold",
+    "build_michell_fourteenfold_division",
     "build_michell_gap_arithmetic",
+    "build_michell_sevenfold_division",
+    "michell_four_triangle_division_angles",
     "michell_heptagon_step_angle",
     "michell_scaffold_local_offsets",
     "verify_michell_28_point_scaffold",
@@ -170,4 +200,4 @@ __all__ = [
     "write_michell_figure14_heptagram_svg",
 ]
 
-__version__ = "0.3.0"
+__version__ = "0.4.0"
