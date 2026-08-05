@@ -194,3 +194,71 @@ def test_moon_001_is_implemented_by_four_by_three_grouping() -> None:
         "partition"
         in claim["notes"]
     )
+
+
+def test_star_001_is_implemented_by_figure14_heptagram() -> None:
+    rows = {
+        row["claim_id"]: row
+        for row in _rows()
+    }
+
+    claim = rows["STAR-001"]
+
+    assert (
+        claim["source_status"]
+        == "stated_approximate"
+    )
+
+    assert (
+        claim["implemented_model"]
+        == "figure14_heptagram"
+    )
+
+    assert (
+        "seven-anchor"
+        in claim["notes"]
+    )
+
+    assert (
+        "zodiac/construction circle"
+        in claim["notes"]
+    )
+
+    assert (
+        "independently calibrated as {7/2}"
+        in claim["notes"]
+    )
+
+
+def test_star_002_is_implemented_by_source_anchor_roles() -> None:
+    rows = {
+        row["claim_id"]: row
+        for row in _rows()
+    }
+
+    claim = rows["STAR-002"]
+
+    assert (
+        claim["source_status"]
+        == "stated_approximate"
+    )
+
+    assert (
+        claim["implemented_model"]
+        == "figure14_heptagram"
+    )
+
+    assert (
+        "three Moon-circle centres"
+        in claim["notes"]
+    )
+
+    assert (
+        "two square-circle junctions"
+        in claim["notes"]
+    )
+
+    assert (
+        "plate-inferred inter-Moon-gap anchors"
+        in claim["notes"]
+    )
