@@ -107,3 +107,61 @@ def test_seven_002_is_verified_by_scaffold_model() -> None:
         "below 0.001"
         in claim["notes"]
     )
+
+
+def test_seven_003_is_implemented_by_reciprocal_triangle() -> None:
+    rows = {
+        row["claim_id"]: row
+        for row in _rows()
+    }
+
+    claim = rows["SEVEN-003"]
+
+    assert (
+        claim["source_status"]
+        == "stated_approximate"
+    )
+
+    assert (
+        claim["implemented_model"]
+        == "michell_reciprocal_triangle"
+    )
+
+    assert (
+        "14 distinct approximate division marks"
+        in claim["notes"]
+    )
+
+    assert (
+        "2.220e-16 rad"
+        in claim["notes"]
+    )
+
+
+def test_seven_003_is_implemented_by_reciprocal_triangle() -> None:
+    rows = {
+        row["claim_id"]: row
+        for row in _rows()
+    }
+
+    claim = rows["SEVEN-003"]
+
+    assert (
+        claim["source_status"]
+        == "stated_approximate"
+    )
+
+    assert (
+        claim["implemented_model"]
+        == "michell_reciprocal_triangle"
+    )
+
+    assert (
+        "14 distinct approximate division marks"
+        in claim["notes"]
+    )
+
+    assert (
+        "2.220e-16 rad"
+        in claim["notes"]
+    )

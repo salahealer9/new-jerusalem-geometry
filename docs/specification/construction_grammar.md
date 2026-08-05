@@ -165,8 +165,21 @@ CONSTRUCTION_CIRCLE
     ↓
 SEPTENARY_METHOD_1
     ↓
+RECIPROCAL_TRIANGLE_14
+    ↓
 SCAFFOLD_28
 ```
+
+The intermediate fourteenfold layer is source-stated rather than inferred.
+The first Method-1 triangle gives an approximate sevenfold division. Its
+reciprocal triangle on the opposite side of the square extends the construction
+to fourteen distinct marks. Corresponding triangles on the remaining two
+square sides complete the twenty-eight-point construction.
+
+The analytic implementation formulates the 7-, 14-, and 28-point stages
+independently. The four-triangle union reproduces the existing role-labelled
+28-point scaffold to floating-point precision, with a maximum angular mismatch
+of approximately `2.220e-16` radians.
 
 The presently calibrated Figure 14 anchor system is:
 
