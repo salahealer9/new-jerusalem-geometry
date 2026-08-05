@@ -29,3 +29,4 @@ DEP-027,CORE_DIMENSIONS,NJG_MICHELL_COMPOSITE,parameterizes,implementation_only,
 DEP-028,MOON_GROUPS_4X3,NJG_MICHELL_COMPOSITE,combines,implementation_only,,michell_composite,Forward composite includes the complete four-by-three incidence-Moon system
 DEP-029,POLAR_PIVOT_WALL,NJG_MICHELL_COMPOSITE,combines,implementation_only,,michell_composite,Forward composite includes the preferred polar-pivot outer-wall reconstruction
 DEP-030,SCAFFOLD_28,NJG_MICHELL_COMPOSITE,combines,implementation_only,,michell_composite,Forward composite includes the independently generated 28-point scaffold and its Figure 14 heptagram candidate
+DEP-031,NJG_MICHELL_COMPOSITE,FROZEN_FORWARD_VALIDATION,validated_by,project_result,,forward_validation,The frozen unit-only composite is evaluated downstream against promoted source-derived geometry under the preregistered no-refitting protocol

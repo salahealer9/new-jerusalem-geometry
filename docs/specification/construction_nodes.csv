@@ -19,3 +19,4 @@ FIG14_ALIGNED_VERTICES,Seven Figure 14 aligned vertices,composite_geometry,figur
 FIG14_SCAFFOLD_VERTICES,Seven vertices selected from 28-point scaffold,project_candidate,figure14_heptagram,STAR-007,"Current implementation selects scaffold indices 7,11,15,19,23,27,3"
 FIG14_HEPTAGRAM_7_2,Figure 14 seven-over-two topology,source_calibrated_result,figure14_edge_topology,STAR-006,Topology selected by independent edge-tracing audit
 NJG_MICHELL_COMPOSITE,Forward integrated NJG_MICHELL construction,composite_geometry,michell_composite,,Unit-only forward composition with no Figure 12 or Figure 14 plate-calibration inputs; scaffold-derived Figure 14 star remains a project candidate
+FROZEN_FORWARD_VALIDATION,Frozen no-refit forward validation,validation_result,forward_validation,,Downstream evaluation of the frozen NJG_MICHELL composite against promoted Figure 12 and Figure 14 source-derived geometry; no geometric refitting

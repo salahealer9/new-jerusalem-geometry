@@ -200,4 +200,4 @@ __all__ = [
     "write_michell_figure14_heptagram_svg",
 ]
 
-__version__ = "0.3.0"
+__version__ = "0.4.0"

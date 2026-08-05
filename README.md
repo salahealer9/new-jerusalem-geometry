@@ -40,7 +40,16 @@ algorithm in Michell's text.
 
 ## Repository status
 
-Early formalisation stage. No scientific conclusions have yet been established.
+Version `v0.4.0` is the integrated construction-grammar checkpoint.
+
+The repository now contains a deterministic `NJG_MICHELL` forward composite
+together with preregistered frozen forward validation against the promoted
+Figure 12 and Figure 14 source-derived geometry.
+
+The project distinguishes reproducible geometric audit results from claims
+about Michell's exact historical construction procedure. Project
+reconstructions and candidate correspondences remain explicitly labelled as
+such.
 
 ## Author
 
@@ -72,12 +81,88 @@ pytest
 ```
 
 The executable model now includes the normalized Earth-Moon core, competing
-oblique Moon-circle placements, Michell's approximate 28-point scaffold,
+oblique Moon-circle placements, Michell's approximate septenary construction,
+the reciprocal fourteenfold extension, the four-triangle 28-point scaffold,
 source-calibrated Figure 12 Moon and wall geometry, the preferred polar-pivot
-outer-wall reconstruction, and the source-calibrated Figure 14 heptagram.
+outer-wall reconstruction, the source-calibrated Figure 14 heptagram, and the
+integrated unit-only `NJG_MICHELL` forward composite.
 
 Competing constructions remain explicitly separated rather than being merged
-into a single model without evidential justification.
+without evidential justification. The frozen validation layer is downstream of
+the composite and supplies no fitted parameters back into the generative model.
+
+## NJG_MICHELL integrated forward reconstruction
+
+The v0.4 composite can be analysed with:
+
+```bash
+python scripts/analyze_michell_composite.py
+````
+
+`NJG_MICHELL` accepts only the scale unit as a caller-supplied geometric
+quantity. It deterministically combines:
+
+* the normalized Earth-Moon core;
+* the exact-incidence `NJG_INC` Moon system;
+* Michell's four groups of three Moon circles;
+* the preferred polar-pivot wall reconstruction;
+* the approximate Method-1 sevenfold construction;
+* the reciprocal fourteenfold construction;
+* the four-triangle 28-point scaffold;
+* a scaffold-derived `{7/2}` Figure 14 candidate.
+
+The independently formulated four-triangle construction and the role-labelled
+28-point scaffold coincide to floating-point precision, with a maximum angular
+mismatch of approximately `2.220e-16` radians.
+
+Plate calibration, digitisation, registration, and measured source landmarks
+are excluded from this generative composite.
+
+## Frozen forward validation
+
+The preregistered no-refitting validation can be reproduced with:
+
+```bash
+python scripts/analyze_forward_validation.py
+```
+
+The predictor was frozen at commit
+`43096326d5c1862fc7e33f9d90eb1df861c3b642` before the validation metrics were
+calculated.
+
+For Figure 12, the frozen polar-pivot wall gives:
+
+* wall-normal angular RMS: approximately `1.019836` degrees;
+* wall-support RMS: approximately `0.038999 u`;
+* wall-vertex RMS: approximately `0.100022 u`;
+* perimeter difference from the affine-calibrated source wall: `-0.379134%`;
+* area difference: `-0.709332%`.
+
+The global dimensions are therefore close while measurable local
+line, vertex, and side-length discrepancies remain.
+
+For Figure 14, the fixed scaffold-derived candidate gives:
+
+| Metric        | Scaffold candidate | Canonical regular |
+| ------------- | -----------------: | ----------------: |
+| Point RMS     |    `0.031023606 u` |   `0.031953847 u` |
+| Point maximum |    `0.049325681 u` |   `0.059258803 u` |
+| Angular RMS   |  `0.215205853 deg` | `0.224058789 deg` |
+
+The scaffold candidate modestly improves on the fixed canonical regular
+comparator without refitting. The difference remains within the source
+registration uncertainty and does not establish that Michell historically
+derived Figure 14 from the 28-point scaffold.
+
+This is described as **frozen forward validation with no refitting**, not as a
+statistically independent hold-out experiment, because the source plates had
+already informed earlier model-development stages.
+
+The complete report is:
+
+```text
+data/validation/njg_michell_v0_4/forward_validation_report.md
+```
 
 ## Generate the verified core diagram
 

@@ -84,6 +84,11 @@ points.
 : A proposed relationship is retained as a hypothesis rather than accepted as
 historical fact.
 
+`validated_by`
+: A frozen generative object is evaluated by a downstream validation result.
+The validation may consume promoted source-derived evidence but must not feed
+parameters back into the construction.
+
 ## Evidence statuses
 
 Where possible the dependency catalogue reuses the evidence vocabulary of
@@ -258,4 +263,30 @@ promoted to a historical dependency.
 
 Figure 12 and Figure 14 plate calibration, digitisation, registration, and
 measured source landmarks are excluded from the generative composite. They are
-reserved for downstream held-out validation.
+reserved for downstream frozen forward validation with no refitting.
+
+## Frozen forward validation
+
+The completed v0.4 validation is represented downstream of the generative
+grammar:
+
+```text
+NJG_MICHELL_COMPOSITE
+        |
+        | validated_by
+        v
+FROZEN_FORWARD_VALIDATION
+````
+
+`FROZEN_FORWARD_VALIDATION` is a project result, not a construction input.
+
+The predictor was frozen before the validation metrics were calculated. The
+validation protocol prohibits fitting translation, rotation, phase, scale,
+wall geometry, Moon geometry, or heptagram vertices to the source plates.
+
+Figure 12 and Figure 14 had already informed earlier model-development stages,
+so this is not represented as a statistically independent hold-out experiment.
+
+The Figure 14 scaffold-to-printed-heptagram correspondence remains a project
+candidate. The frozen validation does not promote that relationship to a
+historical construction dependency.

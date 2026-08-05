@@ -33,6 +33,7 @@ ALLOWED_NODE_TYPES = {
     "composite_geometry",
     "project_candidate",
     "source_calibrated_result",
+    "validation_result",
 }
 
 
@@ -55,6 +56,7 @@ ALLOWED_RELATION_TYPES = {
     "selects",
     "connects",
     "candidate_correspondence",
+    "validated_by",
 }
 
 
@@ -237,3 +239,46 @@ def test_construction_claim_references_exist() -> None:
     )
 
     assert unknown == set()
+
+def test_frozen_forward_validation_is_strictly_downstream() -> None:
+    edges = _read(
+        EDGE_PATH
+    )
+
+    incoming = [
+        edge
+        for edge in edges
+        if (
+            edge["child_node"]
+            == "FROZEN_FORWARD_VALIDATION"
+        )
+    ]
+
+    assert len(incoming) == 1
+
+    assert (
+        incoming[0]["parent_node"]
+        == "NJG_MICHELL_COMPOSITE"
+    )
+
+    assert (
+        incoming[0]["relation_type"]
+        == "validated_by"
+    )
+
+    assert (
+        incoming[0]["evidence_status"]
+        == "project_result"
+    )
+
+    outgoing = [
+        edge
+        for edge in edges
+        if (
+            edge["parent_node"]
+            == "FROZEN_FORWARD_VALIDATION"
+        )
+    ]
+
+    assert outgoing == []
+
