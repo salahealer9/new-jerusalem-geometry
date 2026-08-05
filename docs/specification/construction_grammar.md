@@ -226,3 +226,36 @@ as evidence for a geometric dependency.
 The purpose of the grammar is to make the developing `NJG_MICHELL` composite
 auditable enough that every final object can be traced back to its exact,
 approximate, inferred, or tested inputs.
+
+## Forward composite integration
+
+`NJG_MICHELL_COMPOSITE` is the executable forward integration of the audited
+construction grammar.
+
+Its caller-supplied geometric input is limited to the scale unit. The core
+dimensions, exact-incidence Moon system, four-by-three Moon grouping,
+polar-pivot wall reconstruction, approximate septenary construction, reciprocal
+fourteenfold extension, and four-triangle twenty-eight-point scaffold are then
+generated deterministically.
+
+The forward branch is therefore:
+
+CORE_DIMENSIONS
+→ NJG_INC_MOONS
+→ MOON_GROUPS_4X3
+→ POLAR_PIVOT_WALL
+
+together with:
+
+CONSTRUCTION_CIRCLE
+→ SEPTENARY_METHOD_1
+→ RECIPROCAL_TRIANGLE_14
+→ SCAFFOLD_28
+
+The seven scaffold points used for the Figure 14 heptagram remain a project
+candidate. Their correspondence with the earlier printed Figure 14 is not
+promoted to a historical dependency.
+
+Figure 12 and Figure 14 plate calibration, digitisation, registration, and
+measured source landmarks are excluded from the generative composite. They are
+reserved for downstream held-out validation.

@@ -117,7 +117,16 @@ from .heptagram_svg import (
     write_michell_figure14_heptagram_svg,
 )
 
+from .michell_composite import (
+    COMPOSITE_MODEL_NAME,
+    MichellComposite,
+    build_michell_composite,
+)
+
 __all__ = [
+    "COMPOSITE_MODEL_NAME",
+    "MichellComposite",
+    "build_michell_composite",
     "AxisAlignedSquare",
     "Check",
     "Circle",

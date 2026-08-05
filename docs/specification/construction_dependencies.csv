@@ -25,3 +25,7 @@ DEP-023,FIG14_ALIGNED_VERTICES,FIG14_HEPTAGRAM_7_2,connects,project_result,STAR-
 DEP-024,FIG14_SCAFFOLD_VERTICES,FIG14_HEPTAGRAM_7_2,candidate_correspondence,hypothesis_to_test,STAR-007,figure14_heptagram,Tests whether the later scaffold predicts the earlier Figure 14 vertex system
 DEP-025,RECIPROCAL_TRIANGLE_14,SCAFFOLD_28,extends,stated_approximate,SEVEN-004,michell_reciprocal_triangle,Adding corresponding triangles on the remaining two square sides completes the 28-part construction
 DEP-026,NJG_INC_MOONS,MOON_GROUPS_4X3,groups_as,stated_exact,MOON-001,michell_moon_groups,The twelve-circle system is partitioned into four cardinal groups of three
+DEP-027,CORE_DIMENSIONS,NJG_MICHELL_COMPOSITE,parameterizes,implementation_only,,michell_composite,The caller supplies only the scale unit; all normalized dimensions follow from the core geometry
+DEP-028,MOON_GROUPS_4X3,NJG_MICHELL_COMPOSITE,combines,implementation_only,,michell_composite,Forward composite includes the complete four-by-three incidence-Moon system
+DEP-029,POLAR_PIVOT_WALL,NJG_MICHELL_COMPOSITE,combines,implementation_only,,michell_composite,Forward composite includes the preferred polar-pivot outer-wall reconstruction
+DEP-030,SCAFFOLD_28,NJG_MICHELL_COMPOSITE,combines,implementation_only,,michell_composite,Forward composite includes the independently generated 28-point scaffold and its Figure 14 heptagram candidate
