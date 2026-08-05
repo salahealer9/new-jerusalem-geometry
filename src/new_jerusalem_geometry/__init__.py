@@ -36,6 +36,12 @@ from .comparison_svg import (
     write_oblique_models_comparison_svg,
 )
 
+from .moon_geometry import (
+    CARDINAL_DIRECTIONS,
+    MichellMoonGroup,
+    build_michell_moon_groups,
+)
+
 from .wall_geometry import (
     OuterWall,
     WallLine,
@@ -143,6 +149,9 @@ __all__ = [
     "POLAR_INDICES",
     "POLAR_PIVOT_WALL_IDS",
     "build_polar_pivot_tangent_wall",
+    "CARDINAL_DIRECTIONS",
+    "MichellMoonGroup",
+    "build_michell_moon_groups",
     "wall_normal_angle_degrees",
     "verify_outer_wall",
     "michell_outer_wall_to_svg",

@@ -6,6 +6,7 @@ CONSTRUCTION_CIRCLE,Construction circle,source_geometry,core_geometry,CORE-003;C
 CARDINAL_MOONS,Four cardinal Moon circles,source_geometry,core_geometry,CORE-001;CORE-002;CORE-003,Centres lie at cardinal points of construction circle
 SQUARE_CIRCLE_INTERSECTIONS,Eight square-construction-circle intersections,derived_geometry,oblique_geometry,MOON-002,Exact intersections used by NJG_INC
 NJG_INC_MOONS,Twelve exact-incidence Moon circles,construction,NJG_INC,MOON-001;MOON-002;MOON-003,Source-supported nonuniform Moon placement
+MOON_GROUPS_4X3,Four cardinal Moon groups of three,construction,michell_moon_groups,MOON-001,Each cardinal Moon is grouped with its immediate clockwise and counter-clockwise oblique neighbours
 REGULAR_DODECAGON_BASELINE,Regular dodecagon baseline,auxiliary_geometry,polar_pivot_tangent_wall,,Project auxiliary with apothem 8.5
 POLAR_PIVOT_WALL,Polar-pivot outer wall,project_reconstruction,polar_pivot_tangent_wall,WALL-001;WALL-002;WALL-004;WALL-006;WALL-007;WALL-008;WALL-011,Preferred Figure 12 wall reconstruction
 SEPTENARY_METHOD_1,Michell approximate sevenfold Method 1,construction,michell_28_point_scaffold,SEVEN-001;SEVEN-002;SEVEN-009,Approximate heptagonal step from Figure 194

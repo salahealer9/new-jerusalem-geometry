@@ -165,3 +165,32 @@ def test_seven_003_is_implemented_by_reciprocal_triangle() -> None:
         "2.220e-16 rad"
         in claim["notes"]
     )
+
+
+def test_moon_001_is_implemented_by_four_by_three_grouping() -> None:
+    rows = {
+        row["claim_id"]: row
+        for row in _rows()
+    }
+
+    claim = rows["MOON-001"]
+
+    assert (
+        claim["source_status"]
+        == "stated_exact"
+    )
+
+    assert (
+        claim["implemented_model"]
+        == "michell_moon_groups"
+    )
+
+    assert (
+        "four cardinal groups of three"
+        in claim["notes"]
+    )
+
+    assert (
+        "partition"
+        in claim["notes"]
+    )

@@ -40,6 +40,7 @@ ALLOWED_RELATION_TYPES = {
     "parameterizes",
     "intersects",
     "extends",
+    "groups_as",
     "constrains",
     "constructs_from",
     "tangent_constraint",

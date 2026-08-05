@@ -35,6 +35,10 @@ Michell used the same dependency historically.
 `extends`
 : A larger construction contains or extends an already constructed subset.
 
+`groups_as`
+: An existing set of geometric objects is partitioned according to a
+source-described grouping structure.
+
 `constrains`
 : One object supplies an incidence or metric condition on another.
 
