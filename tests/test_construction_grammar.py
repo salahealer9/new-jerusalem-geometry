@@ -184,3 +184,55 @@ def test_construction_dependency_graph_is_acyclic() -> None:
                 )
 
     assert visited == len(nodes)
+
+
+CLAIM_MATRIX_PATH = (
+    ROOT
+    / "docs"
+    / "sources"
+    / "geometric_claim_matrix.csv"
+)
+
+
+def _claim_ids(
+    value: str,
+) -> set[str]:
+    return {
+        item.strip()
+        for item in value.split(";")
+        if item.strip()
+    }
+
+
+def test_construction_claim_references_exist() -> None:
+    claim_rows = _read(
+        CLAIM_MATRIX_PATH
+    )
+
+    known_claims = {
+        row["claim_id"]
+        for row in claim_rows
+    }
+
+    referenced_claims: set[str] = set()
+
+    for node in _read(NODE_PATH):
+        referenced_claims.update(
+            _claim_ids(
+                node["claim_ids"]
+            )
+        )
+
+    for edge in _read(EDGE_PATH):
+        referenced_claims.update(
+            _claim_ids(
+                edge["claim_ids"]
+            )
+        )
+
+    unknown = (
+        referenced_claims
+        - known_claims
+    )
+
+    assert unknown == set()

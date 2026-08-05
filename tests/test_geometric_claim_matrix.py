@@ -78,3 +78,32 @@ def test_claim_matrix_rows_match_header() -> None:
         assert set(row) == set(
             EXPECTED_FIELDS
         )
+
+
+def test_seven_002_is_verified_by_scaffold_model() -> None:
+    rows = {
+        row["claim_id"]: row
+        for row in _rows()
+    }
+
+    claim = rows["SEVEN-002"]
+
+    assert (
+        claim["source_status"]
+        == "stated_approximate"
+    )
+
+    assert (
+        claim["implemented_model"]
+        == "michell_28_point_scaffold"
+    )
+
+    assert (
+        "0.0008191945196658335"
+        in claim["notes"]
+    )
+
+    assert (
+        "below 0.001"
+        in claim["notes"]
+    )
