@@ -80,11 +80,16 @@ def _scaffold_marker(
     """Return one deterministic role-coded scaffold marker."""
 
     role_name = role.value
+    object_id = (
+        f"scaffold-point-{index:02d}"
+    )
 
     if role is ScaffoldRole.MOON_CENTRE:
         return (
             '      <circle '
+            f'id="{object_id}" '
             'class="scaffold-marker scaffold-moon-centre" '
+            f'data-provenance-id="{object_id}" '
             f'data-scaffold-index="{index}" '
             f'data-role="{escape(role_name)}" '
             f'cx="{_format_number(x)}" '
@@ -97,7 +102,9 @@ def _scaffold_marker(
 
         return (
             '      <rect '
+            f'id="{object_id}" '
             'class="scaffold-marker scaffold-gap" '
+            f'data-provenance-id="{object_id}" '
             f'data-scaffold-index="{index}" '
             f'data-role="{escape(role_name)}" '
             f'x="{_format_number(x - half)}" '
@@ -123,7 +130,9 @@ def _scaffold_marker(
 
     return (
         '      <polygon '
+        f'id="{object_id}" '
         'class="scaffold-marker scaffold-intersection" '
+        f'data-provenance-id="{object_id}" '
         f'data-scaffold-index="{index}" '
         f'data-role="{escape(role_name)}" '
         f'points="{points}" />'
@@ -264,7 +273,8 @@ def michell_composite_to_svg(
         (
             '  <g id="njg-michell-composite" '
             'transform="scale(1,-1)" '
-            'data-model="NJG_MICHELL">'
+            'data-model="NJG_MICHELL" '
+            'data-provenance-id="njg-michell-composite">'
         ),
         (
             '    <g id="wall" '
@@ -274,6 +284,7 @@ def michell_composite_to_svg(
             '      <polygon '
             'id="polar-pivot-wall" '
             'class="geometry wall" '
+            'data-provenance-id="polar-pivot-wall" '
             f'points="{wall_points}" />'
         ),
         "    </g>",
@@ -286,6 +297,7 @@ def michell_composite_to_svg(
             '      <circle '
             'id="construction-circle" '
             'class="geometry construction-circle" '
+            'data-provenance-id="construction-circle" '
             f'cx="{_format_number(core.construction_circle.centre.x)}" '
             f'cy="{_format_number(core.construction_circle.centre.y)}" '
             f'r="{_format_number(core.construction_circle.radius)}" />'
@@ -300,6 +312,7 @@ def michell_composite_to_svg(
             '      <rect '
             'id="earth-square" '
             'class="geometry earth-square" '
+            'data-provenance-id="earth-square" '
             f'x="{_format_number(-square_half_side)}" '
             f'y="{_format_number(-square_half_side)}" '
             f'width="{_format_number(core.earth_square.side)}" '
@@ -315,6 +328,7 @@ def michell_composite_to_svg(
             '      <circle '
             'id="earth-circle" '
             'class="geometry earth-circle" '
+            'data-provenance-id="earth-circle" '
             f'cx="{_format_number(core.earth_circle.centre.x)}" '
             f'cy="{_format_number(core.earth_circle.centre.y)}" '
             f'r="{_format_number(core.earth_circle.radius)}" />'
@@ -333,6 +347,7 @@ def michell_composite_to_svg(
                 '      <circle '
                 f'id="{escape(moon_name)}" '
                 'class="geometry moon-circle" '
+                f'data-provenance-id="{escape(moon_name)}" '
                 f'data-moon="{escape(moon_name)}" '
                 f'cx="{_format_number(moon.centre.x)}" '
                 f'cy="{_format_number(moon.centre.y)}" '
@@ -394,6 +409,7 @@ def michell_composite_to_svg(
                 '      <line '
                 f'id="heptagram-edge-{edge_index:02d}" '
                 'class="geometry heptagram-edge" '
+                f'data-provenance-id="heptagram-edge-{edge_index:02d}" '
                 f'data-start-index="{start_index}" '
                 f'data-end-index="{end_index}" '
                 f'x1="{_format_number(start.x)}" '
@@ -411,6 +427,7 @@ def michell_composite_to_svg(
                 '      <circle '
                 f'id="heptagram-vertex-{vertex_index:02d}" '
                 'class="heptagram-vertex" '
+                f'data-provenance-id="heptagram-vertex-{vertex_index:02d}" '
                 f'data-vertex-index="{vertex_index}" '
                 f'cx="{_format_number(vertex.x)}" '
                 f'cy="{_format_number(vertex.y)}" '

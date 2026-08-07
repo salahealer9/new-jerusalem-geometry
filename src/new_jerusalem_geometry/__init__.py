@@ -128,12 +128,31 @@ from .michell_composite_svg import (
     write_michell_composite_svg,
 )
 
+from .michell_provenance import (
+    GrammarSnapshot,
+    MichellCompositeProvenance,
+    PROVENANCE_SCHEMA_NAME,
+    PROVENANCE_SCHEMA_VERSION,
+    ProvenanceObject,
+    build_michell_composite_provenance,
+    michell_composite_provenance_to_json,
+    write_michell_composite_provenance_json,
+)
+
 __all__ = [
     "COMPOSITE_MODEL_NAME",
     "MichellComposite",
     "build_michell_composite",
     "michell_composite_to_svg",
     "write_michell_composite_svg",
+    "GrammarSnapshot",
+    "MichellCompositeProvenance",
+    "PROVENANCE_SCHEMA_NAME",
+    "PROVENANCE_SCHEMA_VERSION",
+    "ProvenanceObject",
+    "build_michell_composite_provenance",
+    "michell_composite_provenance_to_json",
+    "write_michell_composite_provenance_json",
     "AxisAlignedSquare",
     "Check",
     "Circle",

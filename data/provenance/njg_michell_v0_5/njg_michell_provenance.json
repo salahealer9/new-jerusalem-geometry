@@ -1,0 +1,2734 @@
+{
+  "grammar_snapshot": {
+    "claims": [
+      {
+        "book": "City of Revelation",
+        "claim": "Earth radius is 3960 miles",
+        "claim_id": "CORE-001",
+        "figure": "11",
+        "implemented_model": "core_geometry",
+        "mathematical_implication": "Earth radius normalizes to 5.5 after division by 720",
+        "notes": "Also repeated in How the World Is Made",
+        "pdf_page": "63",
+        "printed_page": "61",
+        "source_status": "stated_exact"
+      },
+      {
+        "book": "City of Revelation",
+        "claim": "Moon radius is 1080 miles",
+        "claim_id": "CORE-002",
+        "figure": "11",
+        "implemented_model": "core_geometry",
+        "mathematical_implication": "Moon radius normalizes to 1.5 after division by 720",
+        "notes": "Also repeated in How the World Is Made",
+        "pdf_page": "63",
+        "printed_page": "61",
+        "source_status": "stated_exact"
+      },
+      {
+        "book": "City of Revelation",
+        "claim": "Combined Earth and Moon radii equal 5040 miles",
+        "claim_id": "CORE-003",
+        "figure": "11",
+        "implemented_model": "core_geometry",
+        "mathematical_implication": "Construction-circle radius normalizes to 7",
+        "notes": "",
+        "pdf_page": "63",
+        "printed_page": "61",
+        "source_status": "stated_exact"
+      },
+      {
+        "book": "City of Revelation",
+        "claim": "Earth diameter is 7920 miles",
+        "claim_id": "CORE-004",
+        "figure": "11",
+        "implemented_model": "core_geometry",
+        "mathematical_implication": "Earth-square side normalizes to 11",
+        "notes": "",
+        "pdf_page": "63",
+        "printed_page": "61",
+        "source_status": "stated_exact"
+      },
+      {
+        "book": "City of Revelation",
+        "claim": "Square perimeter and construction-circle circumference are both 31680 under pi equals 22 over 7",
+        "claim_id": "CORE-005",
+        "figure": "11",
+        "implemented_model": "verification",
+        "mathematical_implication": "Normalized nominal perimeter is 44",
+        "notes": "Not exact under Euclidean pi",
+        "pdf_page": "63",
+        "printed_page": "61",
+        "source_status": "conventional_exact"
+      },
+      {
+        "book": "How the World Is Made",
+        "claim": "Normalized dimensions are Earth diameter 11 Moon diameter 3 construction radius 7 and perimeter 44",
+        "claim_id": "CORE-006",
+        "figure": "19",
+        "implemented_model": "core_geometry",
+        "mathematical_implication": "Defines the scale-free core model",
+        "notes": "",
+        "pdf_page": "43",
+        "printed_page": "25",
+        "source_status": "stated_exact"
+      },
+      {
+        "book": "City of Revelation",
+        "claim": "Twelve Moon circles are arranged in four groups of three",
+        "claim_id": "MOON-001",
+        "figure": "12",
+        "implemented_model": "michell_moon_groups",
+        "mathematical_implication": "Three Moon circles per cardinal side",
+        "notes": "Implemented as four cardinal groups of three: each group contains one cardinal Moon and its two adjacent oblique Moons. The four groups partition the complete twelve-Moon system exactly once.",
+        "pdf_page": "65",
+        "printed_page": "63",
+        "source_status": "stated_exact"
+      },
+      {
+        "book": "City of Revelation",
+        "claim": "The two outer circles in each group touch the square-circle intersection points",
+        "claim_id": "MOON-002",
+        "figure": "12",
+        "implemented_model": "NJG_INC",
+        "mathematical_implication": "Supports exact-incidence oblique placement",
+        "notes": "",
+        "pdf_page": "65",
+        "printed_page": "63",
+        "source_status": "stated_exact"
+      },
+      {
+        "book": "City of Revelation",
+        "claim": "The twelve Moon circles are not evenly spaced",
+        "claim_id": "MOON-003",
+        "figure": "12",
+        "implemented_model": "NJG_INC",
+        "mathematical_implication": "Rules out a regular twelvefold Moon-centre arrangement",
+        "notes": "",
+        "pdf_page": "64-65",
+        "printed_page": "62-63",
+        "source_status": "stated_exact"
+      },
+      {
+        "book": "City of Revelation",
+        "claim": "The enclosing twelve-sided figure is not quite a regular dodecagon",
+        "claim_id": "WALL-001",
+        "figure": "12",
+        "implemented_model": "polar_pivot_tangent_wall",
+        "mathematical_implication": "Outer wall must be modelled as nonregular",
+        "notes": "Figure 12 source calibration confirms a nonregular wall; polar-pivot tangent is the current preferred reconstruction",
+        "pdf_page": "64-65",
+        "printed_page": "62-63",
+        "source_status": "stated_exact"
+      },
+      {
+        "book": "City of Revelation",
+        "claim": "Four pairs of wall sides opposite square corners are drawn inward to touch the Moon circles",
+        "claim_id": "WALL-002",
+        "figure": "12",
+        "implemented_model": "polar_pivot_tangent_wall",
+        "mathematical_implication": "Defines tangent adjustment of eight wall sides",
+        "notes": "Implemented as eight pivoted oblique tangent sides while retaining four polar sides; pivot rule remains a project reconstruction",
+        "pdf_page": "65",
+        "printed_page": "63",
+        "source_status": "stated_exact"
+      },
+      {
+        "book": "How the World Is Made",
+        "claim": "Exact septenary division is impossible by the shown construction",
+        "claim_id": "SEVEN-001",
+        "figure": "194",
+        "implemented_model": "NJG_MICHELL",
+        "mathematical_implication": "Sevenfold layer must be treated as approximate",
+        "notes": "",
+        "pdf_page": "239",
+        "printed_page": "221",
+        "source_status": "stated_exact"
+      },
+      {
+        "book": "How the World Is Made",
+        "claim": "The first septenary approximation is accurate to better than one part in one thousand",
+        "claim_id": "SEVEN-002",
+        "figure": "194",
+        "implemented_model": "michell_28_point_scaffold",
+        "mathematical_implication": "Provides a quantitative approximation claim",
+        "notes": "Verified computationally: Method 1 gives alpha = 51.470701432440 degrees versus 360/7 = 51.428571428571 degrees; relative angular error = 0.0008191945196658335 (0.081919452 percent), below 0.001",
+        "pdf_page": "239",
+        "printed_page": "221",
+        "source_status": "stated_approximate"
+      },
+      {
+        "book": "How the World Is Made",
+        "claim": "The reciprocal triangle gives fourteen divisions",
+        "claim_id": "SEVEN-003",
+        "figure": "194",
+        "implemented_model": "michell_reciprocal_triangle",
+        "mathematical_implication": "Fourteenfold layer derives from approximate septenary geometry",
+        "notes": "Implemented from Figure 194 Method 1: the south-side primary triangle and north-side reciprocal triangle generate 14 distinct approximate division marks. Extending the same construction to all four square sides reproduces the existing 28-point scaffold with maximum angular mismatch 2.220e-16 rad.",
+        "pdf_page": "239",
+        "printed_page": "221",
+        "source_status": "stated_approximate"
+      },
+      {
+        "book": "How the World Is Made",
+        "claim": "Four triangles procure the twenty-eight-part division",
+        "claim_id": "SEVEN-004",
+        "figure": "194",
+        "implemented_model": "NJG_MICHELL",
+        "mathematical_implication": "Twenty-eightfold layer is approximate rather than regular",
+        "notes": "",
+        "pdf_page": "239",
+        "printed_page": "221",
+        "source_status": "stated_approximate"
+      },
+      {
+        "book": "City of Revelation",
+        "claim": "Area of the complete figure is stated as 120 million square feet",
+        "claim_id": "WALL-004",
+        "figure": "12",
+        "implemented_model": "polar_pivot_tangent_wall",
+        "mathematical_implication": "Provides an area target for candidate wall reconstructions",
+        "notes": "Polar-pivot reconstruction gives approximately 120002599.573 square feet",
+        "pdf_page": "65",
+        "printed_page": "63",
+        "source_status": "stated_approximate"
+      },
+      {
+        "book": "How the World Is Made",
+        "claim": "Twenty-eight points form the framework for positioning the twelve lunar circles",
+        "claim_id": "SEVEN-005",
+        "figure": "27",
+        "implemented_model": "michell_28_point_scaffold",
+        "mathematical_implication": "Defines the source septenary scaffold",
+        "notes": "",
+        "pdf_page": "50",
+        "printed_page": "32",
+        "source_status": "stated_approximate"
+      },
+      {
+        "book": "How the World Is Made",
+        "claim": "Twelve of the twenty-eight points indicate lunar-circle centres",
+        "claim_id": "SEVEN-006",
+        "figure": "27",
+        "implemented_model": "michell_28_point_scaffold",
+        "mathematical_implication": "Defines twelve Moon-centre roles",
+        "notes": "",
+        "pdf_page": "50",
+        "printed_page": "32",
+        "source_status": "stated_approximate"
+      },
+      {
+        "book": "How the World Is Made",
+        "claim": "Eight points fit between pairs of lunar circles",
+        "claim_id": "SEVEN-007",
+        "figure": "27",
+        "implemented_model": "michell_28_point_scaffold",
+        "mathematical_implication": "Defines eight inter-Moon-gap roles",
+        "notes": "",
+        "pdf_page": "50",
+        "printed_page": "32",
+        "source_status": "stated_approximate"
+      },
+      {
+        "book": "How the World Is Made",
+        "claim": "Eight points position circles that pass through square-circle intersections",
+        "claim_id": "SEVEN-008",
+        "figure": "27",
+        "implemented_model": "michell_28_point_scaffold",
+        "mathematical_implication": "Defines eight intersection-positioner roles",
+        "notes": "",
+        "pdf_page": "50",
+        "printed_page": "32",
+        "source_status": "stated_approximate"
+      },
+      {
+        "book": "Present project",
+        "claim": "The Method 1 heptagonal step equals approximately 51.470701432440 degrees",
+        "claim_id": "SEVEN-009",
+        "figure": "",
+        "implemented_model": "michell_28_point_scaffold",
+        "mathematical_implication": "Analytic result derived from Figure 194",
+        "notes": "Relative angular error is approximately 0.081919 percent",
+        "pdf_page": "",
+        "printed_page": "",
+        "source_status": "project_derivation"
+      },
+      {
+        "book": "City of Revelation",
+        "claim": "A seven-pointed star is placed within the zodiac circle",
+        "claim_id": "STAR-001",
+        "figure": "14",
+        "implemented_model": "figure14_heptagram",
+        "mathematical_implication": "Defines the next interior overlay",
+        "notes": "Implemented by the seven-anchor Figure 14 heptagram system. All seven anchors lie on the zodiac/construction circle; the printed edge topology is independently calibrated as {7/2}.",
+        "pdf_page": "68",
+        "printed_page": "66",
+        "source_status": "stated_approximate"
+      },
+      {
+        "book": "City of Revelation",
+        "claim": "Star extremities accord with three circle centres and two square-circle junctions",
+        "claim_id": "STAR-002",
+        "figure": "14",
+        "implemented_model": "figure14_heptagram",
+        "mathematical_implication": "Provides alignment constraints for heptagram fitting",
+        "notes": "Implemented and verified as five source-text-and-plate anchors: three Moon-circle centres and two square-circle junctions. The remaining two extremities are separately classified as plate-inferred inter-Moon-gap anchors.",
+        "pdf_page": "68",
+        "printed_page": "66",
+        "source_status": "stated_approximate"
+      },
+      {
+        "book": "City of Revelation",
+        "claim": "Figure 14 contains three star extremities at Moon-circle centres",
+        "claim_id": "STAR-003",
+        "figure": "14",
+        "implemented_model": "figure14_heptagram",
+        "mathematical_implication": "Defines three endpoint roles",
+        "notes": "Exact identities resolved from the printed plate",
+        "pdf_page": "69",
+        "printed_page": "67",
+        "source_status": "stated_approximate"
+      },
+      {
+        "book": "City of Revelation",
+        "claim": "Figure 14 contains two star extremities at square-circle junctions",
+        "claim_id": "STAR-004",
+        "figure": "14",
+        "implemented_model": "figure14_heptagram",
+        "mathematical_implication": "Defines two endpoint roles",
+        "notes": "Upper-left and upper-right junctions",
+        "pdf_page": "69",
+        "printed_page": "67",
+        "source_status": "stated_approximate"
+      },
+      {
+        "book": "Present project",
+        "claim": "The remaining two Figure 14 extremities occupy inter-Moon gaps on the zodiac circle",
+        "claim_id": "STAR-005",
+        "figure": "",
+        "implemented_model": "figure14_heptagram",
+        "mathematical_implication": "Completes the seven-anchor set",
+        "notes": "Inferred from the printed plate and later 28-point scaffold",
+        "pdf_page": "",
+        "printed_page": "",
+        "source_status": "project_inference"
+      },
+      {
+        "book": "Present project",
+        "claim": "The Figure 14 printed line topology is consistent with the heptagram seven over two",
+        "claim_id": "STAR-006",
+        "figure": "",
+        "implemented_model": "figure14_edge_topology",
+        "mathematical_implication": "Defines the source-supported star edge traversal",
+        "notes": "Three independent near-endpoint trace passes; 21 of 21 endpoint-pass wins; angular RMS 1.248033670 degrees",
+        "pdf_page": "",
+        "printed_page": "",
+        "source_status": "project_result"
+      },
+      {
+        "book": "Present project",
+        "claim": "The regular and Michell-scaffold candidates each fit the Figure 14 anchors within 0.05 normalized units",
+        "claim_id": "STAR-007",
+        "figure": "",
+        "implemented_model": "figure14_heptagram",
+        "mathematical_implication": "Quantifies the near-coincidence of candidate constructions",
+        "notes": "Neither candidate strictly dominates",
+        "pdf_page": "",
+        "printed_page": "",
+        "source_status": "project_result"
+      },
+      {
+        "book": "How the World Is Made",
+        "claim": "The dodecagon is regular at its four polar sides while the other eight sides are slightly shorter",
+        "claim_id": "WALL-006",
+        "figure": "30",
+        "implemented_model": "polar_pivot_tangent_wall",
+        "mathematical_implication": "Supports four fixed polar sides and a distinct eight-side oblique class",
+        "notes": "Michell reports Ian Sommerville's analysis",
+        "pdf_page": "52",
+        "printed_page": "34",
+        "source_status": "stated_approximate"
+      },
+      {
+        "book": "How the World Is Made",
+        "claim": "The four longer dodecagon sides are approximately 3280 feet and the eight shorter sides approximately 3270 feet",
+        "claim_id": "WALL-007",
+        "figure": "30",
+        "implemented_model": "polar_pivot_tangent_wall",
+        "mathematical_implication": "Provides separate numerical targets for the polar and oblique wall-side classes",
+        "notes": "Polar-pivot values are approximately 3279.698115 and 3271.120651 feet",
+        "pdf_page": "52",
+        "printed_page": "34",
+        "source_status": "stated_approximate"
+      },
+      {
+        "book": "How the World Is Made",
+        "claim": "The irregular dodecagon perimeter is virtually 36000 feet in the old English foot",
+        "claim_id": "WALL-008",
+        "figure": "30",
+        "implemented_model": "polar_pivot_tangent_wall",
+        "mathematical_implication": "Provides a perimeter target under the stated 12 to 11 old-English-foot conversion",
+        "notes": "Polar-pivot reconstruction gives approximately 36013.778 old English feet",
+        "pdf_page": "52",
+        "printed_page": "34",
+        "source_status": "stated_approximate"
+      },
+      {
+        "book": "Present project",
+        "claim": "The exact NJG_INC polar-pivot wall reproduces the later Sommerville wall dimensions within approximately 0.04 percent",
+        "claim_id": "WALL-011",
+        "figure": "12/30 comparison",
+        "implemented_model": "polar_pivot_tangent_wall",
+        "mathematical_implication": "Provides an independent numerical validation channel in addition to Figure 12 plate fitting",
+        "notes": "Errors: polar side -0.009204 percent; oblique side +0.034271 percent; area +0.002166 percent; old-English perimeter +0.038272 percent",
+        "pdf_page": "",
+        "printed_page": "",
+        "source_status": "project_result"
+      }
+    ],
+    "dependencies": [
+      {
+        "child_node": "EARTH_CIRCLE",
+        "claim_ids": "CORE-001;CORE-004",
+        "edge_id": "DEP-001",
+        "evidence_status": "stated_exact",
+        "implementation_reference": "core_geometry",
+        "notes": "Earth-circle radius follows normalized dimensions",
+        "parent_node": "CORE_DIMENSIONS",
+        "relation_type": "parameterizes"
+      },
+      {
+        "child_node": "EARTH_SQUARE",
+        "claim_ids": "CORE-004;CORE-006",
+        "edge_id": "DEP-002",
+        "evidence_status": "stated_exact",
+        "implementation_reference": "core_geometry",
+        "notes": "Earth-square side follows normalized dimensions",
+        "parent_node": "CORE_DIMENSIONS",
+        "relation_type": "parameterizes"
+      },
+      {
+        "child_node": "CONSTRUCTION_CIRCLE",
+        "claim_ids": "CORE-003;CORE-006",
+        "edge_id": "DEP-003",
+        "evidence_status": "stated_exact",
+        "implementation_reference": "core_geometry",
+        "notes": "Construction radius equals 7",
+        "parent_node": "CORE_DIMENSIONS",
+        "relation_type": "parameterizes"
+      },
+      {
+        "child_node": "CARDINAL_MOONS",
+        "claim_ids": "CORE-001;CORE-002;CORE-003",
+        "edge_id": "DEP-004",
+        "evidence_status": "stated_exact",
+        "implementation_reference": "core_geometry",
+        "notes": "Moon radius and radial centre distance",
+        "parent_node": "CORE_DIMENSIONS",
+        "relation_type": "parameterizes"
+      },
+      {
+        "child_node": "SQUARE_CIRCLE_INTERSECTIONS",
+        "claim_ids": "MOON-002",
+        "edge_id": "DEP-005",
+        "evidence_status": "project_derivation",
+        "implementation_reference": "oblique_geometry",
+        "notes": "Exact Euclidean intersection",
+        "parent_node": "EARTH_SQUARE",
+        "relation_type": "intersects"
+      },
+      {
+        "child_node": "SQUARE_CIRCLE_INTERSECTIONS",
+        "claim_ids": "MOON-002",
+        "edge_id": "DEP-006",
+        "evidence_status": "project_derivation",
+        "implementation_reference": "oblique_geometry",
+        "notes": "Exact Euclidean intersection",
+        "parent_node": "CONSTRUCTION_CIRCLE",
+        "relation_type": "intersects"
+      },
+      {
+        "child_node": "NJG_INC_MOONS",
+        "claim_ids": "MOON-001;MOON-003",
+        "edge_id": "DEP-007",
+        "evidence_status": "stated_exact",
+        "implementation_reference": "NJG_INC",
+        "notes": "Four cardinal members belong to twelve-Moon system",
+        "parent_node": "CARDINAL_MOONS",
+        "relation_type": "extends"
+      },
+      {
+        "child_node": "NJG_INC_MOONS",
+        "claim_ids": "MOON-002",
+        "edge_id": "DEP-008",
+        "evidence_status": "stated_exact",
+        "implementation_reference": "NJG_INC",
+        "notes": "Oblique Moon circumferences pass through square-circle intersections",
+        "parent_node": "SQUARE_CIRCLE_INTERSECTIONS",
+        "relation_type": "constrains"
+      },
+      {
+        "child_node": "NJG_INC_MOONS",
+        "claim_ids": "MOON-002;MOON-003",
+        "edge_id": "DEP-009",
+        "evidence_status": "stated_exact",
+        "implementation_reference": "NJG_INC",
+        "notes": "Moon centres lie on construction circle",
+        "parent_node": "CONSTRUCTION_CIRCLE",
+        "relation_type": "constrains"
+      },
+      {
+        "child_node": "REGULAR_DODECAGON_BASELINE",
+        "claim_ids": "",
+        "edge_id": "DEP-010",
+        "evidence_status": "project_derivation",
+        "implementation_reference": "polar_pivot_tangent_wall",
+        "notes": "Baseline apothem is construction radius plus Moon radius = 8.5",
+        "parent_node": "CORE_DIMENSIONS",
+        "relation_type": "parameterizes"
+      },
+      {
+        "child_node": "POLAR_PIVOT_WALL",
+        "claim_ids": "WALL-001;WALL-002;WALL-006",
+        "edge_id": "DEP-011",
+        "evidence_status": "project_inference",
+        "implementation_reference": "polar_pivot_tangent_wall",
+        "notes": "Four polar sides fixed; eight oblique sides pivot inward",
+        "parent_node": "REGULAR_DODECAGON_BASELINE",
+        "relation_type": "constructs_from"
+      },
+      {
+        "child_node": "POLAR_PIVOT_WALL",
+        "claim_ids": "WALL-002;WALL-006;WALL-011",
+        "edge_id": "DEP-012",
+        "evidence_status": "project_inference",
+        "implementation_reference": "polar_pivot_tangent_wall",
+        "notes": "Each relevant wall side is tangent to its corresponding Moon",
+        "parent_node": "NJG_INC_MOONS",
+        "relation_type": "tangent_constraint"
+      },
+      {
+        "child_node": "SEPTENARY_METHOD_1",
+        "claim_ids": "SEVEN-001;SEVEN-002",
+        "edge_id": "DEP-013",
+        "evidence_status": "stated_approximate",
+        "implementation_reference": "michell_28_point_scaffold",
+        "notes": "Method 1 produces approximate sevenfold step on the circle",
+        "parent_node": "CONSTRUCTION_CIRCLE",
+        "relation_type": "construction_domain"
+      },
+      {
+        "child_node": "RECIPROCAL_TRIANGLE_14",
+        "claim_ids": "SEVEN-003",
+        "edge_id": "DEP-014",
+        "evidence_status": "stated_approximate",
+        "implementation_reference": "michell_reciprocal_triangle",
+        "notes": "Reciprocal triangle on the opposite square side extends the first approximate sevenfold construction to fourteen marks",
+        "parent_node": "SEPTENARY_METHOD_1",
+        "relation_type": "extends"
+      },
+      {
+        "child_node": "SCAFFOLD_28",
+        "claim_ids": "SEVEN-005",
+        "edge_id": "DEP-015",
+        "evidence_status": "stated_approximate",
+        "implementation_reference": "michell_28_point_scaffold",
+        "notes": "Twenty-eight scaffold points lie on construction circle",
+        "parent_node": "CONSTRUCTION_CIRCLE",
+        "relation_type": "locates_on"
+      },
+      {
+        "child_node": "FIG14_TEXT_ANCHORS",
+        "claim_ids": "STAR-002;STAR-003",
+        "edge_id": "DEP-017",
+        "evidence_status": "stated_approximate",
+        "implementation_reference": "figure14_heptagram",
+        "notes": "Three source-described extremities are Moon centres",
+        "parent_node": "NJG_INC_MOONS",
+        "relation_type": "selects_moon_centres"
+      },
+      {
+        "child_node": "FIG14_TEXT_ANCHORS",
+        "claim_ids": "STAR-002;STAR-004",
+        "edge_id": "DEP-018",
+        "evidence_status": "stated_approximate",
+        "implementation_reference": "figure14_heptagram",
+        "notes": "Two source-described extremities are square-circle junctions",
+        "parent_node": "SQUARE_CIRCLE_INTERSECTIONS",
+        "relation_type": "selects_junctions"
+      },
+      {
+        "child_node": "FIG14_GAP_ANCHORS",
+        "claim_ids": "STAR-005",
+        "edge_id": "DEP-019",
+        "evidence_status": "project_inference",
+        "implementation_reference": "figure14_heptagram",
+        "notes": "Two remaining anchors inferred as inter-Moon-gap bisectors",
+        "parent_node": "NJG_INC_MOONS",
+        "relation_type": "defines_gap_bisectors"
+      },
+      {
+        "child_node": "FIG14_ALIGNED_VERTICES",
+        "claim_ids": "STAR-003;STAR-004",
+        "edge_id": "DEP-020",
+        "evidence_status": "project_derivation",
+        "implementation_reference": "figure14_heptagram",
+        "notes": "Five source-supported vertices",
+        "parent_node": "FIG14_TEXT_ANCHORS",
+        "relation_type": "combines"
+      },
+      {
+        "child_node": "FIG14_ALIGNED_VERTICES",
+        "claim_ids": "STAR-005",
+        "edge_id": "DEP-021",
+        "evidence_status": "project_inference",
+        "implementation_reference": "figure14_heptagram",
+        "notes": "Two inferred vertices complete seven-point set",
+        "parent_node": "FIG14_GAP_ANCHORS",
+        "relation_type": "combines"
+      },
+      {
+        "child_node": "FIG14_SCAFFOLD_VERTICES",
+        "claim_ids": "STAR-007",
+        "edge_id": "DEP-022",
+        "evidence_status": "implementation_only",
+        "implementation_reference": "figure14_heptagram",
+        "notes": "Current code selects seven scaffold indices; historical dependency not established",
+        "parent_node": "SCAFFOLD_28",
+        "relation_type": "selects"
+      },
+      {
+        "child_node": "FIG14_HEPTAGRAM_7_2",
+        "claim_ids": "STAR-006",
+        "edge_id": "DEP-023",
+        "evidence_status": "project_result",
+        "implementation_reference": "figure14_edge_topology",
+        "notes": "Independent plate tracing establishes step-2 traversal",
+        "parent_node": "FIG14_ALIGNED_VERTICES",
+        "relation_type": "connects"
+      },
+      {
+        "child_node": "FIG14_HEPTAGRAM_7_2",
+        "claim_ids": "STAR-007",
+        "edge_id": "DEP-024",
+        "evidence_status": "hypothesis_to_test",
+        "implementation_reference": "figure14_heptagram",
+        "notes": "Tests whether the later scaffold predicts the earlier Figure 14 vertex system",
+        "parent_node": "FIG14_SCAFFOLD_VERTICES",
+        "relation_type": "candidate_correspondence"
+      },
+      {
+        "child_node": "SCAFFOLD_28",
+        "claim_ids": "SEVEN-004",
+        "edge_id": "DEP-025",
+        "evidence_status": "stated_approximate",
+        "implementation_reference": "michell_reciprocal_triangle",
+        "notes": "Adding corresponding triangles on the remaining two square sides completes the 28-part construction",
+        "parent_node": "RECIPROCAL_TRIANGLE_14",
+        "relation_type": "extends"
+      },
+      {
+        "child_node": "MOON_GROUPS_4X3",
+        "claim_ids": "MOON-001",
+        "edge_id": "DEP-026",
+        "evidence_status": "stated_exact",
+        "implementation_reference": "michell_moon_groups",
+        "notes": "The twelve-circle system is partitioned into four cardinal groups of three",
+        "parent_node": "NJG_INC_MOONS",
+        "relation_type": "groups_as"
+      },
+      {
+        "child_node": "NJG_MICHELL_COMPOSITE",
+        "claim_ids": "",
+        "edge_id": "DEP-027",
+        "evidence_status": "implementation_only",
+        "implementation_reference": "michell_composite",
+        "notes": "The caller supplies only the scale unit; all normalized dimensions follow from the core geometry",
+        "parent_node": "CORE_DIMENSIONS",
+        "relation_type": "parameterizes"
+      },
+      {
+        "child_node": "NJG_MICHELL_COMPOSITE",
+        "claim_ids": "",
+        "edge_id": "DEP-028",
+        "evidence_status": "implementation_only",
+        "implementation_reference": "michell_composite",
+        "notes": "Forward composite includes the complete four-by-three incidence-Moon system",
+        "parent_node": "MOON_GROUPS_4X3",
+        "relation_type": "combines"
+      },
+      {
+        "child_node": "NJG_MICHELL_COMPOSITE",
+        "claim_ids": "",
+        "edge_id": "DEP-029",
+        "evidence_status": "implementation_only",
+        "implementation_reference": "michell_composite",
+        "notes": "Forward composite includes the preferred polar-pivot outer-wall reconstruction",
+        "parent_node": "POLAR_PIVOT_WALL",
+        "relation_type": "combines"
+      },
+      {
+        "child_node": "NJG_MICHELL_COMPOSITE",
+        "claim_ids": "",
+        "edge_id": "DEP-030",
+        "evidence_status": "implementation_only",
+        "implementation_reference": "michell_composite",
+        "notes": "Forward composite includes the independently generated 28-point scaffold and its Figure 14 heptagram candidate",
+        "parent_node": "SCAFFOLD_28",
+        "relation_type": "combines"
+      }
+    ],
+    "nodes": [
+      {
+        "claim_ids": "CORE-001;CORE-002;CORE-003;CORE-004;CORE-006",
+        "implementation_reference": "core_geometry",
+        "label": "Normalized Earth-Moon dimensions",
+        "node_id": "CORE_DIMENSIONS",
+        "node_type": "source_geometry",
+        "notes": "Scale-free 11/3/7 dimensional system"
+      },
+      {
+        "claim_ids": "CORE-001;CORE-004",
+        "implementation_reference": "core_geometry",
+        "label": "Earth circle",
+        "node_id": "EARTH_CIRCLE",
+        "node_type": "source_geometry",
+        "notes": "Radius 5.5 normalized units"
+      },
+      {
+        "claim_ids": "CORE-004;CORE-006",
+        "implementation_reference": "core_geometry",
+        "label": "Earth square",
+        "node_id": "EARTH_SQUARE",
+        "node_type": "source_geometry",
+        "notes": "Side 11 normalized units"
+      },
+      {
+        "claim_ids": "CORE-003;CORE-005;CORE-006",
+        "implementation_reference": "core_geometry",
+        "label": "Construction circle",
+        "node_id": "CONSTRUCTION_CIRCLE",
+        "node_type": "source_geometry",
+        "notes": "Radius 7 normalized units"
+      },
+      {
+        "claim_ids": "CORE-001;CORE-002;CORE-003",
+        "implementation_reference": "core_geometry",
+        "label": "Four cardinal Moon circles",
+        "node_id": "CARDINAL_MOONS",
+        "node_type": "source_geometry",
+        "notes": "Centres lie at cardinal points of construction circle"
+      },
+      {
+        "claim_ids": "MOON-002",
+        "implementation_reference": "oblique_geometry",
+        "label": "Eight square-construction-circle intersections",
+        "node_id": "SQUARE_CIRCLE_INTERSECTIONS",
+        "node_type": "derived_geometry",
+        "notes": "Exact intersections used by NJG_INC"
+      },
+      {
+        "claim_ids": "MOON-001;MOON-002;MOON-003",
+        "implementation_reference": "NJG_INC",
+        "label": "Twelve exact-incidence Moon circles",
+        "node_id": "NJG_INC_MOONS",
+        "node_type": "construction",
+        "notes": "Source-supported nonuniform Moon placement"
+      },
+      {
+        "claim_ids": "MOON-001",
+        "implementation_reference": "michell_moon_groups",
+        "label": "Four cardinal Moon groups of three",
+        "node_id": "MOON_GROUPS_4X3",
+        "node_type": "construction",
+        "notes": "Each cardinal Moon is grouped with its immediate clockwise and counter-clockwise oblique neighbours"
+      },
+      {
+        "claim_ids": "",
+        "implementation_reference": "polar_pivot_tangent_wall",
+        "label": "Regular dodecagon baseline",
+        "node_id": "REGULAR_DODECAGON_BASELINE",
+        "node_type": "auxiliary_geometry",
+        "notes": "Project auxiliary with apothem 8.5"
+      },
+      {
+        "claim_ids": "WALL-001;WALL-002;WALL-004;WALL-006;WALL-007;WALL-008;WALL-011",
+        "implementation_reference": "polar_pivot_tangent_wall",
+        "label": "Polar-pivot outer wall",
+        "node_id": "POLAR_PIVOT_WALL",
+        "node_type": "project_reconstruction",
+        "notes": "Preferred Figure 12 wall reconstruction"
+      },
+      {
+        "claim_ids": "SEVEN-001;SEVEN-002;SEVEN-009",
+        "implementation_reference": "michell_28_point_scaffold",
+        "label": "Michell approximate sevenfold Method 1",
+        "node_id": "SEPTENARY_METHOD_1",
+        "node_type": "construction",
+        "notes": "Approximate heptagonal step from Figure 194"
+      },
+      {
+        "claim_ids": "SEVEN-003",
+        "implementation_reference": "michell_reciprocal_triangle",
+        "label": "Michell reciprocal-triangle fourteenfold division",
+        "node_id": "RECIPROCAL_TRIANGLE_14",
+        "node_type": "construction",
+        "notes": "Primary Method-1 triangle plus reciprocal triangle on opposite square side gives 14 distinct approximate division marks"
+      },
+      {
+        "claim_ids": "SEVEN-004;SEVEN-005;SEVEN-006;SEVEN-007;SEVEN-008",
+        "implementation_reference": "michell_28_point_scaffold",
+        "label": "Michell approximate 28-point scaffold",
+        "node_id": "SCAFFOLD_28",
+        "node_type": "construction",
+        "notes": "12 Moon centres + 8 gaps + 8 intersection positioners"
+      },
+      {
+        "claim_ids": "STAR-002;STAR-003;STAR-004",
+        "implementation_reference": "figure14_heptagram",
+        "label": "Five text-and-plate Figure 14 anchors",
+        "node_id": "FIG14_TEXT_ANCHORS",
+        "node_type": "source_geometry",
+        "notes": "Three Moon centres plus two square-circle junctions"
+      },
+      {
+        "claim_ids": "STAR-005",
+        "implementation_reference": "figure14_heptagram",
+        "label": "Two inferred Figure 14 gap anchors",
+        "node_id": "FIG14_GAP_ANCHORS",
+        "node_type": "project_inference",
+        "notes": "Plate-derived inter-Moon-gap inference"
+      },
+      {
+        "claim_ids": "STAR-001;STAR-003;STAR-004;STAR-005",
+        "implementation_reference": "figure14_heptagram",
+        "label": "Seven Figure 14 aligned vertices",
+        "node_id": "FIG14_ALIGNED_VERTICES",
+        "node_type": "composite_geometry",
+        "notes": "Five source-supported plus two inferred vertices"
+      },
+      {
+        "claim_ids": "STAR-007",
+        "implementation_reference": "figure14_heptagram",
+        "label": "Seven vertices selected from 28-point scaffold",
+        "node_id": "FIG14_SCAFFOLD_VERTICES",
+        "node_type": "project_candidate",
+        "notes": "Current implementation selects scaffold indices 7,11,15,19,23,27,3"
+      },
+      {
+        "claim_ids": "STAR-006",
+        "implementation_reference": "figure14_edge_topology",
+        "label": "Figure 14 seven-over-two topology",
+        "node_id": "FIG14_HEPTAGRAM_7_2",
+        "node_type": "source_calibrated_result",
+        "notes": "Topology selected by independent edge-tracing audit"
+      },
+      {
+        "claim_ids": "",
+        "implementation_reference": "michell_composite",
+        "label": "Forward integrated NJG_MICHELL construction",
+        "node_id": "NJG_MICHELL_COMPOSITE",
+        "node_type": "composite_geometry",
+        "notes": "Unit-only forward composition with no Figure 12 or Figure 14 plate-calibration inputs; scaffold-derived Figure 14 star remains a project candidate"
+      }
+    ]
+  },
+  "model_name": "NJG_MICHELL",
+  "object_count": 132,
+  "objects": [
+    {
+      "attributes": {},
+      "geometry_type": "composite",
+      "grammar_nodes": [
+        "NJG_MICHELL_COMPOSITE"
+      ],
+      "object_id": "njg-michell-composite",
+      "rendered_svg_id": "njg-michell-composite",
+      "role": "composite_root",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {},
+      "geometry_type": "circle",
+      "grammar_nodes": [
+        "EARTH_CIRCLE"
+      ],
+      "object_id": "earth-circle",
+      "rendered_svg_id": "earth-circle",
+      "role": "earth_circle",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {},
+      "geometry_type": "square",
+      "grammar_nodes": [
+        "EARTH_SQUARE"
+      ],
+      "object_id": "earth-square",
+      "rendered_svg_id": "earth-square",
+      "role": "earth_square",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {},
+      "geometry_type": "circle",
+      "grammar_nodes": [
+        "CONSTRUCTION_CIRCLE"
+      ],
+      "object_id": "construction-circle",
+      "rendered_svg_id": "construction-circle",
+      "role": "construction_circle",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "moon_group": "east",
+        "moon_group_role": "cardinal",
+        "moon_name": "moon-east"
+      },
+      "geometry_type": "circle",
+      "grammar_nodes": [
+        "CARDINAL_MOONS",
+        "NJG_INC_MOONS",
+        "MOON_GROUPS_4X3"
+      ],
+      "object_id": "moon-east",
+      "rendered_svg_id": "moon-east",
+      "role": "cardinal_moon",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "moon_group": "east",
+        "moon_group_role": "counterclockwise_outer",
+        "moon_name": "moon-q1-a"
+      },
+      "geometry_type": "circle",
+      "grammar_nodes": [
+        "NJG_INC_MOONS",
+        "MOON_GROUPS_4X3"
+      ],
+      "object_id": "moon-q1-a",
+      "rendered_svg_id": "moon-q1-a",
+      "role": "oblique_moon",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "moon_group": "north",
+        "moon_group_role": "clockwise_outer",
+        "moon_name": "moon-q1-b"
+      },
+      "geometry_type": "circle",
+      "grammar_nodes": [
+        "NJG_INC_MOONS",
+        "MOON_GROUPS_4X3"
+      ],
+      "object_id": "moon-q1-b",
+      "rendered_svg_id": "moon-q1-b",
+      "role": "oblique_moon",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "moon_group": "north",
+        "moon_group_role": "cardinal",
+        "moon_name": "moon-north"
+      },
+      "geometry_type": "circle",
+      "grammar_nodes": [
+        "CARDINAL_MOONS",
+        "NJG_INC_MOONS",
+        "MOON_GROUPS_4X3"
+      ],
+      "object_id": "moon-north",
+      "rendered_svg_id": "moon-north",
+      "role": "cardinal_moon",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "moon_group": "north",
+        "moon_group_role": "counterclockwise_outer",
+        "moon_name": "moon-q2-a"
+      },
+      "geometry_type": "circle",
+      "grammar_nodes": [
+        "NJG_INC_MOONS",
+        "MOON_GROUPS_4X3"
+      ],
+      "object_id": "moon-q2-a",
+      "rendered_svg_id": "moon-q2-a",
+      "role": "oblique_moon",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "moon_group": "west",
+        "moon_group_role": "clockwise_outer",
+        "moon_name": "moon-q2-b"
+      },
+      "geometry_type": "circle",
+      "grammar_nodes": [
+        "NJG_INC_MOONS",
+        "MOON_GROUPS_4X3"
+      ],
+      "object_id": "moon-q2-b",
+      "rendered_svg_id": "moon-q2-b",
+      "role": "oblique_moon",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "moon_group": "west",
+        "moon_group_role": "cardinal",
+        "moon_name": "moon-west"
+      },
+      "geometry_type": "circle",
+      "grammar_nodes": [
+        "CARDINAL_MOONS",
+        "NJG_INC_MOONS",
+        "MOON_GROUPS_4X3"
+      ],
+      "object_id": "moon-west",
+      "rendered_svg_id": "moon-west",
+      "role": "cardinal_moon",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "moon_group": "west",
+        "moon_group_role": "counterclockwise_outer",
+        "moon_name": "moon-q3-a"
+      },
+      "geometry_type": "circle",
+      "grammar_nodes": [
+        "NJG_INC_MOONS",
+        "MOON_GROUPS_4X3"
+      ],
+      "object_id": "moon-q3-a",
+      "rendered_svg_id": "moon-q3-a",
+      "role": "oblique_moon",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "moon_group": "south",
+        "moon_group_role": "clockwise_outer",
+        "moon_name": "moon-q3-b"
+      },
+      "geometry_type": "circle",
+      "grammar_nodes": [
+        "NJG_INC_MOONS",
+        "MOON_GROUPS_4X3"
+      ],
+      "object_id": "moon-q3-b",
+      "rendered_svg_id": "moon-q3-b",
+      "role": "oblique_moon",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "moon_group": "south",
+        "moon_group_role": "cardinal",
+        "moon_name": "moon-south"
+      },
+      "geometry_type": "circle",
+      "grammar_nodes": [
+        "CARDINAL_MOONS",
+        "NJG_INC_MOONS",
+        "MOON_GROUPS_4X3"
+      ],
+      "object_id": "moon-south",
+      "rendered_svg_id": "moon-south",
+      "role": "cardinal_moon",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "moon_group": "south",
+        "moon_group_role": "counterclockwise_outer",
+        "moon_name": "moon-q4-a"
+      },
+      "geometry_type": "circle",
+      "grammar_nodes": [
+        "NJG_INC_MOONS",
+        "MOON_GROUPS_4X3"
+      ],
+      "object_id": "moon-q4-a",
+      "rendered_svg_id": "moon-q4-a",
+      "role": "oblique_moon",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "moon_group": "east",
+        "moon_group_role": "clockwise_outer",
+        "moon_name": "moon-q4-b"
+      },
+      "geometry_type": "circle",
+      "grammar_nodes": [
+        "NJG_INC_MOONS",
+        "MOON_GROUPS_4X3"
+      ],
+      "object_id": "moon-q4-b",
+      "rendered_svg_id": "moon-q4-b",
+      "role": "oblique_moon",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {},
+      "geometry_type": "polygon",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "polar-pivot-wall",
+      "rendered_svg_id": "polar-pivot-wall",
+      "role": "outer_wall",
+      "source_object_ids": [
+        "wall-vertex-00",
+        "wall-vertex-01",
+        "wall-vertex-02",
+        "wall-vertex-03",
+        "wall-vertex-04",
+        "wall-vertex-05",
+        "wall-vertex-06",
+        "wall-vertex-07",
+        "wall-vertex-08",
+        "wall-vertex-09",
+        "wall-vertex-10",
+        "wall-vertex-11"
+      ]
+    },
+    {
+      "attributes": {
+        "wall_index": 0,
+        "wall_moon_name": "moon-east"
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall_east",
+      "rendered_svg_id": null,
+      "role": "wall_line",
+      "source_object_ids": [
+        "moon-east"
+      ]
+    },
+    {
+      "attributes": {
+        "wall_index": 1,
+        "wall_moon_name": "moon-q1-a"
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall_east_north",
+      "rendered_svg_id": null,
+      "role": "wall_line",
+      "source_object_ids": [
+        "moon-q1-a"
+      ]
+    },
+    {
+      "attributes": {
+        "wall_index": 2,
+        "wall_moon_name": "moon-q1-b"
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall_north_east",
+      "rendered_svg_id": null,
+      "role": "wall_line",
+      "source_object_ids": [
+        "moon-q1-b"
+      ]
+    },
+    {
+      "attributes": {
+        "wall_index": 3,
+        "wall_moon_name": "moon-north"
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall_north",
+      "rendered_svg_id": null,
+      "role": "wall_line",
+      "source_object_ids": [
+        "moon-north"
+      ]
+    },
+    {
+      "attributes": {
+        "wall_index": 4,
+        "wall_moon_name": "moon-q2-a"
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall_north_west",
+      "rendered_svg_id": null,
+      "role": "wall_line",
+      "source_object_ids": [
+        "moon-q2-a"
+      ]
+    },
+    {
+      "attributes": {
+        "wall_index": 5,
+        "wall_moon_name": "moon-q2-b"
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall_west_north",
+      "rendered_svg_id": null,
+      "role": "wall_line",
+      "source_object_ids": [
+        "moon-q2-b"
+      ]
+    },
+    {
+      "attributes": {
+        "wall_index": 6,
+        "wall_moon_name": "moon-west"
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall_west",
+      "rendered_svg_id": null,
+      "role": "wall_line",
+      "source_object_ids": [
+        "moon-west"
+      ]
+    },
+    {
+      "attributes": {
+        "wall_index": 7,
+        "wall_moon_name": "moon-q3-a"
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall_west_south",
+      "rendered_svg_id": null,
+      "role": "wall_line",
+      "source_object_ids": [
+        "moon-q3-a"
+      ]
+    },
+    {
+      "attributes": {
+        "wall_index": 8,
+        "wall_moon_name": "moon-q3-b"
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall_south_west",
+      "rendered_svg_id": null,
+      "role": "wall_line",
+      "source_object_ids": [
+        "moon-q3-b"
+      ]
+    },
+    {
+      "attributes": {
+        "wall_index": 9,
+        "wall_moon_name": "moon-south"
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall_south",
+      "rendered_svg_id": null,
+      "role": "wall_line",
+      "source_object_ids": [
+        "moon-south"
+      ]
+    },
+    {
+      "attributes": {
+        "wall_index": 10,
+        "wall_moon_name": "moon-q4-a"
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall_south_east",
+      "rendered_svg_id": null,
+      "role": "wall_line",
+      "source_object_ids": [
+        "moon-q4-a"
+      ]
+    },
+    {
+      "attributes": {
+        "wall_index": 11,
+        "wall_moon_name": "moon-q4-b"
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall_east_south",
+      "rendered_svg_id": null,
+      "role": "wall_line",
+      "source_object_ids": [
+        "moon-q4-b"
+      ]
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 0
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall-vertex-00",
+      "rendered_svg_id": null,
+      "role": "wall_vertex",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 1
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall-vertex-01",
+      "rendered_svg_id": null,
+      "role": "wall_vertex",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 2
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall-vertex-02",
+      "rendered_svg_id": null,
+      "role": "wall_vertex",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 3
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall-vertex-03",
+      "rendered_svg_id": null,
+      "role": "wall_vertex",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 4
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall-vertex-04",
+      "rendered_svg_id": null,
+      "role": "wall_vertex",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 5
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall-vertex-05",
+      "rendered_svg_id": null,
+      "role": "wall_vertex",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 6
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall-vertex-06",
+      "rendered_svg_id": null,
+      "role": "wall_vertex",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 7
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall-vertex-07",
+      "rendered_svg_id": null,
+      "role": "wall_vertex",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 8
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall-vertex-08",
+      "rendered_svg_id": null,
+      "role": "wall_vertex",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 9
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall-vertex-09",
+      "rendered_svg_id": null,
+      "role": "wall_vertex",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 10
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall-vertex-10",
+      "rendered_svg_id": null,
+      "role": "wall_vertex",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 11
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "POLAR_PIVOT_WALL"
+      ],
+      "object_id": "wall-vertex-11",
+      "rendered_svg_id": null,
+      "role": "wall_vertex",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "sevenfold_index": 0,
+        "triangle_base": "south"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SEPTENARY_METHOD_1"
+      ],
+      "object_id": "sevenfold-point-00",
+      "rendered_svg_id": null,
+      "role": "sevenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "sevenfold_index": 1,
+        "triangle_base": "south"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SEPTENARY_METHOD_1"
+      ],
+      "object_id": "sevenfold-point-01",
+      "rendered_svg_id": null,
+      "role": "sevenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "sevenfold_index": 2,
+        "triangle_base": "south"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SEPTENARY_METHOD_1"
+      ],
+      "object_id": "sevenfold-point-02",
+      "rendered_svg_id": null,
+      "role": "sevenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "sevenfold_index": 3,
+        "triangle_base": "south"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SEPTENARY_METHOD_1"
+      ],
+      "object_id": "sevenfold-point-03",
+      "rendered_svg_id": null,
+      "role": "sevenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "sevenfold_index": 4,
+        "triangle_base": "south"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SEPTENARY_METHOD_1"
+      ],
+      "object_id": "sevenfold-point-04",
+      "rendered_svg_id": null,
+      "role": "sevenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "sevenfold_index": 5,
+        "triangle_base": "south"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SEPTENARY_METHOD_1"
+      ],
+      "object_id": "sevenfold-point-05",
+      "rendered_svg_id": null,
+      "role": "sevenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "sevenfold_index": 6,
+        "triangle_base": "south"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SEPTENARY_METHOD_1"
+      ],
+      "object_id": "sevenfold-point-06",
+      "rendered_svg_id": null,
+      "role": "sevenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 0
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "RECIPROCAL_TRIANGLE_14"
+      ],
+      "object_id": "fourteenfold-point-00",
+      "rendered_svg_id": null,
+      "role": "fourteenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 1
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "RECIPROCAL_TRIANGLE_14"
+      ],
+      "object_id": "fourteenfold-point-01",
+      "rendered_svg_id": null,
+      "role": "fourteenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 2
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "RECIPROCAL_TRIANGLE_14"
+      ],
+      "object_id": "fourteenfold-point-02",
+      "rendered_svg_id": null,
+      "role": "fourteenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 3
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "RECIPROCAL_TRIANGLE_14"
+      ],
+      "object_id": "fourteenfold-point-03",
+      "rendered_svg_id": null,
+      "role": "fourteenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 4
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "RECIPROCAL_TRIANGLE_14"
+      ],
+      "object_id": "fourteenfold-point-04",
+      "rendered_svg_id": null,
+      "role": "fourteenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 5
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "RECIPROCAL_TRIANGLE_14"
+      ],
+      "object_id": "fourteenfold-point-05",
+      "rendered_svg_id": null,
+      "role": "fourteenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 6
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "RECIPROCAL_TRIANGLE_14"
+      ],
+      "object_id": "fourteenfold-point-06",
+      "rendered_svg_id": null,
+      "role": "fourteenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 7
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "RECIPROCAL_TRIANGLE_14"
+      ],
+      "object_id": "fourteenfold-point-07",
+      "rendered_svg_id": null,
+      "role": "fourteenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 8
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "RECIPROCAL_TRIANGLE_14"
+      ],
+      "object_id": "fourteenfold-point-08",
+      "rendered_svg_id": null,
+      "role": "fourteenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 9
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "RECIPROCAL_TRIANGLE_14"
+      ],
+      "object_id": "fourteenfold-point-09",
+      "rendered_svg_id": null,
+      "role": "fourteenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 10
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "RECIPROCAL_TRIANGLE_14"
+      ],
+      "object_id": "fourteenfold-point-10",
+      "rendered_svg_id": null,
+      "role": "fourteenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 11
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "RECIPROCAL_TRIANGLE_14"
+      ],
+      "object_id": "fourteenfold-point-11",
+      "rendered_svg_id": null,
+      "role": "fourteenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 12
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "RECIPROCAL_TRIANGLE_14"
+      ],
+      "object_id": "fourteenfold-point-12",
+      "rendered_svg_id": null,
+      "role": "fourteenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 13
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "RECIPROCAL_TRIANGLE_14"
+      ],
+      "object_id": "fourteenfold-point-13",
+      "rendered_svg_id": null,
+      "role": "fourteenfold_point",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 0
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-00",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 1
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-01",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 2
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-02",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 3
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-03",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 4
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-04",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 5
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-05",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 6
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-06",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 7
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-07",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 8
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-08",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 9
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-09",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 10
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-10",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 11
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-11",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 12
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-12",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 13
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-13",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 14
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-14",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 15
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-15",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 16
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-16",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 17
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-17",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 18
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-18",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 19
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-19",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 20
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-20",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 21
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-21",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 22
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-22",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 23
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-23",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 24
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-24",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 25
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-25",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 26
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-26",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 27
+      },
+      "geometry_type": "angular_mark",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "four-triangle-mark-27",
+      "rendered_svg_id": null,
+      "role": "four_triangle_angular_mark",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 0,
+        "scaffold_role": "moon_centre"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-00",
+      "rendered_svg_id": "scaffold-point-00",
+      "role": "moon_centre",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 1,
+        "scaffold_role": "inter_moon_gap"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-01",
+      "rendered_svg_id": "scaffold-point-01",
+      "role": "inter_moon_gap",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 2,
+        "scaffold_role": "moon_centre"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-02",
+      "rendered_svg_id": "scaffold-point-02",
+      "role": "moon_centre",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 3,
+        "scaffold_role": "intersection_positioner"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-03",
+      "rendered_svg_id": "scaffold-point-03",
+      "role": "intersection_positioner",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 4,
+        "scaffold_role": "intersection_positioner"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-04",
+      "rendered_svg_id": "scaffold-point-04",
+      "role": "intersection_positioner",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 5,
+        "scaffold_role": "moon_centre"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-05",
+      "rendered_svg_id": "scaffold-point-05",
+      "role": "moon_centre",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 6,
+        "scaffold_role": "inter_moon_gap"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-06",
+      "rendered_svg_id": "scaffold-point-06",
+      "role": "inter_moon_gap",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 7,
+        "scaffold_role": "moon_centre"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-07",
+      "rendered_svg_id": "scaffold-point-07",
+      "role": "moon_centre",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 8,
+        "scaffold_role": "inter_moon_gap"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-08",
+      "rendered_svg_id": "scaffold-point-08",
+      "role": "inter_moon_gap",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 9,
+        "scaffold_role": "moon_centre"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-09",
+      "rendered_svg_id": "scaffold-point-09",
+      "role": "moon_centre",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 10,
+        "scaffold_role": "intersection_positioner"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-10",
+      "rendered_svg_id": "scaffold-point-10",
+      "role": "intersection_positioner",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 11,
+        "scaffold_role": "intersection_positioner"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-11",
+      "rendered_svg_id": "scaffold-point-11",
+      "role": "intersection_positioner",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 12,
+        "scaffold_role": "moon_centre"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-12",
+      "rendered_svg_id": "scaffold-point-12",
+      "role": "moon_centre",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 13,
+        "scaffold_role": "inter_moon_gap"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-13",
+      "rendered_svg_id": "scaffold-point-13",
+      "role": "inter_moon_gap",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 14,
+        "scaffold_role": "moon_centre"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-14",
+      "rendered_svg_id": "scaffold-point-14",
+      "role": "moon_centre",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 15,
+        "scaffold_role": "inter_moon_gap"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-15",
+      "rendered_svg_id": "scaffold-point-15",
+      "role": "inter_moon_gap",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 16,
+        "scaffold_role": "moon_centre"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-16",
+      "rendered_svg_id": "scaffold-point-16",
+      "role": "moon_centre",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 17,
+        "scaffold_role": "intersection_positioner"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-17",
+      "rendered_svg_id": "scaffold-point-17",
+      "role": "intersection_positioner",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 18,
+        "scaffold_role": "intersection_positioner"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-18",
+      "rendered_svg_id": "scaffold-point-18",
+      "role": "intersection_positioner",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 19,
+        "scaffold_role": "moon_centre"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-19",
+      "rendered_svg_id": "scaffold-point-19",
+      "role": "moon_centre",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 20,
+        "scaffold_role": "inter_moon_gap"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-20",
+      "rendered_svg_id": "scaffold-point-20",
+      "role": "inter_moon_gap",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 21,
+        "scaffold_role": "moon_centre"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-21",
+      "rendered_svg_id": "scaffold-point-21",
+      "role": "moon_centre",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 22,
+        "scaffold_role": "inter_moon_gap"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-22",
+      "rendered_svg_id": "scaffold-point-22",
+      "role": "inter_moon_gap",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 23,
+        "scaffold_role": "moon_centre"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-23",
+      "rendered_svg_id": "scaffold-point-23",
+      "role": "moon_centre",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 24,
+        "scaffold_role": "intersection_positioner"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-24",
+      "rendered_svg_id": "scaffold-point-24",
+      "role": "intersection_positioner",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 25,
+        "scaffold_role": "intersection_positioner"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-25",
+      "rendered_svg_id": "scaffold-point-25",
+      "role": "intersection_positioner",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 26,
+        "scaffold_role": "moon_centre"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-26",
+      "rendered_svg_id": "scaffold-point-26",
+      "role": "moon_centre",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "scaffold_index": 27,
+        "scaffold_role": "inter_moon_gap"
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "SCAFFOLD_28"
+      ],
+      "object_id": "scaffold-point-27",
+      "rendered_svg_id": "scaffold-point-27",
+      "role": "inter_moon_gap",
+      "source_object_ids": []
+    },
+    {
+      "attributes": {
+        "heptagram_vertex_index": 0,
+        "scaffold_index": 7
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "FIG14_SCAFFOLD_VERTICES"
+      ],
+      "object_id": "heptagram-vertex-00",
+      "rendered_svg_id": "heptagram-vertex-00",
+      "role": "heptagram_vertex",
+      "source_object_ids": [
+        "scaffold-point-07"
+      ]
+    },
+    {
+      "attributes": {
+        "heptagram_vertex_index": 1,
+        "scaffold_index": 11
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "FIG14_SCAFFOLD_VERTICES"
+      ],
+      "object_id": "heptagram-vertex-01",
+      "rendered_svg_id": "heptagram-vertex-01",
+      "role": "heptagram_vertex",
+      "source_object_ids": [
+        "scaffold-point-11"
+      ]
+    },
+    {
+      "attributes": {
+        "heptagram_vertex_index": 2,
+        "scaffold_index": 15
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "FIG14_SCAFFOLD_VERTICES"
+      ],
+      "object_id": "heptagram-vertex-02",
+      "rendered_svg_id": "heptagram-vertex-02",
+      "role": "heptagram_vertex",
+      "source_object_ids": [
+        "scaffold-point-15"
+      ]
+    },
+    {
+      "attributes": {
+        "heptagram_vertex_index": 3,
+        "scaffold_index": 19
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "FIG14_SCAFFOLD_VERTICES"
+      ],
+      "object_id": "heptagram-vertex-03",
+      "rendered_svg_id": "heptagram-vertex-03",
+      "role": "heptagram_vertex",
+      "source_object_ids": [
+        "scaffold-point-19"
+      ]
+    },
+    {
+      "attributes": {
+        "heptagram_vertex_index": 4,
+        "scaffold_index": 23
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "FIG14_SCAFFOLD_VERTICES"
+      ],
+      "object_id": "heptagram-vertex-04",
+      "rendered_svg_id": "heptagram-vertex-04",
+      "role": "heptagram_vertex",
+      "source_object_ids": [
+        "scaffold-point-23"
+      ]
+    },
+    {
+      "attributes": {
+        "heptagram_vertex_index": 5,
+        "scaffold_index": 27
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "FIG14_SCAFFOLD_VERTICES"
+      ],
+      "object_id": "heptagram-vertex-05",
+      "rendered_svg_id": "heptagram-vertex-05",
+      "role": "heptagram_vertex",
+      "source_object_ids": [
+        "scaffold-point-27"
+      ]
+    },
+    {
+      "attributes": {
+        "heptagram_vertex_index": 6,
+        "scaffold_index": 3
+      },
+      "geometry_type": "point",
+      "grammar_nodes": [
+        "FIG14_SCAFFOLD_VERTICES"
+      ],
+      "object_id": "heptagram-vertex-06",
+      "rendered_svg_id": "heptagram-vertex-06",
+      "role": "heptagram_vertex",
+      "source_object_ids": [
+        "scaffold-point-03"
+      ]
+    },
+    {
+      "attributes": {
+        "end_vertex_index": 2,
+        "heptagram_edge_index": 0,
+        "start_vertex_index": 0
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "FIG14_HEPTAGRAM_7_2"
+      ],
+      "object_id": "heptagram-edge-00",
+      "rendered_svg_id": "heptagram-edge-00",
+      "role": "heptagram_edge",
+      "source_object_ids": [
+        "heptagram-vertex-00",
+        "heptagram-vertex-02"
+      ]
+    },
+    {
+      "attributes": {
+        "end_vertex_index": 4,
+        "heptagram_edge_index": 1,
+        "start_vertex_index": 2
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "FIG14_HEPTAGRAM_7_2"
+      ],
+      "object_id": "heptagram-edge-01",
+      "rendered_svg_id": "heptagram-edge-01",
+      "role": "heptagram_edge",
+      "source_object_ids": [
+        "heptagram-vertex-02",
+        "heptagram-vertex-04"
+      ]
+    },
+    {
+      "attributes": {
+        "end_vertex_index": 6,
+        "heptagram_edge_index": 2,
+        "start_vertex_index": 4
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "FIG14_HEPTAGRAM_7_2"
+      ],
+      "object_id": "heptagram-edge-02",
+      "rendered_svg_id": "heptagram-edge-02",
+      "role": "heptagram_edge",
+      "source_object_ids": [
+        "heptagram-vertex-04",
+        "heptagram-vertex-06"
+      ]
+    },
+    {
+      "attributes": {
+        "end_vertex_index": 1,
+        "heptagram_edge_index": 3,
+        "start_vertex_index": 6
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "FIG14_HEPTAGRAM_7_2"
+      ],
+      "object_id": "heptagram-edge-03",
+      "rendered_svg_id": "heptagram-edge-03",
+      "role": "heptagram_edge",
+      "source_object_ids": [
+        "heptagram-vertex-06",
+        "heptagram-vertex-01"
+      ]
+    },
+    {
+      "attributes": {
+        "end_vertex_index": 3,
+        "heptagram_edge_index": 4,
+        "start_vertex_index": 1
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "FIG14_HEPTAGRAM_7_2"
+      ],
+      "object_id": "heptagram-edge-04",
+      "rendered_svg_id": "heptagram-edge-04",
+      "role": "heptagram_edge",
+      "source_object_ids": [
+        "heptagram-vertex-01",
+        "heptagram-vertex-03"
+      ]
+    },
+    {
+      "attributes": {
+        "end_vertex_index": 5,
+        "heptagram_edge_index": 5,
+        "start_vertex_index": 3
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "FIG14_HEPTAGRAM_7_2"
+      ],
+      "object_id": "heptagram-edge-05",
+      "rendered_svg_id": "heptagram-edge-05",
+      "role": "heptagram_edge",
+      "source_object_ids": [
+        "heptagram-vertex-03",
+        "heptagram-vertex-05"
+      ]
+    },
+    {
+      "attributes": {
+        "end_vertex_index": 0,
+        "heptagram_edge_index": 6,
+        "start_vertex_index": 5
+      },
+      "geometry_type": "line",
+      "grammar_nodes": [
+        "FIG14_HEPTAGRAM_7_2"
+      ],
+      "object_id": "heptagram-edge-06",
+      "rendered_svg_id": "heptagram-edge-06",
+      "role": "heptagram_edge",
+      "source_object_ids": [
+        "heptagram-vertex-05",
+        "heptagram-vertex-00"
+      ]
+    }
+  ],
+  "schema_name": "njg_michell_provenance",
+  "schema_version": "1.0",
+  "source_hashes": {
+    "docs/sources/geometric_claim_matrix.csv": "a955b1ea4f4a1e5dda0716c7b9a20fce4bde1421b5ccfff3cc9cf2d5356987e3",
+    "docs/specification/construction_dependencies.csv": "ac70ec1f856e22a6a79534c275d52c2f87adf87ba5563b5d087be3163cbf30b2",
+    "docs/specification/construction_nodes.csv": "9c2e38108a8e7e668794983b9d2a7b0ec8997e6393181ac24f68c5cdeadab42b"
+  },
+  "unit": 1.0
+}
