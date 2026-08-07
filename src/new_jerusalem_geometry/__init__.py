@@ -123,10 +123,17 @@ from .michell_composite import (
     build_michell_composite,
 )
 
+from .michell_composite_svg import (
+    michell_composite_to_svg,
+    write_michell_composite_svg,
+)
+
 __all__ = [
     "COMPOSITE_MODEL_NAME",
     "MichellComposite",
     "build_michell_composite",
+    "michell_composite_to_svg",
+    "write_michell_composite_svg",
     "AxisAlignedSquare",
     "Check",
     "Circle",
