@@ -1,0 +1,744 @@
+{
+  "model_name": "NJG_MICHELL",
+  "protocol": {
+    "claim_matrix_sha256": "a955b1ea4f4a1e5dda0716c7b9a20fce4bde1421b5ccfff3cc9cf2d5356987e3",
+    "construction_dependencies_sha256": "ac70ec1f856e22a6a79534c275d52c2f87adf87ba5563b5d087be3163cbf30b2",
+    "construction_nodes_sha256": "9c2e38108a8e7e668794983b9d2a7b0ec8997e6393181ac24f68c5cdeadab42b",
+    "phase": "5F",
+    "protocol_path": "/home/salahealer/new-jerusalem-geometry/docs/specification/v0.5_sevenfold_phase_selection_protocol.md",
+    "protocol_sha256": "02871909641d5246116a7b55c94b43522bcc6db006862a3c44dee72a4d15be28",
+    "registered_atol": 1e-12,
+    "registered_phase_indices": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22,
+        26
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23,
+        27
+      ]
+    },
+    "registered_rtol": 1e-12,
+    "registered_step2_edge_pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        5,
+        0
+      ]
+    ],
+    "stage": "A",
+    "unit": 1.0
+  },
+  "schema_name": "njg_michell_sevenfold_phase_selection",
+  "schema_version": "1.0",
+  "stage_a": {
+    "candidate_count": 4,
+    "discriminating_grammar_condition": null,
+    "existing_candidate_state": {
+      "cyclic_origin_scaffold_index": 7,
+      "ordered_scaffold_indices": [
+        7,
+        11,
+        15,
+        19,
+        23,
+        27,
+        3
+      ],
+      "phase_id": 3,
+      "used_as_selection_evidence": false
+    },
+    "feeds_back_into_builder": false,
+    "grammar_boundary": {
+      "candidate_node": {
+        "claim_ids": "STAR-007",
+        "implementation_reference": "figure14_heptagram",
+        "label": "Seven vertices selected from 28-point scaffold",
+        "node_id": "FIG14_SCAFFOLD_VERTICES",
+        "node_type": "project_candidate",
+        "notes": "Current implementation selects scaffold indices 7,11,15,19,23,27,3"
+      },
+      "excluded_existing_phase_evidence": {
+        "DEP-022": "implementation_only",
+        "DEP-024": "hypothesis_to_test"
+      },
+      "existing_phase_node_is_admissible_selection_evidence": false,
+      "touching_edges": [
+        {
+          "child_node": "FIG14_SCAFFOLD_VERTICES",
+          "claim_ids": "STAR-007",
+          "edge_id": "DEP-022",
+          "evidence_status": "implementation_only",
+          "implementation_reference": "figure14_heptagram",
+          "notes": "Current code selects seven scaffold indices; historical dependency not established",
+          "parent_node": "SCAFFOLD_28",
+          "relation_type": "selects"
+        },
+        {
+          "child_node": "FIG14_HEPTAGRAM_7_2",
+          "claim_ids": "STAR-007",
+          "edge_id": "DEP-024",
+          "evidence_status": "hypothesis_to_test",
+          "implementation_reference": "figure14_heptagram",
+          "notes": "Tests whether the later scaffold predicts the earlier Figure 14 vertex system",
+          "parent_node": "FIG14_SCAFFOLD_VERTICES",
+          "relation_type": "candidate_correspondence"
+        }
+      ]
+    },
+    "grammar_selection_result": "GRAMMAR_UNDERDETERMINED",
+    "metric_equivalence": {
+      "all_phases_metric_equivalent": true,
+      "comparisons": [
+        {
+          "equivalent_to_phase_0": true,
+          "max_sorted_angular_gap_residual": 0.0,
+          "max_sorted_edge_length_residual": 0.0,
+          "phase_id": 0,
+          "star_edge_perimeter_residual": 0.0
+        },
+        {
+          "equivalent_to_phase_0": true,
+          "max_sorted_angular_gap_residual": 1.1102230246251565e-16,
+          "max_sorted_edge_length_residual": 1.7763568394002505e-15,
+          "phase_id": 1,
+          "star_edge_perimeter_residual": 0.0
+        },
+        {
+          "equivalent_to_phase_0": true,
+          "max_sorted_angular_gap_residual": 1.1102230246251565e-16,
+          "max_sorted_edge_length_residual": 3.552713678800501e-15,
+          "phase_id": 2,
+          "star_edge_perimeter_residual": 1.4210854715202004e-14
+        },
+        {
+          "equivalent_to_phase_0": true,
+          "max_sorted_angular_gap_residual": 1.1102230246251565e-16,
+          "max_sorted_edge_length_residual": 1.7763568394002505e-15,
+          "phase_id": 3,
+          "star_edge_perimeter_residual": 0.0
+        }
+      ],
+      "reference_phase_id": 0
+    },
+    "phases": [
+      {
+        "angular_gaps": [
+          0.8983332083070389,
+          0.8983332083070389,
+          0.898333208307039,
+          0.8931860573373527,
+          0.8983332083070392,
+          0.8983332083070383,
+          0.8983332083070392
+        ],
+        "candidate_valid": true,
+        "canonical_cyclic_role_sequence": [
+          "inter_moon_gap",
+          "intersection_positioner",
+          "moon_centre",
+          "intersection_positioner",
+          "inter_moon_gap",
+          "moon_centre",
+          "moon_centre"
+        ],
+        "cyclic_role_sequence": [
+          "moon_centre",
+          "intersection_positioner",
+          "inter_moon_gap",
+          "moon_centre",
+          "moon_centre",
+          "inter_moon_gap",
+          "intersection_positioner"
+        ],
+        "edge_lengths": [
+          10.952056187223628,
+          10.92957628898493,
+          10.952056187223626,
+          10.95205618722363,
+          10.952056187223626,
+          10.929576288984931,
+          10.952056187223628
+        ],
+        "phase_id": 0,
+        "project_inferred_gap_completion": {
+          "inter_moon_gap_count": 2,
+          "status": "project_inference"
+        },
+        "quarter_turn_target_phase": 3,
+        "radius_check": {
+          "expected_radius": 7.0,
+          "max_abs_residual": 0.0,
+          "passes": true
+        },
+        "role_counts": {
+          "inter_moon_gap": 2,
+          "intersection_positioner": 2,
+          "moon_centre": 3
+        },
+        "scaffold_indices": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24
+        ],
+        "sorted_angular_gaps": [
+          0.8931860573373527,
+          0.8983332083070383,
+          0.8983332083070389,
+          0.8983332083070389,
+          0.898333208307039,
+          0.8983332083070392,
+          0.8983332083070392
+        ],
+        "sorted_edge_lengths": [
+          10.92957628898493,
+          10.929576288984931,
+          10.952056187223626,
+          10.952056187223626,
+          10.952056187223628,
+          10.952056187223628,
+          10.95205618722363
+        ],
+        "source_stated_role_criterion": {
+          "passes": true,
+          "required_intersection_positions": 2,
+          "required_moon_centres": 3
+        },
+        "star_edge_perimeter": 76.619433514088,
+        "step2_edge_pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        "unique_index_count": 7,
+        "unique_point_count": 7
+      },
+      {
+        "angular_gaps": [
+          0.898333208307039,
+          0.8931860573373527,
+          0.8983332083070392,
+          0.8983332083070388,
+          0.8983332083070388,
+          0.8983332083070392,
+          0.8983332083070383
+        ],
+        "candidate_valid": true,
+        "canonical_cyclic_role_sequence": [
+          "inter_moon_gap",
+          "intersection_positioner",
+          "moon_centre",
+          "intersection_positioner",
+          "inter_moon_gap",
+          "moon_centre",
+          "moon_centre"
+        ],
+        "cyclic_role_sequence": [
+          "inter_moon_gap",
+          "moon_centre",
+          "moon_centre",
+          "inter_moon_gap",
+          "intersection_positioner",
+          "moon_centre",
+          "intersection_positioner"
+        ],
+        "edge_lengths": [
+          10.92957628898493,
+          10.95205618722363,
+          10.952056187223628,
+          10.952056187223628,
+          10.929576288984931,
+          10.952056187223626,
+          10.952056187223628
+        ],
+        "phase_id": 1,
+        "project_inferred_gap_completion": {
+          "inter_moon_gap_count": 2,
+          "status": "project_inference"
+        },
+        "quarter_turn_target_phase": 0,
+        "radius_check": {
+          "expected_radius": 7.0,
+          "max_abs_residual": 8.881784197001252e-16,
+          "passes": true
+        },
+        "role_counts": {
+          "inter_moon_gap": 2,
+          "intersection_positioner": 2,
+          "moon_centre": 3
+        },
+        "scaffold_indices": [
+          1,
+          5,
+          9,
+          13,
+          17,
+          21,
+          25
+        ],
+        "sorted_angular_gaps": [
+          0.8931860573373527,
+          0.8983332083070383,
+          0.8983332083070388,
+          0.8983332083070388,
+          0.898333208307039,
+          0.8983332083070392,
+          0.8983332083070392
+        ],
+        "sorted_edge_lengths": [
+          10.92957628898493,
+          10.929576288984931,
+          10.952056187223626,
+          10.952056187223628,
+          10.952056187223628,
+          10.952056187223628,
+          10.95205618722363
+        ],
+        "source_stated_role_criterion": {
+          "passes": true,
+          "required_intersection_positions": 2,
+          "required_moon_centres": 3
+        },
+        "star_edge_perimeter": 76.619433514088,
+        "step2_edge_pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        "unique_index_count": 7,
+        "unique_point_count": 7
+      },
+      {
+        "angular_gaps": [
+          0.898333208307039,
+          0.898333208307039,
+          0.8983332083070388,
+          0.8983332083070392,
+          0.8983332083070383,
+          0.8983332083070392,
+          0.8931860573373527
+        ],
+        "candidate_valid": true,
+        "canonical_cyclic_role_sequence": [
+          "inter_moon_gap",
+          "intersection_positioner",
+          "moon_centre",
+          "intersection_positioner",
+          "inter_moon_gap",
+          "moon_centre",
+          "moon_centre"
+        ],
+        "cyclic_role_sequence": [
+          "moon_centre",
+          "inter_moon_gap",
+          "intersection_positioner",
+          "moon_centre",
+          "intersection_positioner",
+          "inter_moon_gap",
+          "moon_centre"
+        ],
+        "edge_lengths": [
+          10.952056187223628,
+          10.952056187223626,
+          10.952056187223624,
+          10.929576288984933,
+          10.952056187223626,
+          10.952056187223626,
+          10.929576288984933
+        ],
+        "phase_id": 2,
+        "project_inferred_gap_completion": {
+          "inter_moon_gap_count": 2,
+          "status": "project_inference"
+        },
+        "quarter_turn_target_phase": 1,
+        "radius_check": {
+          "expected_radius": 7.0,
+          "max_abs_residual": 0.0,
+          "passes": true
+        },
+        "role_counts": {
+          "inter_moon_gap": 2,
+          "intersection_positioner": 2,
+          "moon_centre": 3
+        },
+        "scaffold_indices": [
+          2,
+          6,
+          10,
+          14,
+          18,
+          22,
+          26
+        ],
+        "sorted_angular_gaps": [
+          0.8931860573373527,
+          0.8983332083070383,
+          0.8983332083070388,
+          0.898333208307039,
+          0.898333208307039,
+          0.8983332083070392,
+          0.8983332083070392
+        ],
+        "sorted_edge_lengths": [
+          10.929576288984933,
+          10.929576288984933,
+          10.952056187223624,
+          10.952056187223626,
+          10.952056187223626,
+          10.952056187223626,
+          10.952056187223628
+        ],
+        "source_stated_role_criterion": {
+          "passes": true,
+          "required_intersection_positions": 2,
+          "required_moon_centres": 3
+        },
+        "star_edge_perimeter": 76.61943351408799,
+        "step2_edge_pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        "unique_index_count": 7,
+        "unique_point_count": 7
+      },
+      {
+        "angular_gaps": [
+          0.8983332083070389,
+          0.8983332083070388,
+          0.8983332083070388,
+          0.8983332083070392,
+          0.8931860573373527,
+          0.8983332083070392,
+          0.8983332083070383
+        ],
+        "candidate_valid": true,
+        "canonical_cyclic_role_sequence": [
+          "inter_moon_gap",
+          "intersection_positioner",
+          "moon_centre",
+          "intersection_positioner",
+          "inter_moon_gap",
+          "moon_centre",
+          "moon_centre"
+        ],
+        "cyclic_role_sequence": [
+          "intersection_positioner",
+          "moon_centre",
+          "intersection_positioner",
+          "inter_moon_gap",
+          "moon_centre",
+          "moon_centre",
+          "inter_moon_gap"
+        ],
+        "edge_lengths": [
+          10.952056187223626,
+          10.952056187223626,
+          10.929576288984931,
+          10.952056187223628,
+          10.952056187223624,
+          10.929576288984931,
+          10.95205618722363
+        ],
+        "phase_id": 3,
+        "project_inferred_gap_completion": {
+          "inter_moon_gap_count": 2,
+          "status": "project_inference"
+        },
+        "quarter_turn_target_phase": 2,
+        "radius_check": {
+          "expected_radius": 7.0,
+          "max_abs_residual": 8.881784197001252e-16,
+          "passes": true
+        },
+        "role_counts": {
+          "inter_moon_gap": 2,
+          "intersection_positioner": 2,
+          "moon_centre": 3
+        },
+        "scaffold_indices": [
+          3,
+          7,
+          11,
+          15,
+          19,
+          23,
+          27
+        ],
+        "sorted_angular_gaps": [
+          0.8931860573373527,
+          0.8983332083070383,
+          0.8983332083070388,
+          0.8983332083070388,
+          0.8983332083070389,
+          0.8983332083070392,
+          0.8983332083070392
+        ],
+        "sorted_edge_lengths": [
+          10.929576288984931,
+          10.929576288984931,
+          10.952056187223624,
+          10.952056187223626,
+          10.952056187223626,
+          10.952056187223628,
+          10.95205618722363
+        ],
+        "source_stated_role_criterion": {
+          "passes": true,
+          "required_intersection_positions": 2,
+          "required_moon_centres": 3
+        },
+        "star_edge_perimeter": 76.619433514088,
+        "step2_edge_pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        "unique_index_count": 7,
+        "unique_point_count": 7
+      }
+    ],
+    "primary_reciprocal_correspondence": {
+      "primary_phase_id": 1,
+      "primary_scaffold_indices": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25
+      ],
+      "reciprocal_phase_id": 3,
+      "reciprocal_scaffold_indices": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23,
+        27
+      ],
+      "selection_status": "descriptive_only"
+    },
+    "quarter_turn_orbit": {
+      "coordinate_rotation_passes": true,
+      "expected_phase_orbit": {
+        "0": 3,
+        "1": 0,
+        "2": 1,
+        "3": 2
+      },
+      "index_action": "(index + 7) mod 28",
+      "max_coordinate_residual": 4.440892098500626e-15,
+      "observed_phase_orbit": {
+        "0": 3,
+        "1": 0,
+        "2": 1,
+        "3": 2
+      },
+      "orbit_passes": true,
+      "role_mismatches": [],
+      "role_rotation_passes": true
+    },
+    "role_equivalence": {
+      "all_cyclic_role_words_equivalent": true,
+      "all_role_counts_equal": true,
+      "canonical_cyclic_role_sequence": [
+        "inter_moon_gap",
+        "intersection_positioner",
+        "moon_centre",
+        "intersection_positioner",
+        "inter_moon_gap",
+        "moon_centre",
+        "moon_centre"
+      ]
+    },
+    "source_orientation_scan": {
+      "admissible_source_claim_ids": [
+        "STAR-001",
+        "STAR-002",
+        "STAR-003",
+        "STAR-004"
+      ],
+      "named_cardinal_matches": [],
+      "named_cardinal_orientation_condition_present": false,
+      "note": "This scan establishes absence of an explicit named-cardinal condition in the audited source-grounded STAR claim records. It does not infer orientation from source-plate geometry.",
+      "searched_terms": [
+        "north",
+        "south",
+        "east",
+        "west",
+        "cardinal"
+      ]
+    },
+    "surviving_phase_ids": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "stage_b": {
+    "feeds_back_into_builder": false,
+    "independent_validation": false,
+    "reason": "Stage A must be recorded before Figure 14 source-coordinate comparison.",
+    "status": "NOT_RUN"
+  }
+}
