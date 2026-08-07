@@ -22,9 +22,16 @@ from .michell_composite import MichellComposite
 
 STAGE_B_SCHEMA_VERSION = "1.0"
 
-FROZEN_STAGE_A_SHA256 = (
+HISTORICAL_STAGE_A_SHA256 = (
     "48a96dc7e160365cafc9114d7586ce94"
     "b070ebbe0403d759e71e8795c28d6d7d"
+)
+
+HISTORICAL_STAGE_A_COMMIT = "a84949a"
+
+FROZEN_STAGE_A_SHA256 = (
+    "6bfb543d5fbb98cbd383a242eac109d1"
+    "ff0f7a96a68410d370ed294ec119613b"
 )
 
 STAGE_A_NOT_RUN = {
@@ -225,7 +232,7 @@ def _frozen_stage_a_input(
     ):
         raise ValueError(
             "Stage B input is not the exact "
-            "committed Phase 5F Stage A artifact. "
+            "portable Phase 5F Stage A artifact. "
             f"Expected {FROZEN_STAGE_A_SHA256}, "
             f"got {frozen_hash}."
         )
@@ -1016,6 +1023,19 @@ def build_sevenfold_phase_selection_stage_b(
         "stage_a_input_sha256": (
             frozen_stage_a_hash
         ),
+        "historical_stage_a_input_sha256": (
+            HISTORICAL_STAGE_A_SHA256
+        ),
+        "historical_stage_a_commit": (
+            HISTORICAL_STAGE_A_COMMIT
+        ),
+        "portability_normalization": {
+            "field": "protocol.protocol_path",
+            "change": (
+                "machine_absolute_to_repository_relative"
+            ),
+            "scientific_values_changed": False,
+        },
         "stage_a_result_preserved": (
             frozen_stage_a[
                 "stage_a"

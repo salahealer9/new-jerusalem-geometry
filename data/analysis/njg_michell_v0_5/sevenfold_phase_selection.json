@@ -5,7 +5,7 @@
     "construction_dependencies_sha256": "ac70ec1f856e22a6a79534c275d52c2f87adf87ba5563b5d087be3163cbf30b2",
     "construction_nodes_sha256": "9c2e38108a8e7e668794983b9d2a7b0ec8997e6393181ac24f68c5cdeadab42b",
     "phase": "5F",
-    "protocol_path": "/home/salahealer/new-jerusalem-geometry/docs/specification/v0.5_sevenfold_phase_selection_protocol.md",
+    "protocol_path": "docs/specification/v0.5_sevenfold_phase_selection_protocol.md",
     "protocol_sha256": "02871909641d5246116a7b55c94b43522bcc6db006862a3c44dee72a4d15be28",
     "registered_atol": 1e-12,
     "registered_phase_indices": {
@@ -760,6 +760,8 @@
       "tie_break_rule": "minimum raw RMS; exact ties use forward before reverse, then lower cyclic shift"
     },
     "feeds_back_into_builder": false,
+    "historical_stage_a_commit": "a84949a",
+    "historical_stage_a_input_sha256": "48a96dc7e160365cafc9114d7586ce94b070ebbe0403d759e71e8795c28d6d7d",
     "independent_validation": false,
     "interpretation": {
       "comparison_type": "descriptive_source_consistency",
@@ -2702,6 +2704,11 @@
         ]
       }
     ],
+    "portability_normalization": {
+      "change": "machine_absolute_to_repository_relative",
+      "field": "protocol.protocol_path",
+      "scientific_values_changed": false
+    },
     "ranking_phase_ids": [
       3,
       0,
@@ -2779,7 +2786,7 @@
         "y": 4.375535737781
       }
     ],
-    "stage_a_input_sha256": "48a96dc7e160365cafc9114d7586ce94b070ebbe0403d759e71e8795c28d6d7d",
+    "stage_a_input_sha256": "6bfb543d5fbb98cbd383a242eac109d1ff0f7a96a68410d370ed294ec119613b",
     "stage_a_result_preserved": "GRAMMAR_UNDERDETERMINED",
     "status": "COMPLETE",
     "winner": {

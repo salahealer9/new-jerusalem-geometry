@@ -805,3 +805,25 @@ def test_stage_a_json_is_deterministic_and_writer_preserves_bytes(
         )
         == first
     )
+
+
+def test_stage_a_protocol_path_is_repository_relative() -> None:
+    _, audit = _build()
+
+    protocol_path = audit[
+        "protocol"
+    ][
+        "protocol_path"
+    ]
+
+    assert (
+        protocol_path
+        == (
+            "docs/specification/"
+            "v0.5_sevenfold_phase_selection_protocol.md"
+        )
+    )
+
+    assert not Path(
+        protocol_path
+    ).is_absolute()

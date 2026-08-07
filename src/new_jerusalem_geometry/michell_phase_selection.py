@@ -95,6 +95,35 @@ def _sha256(
     return digest.hexdigest()
 
 
+
+def _repository_relative_path(
+    path: str | Path,
+) -> str:
+    """Return a stable repository-relative path for repository inputs."""
+
+    resolved = Path(
+        path
+    ).resolve()
+
+    repository_root = (
+        Path(__file__)
+        .resolve()
+        .parents[2]
+    )
+
+    try:
+        return (
+            resolved
+            .relative_to(
+                repository_root
+            )
+            .as_posix()
+        )
+    except ValueError:
+        return str(
+            resolved
+        )
+
 def _close(
     a: float,
     b: float,
@@ -1180,8 +1209,10 @@ def build_sevenfold_phase_selection_stage_a(
             ],
             "registered_rtol": RTOL,
             "registered_atol": ATOL,
-            "protocol_path": str(
-                protocol_path
+            "protocol_path": (
+                _repository_relative_path(
+                    protocol_path
+                )
             ),
             "protocol_sha256": (
                 _sha256(

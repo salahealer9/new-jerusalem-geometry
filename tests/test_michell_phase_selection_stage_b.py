@@ -18,6 +18,8 @@ from new_jerusalem_geometry.michell_phase_selection_stage_b import (
     ATOL,
     CORRESPONDENCE_COUNT,
     FROZEN_STAGE_A_SHA256,
+    HISTORICAL_STAGE_A_COMMIT,
+    HISTORICAL_STAGE_A_SHA256,
     ORIENTATIONS,
     RTOL,
     STAGE_A_NOT_RUN,
@@ -120,13 +122,23 @@ def _build(
     )
 
 
-def test_frozen_stage_a_hash_is_exactly_registered() -> None:
+def test_stage_a_hashes_record_portable_and_historical_boundaries() -> None:
     assert (
         FROZEN_STAGE_A_SHA256
+        == "6bfb543d5fbb98cbd383a242eac109d1ff0f7a96a68410d370ed294ec119613b"
+    )
+
+    assert (
+        HISTORICAL_STAGE_A_SHA256
         == (
             "48a96dc7e160365cafc9114d7586ce94"
             "b070ebbe0403d759e71e8795c28d6d7d"
         )
+    )
+
+    assert (
+        HISTORICAL_STAGE_A_COMMIT
+        == "a84949a"
     )
 
 
@@ -1012,4 +1024,77 @@ def test_stage_b_source_binding_paths_are_repository_relative() -> None:
         not Path(value).is_absolute()
         for value
         in observed.values()
+    )
+
+
+
+def test_completed_stage_b_records_historical_and_portable_stage_a_bindings() -> None:
+    _, audit = _build()
+
+    stage_b = audit[
+        "stage_b"
+    ]
+
+    assert (
+        stage_b[
+            "stage_a_input_sha256"
+        ]
+        == FROZEN_STAGE_A_SHA256
+    )
+
+    assert (
+        stage_b[
+            "historical_stage_a_input_sha256"
+        ]
+        == HISTORICAL_STAGE_A_SHA256
+    )
+
+    assert (
+        stage_b[
+            "historical_stage_a_commit"
+        ]
+        == HISTORICAL_STAGE_A_COMMIT
+    )
+
+    normalization = stage_b[
+        "portability_normalization"
+    ]
+
+    assert (
+        normalization[
+            "field"
+        ]
+        == "protocol.protocol_path"
+    )
+
+    assert (
+        normalization[
+            "change"
+        ]
+        == "machine_absolute_to_repository_relative"
+    )
+
+    assert (
+        normalization[
+            "scientific_values_changed"
+        ]
+        is False
+    )
+
+    protocol_path = audit[
+        "protocol"
+    ][
+        "protocol_path"
+    ]
+
+    assert not Path(
+        protocol_path
+    ).is_absolute()
+
+    assert (
+        protocol_path
+        == (
+            "docs/specification/"
+            "v0.5_sevenfold_phase_selection_protocol.md"
+        )
     )
