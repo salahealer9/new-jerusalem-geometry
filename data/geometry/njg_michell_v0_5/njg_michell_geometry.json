@@ -1,0 +1,2288 @@
+{
+  "coordinate_system": {
+    "angle_direction": "counter-clockwise",
+    "angle_origin": "positive x-axis",
+    "angle_units": [
+      "radians",
+      "degrees"
+    ],
+    "dimension": 2,
+    "geometry": "Euclidean",
+    "origin": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "positive_x": "right",
+    "positive_y": "up"
+  },
+  "model_name": "NJG_MICHELL",
+  "object_count": 132,
+  "objects": [
+    {
+      "attributes": {},
+      "geometry": {
+        "heptagram_vertex_count": 7,
+        "moon_count": 12,
+        "scaffold_point_count": 28,
+        "unit": 1.0,
+        "wall_side_count": 12
+      },
+      "geometry_type": "composite",
+      "object_id": "njg-michell-composite"
+    },
+    {
+      "attributes": {},
+      "geometry": {
+        "centre": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "radius": 5.5
+      },
+      "geometry_type": "circle",
+      "object_id": "earth-circle"
+    },
+    {
+      "attributes": {},
+      "geometry": {
+        "centre": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "half_side": 5.5,
+        "perimeter": 44.0,
+        "side": 11.0
+      },
+      "geometry_type": "square",
+      "object_id": "earth-square"
+    },
+    {
+      "attributes": {},
+      "geometry": {
+        "centre": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "radius": 7.0
+      },
+      "geometry_type": "circle",
+      "object_id": "construction-circle"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-east"
+      },
+      "geometry": {
+        "centre": {
+          "x": 7.0,
+          "y": 0.0
+        },
+        "radius": 1.5
+      },
+      "geometry_type": "circle",
+      "object_id": "moon-east"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-q1-a"
+      },
+      "geometry": {
+        "centre": {
+          "x": 6.296267611064377,
+          "y": 3.0589236946778655
+        },
+        "radius": 1.5
+      },
+      "geometry_type": "circle",
+      "object_id": "moon-q1-a"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-q1-b"
+      },
+      "geometry": {
+        "centre": {
+          "x": 3.0589236946778655,
+          "y": 6.296267611064377
+        },
+        "radius": 1.5
+      },
+      "geometry_type": "circle",
+      "object_id": "moon-q1-b"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-north"
+      },
+      "geometry": {
+        "centre": {
+          "x": 0.0,
+          "y": 7.0
+        },
+        "radius": 1.5
+      },
+      "geometry_type": "circle",
+      "object_id": "moon-north"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-q2-a"
+      },
+      "geometry": {
+        "centre": {
+          "x": -3.0589236946778646,
+          "y": 6.296267611064377
+        },
+        "radius": 1.5
+      },
+      "geometry_type": "circle",
+      "object_id": "moon-q2-a"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-q2-b"
+      },
+      "geometry": {
+        "centre": {
+          "x": -6.296267611064377,
+          "y": 3.058923694677866
+        },
+        "radius": 1.5
+      },
+      "geometry_type": "circle",
+      "object_id": "moon-q2-b"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-west"
+      },
+      "geometry": {
+        "centre": {
+          "x": -7.0,
+          "y": 0.0
+        },
+        "radius": 1.5
+      },
+      "geometry_type": "circle",
+      "object_id": "moon-west"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-q3-a"
+      },
+      "geometry": {
+        "centre": {
+          "x": -6.296267611064377,
+          "y": -3.0589236946778646
+        },
+        "radius": 1.5
+      },
+      "geometry_type": "circle",
+      "object_id": "moon-q3-a"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-q3-b"
+      },
+      "geometry": {
+        "centre": {
+          "x": -3.0589236946778664,
+          "y": -6.296267611064376
+        },
+        "radius": 1.5
+      },
+      "geometry_type": "circle",
+      "object_id": "moon-q3-b"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-south"
+      },
+      "geometry": {
+        "centre": {
+          "x": 0.0,
+          "y": -7.0
+        },
+        "radius": 1.5
+      },
+      "geometry_type": "circle",
+      "object_id": "moon-south"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-q4-a"
+      },
+      "geometry": {
+        "centre": {
+          "x": 3.058923694677864,
+          "y": -6.296267611064378
+        },
+        "radius": 1.5
+      },
+      "geometry_type": "circle",
+      "object_id": "moon-q4-a"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-q4-b"
+      },
+      "geometry": {
+        "centre": {
+          "x": 6.296267611064376,
+          "y": -3.058923694677867
+        },
+        "radius": 1.5
+      },
+      "geometry_type": "circle",
+      "object_id": "moon-q4-b"
+    },
+    {
+      "attributes": {},
+      "geometry": {
+        "area": 231.4864960894015,
+        "mean_side_length": 4.547194174781999,
+        "perimeter": 54.56633009738399,
+        "side_ids": [
+          "wall_east",
+          "wall_east_north",
+          "wall_north_east",
+          "wall_north",
+          "wall_north_west",
+          "wall_west_north",
+          "wall_west",
+          "wall_west_south",
+          "wall_south_west",
+          "wall_south",
+          "wall_south_east",
+          "wall_east_south"
+        ],
+        "side_lengths": [
+          4.55513627132909,
+          4.543223126508457,
+          4.543223126508456,
+          4.555136271329083,
+          4.543223126508464,
+          4.543223126508447,
+          4.555136271329085,
+          4.543223126508448,
+          4.54322312650846,
+          4.55513627132909,
+          4.543223126508451,
+          4.543223126508453
+        ],
+        "vertex_ids": [
+          "wall-vertex-00",
+          "wall-vertex-01",
+          "wall-vertex-02",
+          "wall-vertex-03",
+          "wall-vertex-04",
+          "wall-vertex-05",
+          "wall-vertex-06",
+          "wall-vertex-07",
+          "wall-vertex-08",
+          "wall-vertex-09",
+          "wall-vertex-10",
+          "wall-vertex-11"
+        ]
+      },
+      "geometry_type": "polygon",
+      "object_id": "polar-pivot-wall"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-east",
+        "wall_index": 0
+      },
+      "geometry": {
+        "normal": {
+          "x": 1.0,
+          "y": 0.0
+        },
+        "offset": 8.5,
+        "side_end": {
+          "x": 8.5,
+          "y": 2.2775681356645423
+        },
+        "side_length": 4.55513627132909,
+        "side_start": {
+          "x": 8.5,
+          "y": -2.277568135664547
+        },
+        "tangency_point": {
+          "x": 8.5,
+          "y": 0.0
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "wall_east"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-q1-a",
+        "wall_index": 1
+      },
+      "geometry": {
+        "normal": {
+          "x": 0.860996518275545,
+          "y": 0.5086108488003269
+        },
+        "offset": 8.476866268023054,
+        "side_end": {
+          "x": 6.189267429337257,
+          "y": 6.189267429337259
+        },
+        "side_length": 4.543223126508457,
+        "side_start": {
+          "x": 8.5,
+          "y": 2.2775681356645423
+        },
+        "tangency_point": {
+          "x": 7.587762388477694,
+          "y": 3.821839967878356
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "wall_east_north"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-q1-b",
+        "wall_index": 2
+      },
+      "geometry": {
+        "normal": {
+          "x": 0.5086108488003265,
+          "y": 0.8609965182755454
+        },
+        "offset": 8.476866268023054,
+        "side_end": {
+          "x": 2.277568135664539,
+          "y": 8.499999999999998
+        },
+        "side_length": 4.543223126508456,
+        "side_start": {
+          "x": 6.189267429337257,
+          "y": 6.189267429337259
+        },
+        "tangency_point": {
+          "x": 3.821839967878355,
+          "y": 7.587762388477695
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "wall_north_east"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-north",
+        "wall_index": 3
+      },
+      "geometry": {
+        "normal": {
+          "x": 6.123233995736766e-17,
+          "y": 1.0
+        },
+        "offset": 8.5,
+        "side_end": {
+          "x": -2.277568135664543,
+          "y": 8.500000000000002
+        },
+        "side_length": 4.555136271329083,
+        "side_start": {
+          "x": 2.277568135664539,
+          "y": 8.499999999999998
+        },
+        "tangency_point": {
+          "x": 9.184850993605148e-17,
+          "y": 8.5
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "wall_north"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-q2-a",
+        "wall_index": 4
+      },
+      "geometry": {
+        "normal": {
+          "x": -0.5086108488003279,
+          "y": 0.8609965182755445
+        },
+        "offset": 8.476866268023052,
+        "side_end": {
+          "x": -6.189267429337264,
+          "y": 6.189267429337251
+        },
+        "side_length": 4.543223126508464,
+        "side_start": {
+          "x": -2.277568135664543,
+          "y": 8.500000000000002
+        },
+        "tangency_point": {
+          "x": -3.821839967878357,
+          "y": 7.587762388477694
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "wall_north_west"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-q2-b",
+        "wall_index": 5
+      },
+      "geometry": {
+        "normal": {
+          "x": -0.860996518275545,
+          "y": 0.5086108488003269
+        },
+        "offset": 8.476866268023054,
+        "side_end": {
+          "x": -8.5,
+          "y": 2.2775681356645427
+        },
+        "side_length": 4.543223126508447,
+        "side_start": {
+          "x": -6.189267429337264,
+          "y": 6.189267429337251
+        },
+        "tangency_point": {
+          "x": -7.587762388477694,
+          "y": 3.8218399678783563
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "wall_west_north"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-west",
+        "wall_index": 6
+      },
+      "geometry": {
+        "normal": {
+          "x": -1.0,
+          "y": 1.2246467991473532e-16
+        },
+        "offset": 8.5,
+        "side_end": {
+          "x": -8.5,
+          "y": -2.2775681356645414
+        },
+        "side_length": 4.555136271329085,
+        "side_start": {
+          "x": -8.5,
+          "y": 2.2775681356645427
+        },
+        "tangency_point": {
+          "x": -8.5,
+          "y": 1.8369701987210297e-16
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "wall_west"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-q3-a",
+        "wall_index": 7
+      },
+      "geometry": {
+        "normal": {
+          "x": -0.860996518275545,
+          "y": -0.508610848800327
+        },
+        "offset": 8.476866268023054,
+        "side_end": {
+          "x": -6.189267429337264,
+          "y": -6.189267429337252
+        },
+        "side_length": 4.543223126508448,
+        "side_start": {
+          "x": -8.5,
+          "y": -2.2775681356645414
+        },
+        "tangency_point": {
+          "x": -7.587762388477694,
+          "y": -3.821839967878355
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "wall_west_south"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-q3-b",
+        "wall_index": 8
+      },
+      "geometry": {
+        "normal": {
+          "x": -0.508610848800328,
+          "y": -0.8609965182755444
+        },
+        "offset": 8.476866268023052,
+        "side_end": {
+          "x": -2.277568135664545,
+          "y": -8.499999999999998
+        },
+        "side_length": 4.54322312650846,
+        "side_start": {
+          "x": -6.189267429337264,
+          "y": -6.189267429337252
+        },
+        "tangency_point": {
+          "x": -3.8218399678783586,
+          "y": -7.587762388477692
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "wall_south_west"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-south",
+        "wall_index": 9
+      },
+      "geometry": {
+        "normal": {
+          "x": -1.8369701987210297e-16,
+          "y": -1.0
+        },
+        "offset": 8.5,
+        "side_end": {
+          "x": 2.277568135664545,
+          "y": -8.5
+        },
+        "side_length": 4.55513627132909,
+        "side_start": {
+          "x": -2.277568135664545,
+          "y": -8.499999999999998
+        },
+        "tangency_point": {
+          "x": -2.755455298081545e-16,
+          "y": -8.5
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "wall_south"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-q4-a",
+        "wall_index": 10
+      },
+      "geometry": {
+        "normal": {
+          "x": 0.5086108488003278,
+          "y": -0.8609965182755446
+        },
+        "offset": 8.476866268023054,
+        "side_end": {
+          "x": 6.1892674293372565,
+          "y": -6.189267429337259
+        },
+        "side_length": 4.543223126508451,
+        "side_start": {
+          "x": 2.277568135664545,
+          "y": -8.5
+        },
+        "tangency_point": {
+          "x": 3.821839967878356,
+          "y": -7.587762388477695
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "wall_south_east"
+    },
+    {
+      "attributes": {
+        "moon_name": "moon-q4-b",
+        "wall_index": 11
+      },
+      "geometry": {
+        "normal": {
+          "x": 0.8609965182755444,
+          "y": -0.5086108488003281
+        },
+        "offset": 8.476866268023054,
+        "side_end": {
+          "x": 8.5,
+          "y": -2.277568135664547
+        },
+        "side_length": 4.543223126508453,
+        "side_start": {
+          "x": 6.1892674293372565,
+          "y": -6.189267429337259
+        },
+        "tangency_point": {
+          "x": 7.587762388477692,
+          "y": -3.821839967878359
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "wall_east_south"
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 0
+      },
+      "geometry": {
+        "x": 8.5,
+        "y": 2.2775681356645423
+      },
+      "geometry_type": "point",
+      "object_id": "wall-vertex-00"
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 1
+      },
+      "geometry": {
+        "x": 6.189267429337257,
+        "y": 6.189267429337259
+      },
+      "geometry_type": "point",
+      "object_id": "wall-vertex-01"
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 2
+      },
+      "geometry": {
+        "x": 2.277568135664539,
+        "y": 8.499999999999998
+      },
+      "geometry_type": "point",
+      "object_id": "wall-vertex-02"
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 3
+      },
+      "geometry": {
+        "x": -2.277568135664543,
+        "y": 8.500000000000002
+      },
+      "geometry_type": "point",
+      "object_id": "wall-vertex-03"
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 4
+      },
+      "geometry": {
+        "x": -6.189267429337264,
+        "y": 6.189267429337251
+      },
+      "geometry_type": "point",
+      "object_id": "wall-vertex-04"
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 5
+      },
+      "geometry": {
+        "x": -8.5,
+        "y": 2.2775681356645427
+      },
+      "geometry_type": "point",
+      "object_id": "wall-vertex-05"
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 6
+      },
+      "geometry": {
+        "x": -8.5,
+        "y": -2.2775681356645414
+      },
+      "geometry_type": "point",
+      "object_id": "wall-vertex-06"
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 7
+      },
+      "geometry": {
+        "x": -6.189267429337264,
+        "y": -6.189267429337252
+      },
+      "geometry_type": "point",
+      "object_id": "wall-vertex-07"
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 8
+      },
+      "geometry": {
+        "x": -2.277568135664545,
+        "y": -8.499999999999998
+      },
+      "geometry_type": "point",
+      "object_id": "wall-vertex-08"
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 9
+      },
+      "geometry": {
+        "x": 2.277568135664545,
+        "y": -8.5
+      },
+      "geometry_type": "point",
+      "object_id": "wall-vertex-09"
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 10
+      },
+      "geometry": {
+        "x": 6.1892674293372565,
+        "y": -6.189267429337259
+      },
+      "geometry_type": "point",
+      "object_id": "wall-vertex-10"
+    },
+    {
+      "attributes": {
+        "wall_vertex_index": 11
+      },
+      "geometry": {
+        "x": 8.5,
+        "y": -2.277568135664547
+      },
+      "geometry_type": "point",
+      "object_id": "wall-vertex-11"
+    },
+    {
+      "attributes": {
+        "base_side": "south",
+        "sevenfold_index": 0
+      },
+      "geometry": {
+        "angle_degrees": 115.58789570268013,
+        "angle_radians": 2.017389355463573,
+        "x": -3.023266527150288,
+        "y": 6.313466520526789
+      },
+      "geometry_type": "point",
+      "object_id": "sevenfold-point-00"
+    },
+    {
+      "attributes": {
+        "base_side": "south",
+        "sevenfold_index": 1
+      },
+      "geometry": {
+        "angle_degrees": 167.0585971351201,
+        "angle_radians": 2.915722563770612,
+        "x": -6.822197308725176,
+        "y": 1.5676810520073792
+      },
+      "geometry_type": "point",
+      "object_id": "sevenfold-point-01"
+    },
+    {
+      "attributes": {
+        "base_side": "south",
+        "sevenfold_index": 2
+      },
+      "geometry": {
+        "angle_degrees": 218.52929856756006,
+        "angle_radians": 3.814055772077651,
+        "x": -5.476028093611814,
+        "y": -4.36040322882806
+      },
+      "geometry_type": "point",
+      "object_id": "sevenfold-point-02"
+    },
+    {
+      "attributes": {
+        "base_side": "south",
+        "sevenfold_index": 3
+      },
+      "geometry": {
+        "angle_degrees": 270.0,
+        "angle_radians": 4.71238898038469,
+        "x": -1.2858791391047208e-15,
+        "y": -7.0
+      },
+      "geometry_type": "point",
+      "object_id": "sevenfold-point-03"
+    },
+    {
+      "attributes": {
+        "base_side": "south",
+        "sevenfold_index": 4
+      },
+      "geometry": {
+        "angle_degrees": 321.47070143243997,
+        "angle_radians": 5.610722188691729,
+        "x": 5.476028093611814,
+        "y": -4.360403228828059
+      },
+      "geometry_type": "point",
+      "object_id": "sevenfold-point-04"
+    },
+    {
+      "attributes": {
+        "base_side": "south",
+        "sevenfold_index": 5
+      },
+      "geometry": {
+        "angle_degrees": 12.941402864879896,
+        "angle_radians": 0.225870089819181,
+        "x": 6.822197308725176,
+        "y": 1.5676810520073783
+      },
+      "geometry_type": "point",
+      "object_id": "sevenfold-point-05"
+    },
+    {
+      "attributes": {
+        "base_side": "south",
+        "sevenfold_index": 6
+      },
+      "geometry": {
+        "angle_degrees": 64.41210429731987,
+        "angle_radians": 1.1242032981262202,
+        "x": 3.0232665271502888,
+        "y": 6.313466520526789
+      },
+      "geometry_type": "point",
+      "object_id": "sevenfold-point-06"
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 0
+      },
+      "geometry": {
+        "angle_degrees": 12.941402864879896,
+        "angle_radians": 0.225870089819181,
+        "angular_gap_to_next_degrees": 25.58789570268015,
+        "angular_gap_to_next_radians": 0.4465930286686767,
+        "x": 6.822197308725176,
+        "y": 1.5676810520073783
+      },
+      "geometry_type": "point",
+      "object_id": "fourteenfold-point-00"
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 1
+      },
+      "geometry": {
+        "angle_degrees": 38.52929856756005,
+        "angle_radians": 0.6724631184878577,
+        "angular_gap_to_next_degrees": 25.882805729759824,
+        "angular_gap_to_next_radians": 0.45174017963836255,
+        "x": 5.476028093611813,
+        "y": 4.36040322882806
+      },
+      "geometry_type": "point",
+      "object_id": "fourteenfold-point-01"
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 2
+      },
+      "geometry": {
+        "angle_degrees": 64.41210429731987,
+        "angle_radians": 1.1242032981262202,
+        "angular_gap_to_next_degrees": 25.587895702680132,
+        "angular_gap_to_next_radians": 0.44659302866867634,
+        "x": 3.0232665271502888,
+        "y": 6.313466520526789
+      },
+      "geometry_type": "point",
+      "object_id": "fourteenfold-point-02"
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 3
+      },
+      "geometry": {
+        "angle_degrees": 90.0,
+        "angle_radians": 1.5707963267948966,
+        "angular_gap_to_next_degrees": 25.587895702680132,
+        "angular_gap_to_next_radians": 0.44659302866867634,
+        "x": 4.286263797015736e-16,
+        "y": 7.0
+      },
+      "geometry_type": "point",
+      "object_id": "fourteenfold-point-03"
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 4
+      },
+      "geometry": {
+        "angle_degrees": 115.58789570268013,
+        "angle_radians": 2.017389355463573,
+        "angular_gap_to_next_degrees": 25.882805729759813,
+        "angular_gap_to_next_radians": 0.45174017963836244,
+        "x": -3.023266527150288,
+        "y": 6.313466520526789
+      },
+      "geometry_type": "point",
+      "object_id": "fourteenfold-point-04"
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 5
+      },
+      "geometry": {
+        "angle_degrees": 141.47070143243994,
+        "angle_radians": 2.4691295351019353,
+        "angular_gap_to_next_degrees": 25.58789570268016,
+        "angular_gap_to_next_radians": 0.4465930286686768,
+        "x": -5.476028093611812,
+        "y": 4.36040322882806
+      },
+      "geometry_type": "point",
+      "object_id": "fourteenfold-point-05"
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 6
+      },
+      "geometry": {
+        "angle_degrees": 167.0585971351201,
+        "angle_radians": 2.915722563770612,
+        "angular_gap_to_next_degrees": 25.88280572975979,
+        "angular_gap_to_next_radians": 0.451740179638362,
+        "x": -6.822197308725176,
+        "y": 1.5676810520073792
+      },
+      "geometry_type": "point",
+      "object_id": "fourteenfold-point-06"
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 7
+      },
+      "geometry": {
+        "angle_degrees": 192.94140286487988,
+        "angle_radians": 3.367462743408974,
+        "angular_gap_to_next_degrees": 25.58789570268016,
+        "angular_gap_to_next_radians": 0.4465930286686768,
+        "x": -6.822197308725177,
+        "y": -1.5676810520073774
+      },
+      "geometry_type": "point",
+      "object_id": "fourteenfold-point-07"
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 8
+      },
+      "geometry": {
+        "angle_degrees": 218.52929856756006,
+        "angle_radians": 3.814055772077651,
+        "angular_gap_to_next_degrees": 25.882805729759813,
+        "angular_gap_to_next_radians": 0.45174017963836244,
+        "x": -5.476028093611814,
+        "y": -4.36040322882806
+      },
+      "geometry_type": "point",
+      "object_id": "fourteenfold-point-08"
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 9
+      },
+      "geometry": {
+        "angle_degrees": 244.41210429731987,
+        "angle_radians": 4.265795951716013,
+        "angular_gap_to_next_degrees": 25.587895702680132,
+        "angular_gap_to_next_radians": 0.44659302866867634,
+        "x": -3.0232665271502897,
+        "y": -6.313466520526788
+      },
+      "geometry_type": "point",
+      "object_id": "fourteenfold-point-09"
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 10
+      },
+      "geometry": {
+        "angle_degrees": 270.0,
+        "angle_radians": 4.71238898038469,
+        "angular_gap_to_next_degrees": 25.587895702680132,
+        "angular_gap_to_next_radians": 0.44659302866867634,
+        "x": -1.2858791391047208e-15,
+        "y": -7.0
+      },
+      "geometry_type": "point",
+      "object_id": "fourteenfold-point-10"
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 11
+      },
+      "geometry": {
+        "angle_degrees": 295.58789570268016,
+        "angle_radians": 5.158982009053366,
+        "angular_gap_to_next_degrees": 25.88280572975984,
+        "angular_gap_to_next_radians": 0.4517401796383629,
+        "x": 3.0232665271502874,
+        "y": -6.31346652052679
+      },
+      "geometry_type": "point",
+      "object_id": "fourteenfold-point-11"
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 12
+      },
+      "geometry": {
+        "angle_degrees": 321.47070143243997,
+        "angle_radians": 5.610722188691729,
+        "angular_gap_to_next_degrees": 25.587895702680132,
+        "angular_gap_to_next_radians": 0.44659302866867634,
+        "x": 5.476028093611814,
+        "y": -4.360403228828059
+      },
+      "geometry_type": "point",
+      "object_id": "fourteenfold-point-12"
+    },
+    {
+      "attributes": {
+        "fourteenfold_index": 13
+      },
+      "geometry": {
+        "angle_degrees": 347.0585971351201,
+        "angle_radians": 6.057315217360405,
+        "angular_gap_to_next_degrees": 25.88280572975979,
+        "angular_gap_to_next_radians": 0.451740179638362,
+        "x": 6.822197308725176,
+        "y": -1.5676810520073798
+      },
+      "geometry_type": "point",
+      "object_id": "fourteenfold-point-13"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 0
+      },
+      "geometry": {
+        "angle_degrees": 0.0,
+        "angle_radians": 0.0
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-00"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 1
+      },
+      "geometry": {
+        "angle_degrees": 12.941402864879894,
+        "angle_radians": 0.225870089819181
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-01"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 2
+      },
+      "geometry": {
+        "angle_degrees": 25.587895702680132,
+        "angle_radians": 0.44659302866867634
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-02"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 3
+      },
+      "geometry": {
+        "angle_degrees": 38.52929856756005,
+        "angle_radians": 0.6724631184878577
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-03"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 4
+      },
+      "geometry": {
+        "angle_degrees": 51.47070143243995,
+        "angle_radians": 0.8983332083070389
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-04"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 5
+      },
+      "geometry": {
+        "angle_degrees": 64.41210429731987,
+        "angle_radians": 1.1242032981262202
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-05"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 6
+      },
+      "geometry": {
+        "angle_degrees": 77.0585971351201,
+        "angle_radians": 1.3449262369757153
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-06"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 7
+      },
+      "geometry": {
+        "angle_degrees": 90.0,
+        "angle_radians": 1.5707963267948966
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-07"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 8
+      },
+      "geometry": {
+        "angle_degrees": 102.9414028648799,
+        "angle_radians": 1.7966664166140778
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-08"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 9
+      },
+      "geometry": {
+        "angle_degrees": 115.58789570268013,
+        "angle_radians": 2.017389355463573
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-09"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 10
+      },
+      "geometry": {
+        "angle_degrees": 128.52929856756006,
+        "angle_radians": 2.2432594452827543
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-10"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 11
+      },
+      "geometry": {
+        "angle_degrees": 141.47070143243994,
+        "angle_radians": 2.4691295351019353
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-11"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 12
+      },
+      "geometry": {
+        "angle_degrees": 154.41210429731987,
+        "angle_radians": 2.6949996249211168
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-12"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 13
+      },
+      "geometry": {
+        "angle_degrees": 167.0585971351201,
+        "angle_radians": 2.915722563770612
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-13"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 14
+      },
+      "geometry": {
+        "angle_degrees": 180.0,
+        "angle_radians": 3.141592653589793
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-14"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 15
+      },
+      "geometry": {
+        "angle_degrees": 192.9414028648799,
+        "angle_radians": 3.367462743408974
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-15"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 16
+      },
+      "geometry": {
+        "angle_degrees": 205.58789570268013,
+        "angle_radians": 3.5881856822584695
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-16"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 17
+      },
+      "geometry": {
+        "angle_degrees": 218.52929856756006,
+        "angle_radians": 3.814055772077651
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-17"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 18
+      },
+      "geometry": {
+        "angle_degrees": 231.47070143243997,
+        "angle_radians": 4.039925861896832
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-18"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 19
+      },
+      "geometry": {
+        "angle_degrees": 244.41210429731987,
+        "angle_radians": 4.265795951716013
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-19"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 20
+      },
+      "geometry": {
+        "angle_degrees": 257.0585971351201,
+        "angle_radians": 4.486518890565509
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-20"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 21
+      },
+      "geometry": {
+        "angle_degrees": 270.0,
+        "angle_radians": 4.71238898038469
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-21"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 22
+      },
+      "geometry": {
+        "angle_degrees": 282.9414028648799,
+        "angle_radians": 4.938259070203871
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-22"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 23
+      },
+      "geometry": {
+        "angle_degrees": 295.58789570268016,
+        "angle_radians": 5.158982009053366
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-23"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 24
+      },
+      "geometry": {
+        "angle_degrees": 308.52929856756003,
+        "angle_radians": 5.384852098872547
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-24"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 25
+      },
+      "geometry": {
+        "angle_degrees": 321.47070143243997,
+        "angle_radians": 5.610722188691729
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-25"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 26
+      },
+      "geometry": {
+        "angle_degrees": 334.41210429731984,
+        "angle_radians": 5.83659227851091
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-26"
+    },
+    {
+      "attributes": {
+        "angular_mark_index": 27
+      },
+      "geometry": {
+        "angle_degrees": 347.0585971351201,
+        "angle_radians": 6.057315217360405
+      },
+      "geometry_type": "angular_mark",
+      "object_id": "four-triangle-mark-27"
+    },
+    {
+      "attributes": {
+        "local_index": 0,
+        "quadrant": 0,
+        "role": "moon_centre",
+        "scaffold_index": 0
+      },
+      "geometry": {
+        "angle_degrees": 0.0,
+        "angle_radians": 0.0,
+        "x": 7.0,
+        "y": 0.0
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-00"
+    },
+    {
+      "attributes": {
+        "local_index": 1,
+        "quadrant": 0,
+        "role": "inter_moon_gap",
+        "scaffold_index": 1
+      },
+      "geometry": {
+        "angle_degrees": 12.941402864879908,
+        "angle_radians": 0.22587008981918122,
+        "x": 6.822197308725176,
+        "y": 1.5676810520073796
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-01"
+    },
+    {
+      "attributes": {
+        "local_index": 2,
+        "quadrant": 0,
+        "role": "moon_centre",
+        "scaffold_index": 2
+      },
+      "geometry": {
+        "angle_degrees": 25.587895702680132,
+        "angle_radians": 0.44659302866867634,
+        "x": 6.313466520526789,
+        "y": 3.0232665271502883
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-02"
+    },
+    {
+      "attributes": {
+        "local_index": 3,
+        "quadrant": 0,
+        "role": "intersection_positioner",
+        "scaffold_index": 3
+      },
+      "geometry": {
+        "angle_degrees": 38.52929856756005,
+        "angle_radians": 0.6724631184878577,
+        "x": 5.476028093611813,
+        "y": 4.36040322882806
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-03"
+    },
+    {
+      "attributes": {
+        "local_index": 4,
+        "quadrant": 0,
+        "role": "intersection_positioner",
+        "scaffold_index": 4
+      },
+      "geometry": {
+        "angle_degrees": 51.47070143243995,
+        "angle_radians": 0.8983332083070389,
+        "x": 4.36040322882806,
+        "y": 5.476028093611813
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-04"
+    },
+    {
+      "attributes": {
+        "local_index": 5,
+        "quadrant": 0,
+        "role": "moon_centre",
+        "scaffold_index": 5
+      },
+      "geometry": {
+        "angle_degrees": 64.41210429731987,
+        "angle_radians": 1.1242032981262202,
+        "x": 3.0232665271502888,
+        "y": 6.313466520526789
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-05"
+    },
+    {
+      "attributes": {
+        "local_index": 6,
+        "quadrant": 0,
+        "role": "inter_moon_gap",
+        "scaffold_index": 6
+      },
+      "geometry": {
+        "angle_degrees": 77.0585971351201,
+        "angle_radians": 1.3449262369757153,
+        "x": 1.56768105200738,
+        "y": 6.822197308725176
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-06"
+    },
+    {
+      "attributes": {
+        "local_index": 0,
+        "quadrant": 1,
+        "role": "moon_centre",
+        "scaffold_index": 7
+      },
+      "geometry": {
+        "angle_degrees": 90.0,
+        "angle_radians": 1.5707963267948966,
+        "x": 4.286263797015736e-16,
+        "y": 7.0
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-07"
+    },
+    {
+      "attributes": {
+        "local_index": 1,
+        "quadrant": 1,
+        "role": "inter_moon_gap",
+        "scaffold_index": 8
+      },
+      "geometry": {
+        "angle_degrees": 102.9414028648799,
+        "angle_radians": 1.7966664166140778,
+        "x": -1.5676810520073794,
+        "y": 6.822197308725176
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-08"
+    },
+    {
+      "attributes": {
+        "local_index": 2,
+        "quadrant": 1,
+        "role": "moon_centre",
+        "scaffold_index": 9
+      },
+      "geometry": {
+        "angle_degrees": 115.58789570268013,
+        "angle_radians": 2.017389355463573,
+        "x": -3.023266527150288,
+        "y": 6.313466520526789
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-09"
+    },
+    {
+      "attributes": {
+        "local_index": 3,
+        "quadrant": 1,
+        "role": "intersection_positioner",
+        "scaffold_index": 10
+      },
+      "geometry": {
+        "angle_degrees": 128.52929856756006,
+        "angle_radians": 2.2432594452827543,
+        "x": -4.36040322882806,
+        "y": 5.476028093611813
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-10"
+    },
+    {
+      "attributes": {
+        "local_index": 4,
+        "quadrant": 1,
+        "role": "intersection_positioner",
+        "scaffold_index": 11
+      },
+      "geometry": {
+        "angle_degrees": 141.47070143243994,
+        "angle_radians": 2.4691295351019353,
+        "x": -5.476028093611812,
+        "y": 4.36040322882806
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-11"
+    },
+    {
+      "attributes": {
+        "local_index": 5,
+        "quadrant": 1,
+        "role": "moon_centre",
+        "scaffold_index": 12
+      },
+      "geometry": {
+        "angle_degrees": 154.41210429731987,
+        "angle_radians": 2.6949996249211168,
+        "x": -6.313466520526788,
+        "y": 3.023266527150289
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-12"
+    },
+    {
+      "attributes": {
+        "local_index": 6,
+        "quadrant": 1,
+        "role": "inter_moon_gap",
+        "scaffold_index": 13
+      },
+      "geometry": {
+        "angle_degrees": 167.0585971351201,
+        "angle_radians": 2.915722563770612,
+        "x": -6.822197308725176,
+        "y": 1.5676810520073792
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-13"
+    },
+    {
+      "attributes": {
+        "local_index": 0,
+        "quadrant": 2,
+        "role": "moon_centre",
+        "scaffold_index": 14
+      },
+      "geometry": {
+        "angle_degrees": 180.0,
+        "angle_radians": 3.141592653589793,
+        "x": -7.0,
+        "y": 8.572527594031472e-16
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-14"
+    },
+    {
+      "attributes": {
+        "local_index": 1,
+        "quadrant": 2,
+        "role": "inter_moon_gap",
+        "scaffold_index": 15
+      },
+      "geometry": {
+        "angle_degrees": 192.9414028648799,
+        "angle_radians": 3.367462743408974,
+        "x": -6.822197308725177,
+        "y": -1.5676810520073774
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-15"
+    },
+    {
+      "attributes": {
+        "local_index": 2,
+        "quadrant": 2,
+        "role": "moon_centre",
+        "scaffold_index": 16
+      },
+      "geometry": {
+        "angle_degrees": 205.58789570268013,
+        "angle_radians": 3.5881856822584695,
+        "x": -6.313466520526789,
+        "y": -3.0232665271502874
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-16"
+    },
+    {
+      "attributes": {
+        "local_index": 3,
+        "quadrant": 2,
+        "role": "intersection_positioner",
+        "scaffold_index": 17
+      },
+      "geometry": {
+        "angle_degrees": 218.52929856756006,
+        "angle_radians": 3.814055772077651,
+        "x": -5.476028093611814,
+        "y": -4.36040322882806
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-17"
+    },
+    {
+      "attributes": {
+        "local_index": 4,
+        "quadrant": 2,
+        "role": "intersection_positioner",
+        "scaffold_index": 18
+      },
+      "geometry": {
+        "angle_degrees": 231.47070143243997,
+        "angle_radians": 4.039925861896832,
+        "x": -4.360403228828059,
+        "y": -5.476028093611814
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-18"
+    },
+    {
+      "attributes": {
+        "local_index": 5,
+        "quadrant": 2,
+        "role": "moon_centre",
+        "scaffold_index": 19
+      },
+      "geometry": {
+        "angle_degrees": 244.41210429731987,
+        "angle_radians": 4.265795951716013,
+        "x": -3.0232665271502897,
+        "y": -6.313466520526788
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-19"
+    },
+    {
+      "attributes": {
+        "local_index": 6,
+        "quadrant": 2,
+        "role": "inter_moon_gap",
+        "scaffold_index": 20
+      },
+      "geometry": {
+        "angle_degrees": 257.0585971351201,
+        "angle_radians": 4.486518890565509,
+        "x": -1.5676810520073796,
+        "y": -6.822197308725176
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-20"
+    },
+    {
+      "attributes": {
+        "local_index": 0,
+        "quadrant": 3,
+        "role": "moon_centre",
+        "scaffold_index": 21
+      },
+      "geometry": {
+        "angle_degrees": 270.0,
+        "angle_radians": 4.71238898038469,
+        "x": -1.2858791391047208e-15,
+        "y": -7.0
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-21"
+    },
+    {
+      "attributes": {
+        "local_index": 1,
+        "quadrant": 3,
+        "role": "inter_moon_gap",
+        "scaffold_index": 22
+      },
+      "geometry": {
+        "angle_degrees": 282.9414028648799,
+        "angle_radians": 4.938259070203871,
+        "x": 1.567681052007377,
+        "y": -6.822197308725177
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-22"
+    },
+    {
+      "attributes": {
+        "local_index": 2,
+        "quadrant": 3,
+        "role": "moon_centre",
+        "scaffold_index": 23
+      },
+      "geometry": {
+        "angle_degrees": 295.58789570268016,
+        "angle_radians": 5.158982009053366,
+        "x": 3.0232665271502874,
+        "y": -6.31346652052679
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-23"
+    },
+    {
+      "attributes": {
+        "local_index": 3,
+        "quadrant": 3,
+        "role": "intersection_positioner",
+        "scaffold_index": 24
+      },
+      "geometry": {
+        "angle_degrees": 308.52929856756003,
+        "angle_radians": 5.384852098872547,
+        "x": 4.360403228828057,
+        "y": -5.4760280936118155
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-24"
+    },
+    {
+      "attributes": {
+        "local_index": 4,
+        "quadrant": 3,
+        "role": "intersection_positioner",
+        "scaffold_index": 25
+      },
+      "geometry": {
+        "angle_degrees": 321.47070143243997,
+        "angle_radians": 5.610722188691729,
+        "x": 5.476028093611814,
+        "y": -4.360403228828059
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-25"
+    },
+    {
+      "attributes": {
+        "local_index": 5,
+        "quadrant": 3,
+        "role": "moon_centre",
+        "scaffold_index": 26
+      },
+      "geometry": {
+        "angle_degrees": 334.41210429731984,
+        "angle_radians": 5.83659227851091,
+        "x": 6.313466520526788,
+        "y": -3.02326652715029
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-26"
+    },
+    {
+      "attributes": {
+        "local_index": 6,
+        "quadrant": 3,
+        "role": "inter_moon_gap",
+        "scaffold_index": 27
+      },
+      "geometry": {
+        "angle_degrees": 347.0585971351201,
+        "angle_radians": 6.057315217360405,
+        "x": 6.822197308725176,
+        "y": -1.5676810520073798
+      },
+      "geometry_type": "point",
+      "object_id": "scaffold-point-27"
+    },
+    {
+      "attributes": {
+        "heptagram_vertex_index": 0,
+        "scaffold_index": 7,
+        "source_scaffold_object_id": "scaffold-point-07"
+      },
+      "geometry": {
+        "x": 4.286263797015736e-16,
+        "y": 7.0
+      },
+      "geometry_type": "point",
+      "object_id": "heptagram-vertex-00"
+    },
+    {
+      "attributes": {
+        "heptagram_vertex_index": 1,
+        "scaffold_index": 11,
+        "source_scaffold_object_id": "scaffold-point-11"
+      },
+      "geometry": {
+        "x": -5.476028093611812,
+        "y": 4.36040322882806
+      },
+      "geometry_type": "point",
+      "object_id": "heptagram-vertex-01"
+    },
+    {
+      "attributes": {
+        "heptagram_vertex_index": 2,
+        "scaffold_index": 15,
+        "source_scaffold_object_id": "scaffold-point-15"
+      },
+      "geometry": {
+        "x": -6.822197308725177,
+        "y": -1.5676810520073774
+      },
+      "geometry_type": "point",
+      "object_id": "heptagram-vertex-02"
+    },
+    {
+      "attributes": {
+        "heptagram_vertex_index": 3,
+        "scaffold_index": 19,
+        "source_scaffold_object_id": "scaffold-point-19"
+      },
+      "geometry": {
+        "x": -3.0232665271502897,
+        "y": -6.313466520526788
+      },
+      "geometry_type": "point",
+      "object_id": "heptagram-vertex-03"
+    },
+    {
+      "attributes": {
+        "heptagram_vertex_index": 4,
+        "scaffold_index": 23,
+        "source_scaffold_object_id": "scaffold-point-23"
+      },
+      "geometry": {
+        "x": 3.0232665271502874,
+        "y": -6.31346652052679
+      },
+      "geometry_type": "point",
+      "object_id": "heptagram-vertex-04"
+    },
+    {
+      "attributes": {
+        "heptagram_vertex_index": 5,
+        "scaffold_index": 27,
+        "source_scaffold_object_id": "scaffold-point-27"
+      },
+      "geometry": {
+        "x": 6.822197308725176,
+        "y": -1.5676810520073798
+      },
+      "geometry_type": "point",
+      "object_id": "heptagram-vertex-05"
+    },
+    {
+      "attributes": {
+        "heptagram_vertex_index": 6,
+        "scaffold_index": 3,
+        "source_scaffold_object_id": "scaffold-point-03"
+      },
+      "geometry": {
+        "x": 5.476028093611813,
+        "y": 4.36040322882806
+      },
+      "geometry_type": "point",
+      "object_id": "heptagram-vertex-06"
+    },
+    {
+      "attributes": {
+        "end_vertex_index": 2,
+        "end_vertex_object_id": "heptagram-vertex-02",
+        "heptagram_edge_index": 0,
+        "start_vertex_index": 0,
+        "start_vertex_object_id": "heptagram-vertex-00"
+      },
+      "geometry": {
+        "end": {
+          "x": -6.822197308725177,
+          "y": -1.5676810520073774
+        },
+        "length": 10.952056187223624,
+        "start": {
+          "x": 4.286263797015736e-16,
+          "y": 7.0
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "heptagram-edge-00"
+    },
+    {
+      "attributes": {
+        "end_vertex_index": 4,
+        "end_vertex_object_id": "heptagram-vertex-04",
+        "heptagram_edge_index": 1,
+        "start_vertex_index": 2,
+        "start_vertex_object_id": "heptagram-vertex-02"
+      },
+      "geometry": {
+        "end": {
+          "x": 3.0232665271502874,
+          "y": -6.31346652052679
+        },
+        "length": 10.929576288984931,
+        "start": {
+          "x": -6.822197308725177,
+          "y": -1.5676810520073774
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "heptagram-edge-01"
+    },
+    {
+      "attributes": {
+        "end_vertex_index": 6,
+        "end_vertex_object_id": "heptagram-vertex-06",
+        "heptagram_edge_index": 2,
+        "start_vertex_index": 4,
+        "start_vertex_object_id": "heptagram-vertex-04"
+      },
+      "geometry": {
+        "end": {
+          "x": 5.476028093611813,
+          "y": 4.36040322882806
+        },
+        "length": 10.95205618722363,
+        "start": {
+          "x": 3.0232665271502874,
+          "y": -6.31346652052679
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "heptagram-edge-02"
+    },
+    {
+      "attributes": {
+        "end_vertex_index": 1,
+        "end_vertex_object_id": "heptagram-vertex-01",
+        "heptagram_edge_index": 3,
+        "start_vertex_index": 6,
+        "start_vertex_object_id": "heptagram-vertex-06"
+      },
+      "geometry": {
+        "end": {
+          "x": -5.476028093611812,
+          "y": 4.36040322882806
+        },
+        "length": 10.952056187223626,
+        "start": {
+          "x": 5.476028093611813,
+          "y": 4.36040322882806
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "heptagram-edge-03"
+    },
+    {
+      "attributes": {
+        "end_vertex_index": 3,
+        "end_vertex_object_id": "heptagram-vertex-03",
+        "heptagram_edge_index": 4,
+        "start_vertex_index": 1,
+        "start_vertex_object_id": "heptagram-vertex-01"
+      },
+      "geometry": {
+        "end": {
+          "x": -3.0232665271502897,
+          "y": -6.313466520526788
+        },
+        "length": 10.952056187223626,
+        "start": {
+          "x": -5.476028093611812,
+          "y": 4.36040322882806
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "heptagram-edge-04"
+    },
+    {
+      "attributes": {
+        "end_vertex_index": 5,
+        "end_vertex_object_id": "heptagram-vertex-05",
+        "heptagram_edge_index": 5,
+        "start_vertex_index": 3,
+        "start_vertex_object_id": "heptagram-vertex-03"
+      },
+      "geometry": {
+        "end": {
+          "x": 6.822197308725176,
+          "y": -1.5676810520073798
+        },
+        "length": 10.929576288984931,
+        "start": {
+          "x": -3.0232665271502897,
+          "y": -6.313466520526788
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "heptagram-edge-05"
+    },
+    {
+      "attributes": {
+        "end_vertex_index": 0,
+        "end_vertex_object_id": "heptagram-vertex-00",
+        "heptagram_edge_index": 6,
+        "start_vertex_index": 5,
+        "start_vertex_object_id": "heptagram-vertex-05"
+      },
+      "geometry": {
+        "end": {
+          "x": 4.286263797015736e-16,
+          "y": 7.0
+        },
+        "length": 10.952056187223628,
+        "start": {
+          "x": 6.822197308725176,
+          "y": -1.5676810520073798
+        }
+      },
+      "geometry_type": "line",
+      "object_id": "heptagram-edge-06"
+    }
+  ],
+  "schema_name": "njg_michell_geometry",
+  "schema_version": "1.0",
+  "sections": {
+    "core": {
+      "construction_radius": 7.0,
+      "earth_diameter": 11.0,
+      "earth_radius": 5.5,
+      "earth_square_side": 11.0,
+      "moon_diameter": 3.0,
+      "moon_radius": 1.5,
+      "object_ids": [
+        "earth-circle",
+        "earth-square",
+        "construction-circle"
+      ]
+    },
+    "four_triangle_28": {
+      "four_triangle_scaffold_max_mismatch_radians": 2.220446049250313e-16,
+      "object_ids": [
+        "four-triangle-mark-00",
+        "four-triangle-mark-01",
+        "four-triangle-mark-02",
+        "four-triangle-mark-03",
+        "four-triangle-mark-04",
+        "four-triangle-mark-05",
+        "four-triangle-mark-06",
+        "four-triangle-mark-07",
+        "four-triangle-mark-08",
+        "four-triangle-mark-09",
+        "four-triangle-mark-10",
+        "four-triangle-mark-11",
+        "four-triangle-mark-12",
+        "four-triangle-mark-13",
+        "four-triangle-mark-14",
+        "four-triangle-mark-15",
+        "four-triangle-mark-16",
+        "four-triangle-mark-17",
+        "four-triangle-mark-18",
+        "four-triangle-mark-19",
+        "four-triangle-mark-20",
+        "four-triangle-mark-21",
+        "four-triangle-mark-22",
+        "four-triangle-mark-23",
+        "four-triangle-mark-24",
+        "four-triangle-mark-25",
+        "four-triangle-mark-26",
+        "four-triangle-mark-27"
+      ]
+    },
+    "fourteenfold": {
+      "object_ids": [
+        "fourteenfold-point-00",
+        "fourteenfold-point-01",
+        "fourteenfold-point-02",
+        "fourteenfold-point-03",
+        "fourteenfold-point-04",
+        "fourteenfold-point-05",
+        "fourteenfold-point-06",
+        "fourteenfold-point-07",
+        "fourteenfold-point-08",
+        "fourteenfold-point-09",
+        "fourteenfold-point-10",
+        "fourteenfold-point-11",
+        "fourteenfold-point-12",
+        "fourteenfold-point-13"
+      ],
+      "primary_base_side": "south",
+      "reciprocal_base_side": "north"
+    },
+    "heptagram": {
+      "edge_object_ids": [
+        "heptagram-edge-00",
+        "heptagram-edge-01",
+        "heptagram-edge-02",
+        "heptagram-edge-03",
+        "heptagram-edge-04",
+        "heptagram-edge-05",
+        "heptagram-edge-06"
+      ],
+      "family_step": 2,
+      "traversal_indices": [
+        0,
+        2,
+        4,
+        6,
+        1,
+        3,
+        5
+      ],
+      "vertex_object_ids": [
+        "heptagram-vertex-00",
+        "heptagram-vertex-01",
+        "heptagram-vertex-02",
+        "heptagram-vertex-03",
+        "heptagram-vertex-04",
+        "heptagram-vertex-05",
+        "heptagram-vertex-06"
+      ]
+    },
+    "moon_system": {
+      "model": "NJG_INC",
+      "moon_count": 12,
+      "object_ids": [
+        "moon-east",
+        "moon-q1-a",
+        "moon-q1-b",
+        "moon-north",
+        "moon-q2-a",
+        "moon-q2-b",
+        "moon-west",
+        "moon-q3-a",
+        "moon-q3-b",
+        "moon-south",
+        "moon-q4-a",
+        "moon-q4-b"
+      ]
+    },
+    "scaffold_28": {
+      "beta_degrees": 25.587895702680132,
+      "beta_radians": 0.44659302866867634,
+      "heptagon_step_degrees": 51.47070143243995,
+      "heptagon_step_radians": 0.8983332083070389,
+      "object_ids": [
+        "scaffold-point-00",
+        "scaffold-point-01",
+        "scaffold-point-02",
+        "scaffold-point-03",
+        "scaffold-point-04",
+        "scaffold-point-05",
+        "scaffold-point-06",
+        "scaffold-point-07",
+        "scaffold-point-08",
+        "scaffold-point-09",
+        "scaffold-point-10",
+        "scaffold-point-11",
+        "scaffold-point-12",
+        "scaffold-point-13",
+        "scaffold-point-14",
+        "scaffold-point-15",
+        "scaffold-point-16",
+        "scaffold-point-17",
+        "scaffold-point-18",
+        "scaffold-point-19",
+        "scaffold-point-20",
+        "scaffold-point-21",
+        "scaffold-point-22",
+        "scaffold-point-23",
+        "scaffold-point-24",
+        "scaffold-point-25",
+        "scaffold-point-26",
+        "scaffold-point-27"
+      ],
+      "radius": 7.0
+    },
+    "sevenfold": {
+      "base_side": "south",
+      "object_ids": [
+        "sevenfold-point-00",
+        "sevenfold-point-01",
+        "sevenfold-point-02",
+        "sevenfold-point-03",
+        "sevenfold-point-04",
+        "sevenfold-point-05",
+        "sevenfold-point-06"
+      ],
+      "radius": 7.0,
+      "step_degrees": 51.47070143243995,
+      "step_radians": 0.8983332083070389
+    },
+    "wall": {
+      "area": 231.4864960894015,
+      "line_object_ids": [
+        "wall_east",
+        "wall_east_north",
+        "wall_north_east",
+        "wall_north",
+        "wall_north_west",
+        "wall_west_north",
+        "wall_west",
+        "wall_west_south",
+        "wall_south_west",
+        "wall_south",
+        "wall_south_east",
+        "wall_east_south"
+      ],
+      "mean_side_length": 4.547194174781999,
+      "perimeter": 54.56633009738399,
+      "polygon_object_id": "polar-pivot-wall",
+      "side_lengths": [
+        4.55513627132909,
+        4.543223126508457,
+        4.543223126508456,
+        4.555136271329083,
+        4.543223126508464,
+        4.543223126508447,
+        4.555136271329085,
+        4.543223126508448,
+        4.54322312650846,
+        4.55513627132909,
+        4.543223126508451,
+        4.543223126508453
+      ],
+      "vertex_object_ids": [
+        "wall-vertex-00",
+        "wall-vertex-01",
+        "wall-vertex-02",
+        "wall-vertex-03",
+        "wall-vertex-04",
+        "wall-vertex-05",
+        "wall-vertex-06",
+        "wall-vertex-07",
+        "wall-vertex-08",
+        "wall-vertex-09",
+        "wall-vertex-10",
+        "wall-vertex-11"
+      ]
+    }
+  },
+  "unit": 1.0
+}

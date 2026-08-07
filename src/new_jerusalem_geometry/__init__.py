@@ -139,6 +139,16 @@ from .michell_provenance import (
     write_michell_composite_provenance_json,
 )
 
+from .michell_geometry_export import (
+    GEOMETRY_SCHEMA_NAME,
+    GEOMETRY_SCHEMA_VERSION,
+    GeometryObject,
+    MichellCompositeGeometryExport,
+    build_michell_composite_geometry_export,
+    michell_composite_geometry_to_json,
+    write_michell_composite_geometry_json,
+)
+
 __all__ = [
     "COMPOSITE_MODEL_NAME",
     "MichellComposite",
@@ -153,6 +163,13 @@ __all__ = [
     "build_michell_composite_provenance",
     "michell_composite_provenance_to_json",
     "write_michell_composite_provenance_json",
+    "GEOMETRY_SCHEMA_NAME",
+    "GEOMETRY_SCHEMA_VERSION",
+    "GeometryObject",
+    "MichellCompositeGeometryExport",
+    "build_michell_composite_geometry_export",
+    "michell_composite_geometry_to_json",
+    "write_michell_composite_geometry_json",
     "AxisAlignedSquare",
     "Check",
     "Circle",
