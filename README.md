@@ -40,16 +40,29 @@ algorithm in Michell's text.
 
 ## Repository status
 
-Version `v0.4.0` is the integrated construction-grammar checkpoint.
+Version `v0.5.0` is the full generative reconstruction and
+construction-sufficiency checkpoint.
 
-The repository now contains a deterministic `NJG_MICHELL` forward composite
-together with preregistered frozen forward validation against the promoted
-Figure 12 and Figure 14 source-derived geometry.
+The repository now contains a deterministic `NJG_MICHELL` composite, a
+provenance-linked SVG renderer, machine-readable geometry and provenance
+exports, a registered generative-invariance audit, and a two-stage sevenfold
+phase-selection audit.
+
+The canonical generative path is calibration-excluded: Figure 12 and Figure
+14 source coordinates, registration matrices, digitised landmarks, and
+source-fit parameters are not inputs to the `NJG_MICHELL` builder.
+
+The Phase 5F grammar-only audit finds the four C4-related sevenfold residue
+classes to be underdetermined by the audited construction grammar. A
+downstream frozen no-refit comparison with the printed Figure 14 source
+strongly favours phase 3 among those four candidates, but this is explicitly
+classified as descriptive source consistency rather than independent
+validation and does not feed back into the builder.
 
 The project distinguishes reproducible geometric audit results from claims
 about Michell's exact historical construction procedure. Project
-reconstructions and candidate correspondences remain explicitly labelled as
-such.
+reconstructions, source-consistency comparisons, and candidate
+correspondences remain explicitly labelled as such.
 
 ## Author
 
@@ -66,7 +79,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -e ".[dev]"
-````
+```
 
 Run the core verification:
 
@@ -93,11 +106,11 @@ the composite and supplies no fitted parameters back into the generative model.
 
 ## NJG_MICHELL integrated forward reconstruction
 
-The v0.4 composite can be analysed with:
+The v0.5 `NJG_MICHELL` composite can be analysed with:
 
 ```bash
 python scripts/analyze_michell_composite.py
-````
+```
 
 `NJG_MICHELL` accepts only the scale unit as a caller-supplied geometric
 quantity. It deterministically combines:
@@ -118,7 +131,50 @@ mismatch of approximately `2.220e-16` radians.
 Plate calibration, digitisation, registration, and measured source landmarks
 are excluded from this generative composite.
 
-## Frozen forward validation
+## v0.5 generative outputs and phase audit
+
+Generate the complete canonical `NJG_MICHELL` SVG:
+
+```bash
+python scripts/generate_michell_composite.py
+```
+
+Generate the machine-readable geometry export:
+
+```bash
+python scripts/generate_michell_geometry.py
+```
+
+Generate the provenance manifest:
+
+```bash
+python scripts/generate_michell_provenance.py
+```
+
+Run the completed sevenfold phase-selection audit:
+
+```bash
+python scripts/audit_sevenfold_phase_selection_stage_b.py
+```
+
+The canonical geometry and provenance exports each contain 132 objects with
+the same ordered `(object_id, geometry_type)` identity. The SVG contains 59
+provenance-linked rendered objects.
+
+The Phase 5E generative-invariance audit passes at the registered scales
+`0.25`, `0.73`, `1.00`, `2.75`, and `8.00`.
+
+For the sevenfold phase question, Stage A remains
+`GRAMMAR_UNDERDETERMINED`: phases 0, 1, 2, and 3 all survive the grammar-only
+audit. Stage B then compares those frozen candidates to the promoted Figure
+14 endpoints with 14 discrete cyclic/orientation correspondences per phase
+and no continuous refitting. The descriptive source-consistency ranking is
+`[3, 0, 2, 1]`, with phase 3 preferred.
+
+That Stage B result is not an independent prediction and does not change the
+grammar-only conclusion.
+
+## Frozen forward validation (v0.4 validation layer)
 
 The preregistered no-refitting validation can be reproduced with:
 
@@ -170,7 +226,7 @@ Generate the standalone SVG:
 
 ```bash
 python scripts/generate_core_diagram.py
-````
+```
 
 The default output is:
 
@@ -196,7 +252,7 @@ Generate the three-panel model comparison:
 
 ```bash
 python scripts/generate_oblique_comparison.py
-````
+```
 
 The default output is:
 
@@ -277,7 +333,7 @@ Run:
 
 ```bash
 python scripts/analyze_septenary_scaffold.py
-````
+```
 
 This reconstructs the approximate sevenfold step described in Figure 194,
 repeats it through four quadrants to obtain twenty-eight points, classifies the
@@ -290,7 +346,7 @@ Generate the comparison SVG:
 
 ```bash
 python scripts/generate_michell_28_point_scaffold.py
-````
+```
 
 The default output is:
 
@@ -322,7 +378,7 @@ Run:
 
 ```bash
 python scripts/analyze_figure14_heptagram.py
-````
+```
 
 The analysis reconstructs the seven endpoint roles visible in Figure 14,
 compares exact-regular, Michell-28-point, and Figure-14-aligned vertex systems,
@@ -346,7 +402,7 @@ Generate the three-panel comparison SVG:
 
 ```bash
 python scripts/generate_michell_figure14_heptagram.py
-````
+```
 
 The default output is:
 
