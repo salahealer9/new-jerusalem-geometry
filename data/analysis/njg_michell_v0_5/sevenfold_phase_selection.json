@@ -1,0 +1,2815 @@
+{
+  "model_name": "NJG_MICHELL",
+  "protocol": {
+    "claim_matrix_sha256": "a955b1ea4f4a1e5dda0716c7b9a20fce4bde1421b5ccfff3cc9cf2d5356987e3",
+    "construction_dependencies_sha256": "ac70ec1f856e22a6a79534c275d52c2f87adf87ba5563b5d087be3163cbf30b2",
+    "construction_nodes_sha256": "9c2e38108a8e7e668794983b9d2a7b0ec8997e6393181ac24f68c5cdeadab42b",
+    "phase": "5F",
+    "protocol_path": "docs/specification/v0.5_sevenfold_phase_selection_protocol.md",
+    "protocol_sha256": "02871909641d5246116a7b55c94b43522bcc6db006862a3c44dee72a4d15be28",
+    "registered_atol": 1e-12,
+    "registered_phase_indices": {
+      "0": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "1": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25
+      ],
+      "2": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22,
+        26
+      ],
+      "3": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23,
+        27
+      ]
+    },
+    "registered_rtol": 1e-12,
+    "registered_step2_edge_pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        5,
+        0
+      ]
+    ],
+    "stage": "A",
+    "unit": 1.0
+  },
+  "schema_name": "njg_michell_sevenfold_phase_selection",
+  "schema_version": "1.0",
+  "stage_a": {
+    "candidate_count": 4,
+    "discriminating_grammar_condition": null,
+    "existing_candidate_state": {
+      "cyclic_origin_scaffold_index": 7,
+      "ordered_scaffold_indices": [
+        7,
+        11,
+        15,
+        19,
+        23,
+        27,
+        3
+      ],
+      "phase_id": 3,
+      "used_as_selection_evidence": false
+    },
+    "feeds_back_into_builder": false,
+    "grammar_boundary": {
+      "candidate_node": {
+        "claim_ids": "STAR-007",
+        "implementation_reference": "figure14_heptagram",
+        "label": "Seven vertices selected from 28-point scaffold",
+        "node_id": "FIG14_SCAFFOLD_VERTICES",
+        "node_type": "project_candidate",
+        "notes": "Current implementation selects scaffold indices 7,11,15,19,23,27,3"
+      },
+      "excluded_existing_phase_evidence": {
+        "DEP-022": "implementation_only",
+        "DEP-024": "hypothesis_to_test"
+      },
+      "existing_phase_node_is_admissible_selection_evidence": false,
+      "touching_edges": [
+        {
+          "child_node": "FIG14_SCAFFOLD_VERTICES",
+          "claim_ids": "STAR-007",
+          "edge_id": "DEP-022",
+          "evidence_status": "implementation_only",
+          "implementation_reference": "figure14_heptagram",
+          "notes": "Current code selects seven scaffold indices; historical dependency not established",
+          "parent_node": "SCAFFOLD_28",
+          "relation_type": "selects"
+        },
+        {
+          "child_node": "FIG14_HEPTAGRAM_7_2",
+          "claim_ids": "STAR-007",
+          "edge_id": "DEP-024",
+          "evidence_status": "hypothesis_to_test",
+          "implementation_reference": "figure14_heptagram",
+          "notes": "Tests whether the later scaffold predicts the earlier Figure 14 vertex system",
+          "parent_node": "FIG14_SCAFFOLD_VERTICES",
+          "relation_type": "candidate_correspondence"
+        }
+      ]
+    },
+    "grammar_selection_result": "GRAMMAR_UNDERDETERMINED",
+    "metric_equivalence": {
+      "all_phases_metric_equivalent": true,
+      "comparisons": [
+        {
+          "equivalent_to_phase_0": true,
+          "max_sorted_angular_gap_residual": 0.0,
+          "max_sorted_edge_length_residual": 0.0,
+          "phase_id": 0,
+          "star_edge_perimeter_residual": 0.0
+        },
+        {
+          "equivalent_to_phase_0": true,
+          "max_sorted_angular_gap_residual": 1.1102230246251565e-16,
+          "max_sorted_edge_length_residual": 1.7763568394002505e-15,
+          "phase_id": 1,
+          "star_edge_perimeter_residual": 0.0
+        },
+        {
+          "equivalent_to_phase_0": true,
+          "max_sorted_angular_gap_residual": 1.1102230246251565e-16,
+          "max_sorted_edge_length_residual": 3.552713678800501e-15,
+          "phase_id": 2,
+          "star_edge_perimeter_residual": 1.4210854715202004e-14
+        },
+        {
+          "equivalent_to_phase_0": true,
+          "max_sorted_angular_gap_residual": 1.1102230246251565e-16,
+          "max_sorted_edge_length_residual": 1.7763568394002505e-15,
+          "phase_id": 3,
+          "star_edge_perimeter_residual": 0.0
+        }
+      ],
+      "reference_phase_id": 0
+    },
+    "phases": [
+      {
+        "angular_gaps": [
+          0.8983332083070389,
+          0.8983332083070389,
+          0.898333208307039,
+          0.8931860573373527,
+          0.8983332083070392,
+          0.8983332083070383,
+          0.8983332083070392
+        ],
+        "candidate_valid": true,
+        "canonical_cyclic_role_sequence": [
+          "inter_moon_gap",
+          "intersection_positioner",
+          "moon_centre",
+          "intersection_positioner",
+          "inter_moon_gap",
+          "moon_centre",
+          "moon_centre"
+        ],
+        "cyclic_role_sequence": [
+          "moon_centre",
+          "intersection_positioner",
+          "inter_moon_gap",
+          "moon_centre",
+          "moon_centre",
+          "inter_moon_gap",
+          "intersection_positioner"
+        ],
+        "edge_lengths": [
+          10.952056187223628,
+          10.92957628898493,
+          10.952056187223626,
+          10.95205618722363,
+          10.952056187223626,
+          10.929576288984931,
+          10.952056187223628
+        ],
+        "phase_id": 0,
+        "project_inferred_gap_completion": {
+          "inter_moon_gap_count": 2,
+          "status": "project_inference"
+        },
+        "quarter_turn_target_phase": 3,
+        "radius_check": {
+          "expected_radius": 7.0,
+          "max_abs_residual": 0.0,
+          "passes": true
+        },
+        "role_counts": {
+          "inter_moon_gap": 2,
+          "intersection_positioner": 2,
+          "moon_centre": 3
+        },
+        "scaffold_indices": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24
+        ],
+        "sorted_angular_gaps": [
+          0.8931860573373527,
+          0.8983332083070383,
+          0.8983332083070389,
+          0.8983332083070389,
+          0.898333208307039,
+          0.8983332083070392,
+          0.8983332083070392
+        ],
+        "sorted_edge_lengths": [
+          10.92957628898493,
+          10.929576288984931,
+          10.952056187223626,
+          10.952056187223626,
+          10.952056187223628,
+          10.952056187223628,
+          10.95205618722363
+        ],
+        "source_stated_role_criterion": {
+          "passes": true,
+          "required_intersection_positions": 2,
+          "required_moon_centres": 3
+        },
+        "star_edge_perimeter": 76.619433514088,
+        "step2_edge_pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        "unique_index_count": 7,
+        "unique_point_count": 7
+      },
+      {
+        "angular_gaps": [
+          0.898333208307039,
+          0.8931860573373527,
+          0.8983332083070392,
+          0.8983332083070388,
+          0.8983332083070388,
+          0.8983332083070392,
+          0.8983332083070383
+        ],
+        "candidate_valid": true,
+        "canonical_cyclic_role_sequence": [
+          "inter_moon_gap",
+          "intersection_positioner",
+          "moon_centre",
+          "intersection_positioner",
+          "inter_moon_gap",
+          "moon_centre",
+          "moon_centre"
+        ],
+        "cyclic_role_sequence": [
+          "inter_moon_gap",
+          "moon_centre",
+          "moon_centre",
+          "inter_moon_gap",
+          "intersection_positioner",
+          "moon_centre",
+          "intersection_positioner"
+        ],
+        "edge_lengths": [
+          10.92957628898493,
+          10.95205618722363,
+          10.952056187223628,
+          10.952056187223628,
+          10.929576288984931,
+          10.952056187223626,
+          10.952056187223628
+        ],
+        "phase_id": 1,
+        "project_inferred_gap_completion": {
+          "inter_moon_gap_count": 2,
+          "status": "project_inference"
+        },
+        "quarter_turn_target_phase": 0,
+        "radius_check": {
+          "expected_radius": 7.0,
+          "max_abs_residual": 8.881784197001252e-16,
+          "passes": true
+        },
+        "role_counts": {
+          "inter_moon_gap": 2,
+          "intersection_positioner": 2,
+          "moon_centre": 3
+        },
+        "scaffold_indices": [
+          1,
+          5,
+          9,
+          13,
+          17,
+          21,
+          25
+        ],
+        "sorted_angular_gaps": [
+          0.8931860573373527,
+          0.8983332083070383,
+          0.8983332083070388,
+          0.8983332083070388,
+          0.898333208307039,
+          0.8983332083070392,
+          0.8983332083070392
+        ],
+        "sorted_edge_lengths": [
+          10.92957628898493,
+          10.929576288984931,
+          10.952056187223626,
+          10.952056187223628,
+          10.952056187223628,
+          10.952056187223628,
+          10.95205618722363
+        ],
+        "source_stated_role_criterion": {
+          "passes": true,
+          "required_intersection_positions": 2,
+          "required_moon_centres": 3
+        },
+        "star_edge_perimeter": 76.619433514088,
+        "step2_edge_pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        "unique_index_count": 7,
+        "unique_point_count": 7
+      },
+      {
+        "angular_gaps": [
+          0.898333208307039,
+          0.898333208307039,
+          0.8983332083070388,
+          0.8983332083070392,
+          0.8983332083070383,
+          0.8983332083070392,
+          0.8931860573373527
+        ],
+        "candidate_valid": true,
+        "canonical_cyclic_role_sequence": [
+          "inter_moon_gap",
+          "intersection_positioner",
+          "moon_centre",
+          "intersection_positioner",
+          "inter_moon_gap",
+          "moon_centre",
+          "moon_centre"
+        ],
+        "cyclic_role_sequence": [
+          "moon_centre",
+          "inter_moon_gap",
+          "intersection_positioner",
+          "moon_centre",
+          "intersection_positioner",
+          "inter_moon_gap",
+          "moon_centre"
+        ],
+        "edge_lengths": [
+          10.952056187223628,
+          10.952056187223626,
+          10.952056187223624,
+          10.929576288984933,
+          10.952056187223626,
+          10.952056187223626,
+          10.929576288984933
+        ],
+        "phase_id": 2,
+        "project_inferred_gap_completion": {
+          "inter_moon_gap_count": 2,
+          "status": "project_inference"
+        },
+        "quarter_turn_target_phase": 1,
+        "radius_check": {
+          "expected_radius": 7.0,
+          "max_abs_residual": 0.0,
+          "passes": true
+        },
+        "role_counts": {
+          "inter_moon_gap": 2,
+          "intersection_positioner": 2,
+          "moon_centre": 3
+        },
+        "scaffold_indices": [
+          2,
+          6,
+          10,
+          14,
+          18,
+          22,
+          26
+        ],
+        "sorted_angular_gaps": [
+          0.8931860573373527,
+          0.8983332083070383,
+          0.8983332083070388,
+          0.898333208307039,
+          0.898333208307039,
+          0.8983332083070392,
+          0.8983332083070392
+        ],
+        "sorted_edge_lengths": [
+          10.929576288984933,
+          10.929576288984933,
+          10.952056187223624,
+          10.952056187223626,
+          10.952056187223626,
+          10.952056187223626,
+          10.952056187223628
+        ],
+        "source_stated_role_criterion": {
+          "passes": true,
+          "required_intersection_positions": 2,
+          "required_moon_centres": 3
+        },
+        "star_edge_perimeter": 76.61943351408799,
+        "step2_edge_pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        "unique_index_count": 7,
+        "unique_point_count": 7
+      },
+      {
+        "angular_gaps": [
+          0.8983332083070389,
+          0.8983332083070388,
+          0.8983332083070388,
+          0.8983332083070392,
+          0.8931860573373527,
+          0.8983332083070392,
+          0.8983332083070383
+        ],
+        "candidate_valid": true,
+        "canonical_cyclic_role_sequence": [
+          "inter_moon_gap",
+          "intersection_positioner",
+          "moon_centre",
+          "intersection_positioner",
+          "inter_moon_gap",
+          "moon_centre",
+          "moon_centre"
+        ],
+        "cyclic_role_sequence": [
+          "intersection_positioner",
+          "moon_centre",
+          "intersection_positioner",
+          "inter_moon_gap",
+          "moon_centre",
+          "moon_centre",
+          "inter_moon_gap"
+        ],
+        "edge_lengths": [
+          10.952056187223626,
+          10.952056187223626,
+          10.929576288984931,
+          10.952056187223628,
+          10.952056187223624,
+          10.929576288984931,
+          10.95205618722363
+        ],
+        "phase_id": 3,
+        "project_inferred_gap_completion": {
+          "inter_moon_gap_count": 2,
+          "status": "project_inference"
+        },
+        "quarter_turn_target_phase": 2,
+        "radius_check": {
+          "expected_radius": 7.0,
+          "max_abs_residual": 8.881784197001252e-16,
+          "passes": true
+        },
+        "role_counts": {
+          "inter_moon_gap": 2,
+          "intersection_positioner": 2,
+          "moon_centre": 3
+        },
+        "scaffold_indices": [
+          3,
+          7,
+          11,
+          15,
+          19,
+          23,
+          27
+        ],
+        "sorted_angular_gaps": [
+          0.8931860573373527,
+          0.8983332083070383,
+          0.8983332083070388,
+          0.8983332083070388,
+          0.8983332083070389,
+          0.8983332083070392,
+          0.8983332083070392
+        ],
+        "sorted_edge_lengths": [
+          10.929576288984931,
+          10.929576288984931,
+          10.952056187223624,
+          10.952056187223626,
+          10.952056187223626,
+          10.952056187223628,
+          10.95205618722363
+        ],
+        "source_stated_role_criterion": {
+          "passes": true,
+          "required_intersection_positions": 2,
+          "required_moon_centres": 3
+        },
+        "star_edge_perimeter": 76.619433514088,
+        "step2_edge_pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        "unique_index_count": 7,
+        "unique_point_count": 7
+      }
+    ],
+    "primary_reciprocal_correspondence": {
+      "primary_phase_id": 1,
+      "primary_scaffold_indices": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25
+      ],
+      "reciprocal_phase_id": 3,
+      "reciprocal_scaffold_indices": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23,
+        27
+      ],
+      "selection_status": "descriptive_only"
+    },
+    "quarter_turn_orbit": {
+      "coordinate_rotation_passes": true,
+      "expected_phase_orbit": {
+        "0": 3,
+        "1": 0,
+        "2": 1,
+        "3": 2
+      },
+      "index_action": "(index + 7) mod 28",
+      "max_coordinate_residual": 4.440892098500626e-15,
+      "observed_phase_orbit": {
+        "0": 3,
+        "1": 0,
+        "2": 1,
+        "3": 2
+      },
+      "orbit_passes": true,
+      "role_mismatches": [],
+      "role_rotation_passes": true
+    },
+    "role_equivalence": {
+      "all_cyclic_role_words_equivalent": true,
+      "all_role_counts_equal": true,
+      "canonical_cyclic_role_sequence": [
+        "inter_moon_gap",
+        "intersection_positioner",
+        "moon_centre",
+        "intersection_positioner",
+        "inter_moon_gap",
+        "moon_centre",
+        "moon_centre"
+      ]
+    },
+    "source_orientation_scan": {
+      "admissible_source_claim_ids": [
+        "STAR-001",
+        "STAR-002",
+        "STAR-003",
+        "STAR-004"
+      ],
+      "named_cardinal_matches": [],
+      "named_cardinal_orientation_condition_present": false,
+      "note": "This scan establishes absence of an explicit named-cardinal condition in the audited source-grounded STAR claim records. It does not infer orientation from source-plate geometry.",
+      "searched_terms": [
+        "north",
+        "south",
+        "east",
+        "west",
+        "cardinal"
+      ]
+    },
+    "surviving_phase_ids": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "stage_b": {
+    "comparison_rule": {
+      "candidate_centre_fit": false,
+      "candidate_phase_fit": false,
+      "candidate_radius_fit": false,
+      "candidate_rotation_fit": false,
+      "candidate_scale_fit": false,
+      "candidate_translation_fit": false,
+      "continuous_fit_parameters": 0,
+      "correspondence_count_per_phase": 14,
+      "cyclic_shift_count": 7,
+      "orientations": [
+        "forward",
+        "reverse"
+      ],
+      "registration_refit": false,
+      "selection_metric": "minimum Euclidean RMS residual",
+      "source_coordinate_fields": [
+        "normalized_x",
+        "normalized_y"
+      ],
+      "source_endpoint_order": "promoted endpoint_order from star_endpoint_geometry.json",
+      "tie_break_rule": "minimum raw RMS; exact ties use forward before reverse, then lower cyclic shift"
+    },
+    "feeds_back_into_builder": false,
+    "historical_stage_a_commit": "a84949a",
+    "historical_stage_a_input_sha256": "48a96dc7e160365cafc9114d7586ce94b070ebbe0403d759e71e8795c28d6d7d",
+    "independent_validation": false,
+    "interpretation": {
+      "comparison_type": "descriptive_source_consistency",
+      "feeds_back_into_builder": false,
+      "grammar_selection_changed": false,
+      "independent_validation": false,
+      "stage_a_remains_grammar_underdetermined": true
+    },
+    "phase_results": [
+      {
+        "all_correspondences": [
+          {
+            "candidate_scaffold_indices": [
+              0,
+              4,
+              8,
+              12,
+              16,
+              20,
+              24
+            ],
+            "cyclic_shift": 0,
+            "max_residual": 9.942977909336186,
+            "mean_residual": 9.922017097465922,
+            "orientation": "forward",
+            "point_residuals": [
+              9.904397341850869,
+              9.90448846298004,
+              9.942977909336186,
+              9.931581011761104,
+              9.923300836174768,
+              9.931584627590802,
+              9.915789492567686
+            ],
+            "rms_residual": 9.922026315788733
+          },
+          {
+            "candidate_scaffold_indices": [
+              4,
+              8,
+              12,
+              16,
+              20,
+              24,
+              0
+            ],
+            "cyclic_shift": 1,
+            "max_residual": 4.674722694433222,
+            "mean_residual": 4.6473785121112,
+            "orientation": "forward",
+            "point_residuals": [
+              4.630187346224068,
+              4.624072070322703,
+              4.668327390653749,
+              4.674722694433222,
+              4.646400736771388,
+              4.65825138792852,
+              4.62968795844475
+            ],
+            "rms_residual": 4.647416281597843
+          },
+          {
+            "candidate_scaffold_indices": [
+              8,
+              12,
+              16,
+              20,
+              24,
+              0,
+              4
+            ],
+            "cyclic_shift": 2,
+            "max_residual": 1.575009448273465,
+            "mean_residual": 1.5478588547769776,
+            "orientation": "forward",
+            "point_residuals": [
+              1.5625916922310517,
+              1.5736776334278386,
+              1.4966754000236948,
+              1.5355652888084736,
+              1.552283380233332,
+              1.539209140440987,
+              1.575009448273465
+            ],
+            "rms_residual": 1.5480658592729957
+          },
+          {
+            "candidate_scaffold_indices": [
+              12,
+              16,
+              20,
+              24,
+              0,
+              4,
+              8
+            ],
+            "cyclic_shift": 3,
+            "max_residual": 7.467052680115361,
+            "mean_residual": 7.436356399100285,
+            "orientation": "forward",
+            "point_residuals": [
+              7.445347132399102,
+              7.428711664478653,
+              7.39862459263045,
+              7.440471188623275,
+              7.442990747421181,
+              7.4312967880339755,
+              7.467052680115361
+            ],
+            "rms_residual": 7.436381293852861
+          },
+          {
+            "candidate_scaffold_indices": [
+              16,
+              20,
+              24,
+              0,
+              4,
+              8,
+              12
+            ],
+            "cyclic_shift": 4,
+            "max_residual": 11.877849930145553,
+            "mean_residual": 11.852061001370702,
+            "orientation": "forward",
+            "point_residuals": [
+              11.831912769970172,
+              11.845842824967505,
+              11.832876782272756,
+              11.869622933668955,
+              11.857159772584623,
+              11.849161995985357,
+              11.877849930145553
+            ],
+            "rms_residual": 11.852071973195889
+          },
+          {
+            "candidate_scaffold_indices": [
+              20,
+              24,
+              0,
+              4,
+              8,
+              12,
+              16
+            ],
+            "cyclic_shift": 5,
+            "max_residual": 13.944094696563184,
+            "mean_residual": 13.92032740272812,
+            "orientation": "forward",
+            "point_residuals": [
+              13.901762670220982,
+              13.912979014048444,
+              13.919711691647167,
+              13.944094696563184,
+              13.919089982344053,
+              13.916374548928733,
+              13.928279215344274
+            ],
+            "rms_residual": 13.920332761278454
+          },
+          {
+            "candidate_scaffold_indices": [
+              24,
+              0,
+              4,
+              8,
+              12,
+              16,
+              20
+            ],
+            "cyclic_shift": 6,
+            "max_residual": 13.252335467535199,
+            "mean_residual": 13.231497764991888,
+            "orientation": "forward",
+            "point_residuals": [
+              13.213761951419718,
+              13.220038725898622,
+              13.245137539981743,
+              13.252335467535199,
+              13.219732103988848,
+              13.234677915346156,
+              13.234800650772927
+            ],
+            "rms_residual": 13.231504381103111
+          },
+          {
+            "candidate_scaffold_indices": [
+              0,
+              24,
+              20,
+              16,
+              12,
+              8,
+              4
+            ],
+            "cyclic_shift": 0,
+            "max_residual": 13.912979014048444,
+            "mean_residual": 8.93351817017295,
+            "orientation": "reverse",
+            "point_residuals": [
+              9.904397341850869,
+              13.912979014048444,
+              7.39862459263045,
+              4.674722694433222,
+              13.219732103988848,
+              11.849161995985357,
+              1.575009448273465
+            ],
+            "rms_residual": 9.898812061148895
+          },
+          {
+            "candidate_scaffold_indices": [
+              4,
+              0,
+              24,
+              20,
+              16,
+              12,
+              8
+            ],
+            "cyclic_shift": 1,
+            "max_residual": 13.916374548928733,
+            "mean_residual": 8.932199458346112,
+            "orientation": "reverse",
+            "point_residuals": [
+              4.630187346224068,
+              13.220038725898622,
+              11.832876782272756,
+              1.5355652888084736,
+              9.923300836174768,
+              13.916374548928733,
+              7.467052680115361
+            ],
+            "rms_residual": 9.90293786333092
+          },
+          {
+            "candidate_scaffold_indices": [
+              8,
+              4,
+              0,
+              24,
+              20,
+              16,
+              12
+            ],
+            "cyclic_shift": 2,
+            "max_residual": 13.919711691647167,
+            "mean_residual": 8.940884516820661,
+            "orientation": "reverse",
+            "point_residuals": [
+              1.5625916922310517,
+              9.90448846298004,
+              13.919711691647167,
+              7.440471188623275,
+              4.646400736771388,
+              13.234677915346156,
+              11.877849930145553
+            ],
+            "rms_residual": 9.910230124832232
+          },
+          {
+            "candidate_scaffold_indices": [
+              12,
+              8,
+              4,
+              0,
+              24,
+              20,
+              16
+            ],
+            "cyclic_shift": 3,
+            "max_residual": 13.928279215344274,
+            "mean_residual": 8.94233241422013,
+            "orientation": "reverse",
+            "point_residuals": [
+              7.445347132399102,
+              4.624072070322703,
+              13.245137539981743,
+              11.869622933668955,
+              1.552283380233332,
+              9.931584627590802,
+              13.928279215344274
+            ],
+            "rms_residual": 9.915210337673223
+          },
+          {
+            "candidate_scaffold_indices": [
+              16,
+              12,
+              8,
+              4,
+              0,
+              24,
+              20
+            ],
+            "cyclic_shift": 4,
+            "max_residual": 13.944094696563184,
+            "mean_residual": 8.946957970774287,
+            "orientation": "reverse",
+            "point_residuals": [
+              11.831912769970172,
+              1.5736776334278386,
+              9.942977909336186,
+              13.944094696563184,
+              7.442990747421181,
+              4.65825138792852,
+              13.234800650772927
+            ],
+            "rms_residual": 9.914121049056657
+          },
+          {
+            "candidate_scaffold_indices": [
+              20,
+              16,
+              12,
+              8,
+              4,
+              0,
+              24
+            ],
+            "cyclic_shift": 5,
+            "max_residual": 13.901762670220982,
+            "mean_residual": 8.937613656925983,
+            "orientation": "reverse",
+            "point_residuals": [
+              13.901762670220982,
+              7.428711664478653,
+              4.668327390653749,
+              13.252335467535199,
+              11.857159772584623,
+              1.539209140440987,
+              9.915789492567686
+            ],
+            "rms_residual": 9.907765512934517
+          },
+          {
+            "candidate_scaffold_indices": [
+              24,
+              20,
+              16,
+              12,
+              8,
+              4,
+              0
+            ],
+            "cyclic_shift": 6,
+            "max_residual": 13.919089982344053,
+            "mean_residual": 8.92399084528497,
+            "orientation": "reverse",
+            "point_residuals": [
+              13.213761951419718,
+              11.845842824967505,
+              1.4966754000236948,
+              9.931581011761104,
+              13.919089982344053,
+              7.4312967880339755,
+              4.62968795844475
+            ],
+            "rms_residual": 9.90096015740634
+          }
+        ],
+        "best_correspondence": {
+          "candidate_scaffold_indices": [
+            8,
+            12,
+            16,
+            20,
+            24,
+            0,
+            4
+          ],
+          "cyclic_shift": 2,
+          "orientation": "forward"
+        },
+        "best_point_pairs": [
+          {
+            "candidate_point": {
+              "x": -1.5676810520073794,
+              "y": 6.822197308725176
+            },
+            "endpoint_id": "star_endpoint_00_top",
+            "residual": 1.5625916922310517,
+            "scaffold_index": 8,
+            "source_index": 0,
+            "source_point": {
+              "x": -0.014399324384,
+              "y": 6.99251663018
+            }
+          },
+          {
+            "candidate_point": {
+              "x": -6.313466520526788,
+              "y": 3.023266527150289
+            },
+            "endpoint_id": "star_endpoint_01_upper_left",
+            "residual": 1.5736776334278386,
+            "scaffold_index": 12,
+            "source_index": 1,
+            "source_point": {
+              "x": -5.480853335429,
+              "y": 4.358637853019
+            }
+          },
+          {
+            "candidate_point": {
+              "x": -6.313466520526789,
+              "y": -3.0232665271502874
+            },
+            "endpoint_id": "star_endpoint_02_lower_left",
+            "residual": 1.4966754000236948,
+            "scaffold_index": 16,
+            "source_index": 2,
+            "source_point": {
+              "x": -6.825484345444,
+              "y": -1.616897087777
+            }
+          },
+          {
+            "candidate_point": {
+              "x": -1.5676810520073796,
+              "y": -6.822197308725176
+            },
+            "endpoint_id": "star_endpoint_03_bottom_left",
+            "residual": 1.5355652888084736,
+            "scaffold_index": 20,
+            "source_index": 3,
+            "source_point": {
+              "x": -3.028635766336,
+              "y": -6.34936321639
+            }
+          },
+          {
+            "candidate_point": {
+              "x": 4.360403228828057,
+              "y": -5.4760280936118155
+            },
+            "endpoint_id": "star_endpoint_04_bottom_right",
+            "residual": 1.552283380233332,
+            "scaffold_index": 24,
+            "source_index": 4,
+            "source_point": {
+              "x": 3.050238523596,
+              "y": -6.308525623766
+            }
+          },
+          {
+            "candidate_point": {
+              "x": 7.0,
+              "y": 0.0
+            },
+            "endpoint_id": "star_endpoint_05_lower_right",
+            "residual": 1.539209140440987,
+            "scaffold_index": 0,
+            "source_index": 5,
+            "source_point": {
+              "x": 6.836759043778,
+              "y": -1.530528395107
+            }
+          },
+          {
+            "candidate_point": {
+              "x": 4.36040322882806,
+              "y": 5.476028093611813
+            },
+            "endpoint_id": "star_endpoint_06_upper_right",
+            "residual": 1.575009448273465,
+            "scaffold_index": 4,
+            "source_index": 6,
+            "source_point": {
+              "x": 5.487155791243,
+              "y": 4.375535737781
+            }
+          }
+        ],
+        "comparison_count": 14,
+        "max_residual": 1.575009448273465,
+        "mean_residual": 1.5478588547769776,
+        "phase_id": 0,
+        "rank": 2,
+        "rms_fraction_of_registration_loo": 43.47553487305233,
+        "rms_residual": 1.5480658592729957,
+        "scaffold_indices": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24
+        ]
+      },
+      {
+        "all_correspondences": [
+          {
+            "candidate_scaffold_indices": [
+              1,
+              5,
+              9,
+              13,
+              17,
+              21,
+              25
+            ],
+            "cyclic_shift": 0,
+            "max_residual": 8.794744299731475,
+            "mean_residual": 8.752052294544884,
+            "orientation": "forward",
+            "point_residuals": [
+              8.72742198899808,
+              8.725904523682681,
+              8.794744299731475,
+              8.778991919557617,
+              8.745993556673312,
+              8.755363719424288,
+              8.735946053746733
+            ],
+            "rms_residual": 8.752086129754973
+          },
+          {
+            "candidate_scaffold_indices": [
+              5,
+              9,
+              13,
+              17,
+              21,
+              25,
+              1
+            ],
+            "cyclic_shift": 1,
+            "max_residual": 3.1845798361797946,
+            "mean_residual": 3.1382683022119915,
+            "orientation": "forward",
+            "point_residuals": [
+              3.1126392140750228,
+              3.14023694003109,
+              3.1845798361797946,
+              3.1536789684003845,
+              3.1276335884846413,
+              3.14002870898786,
+              3.109080859325146
+            ],
+            "rms_residual": 3.138359594988041
+          },
+          {
+            "candidate_scaffold_indices": [
+              9,
+              13,
+              17,
+              21,
+              25,
+              1,
+              5
+            ],
+            "cyclic_shift": 2,
+            "max_residual": 3.1346971184510037,
+            "mean_residual": 3.0972011512230937,
+            "orientation": "forward",
+            "point_residuals": [
+              3.0845406295431843,
+              3.096553490545738,
+              3.0574267156538446,
+              3.0977351128390573,
+              3.1112113241720247,
+              3.098243667356804,
+              3.1346971184510037
+            ],
+            "rms_residual": 3.0972783240502655
+          },
+          {
+            "candidate_scaffold_indices": [
+              13,
+              17,
+              21,
+              25,
+              1,
+              5,
+              9
+            ],
+            "cyclic_shift": 3,
+            "max_residual": 8.73414387349011,
+            "mean_residual": 8.719122726725917,
+            "orientation": "forward",
+            "point_residuals": [
+              8.704881070170186,
+              8.719042417025813,
+              8.692815051149129,
+              8.73414387349011,
+              8.73282913357466,
+              8.721868000082567,
+              8.728279541588954
+            ],
+            "rms_residual": 8.719134194199453
+          },
+          {
+            "candidate_scaffold_indices": [
+              17,
+              21,
+              25,
+              1,
+              5,
+              9,
+              13
+            ],
+            "cyclic_shift": 4,
+            "max_residual": 12.637978565438504,
+            "mean_residual": 12.614140479692391,
+            "orientation": "forward",
+            "point_residuals": [
+              12.598340292987666,
+              12.611835994831177,
+              12.603730964846472,
+              12.637978565438504,
+              12.622020962555132,
+              12.599538106448524,
+              12.625538470739258
+            ],
+            "rms_residual": 12.614148049507717
+          },
+          {
+            "candidate_scaffold_indices": [
+              21,
+              25,
+              1,
+              5,
+              9,
+              13,
+              17
+            ],
+            "cyclic_shift": 5,
+            "max_residual": 14.034699081777589,
+            "mean_residual": 14.010783011805348,
+            "orientation": "forward",
+            "point_residuals": [
+              13.992524039157715,
+              14.00267574562077,
+              14.014305279318645,
+              14.034699081777589,
+              14.00721775700048,
+              14.005926974598134,
+              14.018132205164099
+            ],
+            "rms_residual": 14.01078848618681
+          },
+          {
+            "candidate_scaffold_indices": [
+              25,
+              1,
+              5,
+              9,
+              13,
+              17,
+              21
+            ],
+            "cyclic_shift": 6,
+            "max_residual": 12.662830875237713,
+            "mean_residual": 12.632420392535854,
+            "orientation": "forward",
+            "point_residuals": [
+              12.610851777629446,
+              12.615644851442811,
+              12.644704848684126,
+              12.662830875237713,
+              12.629315930120534,
+              12.633800642134569,
+              12.629793822501787
+            ],
+            "rms_residual": 12.632430800959348
+          },
+          {
+            "candidate_scaffold_indices": [
+              1,
+              25,
+              21,
+              17,
+              13,
+              9,
+              5
+            ],
+            "cyclic_shift": 0,
+            "max_residual": 14.00267574562077,
+            "mean_residual": 8.991448987026917,
+            "orientation": "reverse",
+            "point_residuals": [
+              8.72742198899808,
+              14.00267574562077,
+              8.692815051149129,
+              3.1536789684003845,
+              12.629315930120534,
+              12.599538106448524,
+              3.1346971184510037
+            ],
+            "rms_residual": 9.898252764599626
+          },
+          {
+            "candidate_scaffold_indices": [
+              5,
+              1,
+              25,
+              21,
+              17,
+              13,
+              9
+            ],
+            "cyclic_shift": 1,
+            "max_residual": 14.005926974598134,
+            "mean_residual": 8.987135745151965,
+            "orientation": "reverse",
+            "point_residuals": [
+              3.1126392140750228,
+              12.615644851442811,
+              12.603730964846472,
+              3.0977351128390573,
+              8.745993556673312,
+              14.005926974598134,
+              8.728279541588954
+            ],
+            "rms_residual": 9.900463715153851
+          },
+          {
+            "candidate_scaffold_indices": [
+              9,
+              5,
+              1,
+              25,
+              21,
+              17,
+              13
+            ],
+            "cyclic_shift": 2,
+            "max_residual": 14.014305279318645,
+            "mean_residual": 8.99226671534187,
+            "orientation": "reverse",
+            "point_residuals": [
+              3.0845406295431843,
+              8.725904523682681,
+              14.014305279318645,
+              8.73414387349011,
+              3.1276335884846413,
+              12.633800642134569,
+              12.625538470739258
+            ],
+            "rms_residual": 9.907724652451929
+          },
+          {
+            "candidate_scaffold_indices": [
+              13,
+              9,
+              5,
+              1,
+              25,
+              21,
+              17
+            ],
+            "cyclic_shift": 3,
+            "max_residual": 14.018132205164099,
+            "mean_residual": 9.00178695329776,
+            "orientation": "reverse",
+            "point_residuals": [
+              8.704881070170186,
+              3.14023694003109,
+              12.644704848684126,
+              12.637978565438504,
+              3.1112113241720247,
+              8.755363719424288,
+              14.018132205164099
+            ],
+            "rms_residual": 9.914543183055372
+          },
+          {
+            "candidate_scaffold_indices": [
+              17,
+              13,
+              9,
+              5,
+              1,
+              25,
+              21
+            ],
+            "cyclic_shift": 4,
+            "max_residual": 14.034699081777589,
+            "mean_residual": 9.00385554715811,
+            "orientation": "reverse",
+            "point_residuals": [
+              12.598340292987666,
+              3.096553490545738,
+              8.794744299731475,
+              14.034699081777589,
+              8.73282913357466,
+              3.14002870898786,
+              12.629793822501787
+            ],
+            "rms_residual": 9.91579479013024
+          },
+          {
+            "candidate_scaffold_indices": [
+              21,
+              17,
+              13,
+              9,
+              5,
+              1,
+              25
+            ],
+            "cyclic_shift": 5,
+            "max_residual": 13.992524039157715,
+            "mean_residual": 9.0021696930371,
+            "orientation": "reverse",
+            "point_residuals": [
+              13.992524039157715,
+              8.719042417025813,
+              3.1845798361797946,
+              12.662830875237713,
+              12.622020962555132,
+              3.098243667356804,
+              8.735946053746733
+            ],
+            "rms_residual": 9.91054665221168
+          },
+          {
+            "candidate_scaffold_indices": [
+              25,
+              21,
+              17,
+              13,
+              9,
+              5,
+              1
+            ],
+            "cyclic_shift": 6,
+            "max_residual": 14.00721775700048,
+            "mean_residual": 8.985324717725755,
+            "orientation": "reverse",
+            "point_residuals": [
+              12.610851777629446,
+              12.611835994831177,
+              3.0574267156538446,
+              8.778991919557617,
+              14.00721775700048,
+              8.721868000082567,
+              3.109080859325146
+            ],
+            "rms_residual": 9.902741766485155
+          }
+        ],
+        "best_correspondence": {
+          "candidate_scaffold_indices": [
+            9,
+            13,
+            17,
+            21,
+            25,
+            1,
+            5
+          ],
+          "cyclic_shift": 2,
+          "orientation": "forward"
+        },
+        "best_point_pairs": [
+          {
+            "candidate_point": {
+              "x": -3.023266527150288,
+              "y": 6.313466520526789
+            },
+            "endpoint_id": "star_endpoint_00_top",
+            "residual": 3.0845406295431843,
+            "scaffold_index": 9,
+            "source_index": 0,
+            "source_point": {
+              "x": -0.014399324384,
+              "y": 6.99251663018
+            }
+          },
+          {
+            "candidate_point": {
+              "x": -6.822197308725176,
+              "y": 1.5676810520073792
+            },
+            "endpoint_id": "star_endpoint_01_upper_left",
+            "residual": 3.096553490545738,
+            "scaffold_index": 13,
+            "source_index": 1,
+            "source_point": {
+              "x": -5.480853335429,
+              "y": 4.358637853019
+            }
+          },
+          {
+            "candidate_point": {
+              "x": -5.476028093611814,
+              "y": -4.36040322882806
+            },
+            "endpoint_id": "star_endpoint_02_lower_left",
+            "residual": 3.0574267156538446,
+            "scaffold_index": 17,
+            "source_index": 2,
+            "source_point": {
+              "x": -6.825484345444,
+              "y": -1.616897087777
+            }
+          },
+          {
+            "candidate_point": {
+              "x": -1.2858791391047208e-15,
+              "y": -7.0
+            },
+            "endpoint_id": "star_endpoint_03_bottom_left",
+            "residual": 3.0977351128390573,
+            "scaffold_index": 21,
+            "source_index": 3,
+            "source_point": {
+              "x": -3.028635766336,
+              "y": -6.34936321639
+            }
+          },
+          {
+            "candidate_point": {
+              "x": 5.476028093611814,
+              "y": -4.360403228828059
+            },
+            "endpoint_id": "star_endpoint_04_bottom_right",
+            "residual": 3.1112113241720247,
+            "scaffold_index": 25,
+            "source_index": 4,
+            "source_point": {
+              "x": 3.050238523596,
+              "y": -6.308525623766
+            }
+          },
+          {
+            "candidate_point": {
+              "x": 6.822197308725176,
+              "y": 1.5676810520073796
+            },
+            "endpoint_id": "star_endpoint_05_lower_right",
+            "residual": 3.098243667356804,
+            "scaffold_index": 1,
+            "source_index": 5,
+            "source_point": {
+              "x": 6.836759043778,
+              "y": -1.530528395107
+            }
+          },
+          {
+            "candidate_point": {
+              "x": 3.0232665271502888,
+              "y": 6.313466520526789
+            },
+            "endpoint_id": "star_endpoint_06_upper_right",
+            "residual": 3.1346971184510037,
+            "scaffold_index": 5,
+            "source_index": 6,
+            "source_point": {
+              "x": 5.487155791243,
+              "y": 4.375535737781
+            }
+          }
+        ],
+        "comparison_count": 14,
+        "max_residual": 3.1346971184510037,
+        "mean_residual": 3.0972011512230937,
+        "phase_id": 1,
+        "rank": 4,
+        "rms_fraction_of_registration_loo": 86.9832707582826,
+        "rms_residual": 3.0972783240502655,
+        "scaffold_indices": [
+          1,
+          5,
+          9,
+          13,
+          17,
+          21,
+          25
+        ]
+      },
+      {
+        "all_correspondences": [
+          {
+            "candidate_scaffold_indices": [
+              2,
+              6,
+              10,
+              14,
+              18,
+              22,
+              26
+            ],
+            "cyclic_shift": 0,
+            "max_residual": 7.5090753452256696,
+            "mean_residual": 7.4720254345246016,
+            "orientation": "forward",
+            "point_residuals": [
+              7.469727741463534,
+              7.466656695112777,
+              7.5090753452256696,
+              7.4890685088382005,
+              7.457255749971537,
+              7.467592836698752,
+              7.444801164361738
+            ],
+            "rms_residual": 7.472051017689572
+          },
+          {
+            "candidate_scaffold_indices": [
+              6,
+              10,
+              14,
+              18,
+              22,
+              26,
+              2
+            ],
+            "cyclic_shift": 1,
+            "max_residual": 1.6262877685535408,
+            "mean_residual": 1.589722748299975,
+            "orientation": "forward",
+            "point_residuals": [
+              1.5912218539925607,
+              1.582393563925903,
+              1.6262877685535408,
+              1.5925824345479036,
+              1.569023663458283,
+              1.5818034630594002,
+              1.5847464905622337
+            ],
+            "rms_residual": 1.5898088828689487
+          },
+          {
+            "candidate_scaffold_indices": [
+              10,
+              14,
+              18,
+              22,
+              26,
+              2,
+              6
+            ],
+            "cyclic_shift": 2,
+            "max_residual": 4.630505835418976,
+            "mean_residual": 4.607615122369596,
+            "orientation": "forward",
+            "point_residuals": [
+              4.602986793266492,
+              4.615791429673493,
+              4.579248522595396,
+              4.620573597883775,
+              4.630505835418976,
+              4.583763002039578,
+              4.620436675709467
+            ],
+            "rms_residual": 4.607651059012653
+          },
+          {
+            "candidate_scaffold_indices": [
+              14,
+              18,
+              22,
+              26,
+              2,
+              6,
+              10
+            ],
+            "cyclic_shift": 3,
+            "max_residual": 9.916541449738325,
+            "mean_residual": 9.892235877046778,
+            "orientation": "forward",
+            "point_residuals": [
+              9.884022744940976,
+              9.898285847721404,
+              9.876253124499101,
+              9.916541449738325,
+              9.885899135023369,
+              9.875789060466015,
+              9.908859776938261
+            ],
+            "rms_residual": 9.892246977182037
+          },
+          {
+            "candidate_scaffold_indices": [
+              18,
+              22,
+              26,
+              2,
+              6,
+              10,
+              14
+            ],
+            "cyclic_shift": 4,
+            "max_residual": 13.233331532448773,
+            "mean_residual": 13.217585811283275,
+            "orientation": "forward",
+            "point_residuals": [
+              13.204255278759181,
+              13.217144620717745,
+              13.214004119054817,
+              13.233331532448773,
+              13.214153827862491,
+              13.208644017789268,
+              13.231567282350655
+            ],
+            "rms_residual": 13.217589733923147
+          },
+          {
+            "candidate_scaffold_indices": [
+              22,
+              26,
+              2,
+              6,
+              10,
+              14,
+              18
+            ],
+            "cyclic_shift": 5,
+            "max_residual": 13.950488699732299,
+            "mean_residual": 13.925030049774088,
+            "orientation": "forward",
+            "point_residuals": [
+              13.90500987166653,
+              13.913967555753302,
+              13.934243726578403,
+              13.950488699732299,
+              13.920966830667114,
+              13.921150024469998,
+              13.92938363955096
+            ],
+            "rms_residual": 13.925036752702832
+          },
+          {
+            "candidate_scaffold_indices": [
+              26,
+              2,
+              6,
+              10,
+              14,
+              18,
+              22
+            ],
+            "cyclic_shift": 6,
+            "max_residual": 11.902249351364203,
+            "mean_residual": 11.874470489981887,
+            "orientation": "forward",
+            "point_residuals": [
+              11.847269660383764,
+              11.869675540744376,
+              11.902249351364203,
+              11.90014639442805,
+              11.866119413139467,
+              11.871959013994871,
+              11.863874055818473
+            ],
+            "rms_residual": 11.874484819191379
+          },
+          {
+            "candidate_scaffold_indices": [
+              2,
+              26,
+              22,
+              18,
+              14,
+              10,
+              6
+            ],
+            "cyclic_shift": 0,
+            "max_residual": 13.913967555753302,
+            "mean_residual": 8.935390137557436,
+            "orientation": "reverse",
+            "point_residuals": [
+              7.469727741463534,
+              13.913967555753302,
+              9.876253124499101,
+              1.5925824345479036,
+              11.866119413139467,
+              13.208644017789268,
+              4.620436675709467
+            ],
+            "rms_residual": 9.900169710334414
+          },
+          {
+            "candidate_scaffold_indices": [
+              6,
+              2,
+              26,
+              22,
+              18,
+              14,
+              10
+            ],
+            "cyclic_shift": 1,
+            "max_residual": 13.921150024469998,
+            "mean_residual": 8.940391523293618,
+            "orientation": "reverse",
+            "point_residuals": [
+              1.5912218539925607,
+              11.869675540744376,
+              13.214004119054817,
+              4.620573597883775,
+              7.457255749971537,
+              13.921150024469998,
+              9.908859776938261
+            ],
+            "rms_residual": 9.90653011954623
+          },
+          {
+            "candidate_scaffold_indices": [
+              10,
+              6,
+              2,
+              26,
+              22,
+              18,
+              14
+            ],
+            "cyclic_shift": 2,
+            "max_residual": 13.934243726578403,
+            "mean_residual": 8.941854089214258,
+            "orientation": "reverse",
+            "point_residuals": [
+              4.602986793266492,
+              7.466656695112777,
+              13.934243726578403,
+              9.916541449738325,
+              1.569023663458283,
+              11.871959013994871,
+              13.231567282350655
+            ],
+            "rms_residual": 9.913331651378536
+          },
+          {
+            "candidate_scaffold_indices": [
+              14,
+              10,
+              6,
+              2,
+              26,
+              22,
+              18
+            ],
+            "cyclic_shift": 3,
+            "max_residual": 13.92938363955096,
+            "mean_residual": 8.94706850062122,
+            "orientation": "reverse",
+            "point_residuals": [
+              9.884022744940976,
+              1.582393563925903,
+              11.902249351364203,
+              13.233331532448773,
+              4.630505835418976,
+              7.467592836698752,
+              13.92938363955096
+            ],
+            "rms_residual": 9.915476602101606
+          },
+          {
+            "candidate_scaffold_indices": [
+              18,
+              14,
+              10,
+              6,
+              2,
+              26,
+              22
+            ],
+            "cyclic_shift": 4,
+            "max_residual": 13.950488699732299,
+            "mean_residual": 8.944455343898841,
+            "orientation": "reverse",
+            "point_residuals": [
+              13.204255278759181,
+              4.615791429673493,
+              7.5090753452256696,
+              13.950488699732299,
+              9.885899135023369,
+              1.5818034630594002,
+              11.863874055818473
+            ],
+            "rms_residual": 9.91135601942429
+          },
+          {
+            "candidate_scaffold_indices": [
+              22,
+              18,
+              14,
+              10,
+              6,
+              2,
+              26
+            ],
+            "cyclic_shift": 5,
+            "max_residual": 13.90500987166653,
+            "mean_residual": 8.938921125233334,
+            "orientation": "reverse",
+            "point_residuals": [
+              13.90500987166653,
+              9.898285847721404,
+              1.6262877685535408,
+              11.90014639442805,
+              13.214153827862491,
+              4.583763002039578,
+              7.444801164361738
+            ],
+            "rms_residual": 9.90406458690769
+          },
+          {
+            "candidate_scaffold_indices": [
+              26,
+              22,
+              18,
+              14,
+              10,
+              6,
+              2
+            ],
+            "cyclic_shift": 6,
+            "max_residual": 13.920966830667114,
+            "mean_residual": 8.930604813461496,
+            "orientation": "reverse",
+            "point_residuals": [
+              11.847269660383764,
+              13.217144620717745,
+              4.579248522595396,
+              7.4890685088382005,
+              13.920966830667114,
+              9.875789060466015,
+              1.5847464905622337
+            ],
+            "rms_residual": 9.899078766656489
+          }
+        ],
+        "best_correspondence": {
+          "candidate_scaffold_indices": [
+            6,
+            10,
+            14,
+            18,
+            22,
+            26,
+            2
+          ],
+          "cyclic_shift": 1,
+          "orientation": "forward"
+        },
+        "best_point_pairs": [
+          {
+            "candidate_point": {
+              "x": 1.56768105200738,
+              "y": 6.822197308725176
+            },
+            "endpoint_id": "star_endpoint_00_top",
+            "residual": 1.5912218539925607,
+            "scaffold_index": 6,
+            "source_index": 0,
+            "source_point": {
+              "x": -0.014399324384,
+              "y": 6.99251663018
+            }
+          },
+          {
+            "candidate_point": {
+              "x": -4.36040322882806,
+              "y": 5.476028093611813
+            },
+            "endpoint_id": "star_endpoint_01_upper_left",
+            "residual": 1.582393563925903,
+            "scaffold_index": 10,
+            "source_index": 1,
+            "source_point": {
+              "x": -5.480853335429,
+              "y": 4.358637853019
+            }
+          },
+          {
+            "candidate_point": {
+              "x": -7.0,
+              "y": 8.572527594031472e-16
+            },
+            "endpoint_id": "star_endpoint_02_lower_left",
+            "residual": 1.6262877685535408,
+            "scaffold_index": 14,
+            "source_index": 2,
+            "source_point": {
+              "x": -6.825484345444,
+              "y": -1.616897087777
+            }
+          },
+          {
+            "candidate_point": {
+              "x": -4.360403228828059,
+              "y": -5.476028093611814
+            },
+            "endpoint_id": "star_endpoint_03_bottom_left",
+            "residual": 1.5925824345479036,
+            "scaffold_index": 18,
+            "source_index": 3,
+            "source_point": {
+              "x": -3.028635766336,
+              "y": -6.34936321639
+            }
+          },
+          {
+            "candidate_point": {
+              "x": 1.567681052007377,
+              "y": -6.822197308725177
+            },
+            "endpoint_id": "star_endpoint_04_bottom_right",
+            "residual": 1.569023663458283,
+            "scaffold_index": 22,
+            "source_index": 4,
+            "source_point": {
+              "x": 3.050238523596,
+              "y": -6.308525623766
+            }
+          },
+          {
+            "candidate_point": {
+              "x": 6.313466520526788,
+              "y": -3.02326652715029
+            },
+            "endpoint_id": "star_endpoint_05_lower_right",
+            "residual": 1.5818034630594002,
+            "scaffold_index": 26,
+            "source_index": 5,
+            "source_point": {
+              "x": 6.836759043778,
+              "y": -1.530528395107
+            }
+          },
+          {
+            "candidate_point": {
+              "x": 6.313466520526789,
+              "y": 3.0232665271502883
+            },
+            "endpoint_id": "star_endpoint_06_upper_right",
+            "residual": 1.5847464905622337,
+            "scaffold_index": 2,
+            "source_index": 6,
+            "source_point": {
+              "x": 5.487155791243,
+              "y": 4.375535737781
+            }
+          }
+        ],
+        "comparison_count": 14,
+        "max_residual": 1.6262877685535408,
+        "mean_residual": 1.589722748299975,
+        "phase_id": 2,
+        "rank": 3,
+        "rms_fraction_of_registration_loo": 44.647836598577605,
+        "rms_residual": 1.5898088828689487,
+        "scaffold_indices": [
+          2,
+          6,
+          10,
+          14,
+          18,
+          22,
+          26
+        ]
+      },
+      {
+        "all_correspondences": [
+          {
+            "candidate_scaffold_indices": [
+              3,
+              7,
+              11,
+              15,
+              19,
+              23,
+              27
+            ],
+            "cyclic_shift": 0,
+            "max_residual": 6.127736225597176,
+            "mean_residual": 6.098041517911859,
+            "orientation": "forward",
+            "point_residuals": [
+              6.088744878039861,
+              6.084122555963782,
+              6.127736225597176,
+              6.1037360278004344,
+              6.073507060496554,
+              6.117125328613902,
+              6.091318548871304
+            ],
+            "rms_residual": 6.098067353996014
+          },
+          {
+            "candidate_scaffold_indices": [
+              7,
+              11,
+              15,
+              19,
+              23,
+              27,
+              3
+            ],
+            "cyclic_shift": 1,
+            "max_residual": 0.049325680808962526,
+            "mean_residual": 0.027585180270429575,
+            "orientation": "forward",
+            "point_residuals": [
+              0.016227796109717346,
+              0.0051380453814221525,
+              0.049325680808962526,
+              0.03629602599912673,
+              0.0274208142305862,
+              0.03990443637624743,
+              0.01878346298694463
+            ],
+            "rms_residual": 0.03102360563200974
+          },
+          {
+            "candidate_scaffold_indices": [
+              11,
+              15,
+              19,
+              23,
+              27,
+              3,
+              7
+            ],
+            "cyclic_shift": 2,
+            "max_residual": 6.082490554126353,
+            "mean_residual": 6.060087263436484,
+            "orientation": "forward",
+            "point_residuals": [
+              6.062788943253211,
+              6.07622081715033,
+              6.0427332205211455,
+              6.05200875269348,
+              6.058323227617221,
+              6.046045328693653,
+              6.082490554126353
+            ],
+            "rms_residual": 6.060103012964781
+          },
+          {
+            "candidate_scaffold_indices": [
+              15,
+              19,
+              23,
+              27,
+              3,
+              7,
+              11
+            ],
+            "cyclic_shift": 3,
+            "max_residual": 10.963194328568997,
+            "mean_residual": 10.940928099047554,
+            "orientation": "forward",
+            "point_residuals": [
+              10.93723446551851,
+              10.951417473554768,
+              10.911262905230833,
+              10.950040940283927,
+              10.941229268218061,
+              10.932117311957784,
+              10.963194328568997
+            ],
+            "rms_residual": 10.940938938049232
+          },
+          {
+            "candidate_scaffold_indices": [
+              19,
+              23,
+              27,
+              3,
+              7,
+              11,
+              15
+            ],
+            "cyclic_shift": 4,
+            "max_residual": 13.67583286976779,
+            "mean_residual": 13.654805654841729,
+            "orientation": "forward",
+            "point_residuals": [
+              13.641937892058282,
+              13.646020166956031,
+              13.64777039489318,
+              13.67583286976779,
+              13.653600599448678,
+              13.649461618999856,
+              13.669016041768282
+            ],
+            "rms_residual": 13.654810709831088
+          },
+          {
+            "candidate_scaffold_indices": [
+              23,
+              27,
+              3,
+              7,
+              11,
+              15,
+              19
+            ],
+            "cyclic_shift": 5,
+            "max_residual": 13.688613256580668,
+            "mean_residual": 13.66418161555053,
+            "orientation": "forward",
+            "point_residuals": [
+              13.64831863023686,
+              13.655999081601301,
+              13.676817150314317,
+              13.688613256580668,
+              13.657352059950213,
+              13.659006880425151,
+              13.66316424974521
+            ],
+            "rms_residual": 13.664187625034268
+          },
+          {
+            "candidate_scaffold_indices": [
+              27,
+              3,
+              7,
+              11,
+              15,
+              19,
+              23
+            ],
+            "cyclic_shift": 6,
+            "max_residual": 10.99264080970723,
+            "mean_residual": 10.967207150675547,
+            "orientation": "forward",
+            "point_residuals": [
+              10.955183151456934,
+              10.956881571259734,
+              10.99264080970723,
+              10.985846645330854,
+              10.951739428824643,
+              10.958859492253467,
+              10.969298955895967
+            ],
+            "rms_residual": 10.967217303049717
+          },
+          {
+            "candidate_scaffold_indices": [
+              3,
+              27,
+              23,
+              19,
+              15,
+              11,
+              7
+            ],
+            "cyclic_shift": 0,
+            "max_residual": 13.655999081601301,
+            "mean_residual": 8.767999213260282,
+            "orientation": "reverse",
+            "point_residuals": [
+              6.088744878039861,
+              13.655999081601301,
+              10.911262905230833,
+              0.03629602599912673,
+              10.951739428824643,
+              13.649461618999856,
+              6.082490554126353
+            ],
+            "rms_residual": 9.898493327208806
+          },
+          {
+            "candidate_scaffold_indices": [
+              7,
+              3,
+              27,
+              23,
+              19,
+              15,
+              11
+            ],
+            "cyclic_shift": 1,
+            "max_residual": 13.659006880425151,
+            "mean_residual": 8.766942397778116,
+            "orientation": "reverse",
+            "point_residuals": [
+              0.016227796109717346,
+              10.956881571259734,
+              13.64777039489318,
+              6.05200875269348,
+              6.073507060496554,
+              13.659006880425151,
+              10.963194328568997
+            ],
+            "rms_residual": 9.903747852359079
+          },
+          {
+            "candidate_scaffold_indices": [
+              11,
+              7,
+              3,
+              27,
+              23,
+              19,
+              15
+            ],
+            "cyclic_shift": 2,
+            "max_residual": 13.676817150314317,
+            "mean_residual": 8.775580848295368,
+            "orientation": "reverse",
+            "point_residuals": [
+              6.062788943253211,
+              6.084122555963782,
+              13.676817150314317,
+              10.950040940283927,
+              0.0274208142305862,
+              10.958859492253467,
+              13.669016041768282
+            ],
+            "rms_residual": 9.91155194583985
+          },
+          {
+            "candidate_scaffold_indices": [
+              15,
+              11,
+              7,
+              3,
+              27,
+              23,
+              19
+            ],
+            "cyclic_shift": 3,
+            "max_residual": 13.67583286976779,
+            "mean_residual": 8.778494142335898,
+            "orientation": "reverse",
+            "point_residuals": [
+              10.93723446551851,
+              0.0051380453814221525,
+              10.99264080970723,
+              13.67583286976779,
+              6.058323227617221,
+              6.117125328613902,
+              13.66316424974521
+            ],
+            "rms_residual": 9.916034927170594
+          },
+          {
+            "candidate_scaffold_indices": [
+              19,
+              15,
+              11,
+              7,
+              3,
+              27,
+              23
+            ],
+            "cyclic_shift": 4,
+            "max_residual": 13.688613256580668,
+            "mean_residual": 8.783562978839532,
+            "orientation": "reverse",
+            "point_residuals": [
+              13.641937892058282,
+              6.07622081715033,
+              6.127736225597176,
+              13.688613256580668,
+              10.941229268218061,
+              0.03990443637624743,
+              10.969298955895967
+            ],
+            "rms_residual": 9.913827449259609
+          },
+          {
+            "candidate_scaffold_indices": [
+              23,
+              19,
+              15,
+              11,
+              7,
+              3,
+              27
+            ],
+            "cyclic_shift": 5,
+            "max_residual": 13.653600599448678,
+            "mean_residual": 8.775124700992155,
+            "orientation": "reverse",
+            "point_residuals": [
+              13.64831863023686,
+              10.951417473554768,
+              0.049325680808962526,
+              10.985846645330854,
+              13.653600599448678,
+              6.046045328693653,
+              6.091318548871304
+            ],
+            "rms_residual": 9.906570984955772
+          },
+          {
+            "candidate_scaffold_indices": [
+              27,
+              23,
+              19,
+              15,
+              11,
+              7,
+              3
+            ],
+            "cyclic_shift": 6,
+            "max_residual": 13.657352059950213,
+            "mean_residual": 8.765132200232783,
+            "orientation": "reverse",
+            "point_residuals": [
+              10.955183151456934,
+              13.646020166956031,
+              6.0427332205211455,
+              6.1037360278004344,
+              13.657352059950213,
+              10.932117311957784,
+              0.01878346298694463
+            ],
+            "rms_residual": 9.899746963438082
+          }
+        ],
+        "best_correspondence": {
+          "candidate_scaffold_indices": [
+            7,
+            11,
+            15,
+            19,
+            23,
+            27,
+            3
+          ],
+          "cyclic_shift": 1,
+          "orientation": "forward"
+        },
+        "best_point_pairs": [
+          {
+            "candidate_point": {
+              "x": 4.286263797015736e-16,
+              "y": 7.0
+            },
+            "endpoint_id": "star_endpoint_00_top",
+            "residual": 0.016227796109717346,
+            "scaffold_index": 7,
+            "source_index": 0,
+            "source_point": {
+              "x": -0.014399324384,
+              "y": 6.99251663018
+            }
+          },
+          {
+            "candidate_point": {
+              "x": -5.476028093611812,
+              "y": 4.36040322882806
+            },
+            "endpoint_id": "star_endpoint_01_upper_left",
+            "residual": 0.0051380453814221525,
+            "scaffold_index": 11,
+            "source_index": 1,
+            "source_point": {
+              "x": -5.480853335429,
+              "y": 4.358637853019
+            }
+          },
+          {
+            "candidate_point": {
+              "x": -6.822197308725177,
+              "y": -1.5676810520073774
+            },
+            "endpoint_id": "star_endpoint_02_lower_left",
+            "residual": 0.049325680808962526,
+            "scaffold_index": 15,
+            "source_index": 2,
+            "source_point": {
+              "x": -6.825484345444,
+              "y": -1.616897087777
+            }
+          },
+          {
+            "candidate_point": {
+              "x": -3.0232665271502897,
+              "y": -6.313466520526788
+            },
+            "endpoint_id": "star_endpoint_03_bottom_left",
+            "residual": 0.03629602599912673,
+            "scaffold_index": 19,
+            "source_index": 3,
+            "source_point": {
+              "x": -3.028635766336,
+              "y": -6.34936321639
+            }
+          },
+          {
+            "candidate_point": {
+              "x": 3.0232665271502874,
+              "y": -6.31346652052679
+            },
+            "endpoint_id": "star_endpoint_04_bottom_right",
+            "residual": 0.0274208142305862,
+            "scaffold_index": 23,
+            "source_index": 4,
+            "source_point": {
+              "x": 3.050238523596,
+              "y": -6.308525623766
+            }
+          },
+          {
+            "candidate_point": {
+              "x": 6.822197308725176,
+              "y": -1.5676810520073798
+            },
+            "endpoint_id": "star_endpoint_05_lower_right",
+            "residual": 0.03990443637624743,
+            "scaffold_index": 27,
+            "source_index": 5,
+            "source_point": {
+              "x": 6.836759043778,
+              "y": -1.530528395107
+            }
+          },
+          {
+            "candidate_point": {
+              "x": 5.476028093611813,
+              "y": 4.36040322882806
+            },
+            "endpoint_id": "star_endpoint_06_upper_right",
+            "residual": 0.01878346298694463,
+            "scaffold_index": 3,
+            "source_index": 6,
+            "source_point": {
+              "x": 5.487155791243,
+              "y": 4.375535737781
+            }
+          }
+        ],
+        "comparison_count": 14,
+        "max_residual": 0.049325680808962526,
+        "mean_residual": 0.027585180270429575,
+        "phase_id": 3,
+        "rank": 1,
+        "rms_fraction_of_registration_loo": 0.8712599922432704,
+        "rms_residual": 0.03102360563200974,
+        "scaffold_indices": [
+          3,
+          7,
+          11,
+          15,
+          19,
+          23,
+          27
+        ]
+      }
+    ],
+    "portability_normalization": {
+      "change": "machine_absolute_to_repository_relative",
+      "field": "protocol.protocol_path",
+      "scientific_values_changed": false
+    },
+    "ranking_phase_ids": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "registration_scale": {
+      "loo_rms_equivalent_normalized": 0.03560774729496293,
+      "loo_rms_pixels": 2.545169618134926,
+      "mean_pixels_per_unit": 71.47797351659383
+    },
+    "runner_up": {
+      "phase_id": 0,
+      "rms_residual": 1.5480658592729957
+    },
+    "schema_version": "1.0",
+    "source_bindings": {
+      "affine_registration_matrix": {
+        "applied_in_stage_b": false,
+        "path": "data/calibration/figure14/derived/affine_registration_matrix.json",
+        "purpose": "provenance_binding_only",
+        "selected_model": "affine",
+        "sha256": "afa55cce578adaf6315ee2f27b54f5cf1e369cc0165925ff71929471b60357dc"
+      },
+      "endpoint_geometry": {
+        "path": "data/calibration/figure14/derived/star_endpoint_geometry.json",
+        "sha256": "3b4eaffb33b5984441a88039d6e5a972343b6b6ef43dbe980bfa7dc28bde98a0"
+      },
+      "registered_landmarks": {
+        "path": "data/calibration/figure14/derived/registered_landmark_centroids.csv",
+        "sha256": "9549c5d416e903781a3ff227e84c278465f9d729259d1a5985c316773814ebd0"
+      }
+    },
+    "source_endpoints": [
+      {
+        "endpoint_id": "star_endpoint_00_top",
+        "source_index": 0,
+        "x": -0.014399324384,
+        "y": 6.99251663018
+      },
+      {
+        "endpoint_id": "star_endpoint_01_upper_left",
+        "source_index": 1,
+        "x": -5.480853335429,
+        "y": 4.358637853019
+      },
+      {
+        "endpoint_id": "star_endpoint_02_lower_left",
+        "source_index": 2,
+        "x": -6.825484345444,
+        "y": -1.616897087777
+      },
+      {
+        "endpoint_id": "star_endpoint_03_bottom_left",
+        "source_index": 3,
+        "x": -3.028635766336,
+        "y": -6.34936321639
+      },
+      {
+        "endpoint_id": "star_endpoint_04_bottom_right",
+        "source_index": 4,
+        "x": 3.050238523596,
+        "y": -6.308525623766
+      },
+      {
+        "endpoint_id": "star_endpoint_05_lower_right",
+        "source_index": 5,
+        "x": 6.836759043778,
+        "y": -1.530528395107
+      },
+      {
+        "endpoint_id": "star_endpoint_06_upper_right",
+        "source_index": 6,
+        "x": 5.487155791243,
+        "y": 4.375535737781
+      }
+    ],
+    "stage_a_input_sha256": "6bfb543d5fbb98cbd383a242eac109d1ff0f7a96a68410d370ed294ec119613b",
+    "stage_a_result_preserved": "GRAMMAR_UNDERDETERMINED",
+    "status": "COMPLETE",
+    "winner": {
+      "best_correspondence": {
+        "candidate_scaffold_indices": [
+          7,
+          11,
+          15,
+          19,
+          23,
+          27,
+          3
+        ],
+        "cyclic_shift": 1,
+        "orientation": "forward"
+      },
+      "max_residual": 0.049325680808962526,
+      "mean_residual": 0.027585180270429575,
+      "phase_id": 3,
+      "rms_fraction_of_registration_loo": 0.8712599922432704,
+      "rms_residual": 0.03102360563200974
+    },
+    "winner_margin_fraction_of_registration_loo": 42.60427488080906,
+    "winner_rms_margin_to_runner_up": 1.517042253640986
+  }
+}
