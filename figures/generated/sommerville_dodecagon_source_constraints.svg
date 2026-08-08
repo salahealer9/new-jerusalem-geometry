@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" role="img">
+<title>Sommerville dodecagon source constraints</title>
+<desc>Frozen polar-pivot outer wall with semantic side and vertex classes in normalized units.</desc>
+<g id="coordinate-frame" fill="none" stroke="currentColor" stroke-width="1">
+<line id="axis-x" x1="70" y1="450.000000" x2="830" y2="450.000000" opacity="0.18"/>
+<line id="axis-y" x1="450.000000" y1="70" x2="450.000000" y2="830" opacity="0.18"/>
+</g>
+<polygon id="frozen-polar-pivot-wall" points="807.000000,354.342138 709.949232,190.050768 545.657862,93.000000 354.342138,93.000000 190.050768,190.050768 93.000000,354.342138 93.000000,545.657862 190.050768,709.949232 354.342138,807.000000 545.657862,807.000000 709.949232,709.949232 807.000000,545.657862" fill="none" stroke="currentColor" stroke-width="2.4"/>
+<circle id="construction-centre" cx="450.000000" cy="450.000000" r="4.5" fill="currentColor"/>
+<line id="radius-ray-wall_vertex_00" x1="450.000000" y1="450.000000" x2="807.000000" y2="354.342138" stroke="currentColor" stroke-width="1.2" opacity="0.90"/>
+<circle id="wall_vertex_00" cx="807.000000" cy="354.342138" r="5.0" fill="none" stroke="currentColor" stroke-width="2"/>
+<line id="radius-ray-wall_vertex_01" x1="450.000000" y1="450.000000" x2="709.949232" y2="190.050768" stroke="currentColor" stroke-width="1.2" opacity="0.52"/>
+<circle id="wall_vertex_01" cx="709.949232" cy="190.050768" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/>
+<line id="radius-ray-wall_vertex_02" x1="450.000000" y1="450.000000" x2="545.657862" y2="93.000000" stroke="currentColor" stroke-width="1.2" opacity="0.90"/>
+<circle id="wall_vertex_02" cx="545.657862" cy="93.000000" r="5.0" fill="none" stroke="currentColor" stroke-width="2"/>
+<line id="radius-ray-wall_vertex_03" x1="450.000000" y1="450.000000" x2="354.342138" y2="93.000000" stroke="currentColor" stroke-width="1.2" opacity="0.90"/>
+<circle id="wall_vertex_03" cx="354.342138" cy="93.000000" r="5.0" fill="none" stroke="currentColor" stroke-width="2"/>
+<line id="radius-ray-wall_vertex_04" x1="450.000000" y1="450.000000" x2="190.050768" y2="190.050768" stroke="currentColor" stroke-width="1.2" opacity="0.52"/>
+<circle id="wall_vertex_04" cx="190.050768" cy="190.050768" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/>
+<line id="radius-ray-wall_vertex_05" x1="450.000000" y1="450.000000" x2="93.000000" y2="354.342138" stroke="currentColor" stroke-width="1.2" opacity="0.90"/>
+<circle id="wall_vertex_05" cx="93.000000" cy="354.342138" r="5.0" fill="none" stroke="currentColor" stroke-width="2"/>
+<line id="radius-ray-wall_vertex_06" x1="450.000000" y1="450.000000" x2="93.000000" y2="545.657862" stroke="currentColor" stroke-width="1.2" opacity="0.90"/>
+<circle id="wall_vertex_06" cx="93.000000" cy="545.657862" r="5.0" fill="none" stroke="currentColor" stroke-width="2"/>
+<line id="radius-ray-wall_vertex_07" x1="450.000000" y1="450.000000" x2="190.050768" y2="709.949232" stroke="currentColor" stroke-width="1.2" opacity="0.52"/>
+<circle id="wall_vertex_07" cx="190.050768" cy="709.949232" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/>
+<line id="radius-ray-wall_vertex_08" x1="450.000000" y1="450.000000" x2="354.342138" y2="807.000000" stroke="currentColor" stroke-width="1.2" opacity="0.90"/>
+<circle id="wall_vertex_08" cx="354.342138" cy="807.000000" r="5.0" fill="none" stroke="currentColor" stroke-width="2"/>
+<line id="radius-ray-wall_vertex_09" x1="450.000000" y1="450.000000" x2="545.657862" y2="807.000000" stroke="currentColor" stroke-width="1.2" opacity="0.90"/>
+<circle id="wall_vertex_09" cx="545.657862" cy="807.000000" r="5.0" fill="none" stroke="currentColor" stroke-width="2"/>
+<line id="radius-ray-wall_vertex_10" x1="450.000000" y1="450.000000" x2="709.949232" y2="709.949232" stroke="currentColor" stroke-width="1.2" opacity="0.52"/>
+<circle id="wall_vertex_10" cx="709.949232" cy="709.949232" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/>
+<line id="radius-ray-wall_vertex_11" x1="450.000000" y1="450.000000" x2="807.000000" y2="545.657862" stroke="currentColor" stroke-width="1.2" opacity="0.90"/>
+<circle id="wall_vertex_11" cx="807.000000" cy="545.657862" r="5.0" fill="none" stroke="currentColor" stroke-width="2"/>
+<line id="wall-side-00-polar" x1="807.000000" y1="545.657862" x2="807.000000" y2="354.342138" stroke="currentColor" stroke-width="4.0" opacity="0.88"/>
+<line id="wall-side-01-oblique" x1="807.000000" y1="354.342138" x2="709.949232" y2="190.050768" stroke="currentColor" stroke-width="2.2" opacity="0.48"/>
+<line id="wall-side-02-oblique" x1="709.949232" y1="190.050768" x2="545.657862" y2="93.000000" stroke="currentColor" stroke-width="2.2" opacity="0.48"/>
+<line id="wall-side-03-polar" x1="545.657862" y1="93.000000" x2="354.342138" y2="93.000000" stroke="currentColor" stroke-width="4.0" opacity="0.88"/>
+<line id="wall-side-04-oblique" x1="354.342138" y1="93.000000" x2="190.050768" y2="190.050768" stroke="currentColor" stroke-width="2.2" opacity="0.48"/>
+<line id="wall-side-05-oblique" x1="190.050768" y1="190.050768" x2="93.000000" y2="354.342138" stroke="currentColor" stroke-width="2.2" opacity="0.48"/>
+<line id="wall-side-06-polar" x1="93.000000" y1="354.342138" x2="93.000000" y2="545.657862" stroke="currentColor" stroke-width="4.0" opacity="0.88"/>
+<line id="wall-side-07-oblique" x1="93.000000" y1="545.657862" x2="190.050768" y2="709.949232" stroke="currentColor" stroke-width="2.2" opacity="0.48"/>
+<line id="wall-side-08-oblique" x1="190.050768" y1="709.949232" x2="354.342138" y2="807.000000" stroke="currentColor" stroke-width="2.2" opacity="0.48"/>
+<line id="wall-side-09-polar" x1="354.342138" y1="807.000000" x2="545.657862" y2="807.000000" stroke="currentColor" stroke-width="4.0" opacity="0.88"/>
+<line id="wall-side-10-oblique" x1="545.657862" y1="807.000000" x2="709.949232" y2="709.949232" stroke="currentColor" stroke-width="2.2" opacity="0.48"/>
+<line id="wall-side-11-oblique" x1="709.949232" y1="709.949232" x2="807.000000" y2="545.657862" stroke="currentColor" stroke-width="2.2" opacity="0.48"/>
+<g id="normalized-apothem" stroke="currentColor" fill="none" opacity="0.60">
+<line x1="450.000000" y1="450.000000" x2="807.000000" y2="450.000000" stroke-width="1.4" stroke-dasharray="7 5"/>
+</g>
+</svg>
