@@ -1,0 +1,396 @@
+{
+  "audit_name": "frozen_dodecagon_vertex_radius_audit",
+  "class_summaries": {
+    "OBLIQUE_PAIR_VERTEX": {
+      "maximum_radius_normalized": 8.752945939722812,
+      "mean_radius_normalized": 8.752945939722812,
+      "minimum_radius_normalized": 8.75294593972281,
+      "numerically_degenerate": true,
+      "radii_normalized": [
+        8.752945939722812,
+        8.75294593972281,
+        8.752945939722812,
+        8.752945939722812
+      ],
+      "vertex_count": 4,
+      "vertex_ids": [
+        "wall_vertex_01",
+        "wall_vertex_04",
+        "wall_vertex_07",
+        "wall_vertex_10"
+      ],
+      "within_class_spread_normalized": 1.7763568394002505e-15
+    },
+    "POLAR_ADJACENT_VERTEX": {
+      "maximum_radius_normalized": 8.799847533485707,
+      "mean_radius_normalized": 8.799847533485705,
+      "minimum_radius_normalized": 8.799847533485703,
+      "numerically_degenerate": true,
+      "radii_normalized": [
+        8.799847533485705,
+        8.799847533485703,
+        8.799847533485707,
+        8.799847533485705,
+        8.799847533485705,
+        8.799847533485705,
+        8.799847533485707,
+        8.799847533485707
+      ],
+      "vertex_count": 8,
+      "vertex_ids": [
+        "wall_vertex_00",
+        "wall_vertex_02",
+        "wall_vertex_03",
+        "wall_vertex_05",
+        "wall_vertex_06",
+        "wall_vertex_08",
+        "wall_vertex_09",
+        "wall_vertex_11"
+      ],
+      "within_class_spread_normalized": 3.552713678800501e-15
+    }
+  },
+  "determinacy": {
+    "historical_comparison_metrics_calculated": false,
+    "historical_dimensional_targets_loaded": false,
+    "new_continuous_parameters_introduced": 0,
+    "new_discrete_candidate_choices_introduced": 0,
+    "new_fitted_scale_parameters_introduced": 0
+  },
+  "frozen_geometry_input": {
+    "geometry_modified": false,
+    "geometry_rebuilt_from_frozen_code": true,
+    "path": "data/geometry/njg_michell_v0_5/njg_michell_geometry.json",
+    "sha256": "19e22356378d581a2adb35c8f8b8ee0237f61ab365d8cbc05abc378568e3b6cb",
+    "wall_model": "POLAR_PIVOT_WALL"
+  },
+  "interpretation": {
+    "historical_dimensional_comparison_phase": "downstream",
+    "independent_forward_prediction": false,
+    "source_term_correction": "decagon -> dodecagon vertex radii"
+  },
+  "normalized_comparison": {
+    "maximum_absolute_radial_displacement_from_regular": 0.04690159376289493,
+    "oblique_pair_mean_radius": 8.752945939722812,
+    "oblique_pair_minus_regular": -0.04690159376289316,
+    "oblique_pair_vertices_all_inward": true,
+    "polar_adjacent_matches_regular": true,
+    "polar_adjacent_mean_radius": 8.799847533485705,
+    "polar_adjacent_minus_regular": 0.0,
+    "polar_adjacent_to_oblique_pair_ratio": 1.0053583780918882,
+    "regular_baseline_radius": 8.799847533485705
+  },
+  "numerical_tolerance": {
+    "absolute_normalized": 1e-12,
+    "purpose": "floating-point geometric identity only",
+    "relative": 1e-12
+  },
+  "phase": "7B",
+  "phase7a_source_clarification": {
+    "path": "docs/sources/v0.7_sommerville_dodecagon_source_clarification.md",
+    "sha256": "da8f237ae413c85b755a6e148a62fd9d402c63ffd833d50e110d1c1c5520bae2"
+  },
+  "protocol": {
+    "path": "docs/specification/v0.7_dodecagon_vertex_radius_audit_protocol.md",
+    "sha256": "ae064694591bc341f70ba334c173c6a8a52afcd0fc73a2b1b1a557636f772c23"
+  },
+  "regular_dodecagon_baseline": {
+    "apothem_normalized": 8.5,
+    "centre": [
+      0.0,
+      0.0
+    ],
+    "circumradius_normalized": 8.799847533485705,
+    "first_vertex_angle_degrees": 15.0,
+    "free_parameters": 0,
+    "side_count": 12,
+    "side_normal_step_degrees": 30.0
+  },
+  "schema_version": "1.0",
+  "semantic_vertex_classes": {
+    "classification_rule": "vertex i is incident on sides i and i+1; at least one polar side => POLAR_ADJACENT_VERTEX, otherwise OBLIQUE_PAIR_VERTEX",
+    "expected_counts": {
+      "OBLIQUE_PAIR_VERTEX": 4,
+      "POLAR_ADJACENT_VERTEX": 8
+    },
+    "observed_counts": {
+      "OBLIQUE_PAIR_VERTEX": 4,
+      "POLAR_ADJACENT_VERTEX": 8
+    }
+  },
+  "stopping_status": "TWO_SEMANTIC_RADIUS_CLASSES_CONFIRMED",
+  "vertices": [
+    {
+      "angle_radians": 0.26179938779914935,
+      "incident_side_classes": [
+        "polar",
+        "oblique"
+      ],
+      "incident_side_indices": [
+        0,
+        1
+      ],
+      "index": 0,
+      "radial_difference_from_regular_normalized": 0.0,
+      "radius_normalized": 8.799847533485705,
+      "regular_radius_normalized": 8.799847533485705,
+      "regular_x_normalized": 8.5,
+      "regular_y_normalized": 2.2775681356645427,
+      "vertex_class": "POLAR_ADJACENT_VERTEX",
+      "vertex_id": "wall_vertex_00",
+      "x_normalized": 8.5,
+      "y_normalized": 2.2775681356645423
+    },
+    {
+      "angle_radians": 0.7853981633974485,
+      "incident_side_classes": [
+        "oblique",
+        "oblique"
+      ],
+      "incident_side_indices": [
+        1,
+        2
+      ],
+      "index": 1,
+      "radial_difference_from_regular_normalized": -0.04690159376289316,
+      "radius_normalized": 8.752945939722812,
+      "regular_radius_normalized": 8.799847533485705,
+      "regular_x_normalized": 6.222431864335457,
+      "regular_y_normalized": 6.222431864335456,
+      "vertex_class": "OBLIQUE_PAIR_VERTEX",
+      "vertex_id": "wall_vertex_01",
+      "x_normalized": 6.189267429337257,
+      "y_normalized": 6.189267429337259
+    },
+    {
+      "angle_radians": 1.3089969389957476,
+      "incident_side_classes": [
+        "oblique",
+        "polar"
+      ],
+      "incident_side_indices": [
+        2,
+        3
+      ],
+      "index": 2,
+      "radial_difference_from_regular_normalized": -1.7763568394002505e-15,
+      "radius_normalized": 8.799847533485703,
+      "regular_radius_normalized": 8.799847533485705,
+      "regular_x_normalized": 2.2775681356645445,
+      "regular_y_normalized": 8.499999999999998,
+      "vertex_class": "POLAR_ADJACENT_VERTEX",
+      "vertex_id": "wall_vertex_02",
+      "x_normalized": 2.277568135664539,
+      "y_normalized": 8.499999999999998
+    },
+    {
+      "angle_radians": 1.8325957145940461,
+      "incident_side_classes": [
+        "polar",
+        "oblique"
+      ],
+      "incident_side_indices": [
+        3,
+        4
+      ],
+      "index": 3,
+      "radial_difference_from_regular_normalized": 1.7763568394002505e-15,
+      "radius_normalized": 8.799847533485707,
+      "regular_radius_normalized": 8.799847533485705,
+      "regular_x_normalized": -2.2775681356645414,
+      "regular_y_normalized": 8.5,
+      "vertex_class": "POLAR_ADJACENT_VERTEX",
+      "vertex_id": "wall_vertex_03",
+      "x_normalized": -2.277568135664543,
+      "y_normalized": 8.500000000000002
+    },
+    {
+      "angle_radians": 2.3561944901923457,
+      "incident_side_classes": [
+        "oblique",
+        "oblique"
+      ],
+      "incident_side_indices": [
+        4,
+        5
+      ],
+      "index": 4,
+      "radial_difference_from_regular_normalized": -0.04690159376289493,
+      "radius_normalized": 8.75294593972281,
+      "regular_radius_normalized": 8.799847533485705,
+      "regular_x_normalized": -6.222431864335456,
+      "regular_y_normalized": 6.222431864335457,
+      "vertex_class": "OBLIQUE_PAIR_VERTEX",
+      "vertex_id": "wall_vertex_04",
+      "x_normalized": -6.189267429337264,
+      "y_normalized": 6.189267429337251
+    },
+    {
+      "angle_radians": 2.879793265790644,
+      "incident_side_classes": [
+        "oblique",
+        "polar"
+      ],
+      "incident_side_indices": [
+        5,
+        6
+      ],
+      "index": 5,
+      "radial_difference_from_regular_normalized": 0.0,
+      "radius_normalized": 8.799847533485705,
+      "regular_radius_normalized": 8.799847533485705,
+      "regular_x_normalized": -8.5,
+      "regular_y_normalized": 2.277568135664541,
+      "vertex_class": "POLAR_ADJACENT_VERTEX",
+      "vertex_id": "wall_vertex_05",
+      "x_normalized": -8.5,
+      "y_normalized": 2.2775681356645427
+    },
+    {
+      "angle_radians": 3.4033920413889422,
+      "incident_side_classes": [
+        "polar",
+        "oblique"
+      ],
+      "incident_side_indices": [
+        6,
+        7
+      ],
+      "index": 6,
+      "radial_difference_from_regular_normalized": 0.0,
+      "radius_normalized": 8.799847533485705,
+      "regular_radius_normalized": 8.799847533485705,
+      "regular_x_normalized": -8.5,
+      "regular_y_normalized": -2.277568135664543,
+      "vertex_class": "POLAR_ADJACENT_VERTEX",
+      "vertex_id": "wall_vertex_06",
+      "x_normalized": -8.5,
+      "y_normalized": -2.2775681356645414
+    },
+    {
+      "angle_radians": 3.9269908169872405,
+      "incident_side_classes": [
+        "oblique",
+        "oblique"
+      ],
+      "incident_side_indices": [
+        7,
+        8
+      ],
+      "index": 7,
+      "radial_difference_from_regular_normalized": -0.04690159376289316,
+      "radius_normalized": 8.752945939722812,
+      "regular_radius_normalized": 8.799847533485705,
+      "regular_x_normalized": -6.222431864335458,
+      "regular_y_normalized": -6.222431864335456,
+      "vertex_class": "OBLIQUE_PAIR_VERTEX",
+      "vertex_id": "wall_vertex_07",
+      "x_normalized": -6.189267429337264,
+      "y_normalized": -6.189267429337252
+    },
+    {
+      "angle_radians": 4.45058959258554,
+      "incident_side_classes": [
+        "oblique",
+        "polar"
+      ],
+      "incident_side_indices": [
+        8,
+        9
+      ],
+      "index": 8,
+      "radial_difference_from_regular_normalized": 0.0,
+      "radius_normalized": 8.799847533485705,
+      "regular_radius_normalized": 8.799847533485705,
+      "regular_x_normalized": -2.2775681356645494,
+      "regular_y_normalized": -8.499999999999998,
+      "vertex_class": "POLAR_ADJACENT_VERTEX",
+      "vertex_id": "wall_vertex_08",
+      "x_normalized": -2.277568135664545,
+      "y_normalized": -8.499999999999998
+    },
+    {
+      "angle_radians": 4.974188368183839,
+      "incident_side_classes": [
+        "polar",
+        "oblique"
+      ],
+      "incident_side_indices": [
+        9,
+        10
+      ],
+      "index": 9,
+      "radial_difference_from_regular_normalized": 1.7763568394002505e-15,
+      "radius_normalized": 8.799847533485707,
+      "regular_radius_normalized": 8.799847533485705,
+      "regular_x_normalized": 2.2775681356645388,
+      "regular_y_normalized": -8.5,
+      "vertex_class": "POLAR_ADJACENT_VERTEX",
+      "vertex_id": "wall_vertex_09",
+      "x_normalized": 2.277568135664545,
+      "y_normalized": -8.5
+    },
+    {
+      "angle_radians": 5.497787143782138,
+      "incident_side_classes": [
+        "oblique",
+        "oblique"
+      ],
+      "incident_side_indices": [
+        10,
+        11
+      ],
+      "index": 10,
+      "radial_difference_from_regular_normalized": -0.04690159376289316,
+      "radius_normalized": 8.752945939722812,
+      "regular_radius_normalized": 8.799847533485705,
+      "regular_x_normalized": 6.222431864335455,
+      "regular_y_normalized": -6.222431864335458,
+      "vertex_class": "OBLIQUE_PAIR_VERTEX",
+      "vertex_id": "wall_vertex_10",
+      "x_normalized": 6.1892674293372565,
+      "y_normalized": -6.189267429337259
+    },
+    {
+      "angle_radians": 6.021385919380436,
+      "incident_side_classes": [
+        "oblique",
+        "polar"
+      ],
+      "incident_side_indices": [
+        11,
+        0
+      ],
+      "index": 11,
+      "radial_difference_from_regular_normalized": 1.7763568394002505e-15,
+      "radius_normalized": 8.799847533485707,
+      "regular_radius_normalized": 8.799847533485705,
+      "regular_x_normalized": 8.499999999999998,
+      "regular_y_normalized": -2.27756813566455,
+      "vertex_class": "POLAR_ADJACENT_VERTEX",
+      "vertex_id": "wall_vertex_11",
+      "x_normalized": 8.5,
+      "y_normalized": -2.277568135664547
+    }
+  ],
+  "wall_topology": {
+    "oblique_side_indices": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      10,
+      11
+    ],
+    "polar_side_indices": [
+      0,
+      3,
+      6,
+      9
+    ],
+    "side_count": 12,
+    "vertex_count": 12
+  }
+}

@@ -10,8 +10,8 @@ import new_jerusalem_geometry as njg
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def test_v060_version_metadata_is_consistent() -> None:
-    expected = "0.6.0"
+def test_v070_version_metadata_is_consistent() -> None:
+    expected = "0.7.0"
 
     assert njg.__version__ == expected
 

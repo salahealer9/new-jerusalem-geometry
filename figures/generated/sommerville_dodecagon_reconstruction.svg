@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1140" viewBox="0 0 960 1140" role="img">
+<title>Frozen Sommerville dodecagon reconstruction</title>
+<desc>The frozen v0.5 polar-pivot wall interpreted as the complete Figure 30 irregular dodecagon geometry, with two semantic vertex-radius classes in normalized units.</desc>
+<metadata>{&quot;figure_role&quot;:&quot;canonical_reconstruction&quot;,&quot;frozen_v0_5_geometry&quot;:{&quot;path&quot;:&quot;data/geometry/njg_michell_v0_5/njg_michell_geometry.json&quot;,&quot;sha256&quot;:&quot;19e22356378d581a2adb35c8f8b8ee0237f61ab365d8cbc05abc378568e3b6cb&quot;},&quot;historical_comparison_metrics_calculated&quot;:false,&quot;historical_targets_loaded&quot;:false,&quot;new_continuous_geometric_parameters&quot;:0,&quot;new_discrete_candidate_choices&quot;:0,&quot;new_fitted_scale_parameters&quot;:0,&quot;new_wall_sides&quot;:0,&quot;new_wall_vertices&quot;:0,&quot;phase&quot;:&quot;7C&quot;,&quot;phase7b_input&quot;:{&quot;path&quot;:&quot;data/analysis/njg_michell_v0_7/dodecagon_vertex_radius_audit.json&quot;,&quot;sha256&quot;:&quot;7093250082940c16b1d1df240e791ba5d5e31b7aa10a1866d58ec8e00d3c96b5&quot;},&quot;protocol&quot;:{&quot;path&quot;:&quot;docs/specification/v0.7_dodecagon_geometry_freeze_protocol.md&quot;,&quot;sha256&quot;:&quot;58afeb921591d8504018d356cd72cf2b47e6488f118460c90443cbe88d67d6d5&quot;},&quot;reconstruction_id&quot;:&quot;SOMMERVILLE_DODECAGON_RECONSTRUCTION&quot;,&quot;stopping_status&quot;:&quot;EXISTING_FROZEN_WALL_IS_COMPLETE_DODECAGON_GEOMETRY&quot;,&quot;wall_model&quot;:&quot;POLAR_PIVOT_WALL&quot;}</metadata>
+<g id="coordinate-frame" fill="none" stroke="currentColor" stroke-width="1" opacity="0.16">
+<line id="axis-x" x1="70" y1="480.000000" x2="890" y2="480.000000"/>
+<line id="axis-y" x1="480.000000" y1="70" x2="480.000000" y2="890"/>
+</g>
+<polygon id="sommerville-dodecagon-reconstruction" points="854.000000,379.787002 752.327767,207.672233 580.212998,106.000000 379.787002,106.000000 207.672233,207.672233 106.000000,379.787002 106.000000,580.212998 207.672233,752.327767 379.787002,854.000000 580.212998,854.000000 752.327767,752.327767 854.000000,580.212998" fill="none" stroke="currentColor" stroke-width="2.8"/>
+<circle id="construction-centre" cx="480.000000" cy="480.000000" r="4.8" fill="currentColor"/>
+<line id="wall-side-00-polar" x1="854.000000" y1="580.212998" x2="854.000000" y2="379.787002" stroke="currentColor" stroke-width="4.0" opacity="0.90"/>
+<line id="wall-side-01-oblique" x1="854.000000" y1="379.787002" x2="752.327767" y2="207.672233" stroke="currentColor" stroke-width="2.0" opacity="0.48"/>
+<line id="wall-side-02-oblique" x1="752.327767" y1="207.672233" x2="580.212998" y2="106.000000" stroke="currentColor" stroke-width="2.0" opacity="0.48"/>
+<line id="wall-side-03-polar" x1="580.212998" y1="106.000000" x2="379.787002" y2="106.000000" stroke="currentColor" stroke-width="4.0" opacity="0.90"/>
+<line id="wall-side-04-oblique" x1="379.787002" y1="106.000000" x2="207.672233" y2="207.672233" stroke="currentColor" stroke-width="2.0" opacity="0.48"/>
+<line id="wall-side-05-oblique" x1="207.672233" y1="207.672233" x2="106.000000" y2="379.787002" stroke="currentColor" stroke-width="2.0" opacity="0.48"/>
+<line id="wall-side-06-polar" x1="106.000000" y1="379.787002" x2="106.000000" y2="580.212998" stroke="currentColor" stroke-width="4.0" opacity="0.90"/>
+<line id="wall-side-07-oblique" x1="106.000000" y1="580.212998" x2="207.672233" y2="752.327767" stroke="currentColor" stroke-width="2.0" opacity="0.48"/>
+<line id="wall-side-08-oblique" x1="207.672233" y1="752.327767" x2="379.787002" y2="854.000000" stroke="currentColor" stroke-width="2.0" opacity="0.48"/>
+<line id="wall-side-09-polar" x1="379.787002" y1="854.000000" x2="580.212998" y2="854.000000" stroke="currentColor" stroke-width="4.0" opacity="0.90"/>
+<line id="wall-side-10-oblique" x1="580.212998" y1="854.000000" x2="752.327767" y2="752.327767" stroke="currentColor" stroke-width="2.0" opacity="0.48"/>
+<line id="wall-side-11-oblique" x1="752.327767" y1="752.327767" x2="854.000000" y2="580.212998" stroke="currentColor" stroke-width="2.0" opacity="0.48"/>
+<line id="radius-wall_vertex_00" x1="480.000000" y1="480.000000" x2="854.000000" y2="379.787002" stroke="currentColor" stroke-width="1.1" opacity="0.24"/>
+<circle id="wall_vertex_00" cx="854.000000" cy="379.787002" r="5.0" fill="none" stroke="currentColor" stroke-width="1.8" opacity="0.74"/>
+<line id="radius-wall_vertex_01" x1="480.000000" y1="480.000000" x2="752.327767" y2="207.672233" stroke="currentColor" stroke-width="1.1" opacity="0.62"/>
+<circle id="wall_vertex_01" cx="752.327767" cy="207.672233" r="7.0" fill="none" stroke="currentColor" stroke-width="2.5" opacity="1.00"/>
+<line id="radius-wall_vertex_02" x1="480.000000" y1="480.000000" x2="580.212998" y2="106.000000" stroke="currentColor" stroke-width="1.1" opacity="0.24"/>
+<circle id="wall_vertex_02" cx="580.212998" cy="106.000000" r="5.0" fill="none" stroke="currentColor" stroke-width="1.8" opacity="0.74"/>
+<line id="radius-wall_vertex_03" x1="480.000000" y1="480.000000" x2="379.787002" y2="106.000000" stroke="currentColor" stroke-width="1.1" opacity="0.24"/>
+<circle id="wall_vertex_03" cx="379.787002" cy="106.000000" r="5.0" fill="none" stroke="currentColor" stroke-width="1.8" opacity="0.74"/>
+<line id="radius-wall_vertex_04" x1="480.000000" y1="480.000000" x2="207.672233" y2="207.672233" stroke="currentColor" stroke-width="1.1" opacity="0.62"/>
+<circle id="wall_vertex_04" cx="207.672233" cy="207.672233" r="7.0" fill="none" stroke="currentColor" stroke-width="2.5" opacity="1.00"/>
+<line id="radius-wall_vertex_05" x1="480.000000" y1="480.000000" x2="106.000000" y2="379.787002" stroke="currentColor" stroke-width="1.1" opacity="0.24"/>
+<circle id="wall_vertex_05" cx="106.000000" cy="379.787002" r="5.0" fill="none" stroke="currentColor" stroke-width="1.8" opacity="0.74"/>
+<line id="radius-wall_vertex_06" x1="480.000000" y1="480.000000" x2="106.000000" y2="580.212998" stroke="currentColor" stroke-width="1.1" opacity="0.24"/>
+<circle id="wall_vertex_06" cx="106.000000" cy="580.212998" r="5.0" fill="none" stroke="currentColor" stroke-width="1.8" opacity="0.74"/>
+<line id="radius-wall_vertex_07" x1="480.000000" y1="480.000000" x2="207.672233" y2="752.327767" stroke="currentColor" stroke-width="1.1" opacity="0.62"/>
+<circle id="wall_vertex_07" cx="207.672233" cy="752.327767" r="7.0" fill="none" stroke="currentColor" stroke-width="2.5" opacity="1.00"/>
+<line id="radius-wall_vertex_08" x1="480.000000" y1="480.000000" x2="379.787002" y2="854.000000" stroke="currentColor" stroke-width="1.1" opacity="0.24"/>
+<circle id="wall_vertex_08" cx="379.787002" cy="854.000000" r="5.0" fill="none" stroke="currentColor" stroke-width="1.8" opacity="0.74"/>
+<line id="radius-wall_vertex_09" x1="480.000000" y1="480.000000" x2="580.212998" y2="854.000000" stroke="currentColor" stroke-width="1.1" opacity="0.24"/>
+<circle id="wall_vertex_09" cx="580.212998" cy="854.000000" r="5.0" fill="none" stroke="currentColor" stroke-width="1.8" opacity="0.74"/>
+<line id="radius-wall_vertex_10" x1="480.000000" y1="480.000000" x2="752.327767" y2="752.327767" stroke="currentColor" stroke-width="1.1" opacity="0.62"/>
+<circle id="wall_vertex_10" cx="752.327767" cy="752.327767" r="7.0" fill="none" stroke="currentColor" stroke-width="2.5" opacity="1.00"/>
+<line id="radius-wall_vertex_11" x1="480.000000" y1="480.000000" x2="854.000000" y2="580.212998" stroke="currentColor" stroke-width="1.1" opacity="0.24"/>
+<circle id="wall_vertex_11" cx="854.000000" cy="580.212998" r="5.0" fill="none" stroke="currentColor" stroke-width="1.8" opacity="0.74"/>
+<line id="legend-separator" x1="70" y1="930.000000" x2="890" y2="930.000000" stroke="currentColor" stroke-width="1" opacity="0.24"/>
+<text id="label-reconstruction" x="78.000000" y="975.000000" text-anchor="start" font-size="18" font-family="sans-serif" fill="currentColor" opacity="0.95">Frozen v0.5 POLAR_PIVOT_WALL</text>
+<text id="label-polar-radius" x="78.000000" y="1007.000000" text-anchor="start" font-size="15" font-family="sans-serif" fill="currentColor" opacity="0.82">8 polar-adjacent vertices: r = 8.799847533486 u</text>
+<text id="label-oblique-radius" x="78.000000" y="1035.000000" text-anchor="start" font-size="15" font-family="sans-serif" fill="currentColor" opacity="0.82">4 oblique-pair vertices: r = 8.752945939723 u</text>
+<text id="label-boundary" x="78.000000" y="1063.000000" text-anchor="start" font-size="15" font-family="sans-serif" fill="currentColor" opacity="0.66">No new geometry; historical targets not loaded</text>
+</svg>

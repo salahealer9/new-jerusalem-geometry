@@ -1,0 +1,233 @@
+{
+  "analysis_id": "njg-michell-v0-7-dodecagon-dimensional-audit-v1",
+  "comparisons": [
+    {
+      "absolute_percent_residual": "0.00173257402607954545454545454545454545454545454545454545454545",
+      "absolute_residual": "0.1097758902924",
+      "blind_target": false,
+      "comparison_id": "D7-001",
+      "comparison_role": "retrospective_no_refit_source_consistency",
+      "duplicate_numeric_evidence_group": "long_radius_6336_equivalence",
+      "frozen_v0_6_prediction_status": "not_evaluable_from_v0_5",
+      "historical_dependency": null,
+      "historical_target": {
+        "expression": "6336 current feet",
+        "unit": "current_foot",
+        "value": "6336"
+      },
+      "independent_forward_prediction": false,
+      "inferred_source_uncertainty": null,
+      "percent_residual": "-0.00173257402607954545454545454545454545454545454545454545454545",
+      "posthoc_tolerance": null,
+      "prediction": {
+        "normalized_unit": "normalized_unit",
+        "normalized_value": "8.799847533485705",
+        "scale_current_foot_per_normalized_unit": "720",
+        "unit": "current_foot",
+        "value": "6335.8902241097076"
+      },
+      "primary_historical_observation": true,
+      "relative_residual": "-0.0000173257402607954545454545454545454545454545454545454545454545",
+      "signed_residual": "-0.1097758902924",
+      "source_book": "How the World Is Made",
+      "source_figure": "30",
+      "source_record_id": "DECAGON-001",
+      "source_relation": "One of the two radii to the decagon = 6336 feet"
+    },
+    {
+      "absolute_percent_residual": "0.0336678825464228571428571428571428571428571428571428571428571",
+      "absolute_residual": "2.12107660042464",
+      "blind_target": false,
+      "comparison_id": "D7-002",
+      "comparison_role": "retrospective_no_refit_source_consistency",
+      "duplicate_numeric_evidence_group": null,
+      "frozen_v0_6_prediction_status": "not_evaluable_from_v0_5",
+      "historical_dependency": null,
+      "historical_target": {
+        "expression": "6300 current feet",
+        "unit": "current_foot",
+        "value": "6300"
+      },
+      "independent_forward_prediction": false,
+      "inferred_source_uncertainty": null,
+      "percent_residual": "0.0336678825464228571428571428571428571428571428571428571428571",
+      "posthoc_tolerance": null,
+      "prediction": {
+        "normalized_unit": "normalized_unit",
+        "normalized_value": "8.752945939722812",
+        "scale_current_foot_per_normalized_unit": "720",
+        "unit": "current_foot",
+        "value": "6302.12107660042464"
+      },
+      "primary_historical_observation": true,
+      "relative_residual": "0.000336678825464228571428571428571428571428571428571428571428571",
+      "signed_residual": "2.12107660042464",
+      "source_book": "How the World Is Made",
+      "source_figure": "30",
+      "source_record_id": "DECAGON-002",
+      "source_relation": "One of the two radii to the decagon = 6300 feet"
+    },
+    {
+      "absolute_percent_residual": "0.0353885419997528409090909090909090909090909090909090909086649",
+      "absolute_residual": "0.00035590762239751428571428571428571428571428571428571428571",
+      "blind_target": false,
+      "comparison_id": "D7-003",
+      "comparison_role": "retrospective_derived_relation",
+      "duplicate_numeric_evidence_group": null,
+      "frozen_v0_6_prediction_status": "not_evaluable_from_v0_5",
+      "historical_dependency": "derived_from_long_short_radius_pair",
+      "historical_target": {
+        "expression": "176/175",
+        "unit": "dimensionless",
+        "value": "1.00571428571428571428571428571428571428571428571428571428571"
+      },
+      "independent_forward_prediction": false,
+      "inferred_source_uncertainty": null,
+      "percent_residual": "-0.0353885419997528409090909090909090909090909090909090909086649",
+      "posthoc_tolerance": null,
+      "prediction": {
+        "normalized_unit": "dimensionless",
+        "normalized_value": "1.0053583780918882",
+        "scale_current_foot_per_normalized_unit": null,
+        "unit": "dimensionless",
+        "value": "1.0053583780918882"
+      },
+      "primary_historical_observation": false,
+      "relative_residual": "-0.000353885419997528409090909090909090909090909090909090909086649",
+      "signed_residual": "-0.00035590762239751428571428571428571428571428571428571428571",
+      "source_book": "How the World Is Made",
+      "source_figure": "30",
+      "source_record_id": "DECAGON-003",
+      "source_relation": "6336:6300 = 176:175"
+    },
+    {
+      "absolute_percent_residual": "0.00173257402607954545454545454545454545454545454545454545454545",
+      "absolute_residual": "0.1097758902924",
+      "blind_target": false,
+      "comparison_id": "D7-004",
+      "comparison_role": "retrospective_equivalent_relation",
+      "duplicate_numeric_evidence_group": "long_radius_6336_equivalence",
+      "frozen_v0_6_prediction_status": "not_evaluable_from_v0_5",
+      "historical_dependency": "equivalent_to_D7-001",
+      "historical_target": {
+        "expression": "31680/5 current feet",
+        "unit": "current_foot",
+        "value": "6336"
+      },
+      "independent_forward_prediction": false,
+      "inferred_source_uncertainty": null,
+      "percent_residual": "-0.00173257402607954545454545454545454545454545454545454545454545",
+      "posthoc_tolerance": null,
+      "prediction": {
+        "normalized_unit": "normalized_unit",
+        "normalized_value": "8.799847533485705",
+        "scale_current_foot_per_normalized_unit": "720",
+        "unit": "current_foot",
+        "value": "6335.8902241097076"
+      },
+      "primary_historical_observation": false,
+      "relative_residual": "-0.0000173257402607954545454545454545454545454545454545454545454545",
+      "signed_residual": "-0.1097758902924",
+      "source_book": "How the World Is Made",
+      "source_figure": "30",
+      "source_record_id": "DECAGON-004",
+      "source_relation": "6336 is one fifth of 31680"
+    }
+  ],
+  "dimensional_predictions": {
+    "long_radius_current_foot": "6335.8902241097076",
+    "radius_class_ratio": "1.0053583780918882",
+    "short_radius_current_foot": "6302.12107660042464"
+  },
+  "duplicate_and_derived_evidence": {
+    "derived_from_long_short_radius_pair": [
+      "D7-001",
+      "D7-002",
+      "D7-003"
+    ],
+    "four_independent_matches_claim_permitted": false,
+    "long_radius_6336_equivalence": [
+      "D7-001",
+      "D7-004"
+    ],
+    "primary_dimensional_observations": [
+      "D7-001",
+      "D7-002"
+    ]
+  },
+  "evidential_policy": {
+    "aggregate_goodness_of_fit_calculated": false,
+    "blind_target": false,
+    "comparison_role": "retrospective_no_refit_source_consistency",
+    "geometry_fitted_to_phase7d_targets": false,
+    "independent_forward_prediction": false,
+    "posthoc_threshold_applied": false,
+    "ranking_calculated": false,
+    "scale_fitted_to_phase7d_targets": false
+  },
+  "frozen_geometry_quantities": {
+    "geometry_modified_in_phase7d": false,
+    "oblique_pair_radius_normalized": "8.752945939722812",
+    "polar_adjacent_radius_normalized": "8.799847533485705",
+    "radius_class_ratio_normalized": "1.0053583780918882"
+  },
+  "frozen_inputs": {
+    "phase6a_registry": {
+      "path": "docs/sources/v0.6_metrology_registry.csv",
+      "sha256": "8c534ddc1a6fe6f2b233b4352202d7538a5379787bc4313a3759916f8b150f5e"
+    },
+    "phase6b_unit_system": {
+      "path": "data/metrology/njg_michell_v0_6/unit_system.json",
+      "sha256": "cdd009dd0ea8e398d51ad3c9d3285741e207f18b45030a177cbf01d3bf0329c3"
+    },
+    "phase6c_dimensional_predictions": {
+      "path": "data/metrology/njg_michell_v0_6/frozen_dimensional_predictions.json",
+      "sha256": "d8399adbfd4c679ebb0ad93dc787049c98a084cb01b033d42e99a97aecc90d46"
+    },
+    "phase7a_source_clarification": {
+      "path": "docs/sources/v0.7_sommerville_dodecagon_source_clarification.md",
+      "sha256": "da8f237ae413c85b755a6e148a62fd9d402c63ffd833d50e110d1c1c5520bae2"
+    },
+    "phase7b_geometry_audit": {
+      "path": "data/analysis/njg_michell_v0_7/dodecagon_vertex_radius_audit.json",
+      "sha256": "7093250082940c16b1d1df240e791ba5d5e31b7aa10a1866d58ec8e00d3c96b5"
+    },
+    "phase7d_protocol": {
+      "path": "docs/specification/v0.7_dodecagon_dimensional_audit_protocol.md",
+      "sha256": "1acd1d2a895f64463ce58ba69a19c53e39c0b373b1d378183d10f548aa1351d9"
+    }
+  },
+  "frozen_scale": {
+    "current_foot_per_normalized_unit": "720",
+    "exact_fraction": {
+      "denominator": 1,
+      "numerator": 720
+    },
+    "free_scale_parameter": false,
+    "source": "frozen Phase 6C scale_derivation"
+  },
+  "historical_tolerance_context": {
+    "relation": "Working tolerance = 1:2500",
+    "secondary_value": "2500",
+    "source_record_id": "SOMM-004",
+    "source_value": "1",
+    "used_as_acceptance_threshold": false,
+    "used_as_pass_fail_rule": false
+  },
+  "phase": "7D",
+  "residual_definition": {
+    "percent_residual": "100 * (prediction - historical_target) / historical_target",
+    "relative_residual": "(prediction - historical_target) / historical_target",
+    "signed_residual": "prediction - historical_target"
+  },
+  "schema_version": "1.0",
+  "stopping_status": "DIMENSIONAL_COMPARISON_CALCULATED_NO_REFIT",
+  "summary": {
+    "aggregate_goodness_of_fit_calculated": false,
+    "comparison_count": 4,
+    "independent_forward_prediction_count": 0,
+    "posthoc_threshold_applied": false,
+    "primary_dimensional_observation_count": 2,
+    "ranking_calculated": false
+  }
+}
