@@ -1,0 +1,443 @@
+{
+  "analysis_id": "njg-michell-v0-6-prediction-status-audit-v1",
+  "frozen_inputs": {
+    "historical_evidence_commit": "44c628356917342b95dc81332f69e42a0d33ce29",
+    "phase6c_predictions": {
+      "path": "data/metrology/njg_michell_v0_6/frozen_dimensional_predictions.json",
+      "sha256": "d8399adbfd4c679ebb0ad93dc787049c98a084cb01b033d42e99a97aecc90d46"
+    },
+    "phase6d_protocol": {
+      "path": "docs/specification/v0.6_prediction_status_leakage_protocol.md",
+      "sha256": "d6f2616201192b37ee863ab15d194a8b8726977284c6f89a6a3aaa44b9c2fa6d"
+    },
+    "registry": {
+      "path": "docs/sources/v0.6_metrology_registry.csv",
+      "sha256": "8c534ddc1a6fe6f2b233b4352202d7538a5379787bc4313a3759916f8b150f5e"
+    },
+    "v0_5_geometry_commit": "c3a051f197ef98389605c9e19e3bc83b42ad779c"
+  },
+  "interpretation_boundary": {
+    "classification_uses_numeric_prediction_values": false,
+    "classification_uses_numeric_source_values": false,
+    "independent_validation_language_permitted_for_registered_wall_targets": false,
+    "numerical_comparisons_calculated": false
+  },
+  "phase": "6D",
+  "prediction_name_inventory": [
+    "mean_side_current_foot",
+    "oblique_side_current_foot",
+    "polar_side_current_foot",
+    "wall_area_square_foot",
+    "wall_perimeter_current_foot",
+    "wall_perimeter_megalithic_yard",
+    "wall_perimeter_old_english_foot"
+  ],
+  "records": [
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "no_residual",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "construction_input",
+      "independent_forward_prediction": false,
+      "notes": "Frozen construction input; no predictive residual is permitted.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "CORE-001"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "no_residual",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "construction_input",
+      "independent_forward_prediction": false,
+      "notes": "Frozen construction input; no predictive residual is permitted.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "CORE-002"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "no_residual",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "construction_identity",
+      "independent_forward_prediction": false,
+      "notes": "Construction identity; numerical agreement is not an independent test.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "CORE-003"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "no_residual",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "construction_identity",
+      "independent_forward_prediction": false,
+      "notes": "Construction identity; numerical agreement is not an independent test.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "CORE-004"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "no_residual",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "construction_identity",
+      "independent_forward_prediction": false,
+      "notes": "Construction identity under the registered source convention.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "CORE-005"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "no_residual",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "unit_definition",
+      "independent_forward_prediction": false,
+      "notes": "Model-scale definition; not a prediction target.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "SCALE-001"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "no_residual",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "construction_input",
+      "independent_forward_prediction": false,
+      "notes": "Frozen construction input used to derive dimensional scale.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "SCALE-002"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "no_residual",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "unit_definition",
+      "independent_forward_prediction": false,
+      "notes": "Unit definition used by Phase 6B; not a prediction target.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "UNIT-001"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "no_residual",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "unit_definition",
+      "independent_forward_prediction": false,
+      "notes": "Unit definition used by Phase 6B; not a prediction target.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "UNIT-002"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "no_residual",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "unit_definition",
+      "independent_forward_prediction": false,
+      "notes": "Unit definition used by Phase 6B; not a prediction target.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "UNIT-003"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "no_residual",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "unit_definition",
+      "independent_forward_prediction": false,
+      "notes": "Unit definition used by Phase 6B; not a prediction target.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "UNIT-004"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "retrospective_residual",
+      "development_evidence": [
+        {
+          "blob_sha256": "00e524d258d0404546249a47784c5e8d61093a4f4e5d50b2fed9cd05814479aa",
+          "commit": "44c628356917342b95dc81332f69e42a0d33ce29",
+          "exposure_kinds": [
+            "target_known_before_freeze",
+            "target_used_in_model_assessment"
+          ],
+          "path": "docs/sources/geometric_claim_matrix.csv",
+          "verified": true
+        }
+      ],
+      "development_exposure": true,
+      "development_exposure_kinds": [
+        "target_known_before_freeze",
+        "target_used_in_model_assessment"
+      ],
+      "frozen_prediction_status": "development_used_target",
+      "independent_forward_prediction": false,
+      "notes": "Historical mean-side quantity was already registered as a wall reconstruction target before the v0.5 freeze.",
+      "phase6c_prediction_quantity": "mean_side_current_foot",
+      "record_id": "WALL12-001"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "descriptive_residual",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "construction_identity",
+      "independent_forward_prediction": false,
+      "notes": "Source arithmetic identity; Phase 6E may show a descriptive difference but no predictive interpretation.",
+      "phase6c_prediction_quantity": "wall_perimeter_megalithic_yard",
+      "record_id": "WALL12-002"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "retrospective_residual",
+      "development_evidence": [
+        {
+          "blob_sha256": "00e524d258d0404546249a47784c5e8d61093a4f4e5d50b2fed9cd05814479aa",
+          "commit": "44c628356917342b95dc81332f69e42a0d33ce29",
+          "exposure_kinds": [
+            "target_known_before_freeze",
+            "target_used_in_model_assessment"
+          ],
+          "path": "docs/sources/geometric_claim_matrix.csv",
+          "verified": true
+        }
+      ],
+      "development_exposure": true,
+      "development_exposure_kinds": [
+        "target_known_before_freeze",
+        "target_used_in_model_assessment"
+      ],
+      "frozen_prediction_status": "development_used_target",
+      "independent_forward_prediction": false,
+      "notes": "Historical area quantity was already registered as a wall reconstruction target before the v0.5 freeze.",
+      "phase6c_prediction_quantity": "wall_area_square_foot",
+      "record_id": "WALL12-003"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "retrospective_residual",
+      "development_evidence": [
+        {
+          "blob_sha256": "9c4777901804cfb14de68688fd0f79c1813dd885bc98f031026062d15f504b85",
+          "commit": "44c628356917342b95dc81332f69e42a0d33ce29",
+          "exposure_kinds": [
+            "target_known_before_freeze",
+            "target_used_in_model_assessment",
+            "target_used_in_model_preference"
+          ],
+          "path": "README.md",
+          "verified": true
+        }
+      ],
+      "development_exposure": true,
+      "development_exposure_kinds": [
+        "target_known_before_freeze",
+        "target_used_in_model_assessment",
+        "target_used_in_model_preference"
+      ],
+      "frozen_prediction_status": "development_used_target",
+      "independent_forward_prediction": false,
+      "notes": "Later polar-side quantity was known and its dimensional closure contributed to preference for the polar-pivot wall.",
+      "phase6c_prediction_quantity": "polar_side_current_foot",
+      "record_id": "SOMM-001"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "retrospective_residual",
+      "development_evidence": [
+        {
+          "blob_sha256": "9c4777901804cfb14de68688fd0f79c1813dd885bc98f031026062d15f504b85",
+          "commit": "44c628356917342b95dc81332f69e42a0d33ce29",
+          "exposure_kinds": [
+            "target_known_before_freeze",
+            "target_used_in_model_assessment",
+            "target_used_in_model_preference"
+          ],
+          "path": "README.md",
+          "verified": true
+        }
+      ],
+      "development_exposure": true,
+      "development_exposure_kinds": [
+        "target_known_before_freeze",
+        "target_used_in_model_assessment",
+        "target_used_in_model_preference"
+      ],
+      "frozen_prediction_status": "development_used_target",
+      "independent_forward_prediction": false,
+      "notes": "Later oblique-side quantity was known and its dimensional closure contributed to preference for the polar-pivot wall.",
+      "phase6c_prediction_quantity": "oblique_side_current_foot",
+      "record_id": "SOMM-002"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "retrospective_residual",
+      "development_evidence": [
+        {
+          "blob_sha256": "9c4777901804cfb14de68688fd0f79c1813dd885bc98f031026062d15f504b85",
+          "commit": "44c628356917342b95dc81332f69e42a0d33ce29",
+          "exposure_kinds": [
+            "target_known_before_freeze",
+            "target_used_in_model_assessment",
+            "target_used_in_model_preference"
+          ],
+          "path": "README.md",
+          "verified": true
+        }
+      ],
+      "development_exposure": true,
+      "development_exposure_kinds": [
+        "target_known_before_freeze",
+        "target_used_in_model_assessment",
+        "target_used_in_model_preference"
+      ],
+      "frozen_prediction_status": "development_used_target",
+      "independent_forward_prediction": false,
+      "notes": "Later area quantity was known and its dimensional closure contributed to preference for the polar-pivot wall.",
+      "phase6c_prediction_quantity": "wall_area_square_foot",
+      "record_id": "SOMM-003"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "context_only",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "descriptive_correspondence",
+      "independent_forward_prediction": false,
+      "notes": "Historical working tolerance is context only and cannot become a post-hoc pass/fail rule.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "SOMM-004"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "retrospective_residual",
+      "development_evidence": [
+        {
+          "blob_sha256": "9c4777901804cfb14de68688fd0f79c1813dd885bc98f031026062d15f504b85",
+          "commit": "44c628356917342b95dc81332f69e42a0d33ce29",
+          "exposure_kinds": [
+            "target_known_before_freeze",
+            "target_used_in_model_assessment",
+            "target_used_in_model_preference"
+          ],
+          "path": "README.md",
+          "verified": true
+        }
+      ],
+      "development_exposure": true,
+      "development_exposure_kinds": [
+        "target_known_before_freeze",
+        "target_used_in_model_assessment",
+        "target_used_in_model_preference"
+      ],
+      "frozen_prediction_status": "development_used_target",
+      "independent_forward_prediction": false,
+      "notes": "Later old-English-foot perimeter was known and its dimensional closure contributed to preference for the polar-pivot wall.",
+      "phase6c_prediction_quantity": "wall_perimeter_old_english_foot",
+      "record_id": "SOMM-005"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "no_residual",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "unit_definition",
+      "independent_forward_prediction": false,
+      "notes": "Unit-length ratio parameterizes Phase 6B and is not a prediction.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "SOMM-006"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "not_evaluable",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "not_evaluable_from_v0_5",
+      "independent_forward_prediction": false,
+      "notes": "The required decagon object is absent from frozen v0.5 geometry.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "DECAGON-001"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "not_evaluable",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "not_evaluable_from_v0_5",
+      "independent_forward_prediction": false,
+      "notes": "The required decagon object is absent from frozen v0.5 geometry.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "DECAGON-002"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "not_evaluable",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "not_evaluable_from_v0_5",
+      "independent_forward_prediction": false,
+      "notes": "The required decagon object is absent from frozen v0.5 geometry.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "DECAGON-003"
+    },
+    {
+      "audit_verdict": "CONFIRMED",
+      "comparison_policy": "not_evaluable",
+      "development_evidence": [],
+      "development_exposure": false,
+      "development_exposure_kinds": [],
+      "frozen_prediction_status": "not_evaluable_from_v0_5",
+      "independent_forward_prediction": false,
+      "notes": "The required decagon object is absent from frozen v0.5 geometry.",
+      "phase6c_prediction_quantity": null,
+      "record_id": "DECAGON-004"
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "comparison_policy_counts": {
+      "context_only": 1,
+      "descriptive_residual": 1,
+      "no_residual": 12,
+      "not_evaluable": 4,
+      "retrospective_residual": 6
+    },
+    "confirmed_record_count": 24,
+    "contradiction_count": 0,
+    "development_used_target_count": 6,
+    "frozen_unused_target_count": 0,
+    "independent_forward_prediction_count": 0,
+    "numeric_comparison_policy_count": 7,
+    "phase6e_blocked": false,
+    "registry_record_count": 24,
+    "status_counts": {
+      "construction_identity": 4,
+      "construction_input": 3,
+      "descriptive_correspondence": 1,
+      "development_used_target": 6,
+      "not_evaluable_from_v0_5": 4,
+      "unit_definition": 6
+    }
+  }
+}

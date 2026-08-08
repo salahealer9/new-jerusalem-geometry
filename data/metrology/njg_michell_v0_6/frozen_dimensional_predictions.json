@@ -1,0 +1,129 @@
+{
+  "analysis_id": "njg-michell-v0-6-frozen-dimensional-predictions-v1",
+  "blind_boundary": {
+    "comparison_metrics_calculated": false,
+    "historical_targets_loaded": false,
+    "scope_statement": "Historical targets were not loaded and residuals were not calculated."
+  },
+  "dimensional_predictions": {
+    "mean_side_current_foot": {
+      "unit": "current_foot",
+      "value": 3273.9798058430392
+    },
+    "oblique_side_current_foot": {
+      "unit": "current_foot",
+      "value": 3271.1206510860893
+    },
+    "polar_side_current_foot": {
+      "unit": "current_foot",
+      "value": 3279.698115356945
+    },
+    "wall_area_square_foot": {
+      "unit": "square_current_foot",
+      "value": 120002599.57274574
+    },
+    "wall_perimeter_current_foot": {
+      "unit": "current_foot",
+      "value": 39287.75767011647
+    },
+    "wall_perimeter_megalithic_yard": {
+      "conversion_source_record_id": "UNIT-001",
+      "unit": "megalithic_yard",
+      "value": 14444.02855518988
+    },
+    "wall_perimeter_old_english_foot": {
+      "conversion_source_record_id": "SOMM-006",
+      "unit": "old_english_foot",
+      "value": 36013.777864273434
+    }
+  },
+  "frozen_inputs": {
+    "phase6b_unit_manifest": {
+      "path": "data/metrology/njg_michell_v0_6/unit_system.json",
+      "sha256": "cdd009dd0ea8e398d51ad3c9d3285741e207f18b45030a177cbf01d3bf0329c3"
+    },
+    "v0_5_geometry_commit": "c3a051f197ef98389605c9e19e3bc83b42ad779c",
+    "v0_5_geometry_export": {
+      "path": "data/geometry/njg_michell_v0_5/njg_michell_geometry.json",
+      "sha256": "19e22356378d581a2adb35c8f8b8ee0237f61ab365d8cbc05abc378568e3b6cb"
+    }
+  },
+  "normalized_geometry": {
+    "mean_side_u": 4.547194174781999,
+    "oblique_side_u": 4.543223126508457,
+    "polar_side_u": 4.55513627132909,
+    "wall_area_u2": 231.4864960894015,
+    "wall_perimeter_u": 54.56633009738399
+  },
+  "phase": "6C",
+  "scale_derivation": {
+    "current_foot_per_normalized_unit": {
+      "decimal": "720",
+      "denominator": 1,
+      "numerator": 720
+    },
+    "earth_square_normalized_units": {
+      "decimal": "11",
+      "denominator": 1,
+      "numerator": 11
+    },
+    "free_wall_scale_parameter": false,
+    "model_scale_numeric_factor": {
+      "decimal": "1",
+      "denominator": 1,
+      "numerator": 1
+    },
+    "model_scale_source_record_id": "SCALE-001",
+    "source_earth_square_miles": {
+      "decimal": "7920",
+      "denominator": 1,
+      "numerator": 7920
+    },
+    "square_current_foot_per_normalized_unit_squared": {
+      "decimal": "518400",
+      "denominator": 1,
+      "numerator": 518400
+    }
+  },
+  "schema_version": 1,
+  "wall_structure": {
+    "class_tolerance_u": 1e-12,
+    "oblique_class_spread_u": 1.7763568394002505e-14,
+    "oblique_indices": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      10,
+      11
+    ],
+    "oblique_side_count": 8,
+    "polar_class_spread_u": 7.105427357601002e-15,
+    "polar_indices": [
+      0,
+      3,
+      6,
+      9
+    ],
+    "polar_side_count": 4,
+    "semantic_wall_ids": [
+      "wall_east",
+      "wall_east_north",
+      "wall_north_east",
+      "wall_north",
+      "wall_north_west",
+      "wall_west_north",
+      "wall_west",
+      "wall_west_south",
+      "wall_south_west",
+      "wall_south",
+      "wall_south_east",
+      "wall_east_south"
+    ],
+    "side_count": 12,
+    "vertex_count": 12,
+    "wall_model": "POLAR_PIVOT_TANGENT"
+  }
+}

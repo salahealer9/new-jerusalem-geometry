@@ -10,8 +10,8 @@ import new_jerusalem_geometry as njg
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def test_v050_version_metadata_is_consistent() -> None:
-    expected = "0.5.0"
+def test_v060_version_metadata_is_consistent() -> None:
+    expected = "0.6.0"
 
     assert njg.__version__ == expected
 
@@ -47,7 +47,7 @@ def test_v050_version_metadata_is_consistent() -> None:
     assert match.group(1) == expected
 
     assert (
-        'date-released: "2026-08-07"'
+        'date-released: "2026-08-08"'
         in citation
     )
 
