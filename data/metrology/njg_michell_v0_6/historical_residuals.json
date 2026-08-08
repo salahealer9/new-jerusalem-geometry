@@ -1,0 +1,423 @@
+{
+  "analysis_id": "njg-michell-v0-6-historical-residual-sensitivity-v1",
+  "comparisons": [
+    {
+      "absolute_percent_residual": "0.30575385548526960784313725490196078431372549019608",
+      "absolute_residual": "9.9798058430392",
+      "comparison_policy": "retrospective_residual",
+      "duplicate_numeric_evidence_group": null,
+      "frozen_prediction_status": "development_used_target",
+      "independent_forward_prediction": false,
+      "independent_numeric_evidence": false,
+      "inferred_source_uncertainty": null,
+      "percent_residual": "0.30575385548526960784313725490196078431372549019608",
+      "phase6c_prediction_quantity": "mean_side_current_foot",
+      "posthoc_tolerance": null,
+      "prediction_in_source_unit": {
+        "unit": "foot",
+        "value": "3273.9798058430392"
+      },
+      "prediction_original": {
+        "unit": "current_foot",
+        "value": "3273.9798058430392"
+      },
+      "record_id": "WALL12-001",
+      "relative_residual": "0.0030575385548526960784313725490196078431372549019608",
+      "secondary_expression_consistency": {
+        "absolute_current_base_difference": "0",
+        "checked": true,
+        "equivalent": true,
+        "present": true,
+        "primary_current_base_value": "3264",
+        "reason": "same_dimension_unit_equivalence",
+        "secondary_current_base_value": "3264",
+        "unit_equivalence_applicable": true
+      },
+      "signed_residual": "9.9798058430392",
+      "source": {
+        "secondary_unit": "megalithic_yard",
+        "secondary_value": "1200",
+        "unit": "foot",
+        "value": "3264"
+      },
+      "unit_reexpression_sensitivity": {
+        "absolute_relative_difference": "0",
+        "base_unit": "current_foot",
+        "passed": true,
+        "prediction_value": "3273.9798058430392",
+        "relative_residual": "0.0030575385548526960784313725490196078431372549019608",
+        "source_value": "3264",
+        "tolerance": "0.000000000001"
+      }
+    },
+    {
+      "absolute_percent_residual": "0.30575385548527777777777777777777777777777777777778",
+      "absolute_residual": "44.02855518988",
+      "comparison_policy": "descriptive_residual",
+      "duplicate_numeric_evidence_group": null,
+      "frozen_prediction_status": "construction_identity",
+      "independent_forward_prediction": false,
+      "independent_numeric_evidence": false,
+      "inferred_source_uncertainty": null,
+      "percent_residual": "0.30575385548527777777777777777777777777777777777778",
+      "phase6c_prediction_quantity": "wall_perimeter_megalithic_yard",
+      "posthoc_tolerance": null,
+      "prediction_in_source_unit": {
+        "unit": "megalithic_yard",
+        "value": "14444.02855518988"
+      },
+      "prediction_original": {
+        "unit": "megalithic_yard",
+        "value": "14444.02855518988"
+      },
+      "record_id": "WALL12-002",
+      "relative_residual": "0.0030575385548527777777777777777777777777777777777778",
+      "secondary_expression_consistency": {
+        "absolute_current_base_difference": null,
+        "checked": false,
+        "equivalent": null,
+        "present": false,
+        "primary_current_base_value": null,
+        "reason": "no_secondary_expression",
+        "secondary_current_base_value": null,
+        "unit_equivalence_applicable": false
+      },
+      "signed_residual": "44.02855518988",
+      "source": {
+        "secondary_unit": null,
+        "secondary_value": null,
+        "unit": "megalithic_yard",
+        "value": "14400"
+      },
+      "unit_reexpression_sensitivity": {
+        "absolute_relative_difference": "0",
+        "base_unit": "current_foot",
+        "passed": true,
+        "prediction_value": "39287.7576701164736",
+        "relative_residual": "0.0030575385548527777777777777777777777777777777777778",
+        "source_value": "39168",
+        "tolerance": "0.000000000001"
+      }
+    },
+    {
+      "absolute_percent_residual": "0.00216631062145",
+      "absolute_residual": "2599.57274574",
+      "comparison_policy": "retrospective_residual",
+      "duplicate_numeric_evidence_group": "wall_area_120m",
+      "frozen_prediction_status": "development_used_target",
+      "independent_forward_prediction": false,
+      "independent_numeric_evidence": false,
+      "inferred_source_uncertainty": null,
+      "percent_residual": "0.00216631062145",
+      "phase6c_prediction_quantity": "wall_area_square_foot",
+      "posthoc_tolerance": null,
+      "prediction_in_source_unit": {
+        "unit": "square_foot",
+        "value": "120002599.57274574"
+      },
+      "prediction_original": {
+        "unit": "square_current_foot",
+        "value": "120002599.57274574"
+      },
+      "record_id": "WALL12-003",
+      "relative_residual": "0.0000216631062145",
+      "secondary_expression_consistency": {
+        "absolute_current_base_difference": null,
+        "checked": false,
+        "equivalent": null,
+        "present": false,
+        "primary_current_base_value": null,
+        "reason": "no_secondary_expression",
+        "secondary_current_base_value": null,
+        "unit_equivalence_applicable": false
+      },
+      "signed_residual": "2599.57274574",
+      "source": {
+        "secondary_unit": null,
+        "secondary_value": null,
+        "unit": "square_foot",
+        "value": "120000000"
+      },
+      "unit_reexpression_sensitivity": {
+        "absolute_relative_difference": "0",
+        "base_unit": "square_current_foot",
+        "passed": true,
+        "prediction_value": "120002599.57274574",
+        "relative_residual": "0.0000216631062145",
+        "source_value": "120000000",
+        "tolerance": "0.000000000001"
+      }
+    },
+    {
+      "absolute_percent_residual": "0.0092038000931402439024390243902439024390243902439024",
+      "absolute_residual": "0.301884643055",
+      "comparison_policy": "retrospective_residual",
+      "duplicate_numeric_evidence_group": null,
+      "frozen_prediction_status": "development_used_target",
+      "independent_forward_prediction": false,
+      "independent_numeric_evidence": false,
+      "inferred_source_uncertainty": null,
+      "percent_residual": "-0.0092038000931402439024390243902439024390243902439024",
+      "phase6c_prediction_quantity": "polar_side_current_foot",
+      "posthoc_tolerance": null,
+      "prediction_in_source_unit": {
+        "unit": "foot",
+        "value": "3279.698115356945"
+      },
+      "prediction_original": {
+        "unit": "current_foot",
+        "value": "3279.698115356945"
+      },
+      "record_id": "SOMM-001",
+      "relative_residual": "-0.000092038000931402439024390243902439024390243902439024",
+      "secondary_expression_consistency": {
+        "absolute_current_base_difference": null,
+        "checked": false,
+        "equivalent": null,
+        "present": true,
+        "primary_current_base_value": null,
+        "reason": "different_physical_dimension:linear:dimensionless",
+        "secondary_current_base_value": null,
+        "unit_equivalence_applicable": false
+      },
+      "signed_residual": "-0.301884643055",
+      "source": {
+        "secondary_unit": "dimensionless",
+        "secondary_value": "4",
+        "unit": "foot",
+        "value": "3280"
+      },
+      "unit_reexpression_sensitivity": {
+        "absolute_relative_difference": "0",
+        "base_unit": "current_foot",
+        "passed": true,
+        "prediction_value": "3279.698115356945",
+        "relative_residual": "-0.000092038000931402439024390243902439024390243902439024",
+        "source_value": "3280",
+        "tolerance": "0.000000000001"
+      }
+    },
+    {
+      "absolute_percent_residual": "0.034270675415574923547400611620795107033639143730887",
+      "absolute_residual": "1.1206510860893",
+      "comparison_policy": "retrospective_residual",
+      "duplicate_numeric_evidence_group": null,
+      "frozen_prediction_status": "development_used_target",
+      "independent_forward_prediction": false,
+      "independent_numeric_evidence": false,
+      "inferred_source_uncertainty": null,
+      "percent_residual": "0.034270675415574923547400611620795107033639143730887",
+      "phase6c_prediction_quantity": "oblique_side_current_foot",
+      "posthoc_tolerance": null,
+      "prediction_in_source_unit": {
+        "unit": "foot",
+        "value": "3271.1206510860893"
+      },
+      "prediction_original": {
+        "unit": "current_foot",
+        "value": "3271.1206510860893"
+      },
+      "record_id": "SOMM-002",
+      "relative_residual": "0.00034270675415574923547400611620795107033639143730887",
+      "secondary_expression_consistency": {
+        "absolute_current_base_difference": null,
+        "checked": false,
+        "equivalent": null,
+        "present": true,
+        "primary_current_base_value": null,
+        "reason": "different_physical_dimension:linear:dimensionless",
+        "secondary_current_base_value": null,
+        "unit_equivalence_applicable": false
+      },
+      "signed_residual": "1.1206510860893",
+      "source": {
+        "secondary_unit": "dimensionless",
+        "secondary_value": "8",
+        "unit": "foot",
+        "value": "3270"
+      },
+      "unit_reexpression_sensitivity": {
+        "absolute_relative_difference": "0",
+        "base_unit": "current_foot",
+        "passed": true,
+        "prediction_value": "3271.1206510860893",
+        "relative_residual": "0.00034270675415574923547400611620795107033639143730887",
+        "source_value": "3270",
+        "tolerance": "0.000000000001"
+      }
+    },
+    {
+      "absolute_percent_residual": "0.00216631062145",
+      "absolute_residual": "2599.57274574",
+      "comparison_policy": "retrospective_residual",
+      "duplicate_numeric_evidence_group": "wall_area_120m",
+      "frozen_prediction_status": "development_used_target",
+      "independent_forward_prediction": false,
+      "independent_numeric_evidence": false,
+      "inferred_source_uncertainty": null,
+      "percent_residual": "0.00216631062145",
+      "phase6c_prediction_quantity": "wall_area_square_foot",
+      "posthoc_tolerance": null,
+      "prediction_in_source_unit": {
+        "unit": "square_foot",
+        "value": "120002599.57274574"
+      },
+      "prediction_original": {
+        "unit": "square_current_foot",
+        "value": "120002599.57274574"
+      },
+      "record_id": "SOMM-003",
+      "relative_residual": "0.0000216631062145",
+      "secondary_expression_consistency": {
+        "absolute_current_base_difference": null,
+        "checked": false,
+        "equivalent": null,
+        "present": false,
+        "primary_current_base_value": null,
+        "reason": "no_secondary_expression",
+        "secondary_current_base_value": null,
+        "unit_equivalence_applicable": false
+      },
+      "signed_residual": "2599.57274574",
+      "source": {
+        "secondary_unit": null,
+        "secondary_value": null,
+        "unit": "square_foot",
+        "value": "120000000"
+      },
+      "unit_reexpression_sensitivity": {
+        "absolute_relative_difference": "0",
+        "base_unit": "square_current_foot",
+        "passed": true,
+        "prediction_value": "120002599.57274574",
+        "relative_residual": "0.0000216631062145",
+        "source_value": "120000000",
+        "tolerance": "0.000000000001"
+      }
+    },
+    {
+      "absolute_percent_residual": "0.038271845203983333333333333333333333333333333333333",
+      "absolute_residual": "13.777864273434",
+      "comparison_policy": "retrospective_residual",
+      "duplicate_numeric_evidence_group": null,
+      "frozen_prediction_status": "development_used_target",
+      "independent_forward_prediction": false,
+      "independent_numeric_evidence": false,
+      "inferred_source_uncertainty": null,
+      "percent_residual": "0.038271845203983333333333333333333333333333333333333",
+      "phase6c_prediction_quantity": "wall_perimeter_old_english_foot",
+      "posthoc_tolerance": null,
+      "prediction_in_source_unit": {
+        "unit": "old_english_foot",
+        "value": "36013.777864273434"
+      },
+      "prediction_original": {
+        "unit": "old_english_foot",
+        "value": "36013.777864273434"
+      },
+      "record_id": "SOMM-005",
+      "relative_residual": "0.00038271845203983333333333333333333333333333333333333",
+      "secondary_expression_consistency": {
+        "absolute_current_base_difference": null,
+        "checked": false,
+        "equivalent": null,
+        "present": false,
+        "primary_current_base_value": null,
+        "reason": "no_secondary_expression",
+        "secondary_current_base_value": null,
+        "unit_equivalence_applicable": false
+      },
+      "signed_residual": "13.777864273434",
+      "source": {
+        "secondary_unit": null,
+        "secondary_value": null,
+        "unit": "old_english_foot",
+        "value": "36000"
+      },
+      "unit_reexpression_sensitivity": {
+        "absolute_relative_difference": "0.00000000000000000000000000000000000000000000000000695",
+        "base_unit": "current_foot",
+        "passed": true,
+        "prediction_value": "39287.757670116473454545454545454545454545454545455",
+        "relative_residual": "0.00038271845203983333333333333333333333333333333332638",
+        "source_value": "39272.727272727272727272727272727272727272727272728",
+        "tolerance": "0.000000000001"
+      }
+    }
+  ],
+  "duplicate_numeric_evidence_groups": {
+    "wall_area_120m": [
+      "SOMM-003",
+      "WALL12-003"
+    ]
+  },
+  "excluded_from_residuals": [
+    "CORE-001",
+    "CORE-002",
+    "CORE-003",
+    "CORE-004",
+    "CORE-005",
+    "SCALE-001",
+    "SCALE-002",
+    "UNIT-001",
+    "UNIT-002",
+    "UNIT-003",
+    "UNIT-004",
+    "SOMM-004",
+    "SOMM-006",
+    "DECAGON-001",
+    "DECAGON-002",
+    "DECAGON-003",
+    "DECAGON-004"
+  ],
+  "frozen_inputs": {
+    "phase6c_predictions": {
+      "path": "data/metrology/njg_michell_v0_6/frozen_dimensional_predictions.json",
+      "sha256": "d8399adbfd4c679ebb0ad93dc787049c98a084cb01b033d42e99a97aecc90d46"
+    },
+    "phase6d_audit": {
+      "path": "data/metrology/njg_michell_v0_6/prediction_status_audit.json",
+      "sha256": "dfc6e88ab1c91d96c9b35e204e71d39461b1a656b4344b6e22a6e95ef1d8e7a1"
+    },
+    "phase6e_protocol": {
+      "path": "docs/specification/v0.6_historical_residual_sensitivity_protocol.md",
+      "sha256": "e0ecd914cba79dbab02ac4eefb93691ffdc17b77b93789d8c8b3b917c6c09d3e"
+    },
+    "registry": {
+      "path": "docs/sources/v0.6_metrology_registry.csv",
+      "sha256": "8c534ddc1a6fe6f2b233b4352202d7538a5379787bc4313a3759916f8b150f5e"
+    },
+    "unit_manifest": {
+      "path": "data/metrology/njg_michell_v0_6/unit_system.json",
+      "sha256": "cdd009dd0ea8e398d51ad3c9d3285741e207f18b45030a177cbf01d3bf0329c3"
+    }
+  },
+  "interpretation_boundary": {
+    "decagon_geometry_extended": false,
+    "development_used_targets_are_retrospective": true,
+    "inferred_source_uncertainty": null,
+    "posthoc_tolerance": null,
+    "registered_wall_comparisons_are_independent_predictions": false,
+    "somm_004_used_as_pass_fail_threshold": false
+  },
+  "phase": "6E",
+  "residual_definition": {
+    "percent_residual": "100 * (prediction - source) / source",
+    "relative_residual": "(prediction - source) / source",
+    "signed_residual": "prediction - source"
+  },
+  "schema_version": 1,
+  "summary": {
+    "aggregate_goodness_of_fit_calculated": false,
+    "comparison_count": 7,
+    "descriptive_residual_count": 1,
+    "independent_forward_prediction_count": 0,
+    "posthoc_threshold_applied": false,
+    "ranking_calculated": false,
+    "retrospective_residual_count": 6,
+    "secondary_expression_check_count": 1,
+    "secondary_expression_failure_count": 0,
+    "secondary_expression_not_applicable_count": 2,
+    "secondary_expression_present_count": 3
+  }
+}
