@@ -1,0 +1,144 @@
+{
+  "area_rule": {
+    "free_area_fit_parameter": false,
+    "method": "square_registered_linear_factor"
+  },
+  "canonical_linear_base": "current_foot",
+  "linear_units": [
+    {
+      "provenance_class": "implementation_base",
+      "source_record_id": null,
+      "to_current_foot": {
+        "decimal": "1",
+        "denominator": 1,
+        "numerator": 1
+      },
+      "unit": "current_foot"
+    },
+    {
+      "provenance_class": "registry_label_alias",
+      "source_record_id": null,
+      "to_current_foot": {
+        "decimal": "1",
+        "denominator": 1,
+        "numerator": 1
+      },
+      "unit": "foot"
+    },
+    {
+      "provenance_class": "standard_identity",
+      "source_record_id": null,
+      "to_current_foot": {
+        "decimal": "0.0833333333333333",
+        "denominator": 12,
+        "numerator": 1
+      },
+      "unit": "inch"
+    },
+    {
+      "provenance_class": "michell_adopts_external",
+      "source_record_id": "UNIT-001",
+      "to_current_foot": {
+        "decimal": "2.72",
+        "denominator": 25,
+        "numerator": 68
+      },
+      "unit": "megalithic_yard"
+    },
+    {
+      "provenance_class": "michell_adopts_external",
+      "source_record_id": "UNIT-002",
+      "to_current_foot": {
+        "decimal": "1.1",
+        "denominator": 10,
+        "numerator": 11
+      },
+      "unit": "sumerian_foot"
+    },
+    {
+      "provenance_class": "michell_stated",
+      "source_record_id": "UNIT-003",
+      "to_current_foot": {
+        "decimal": "660",
+        "denominator": 1,
+        "numerator": 660
+      },
+      "unit": "new_jerusalem_stadion"
+    },
+    {
+      "provenance_class": "michell_stated",
+      "source_record_id": "UNIT-003",
+      "to_current_foot": {
+        "decimal": "660",
+        "denominator": 1,
+        "numerator": 660
+      },
+      "unit": "furlong"
+    },
+    {
+      "provenance_class": "michell_stated",
+      "source_record_id": "UNIT-004",
+      "to_current_foot": {
+        "decimal": "1.728",
+        "denominator": 125,
+        "numerator": 216
+      },
+      "unit": "new_jerusalem_cubit"
+    },
+    {
+      "provenance_class": "michell_reports_other",
+      "source_record_id": "SOMM-006",
+      "to_current_foot": {
+        "decimal": "1.09090909090909",
+        "denominator": 11,
+        "numerator": 12
+      },
+      "unit": "old_english_foot"
+    }
+  ],
+  "model_scale": {
+    "model_unit": "model_foot",
+    "numeric_factor": {
+      "decimal": "1",
+      "denominator": 1,
+      "numerator": 1
+    },
+    "physical_unit_conversion": false,
+    "source_record_id": "SCALE-001",
+    "source_unit": "source_mile"
+  },
+  "phase": "6B",
+  "pi_conventions": {
+    "euclidean": {
+      "exact_in_convention": true,
+      "implementation": "math.pi",
+      "rationalized": false
+    },
+    "michell_22_over_7": {
+      "exact_in_convention": true,
+      "value": {
+        "decimal": "3.14285714285714",
+        "denominator": 7,
+        "numerator": 22
+      }
+    }
+  },
+  "purpose": "formal_source_defined_unit_system",
+  "schema_version": 1,
+  "source_registry": {
+    "allowed_record_ids": [
+      "SCALE-001",
+      "UNIT-001",
+      "UNIT-002",
+      "UNIT-003",
+      "UNIT-004",
+      "SOMM-006"
+    ],
+    "path": "docs/sources/v0.6_metrology_registry.csv",
+    "sha256": "8c534ddc1a6fe6f2b233b4352202d7538a5379787bc4313a3759916f8b150f5e"
+  },
+  "target_leakage": {
+    "development_used_target_parameters": [],
+    "geometric_target_records_used_as_parameters": []
+  }
+}
