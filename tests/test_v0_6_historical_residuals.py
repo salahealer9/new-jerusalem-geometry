@@ -957,8 +957,8 @@ def test_generated_artifacts_have_no_absolute_home_paths() -> None:
     assert b"/Users/" not in combined
 
 
-def test_package_version_remains_0_5_0() -> None:
-    assert njg.__version__ == "0.5.0"
+def test_package_version_is_0_6_0() -> None:
+    assert njg.__version__ == "0.6.0"
 
 
 def test_dimensionless_secondary_is_not_forced_into_physical_conversion() -> None:

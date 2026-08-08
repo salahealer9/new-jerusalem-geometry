@@ -422,3 +422,38 @@ plate. Dashed orange segments show candidate-to-anchor residuals.
 
 The SVG is a transparent-background computational reconstruction and is not
 a facsimile of Michell's printed plate.
+
+## v0.6.0 — Historical metrology and prediction-status audit
+
+v0.6.0 keeps the v0.5 `NJG_MICHELL` geometry frozen and audits the historical
+dimensional/metrological layer around it.
+
+```text
+24 registered metrology records accounted for
+6 development-used targets
+0 frozen-unused targets
+0 independent forward predictions
+7 numerical comparison rows:
+    6 retrospective
+    1 descriptive
+```
+
+The later Sommerville wall dimensions are reproduced very closely by the frozen
+polar-pivot wall:
+
+```text
+polar side                  -0.00920%
+oblique side                +0.03427%
+wall area                   +0.002166%
+old-English-foot perimeter  +0.03827%
+```
+
+These are reported as retrospective agreements, not blind predictions, because
+the historical dimensions were available during model development.
+
+The earlier Figure 12 mean-side/perimeter layer differs by about +0.305754%.
+No aggregate score, ranking, post-hoc tolerance, or inferred historical
+uncertainty is introduced.
+
+See `docs/checkpoints/v0.6.0.md` and
+`docs/geometry/v0.6_historical_residual_sensitivity_report.md`.
