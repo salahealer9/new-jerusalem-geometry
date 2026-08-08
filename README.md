@@ -457,3 +457,42 @@ uncertainty is introduced.
 
 See `docs/checkpoints/v0.6.0.md` and
 `docs/geometry/v0.6_historical_residual_sensitivity_report.md`.
+
+## v0.7.0 — Sommerville dodecagon vertex-radius audit
+
+v0.7.0 resolves the Figure 30 radius problem without adding a new polygon or
+refitting the frozen v0.5 geometry.
+
+The source prose says `decagon`, but source inspection shows that the marked
+6336/6300 radii refer to vertices of the irregular outer dodecagon. v0.7
+preserves the literal wording in provenance while treating the operational
+geometric referent as `dodecagon_vertex_radii`.
+
+The frozen polar-pivot wall already contains exactly two semantically defined
+radius classes:
+
+```text
+8 polar-adjacent vertices   r = 8.79984753348571 u
+4 oblique-pair vertices     r = 8.75294593972281 u
+```
+
+The eight polar-adjacent vertices lie on the parameter-free regular-dodecagon
+baseline; the four oblique-pair vertices are displaced inward by
+`0.0469015937628932 u`.
+
+Under the already-frozen `720 current ft/u` scale:
+
+```text
+long radius   6335.8902241097 ft   vs 6336 ft   (-0.001732574%)
+short radius  6302.1210766004 ft   vs 6300 ft   (+0.033667883%)
+class ratio   1.0053583780919       vs 176/175   (-0.035388542%)
+```
+
+These are retrospective no-refit source-consistency results, not independent
+forward predictions. `31680/5` is equivalent to the 6336-ft row, and `176/175`
+is derived from the same long/short historical pair, so the four registered
+rows are not four independent numerical matches.
+
+See `docs/checkpoints/v0.7.0.md` and
+`docs/geometry/v0.7_dodecagon_dimensional_audit_report.md`.
+

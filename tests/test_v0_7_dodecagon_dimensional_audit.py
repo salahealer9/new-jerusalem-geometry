@@ -732,8 +732,8 @@ def test_generated_outputs_have_no_absolute_home_paths() -> None:
     assert b"/Users/" not in combined
 
 
-def test_package_version_remains_0_6_0() -> None:
+def test_package_version_is_0_7_0() -> None:
     assert (
         njg.__version__
-        == "0.6.0"
+        == "0.7.0"
     )
