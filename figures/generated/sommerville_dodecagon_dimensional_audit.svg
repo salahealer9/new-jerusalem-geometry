@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="900" viewBox="0 0 1100 900" role="img">
+<title>Sommerville dodecagon dimensional audit</title>
+<desc>Historical Figure 30 radius comparison against frozen v0.7 geometry under the frozen current-foot scale. Retrospective no-refit comparison.</desc>
+<metadata>{&quot;comparison_role&quot;:&quot;retrospective_no_refit_source_consistency&quot;,&quot;geometry_refit&quot;:false,&quot;independent_forward_prediction&quot;:false,&quot;phase&quot;:&quot;7D&quot;,&quot;phase7b_sha256&quot;:&quot;7093250082940c16b1d1df240e791ba5d5e31b7aa10a1866d58ec8e00d3c96b5&quot;,&quot;protocol_sha256&quot;:&quot;1acd1d2a895f64463ce58ba69a19c53e39c0b373b1d378183d10f548aa1351d9&quot;,&quot;scale_refit&quot;:false}</metadata>
+<text x="60" y="60" font-family="sans-serif" font-size="27" font-weight="bold" fill="currentColor" opacity="1.00">Sommerville dodecagon — frozen dimensional audit</text>
+<text x="60" y="92" font-family="sans-serif" font-size="16" font-weight="normal" fill="currentColor" opacity="0.72">Figure 30 source values compared only after the geometry and scale were frozen</text>
+<line x1="60" y1="116" x2="1040" y2="116" stroke="currentColor" stroke-width="1" opacity="0.25"/>
+<text x="70" y="170" font-family="sans-serif" font-size="20" font-weight="bold" fill="currentColor" opacity="1.00">D7-001 — Long / polar-adjacent radius</text>
+<text x="90" y="204" font-family="sans-serif" font-size="17" font-weight="normal" fill="currentColor" opacity="1.00">Frozen prediction: 6335.8902241097 current ft</text>
+<text x="90" y="232" font-family="sans-serif" font-size="17" font-weight="normal" fill="currentColor" opacity="1.00">Historical source: 6336 current feet</text>
+<text x="90" y="260" font-family="sans-serif" font-size="17" font-weight="normal" fill="currentColor" opacity="1.00">Residual: -0.1097758902924   (-0.0017325740260795%)</text>
+<text x="650" y="204" font-family="sans-serif" font-size="16" font-weight="normal" fill="currentColor" opacity="0.72">retrospective / no-refit</text>
+<text x="650" y="232" font-family="sans-serif" font-size="16" font-weight="normal" fill="currentColor" opacity="0.72">primary historical observation</text>
+<line x1="60" y1="286" x2="1040" y2="286" stroke="currentColor" stroke-width="1" opacity="0.18"/>
+<text x="70" y="315" font-family="sans-serif" font-size="20" font-weight="bold" fill="currentColor" opacity="1.00">D7-002 — Short / oblique-pair radius</text>
+<text x="90" y="349" font-family="sans-serif" font-size="17" font-weight="normal" fill="currentColor" opacity="1.00">Frozen prediction: 6302.1210766004 current ft</text>
+<text x="90" y="377" font-family="sans-serif" font-size="17" font-weight="normal" fill="currentColor" opacity="1.00">Historical source: 6300 current feet</text>
+<text x="90" y="405" font-family="sans-serif" font-size="17" font-weight="normal" fill="currentColor" opacity="1.00">Residual: 2.1210766004246   (0.033667882546423%)</text>
+<text x="650" y="349" font-family="sans-serif" font-size="16" font-weight="normal" fill="currentColor" opacity="0.72">retrospective / no-refit</text>
+<text x="650" y="377" font-family="sans-serif" font-size="16" font-weight="normal" fill="currentColor" opacity="0.72">primary historical observation</text>
+<line x1="60" y1="431" x2="1040" y2="431" stroke="currentColor" stroke-width="1" opacity="0.18"/>
+<text x="70" y="460" font-family="sans-serif" font-size="20" font-weight="bold" fill="currentColor" opacity="1.00">D7-003 — Radius-class ratio</text>
+<text x="90" y="494" font-family="sans-serif" font-size="17" font-weight="normal" fill="currentColor" opacity="1.00">Frozen prediction: 1.0053583780919</text>
+<text x="90" y="522" font-family="sans-serif" font-size="17" font-weight="normal" fill="currentColor" opacity="1.00">Historical source: 176/175</text>
+<text x="90" y="550" font-family="sans-serif" font-size="17" font-weight="normal" fill="currentColor" opacity="1.00">Residual: -0.00035590762239751   (-0.035388541999753%)</text>
+<text x="650" y="494" font-family="sans-serif" font-size="16" font-weight="normal" fill="currentColor" opacity="0.72">retrospective / no-refit</text>
+<text x="650" y="522" font-family="sans-serif" font-size="16" font-weight="normal" fill="currentColor" opacity="0.72">derived / equivalent relation</text>
+<line x1="60" y1="576" x2="1040" y2="576" stroke="currentColor" stroke-width="1" opacity="0.18"/>
+<text x="70" y="605" font-family="sans-serif" font-size="20" font-weight="bold" fill="currentColor" opacity="1.00">D7-004 — Long radius = one fifth relation</text>
+<text x="90" y="639" font-family="sans-serif" font-size="17" font-weight="normal" fill="currentColor" opacity="1.00">Frozen prediction: 6335.8902241097 current ft</text>
+<text x="90" y="667" font-family="sans-serif" font-size="17" font-weight="normal" fill="currentColor" opacity="1.00">Historical source: 31680/5 current feet</text>
+<text x="90" y="695" font-family="sans-serif" font-size="17" font-weight="normal" fill="currentColor" opacity="1.00">Residual: -0.1097758902924   (-0.0017325740260795%)</text>
+<text x="650" y="639" font-family="sans-serif" font-size="16" font-weight="normal" fill="currentColor" opacity="0.72">retrospective / no-refit</text>
+<text x="650" y="667" font-family="sans-serif" font-size="16" font-weight="normal" fill="currentColor" opacity="0.72">derived / equivalent relation</text>
+<line x1="60" y1="721" x2="1040" y2="721" stroke="currentColor" stroke-width="1" opacity="0.18"/>
+<text x="60" y="790" font-family="sans-serif" font-size="18" font-weight="bold" fill="currentColor" opacity="1.00">Evidence note</text>
+<text x="60" y="820" font-family="sans-serif" font-size="15" font-weight="normal" fill="currentColor" opacity="0.72">D7-001 and D7-004 are the same numerical evidence; D7-003 is derived from the long/short pair.</text>
+<text x="60" y="846" font-family="sans-serif" font-size="15" font-weight="normal" fill="currentColor" opacity="0.72">No independent forward-prediction claim and no 1:2500 pass/fail threshold.</text>
+</svg>
