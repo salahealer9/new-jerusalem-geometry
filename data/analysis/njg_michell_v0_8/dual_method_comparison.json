@@ -1,0 +1,54 @@
+{
+  "alpha_exact_radians": 0.8975979010256552,
+  "degrees_of_freedom": {
+    "continuous_fitted_parameters": 0,
+    "optimized_combination_weights": 0,
+    "scale_parameters": 0,
+    "target_based_candidate_choices": 0
+  },
+  "exploratory": {
+    "arithmetic_midpoint_radians": 0.896999001082452,
+    "midpoint_absolute_residual_radians": 0.0005988999432031683,
+    "midpoint_signed_residual_radians": -0.0005988999432031683
+  },
+  "implementation_checks": {
+    "method_2_identity_absolute_error_radians": 0.0,
+    "method_2_identity_pass": true,
+    "method_2_identity_radians": 0.895664793857865,
+    "method_2_identity_tolerance_radians": 1e-15
+  },
+  "method1_source_sha256": "419d38ac8b5a4d0201e6e0cb4ed05a8d776386286119885463fa95fae374fa6c",
+  "method_1": {
+    "absolute_percent_residual": 0.08191945196657673,
+    "absolute_residual_radians": 0.0007353072813837125,
+    "alpha_radians": 0.8983332083070389,
+    "percent_residual": 0.08191945196657673,
+    "relative_residual": 0.0008191945196657672,
+    "seven_step_closure_radians": 0.005147150969685654,
+    "signed_residual_radians": 0.0007353072813837125
+  },
+  "method_2": {
+    "absolute_percent_residual": 0.21536449289612453,
+    "absolute_residual_radians": 0.0019331071677901601,
+    "alpha_radians": 0.895664793857865,
+    "percent_residual": -0.21536449289612453,
+    "relative_residual": -0.0021536449289612453,
+    "seven_step_closure_radians": -0.013531750174530899,
+    "signed_residual_radians": -0.0019331071677901601
+  },
+  "phase": "8C",
+  "phase8a_commit": "d30a384",
+  "phase8a_source_audit_sha256": "48a7892bb7be5ebd1b0cfdc2e66f0de7a4f380b6926d7a1799c6693e7dd441b4",
+  "protocol_sha256": "6e4c4e6a5c87280f3ff67d3e21997c681aec22b5cfbe39be713b5627507d2a99",
+  "relationships": {
+    "absolute_accuracy_order": [
+      "method_1",
+      "method_2"
+    ],
+    "absolute_error_ratio": 2.6289786824256787,
+    "bracketing": true,
+    "opposite_signed_errors": true
+  },
+  "schema": "njg_michell_v0_8_dual_method_comparison",
+  "stopping_status": "DUAL_METHOD_LOCAL_COMPARISON_COMPLETE"
+}
