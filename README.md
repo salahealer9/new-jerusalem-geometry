@@ -40,29 +40,92 @@ algorithm in Michell's text.
 
 ## Repository status
 
-Version `v0.5.0` is the full generative reconstruction and
-construction-sufficiency checkpoint.
+Version `v0.8.0` is the Figure 194 dual-method construction checkpoint.
 
-The repository now contains a deterministic `NJG_MICHELL` composite, a
-provenance-linked SVG renderer, machine-readable geometry and provenance
-exports, a registered generative-invariance audit, and a two-stage sevenfold
-phase-selection audit.
+The repository now preserves both approximate sevenfold construction branches
+described by Michell:
 
-The canonical generative path is calibration-excluded: Figure 12 and Figure
-14 source coordinates, registration matrices, digitised landmarks, and
-source-fit parameters are not inputs to the `NJG_MICHELL` builder.
+```text
+Method 1: 7 -> 14 -> 28
+Method 2: 7 -> 21 -> 42
+```
 
-The Phase 5F grammar-only audit finds the four C4-related sevenfold residue
-classes to be underdetermined by the audited construction grammar. A
-downstream frozen no-refit comparison with the printed Figure 14 source
-strongly favours phase 3 among those four candidates, but this is explicitly
-classified as descriptive source consistency rather than independent
-validation and does not feed back into the builder.
+Method 1 remains the branch used by the existing `NJG_MICHELL` forward
+composite. Method 2 is audited separately and is not silently inserted into
+that composite.
 
-The project distinguishes reproducible geometric audit results from claims
-about Michell's exact historical construction procedure. Project
-reconstructions, source-consistency comparisons, and candidate
-correspondences remain explicitly labelled as such.
+The v0.8 audit reconstructs the Method 2 local identity
+`alpha_2 = acos(5/8)`, preregisters and executes the 21/42-point propagation,
+derives the resulting two-class gap structure, and provides a deterministic
+transparent SVG.
+
+The symbolic gap derivation is explicitly post-result explanatory work, not a
+preregistered prediction or a claim of historical intention.
+
+
+## v0.8 Figure 194 dual-method audit
+
+The complete synthesis is:
+
+```text
+docs/geometry/v0.8_figure194_dual_method_synthesis.md
+```
+
+The two local approximate steps are:
+
+```text
+exact 360/7:  51.42857142857143 deg
+Method 1:     51.47070143243995 deg
+Method 2:     51.31781254651057 deg
+```
+
+so the exact regular step lies between the two approximations. Method 1 is the
+more accurate local construction.
+
+Method 2 propagates through the source-described `7 -> 21 -> 42` branch. Its
+entire nonuniformity is explained by:
+
+```text
+delta = 2*pi/7 - alpha_2
+
+RMS_21   = sqrt(10)*delta
+MAX_21   = 5*delta
+RANGE_21 = 7*delta
+
+RMS_42   = sqrt(6)*delta
+MAX_42   = 6*delta
+RANGE_42 = 7*delta
+```
+
+The exact cross-relations are:
+
+```text
+RMS_42 / RMS_21 = sqrt(3/5)
+MAX_42 / MAX_21 = 6/5
+RANGE_42 / RANGE_21 = 1
+```
+
+The reciprocal stage lowers raw RMS but raises worst-case error and normalized
+RMS, so it is not assigned an unqualified "more regular" or "less regular"
+label.
+
+Generate the v0.8 analyses and visualization with:
+
+```bash
+python scripts/analyze_v0_8_dual_method.py
+python scripts/analyze_v0_8_method2_propagation.py
+python scripts/analyze_v0_8_method2_symbolic_gap.py
+python scripts/generate_v0_8_method2_propagation_svg.py
+```
+
+Canonical visualization:
+
+```text
+figures/generated/v0.8_method2_7_21_42.svg
+```
+
+The SVG is visualization-only and does not feed back into model selection,
+calibration, or fitting.
 
 ## Author
 

@@ -958,7 +958,7 @@ def test_generated_artifacts_have_no_absolute_home_paths() -> None:
 
 
 def test_package_version_matches_current_release() -> None:
-    assert njg.__version__ == "0.7.0"
+    assert njg.__version__ == "0.8.0"
 
 
 def test_dimensionless_secondary_is_not_forced_into_physical_conversion() -> None:

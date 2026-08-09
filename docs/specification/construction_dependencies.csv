@@ -30,3 +30,6 @@ DEP-028,MOON_GROUPS_4X3,NJG_MICHELL_COMPOSITE,combines,implementation_only,,mich
 DEP-029,POLAR_PIVOT_WALL,NJG_MICHELL_COMPOSITE,combines,implementation_only,,michell_composite,Forward composite includes the preferred polar-pivot outer-wall reconstruction
 DEP-030,SCAFFOLD_28,NJG_MICHELL_COMPOSITE,combines,implementation_only,,michell_composite,Forward composite includes the independently generated 28-point scaffold and its Figure 14 heptagram candidate
 DEP-031,NJG_MICHELL_COMPOSITE,FROZEN_FORWARD_VALIDATION,validated_by,project_result,,forward_validation,The frozen unit-only composite is evaluated downstream against promoted source-derived geometry under the preregistered no-refitting protocol
+DEP-032,CONSTRUCTION_CIRCLE,SEPTENARY_METHOD_2,construction_domain,stated_approximate,SEVEN-010;SEVEN-011;SEVEN-014,sevenfold_dual_method,Figure 194 Method 2 constructs an approximate sevenfold division on the construction circle
+DEP-033,SEPTENARY_METHOD_2,METHOD2_21,extends,stated_approximate,SEVEN-012,method2_propagation,Corresponding arcs from all three original triangle vertices extend Method 2 to 21 approximate divisions
+DEP-034,METHOD2_21,METHOD2_42,extends,stated_approximate,SEVEN-013,method2_propagation,Adding the reciprocal triangle extends the source-described Method 2 construction to 42 approximate divisions
