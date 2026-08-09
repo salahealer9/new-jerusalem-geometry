@@ -183,10 +183,10 @@ def test_protocol_contains_no_precomputed_decimal_outcomes() -> None:
         assert literal not in text
 
 
-def test_protocol_does_not_modify_package_version() -> None:
+def test_package_version_is_0_8_0_at_release_closeout() -> None:
     assert (
         njg.__version__
-        == "0.7.0"
+        == "0.8.0"
     )
 
 

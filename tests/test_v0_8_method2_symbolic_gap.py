@@ -707,8 +707,8 @@ def test_markdown_preserves_post_result_boundary() -> None:
         assert phrase in text
 
 
-def test_package_version_remains_0_7_0() -> None:
+def test_package_version_is_0_8_0_at_release_closeout() -> None:
     assert (
         njg.__version__
-        == "0.7.0"
+        == "0.8.0"
     )

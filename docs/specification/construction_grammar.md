@@ -290,3 +290,67 @@ so this is not represented as a statistically independent hold-out experiment.
 The Figure 14 scaffold-to-printed-heptagram correspondence remains a project
 candidate. The frozen validation does not promote that relationship to a
 historical construction dependency.
+
+## v0.8 Figure 194 dual-method branch
+
+Version `v0.8.0` extends the source construction grammar to preserve both
+approximate sevenfold methods described in Figure 194.
+
+The existing Method 1 branch remains:
+
+```text
+CONSTRUCTION_CIRCLE
+        |
+        v
+SEPTENARY_METHOD_1
+        |
+        v
+RECIPROCAL_TRIANGLE_14
+        |
+        v
+SCAFFOLD_28
+```
+
+The newly formalized Method 2 branch is:
+
+```text
+CONSTRUCTION_CIRCLE
+        |
+        v
+SEPTENARY_METHOD_2
+        |
+        v
+METHOD2_21
+        |
+        v
+METHOD2_42
+```
+
+`SEPTENARY_METHOD_2` records the source-described equilateral-triangle and
+midpoint-arc construction. The local analytic identity
+
+```text
+alpha_2 = acos(5/8)
+```
+
+is a project derivation from that geometry.
+
+The source explicitly extends Method 2 to 21 divisions using corresponding
+arcs from the other two vertices and then to 42 divisions after addition of
+the reciprocal triangle.
+
+The deterministic `k = -3,...,+3` completion used by the executable
+propagation audit is a project operationalization of the source description
+"seven virtually equal parts". It must not be reclassified as a further
+formula stated by Michell.
+
+The existing `NJG_MICHELL_COMPOSITE` continues to use Method 1 and its
+28-point scaffold. The Method 2 branch is deliberately not inserted into that
+composite at v0.8.
+
+The Phase 8F symbolic gap identities are downstream analytical results, not
+construction dependencies. They are therefore not represented as source
+construction nodes.
+
+No grammar edge combines, averages, ranks, or optimizes the Method 1 and
+Method 2 branches.
