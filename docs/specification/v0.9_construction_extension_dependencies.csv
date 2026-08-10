@@ -1,0 +1,6 @@
+edge_id,parent_node,child_node,relation_type,evidence_status,claim_ids,implementation_reference,notes
+V09-DEP-001,CONSTRUCTION_CIRCLE,EXACT_SEVENFOLD_BOUNDARY,validated_by,project_result,,exact_sevenfold_boundary,Phase 9B proves that exact regular sevenfold geometry on the construction circle is outside the frozen Euclidean closure
+V09-DEP-002,CORE_DIMENSIONS,TRISECT_ANGLE_EXTENSION,parameterizes,project_derivation,,one_trisection_heptagon,Native dimensions R=7 and D=3 give u=1 and the 3*sqrt(3) anchor leg used by the registered trisection
+V09-DEP-003,EXACT_SEVENFOLD_BOUNDARY,TRISECT_ANGLE_EXTENSION,extends,project_result,,one_trisection_heptagon,The one-operation project extension crosses the boundary that excludes zero cubic-capable operations
+V09-DEP-004,TRISECT_ANGLE_EXTENSION,EXACT_HEPTAGON_7,constructs_from,project_result,,one_trisection_heptagon,The exact heptagon is constructed downstream of the one registered angle trisection and ordinary Euclidean operations
+V09-DEP-005,CONSTRUCTION_CIRCLE,EXACT_HEPTAGON_7,locates_on,project_result,,exact_heptagon_synthesis,All seven exact vertices lie on the radius-7 construction circle
