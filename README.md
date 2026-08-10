@@ -40,30 +40,47 @@ algorithm in Michell's text.
 
 ## Repository status
 
-Version `v0.8.0` is the Figure 194 dual-method construction checkpoint.
+Version `v0.9.0` is the **Exact Sevenfold Boundary and Minimal Cubic
+Extension** checkpoint.
 
-The repository now preserves both approximate sevenfold construction branches
-described by Michell:
+The v0.9 audit proves that the exact regular-heptagon target has algebraic
+degree three and is therefore excluded from the frozen ordinary
+straightedge-and-compass closure.
+
+A preregistered project extension then admits exactly one cubic-capable
+operation, `TRISECT_ANGLE`, anchored by the native dimensions `7` and `3`
+together with equilateral-triangle geometry. The resulting construction
+recovers the exact regular heptagon.
+
+Within the frozen operation-count model:
+
+```text
+zero cubic-capable operations: impossible
+one cubic-capable operation:   sufficient
+```
+
+The exact construction is a project mathematical result. It is not attributed
+to Michell, Sommerville, or an ancient source.
+
+## v0.8 Figure 194 dual-method audit
+
+Version `v0.8.0` remains the historical Figure 194 dual-method construction checkpoint.
+
+Its frozen source-described branches are:
 
 ```text
 Method 1: 7 -> 14 -> 28
 Method 2: 7 -> 21 -> 42
 ```
 
-Method 1 remains the branch used by the existing `NJG_MICHELL` forward
-composite. Method 2 is audited separately and is not silently inserted into
-that composite.
+The project-derived Method 2 local identity remains:
 
-The v0.8 audit reconstructs the Method 2 local identity
-`alpha_2 = acos(5/8)`, preregisters and executes the 21/42-point propagation,
-derives the resulting two-class gap structure, and provides a deterministic
-transparent SVG.
+```text
+alpha_2 = acos(5/8)
+```
 
-The symbolic gap derivation is explicitly post-result explanatory work, not a
-preregistered prediction or a claim of historical intention.
-
-
-## v0.8 Figure 194 dual-method audit
+The symbolic gap derivation remains explicitly post-result explanatory work,
+and the canonical v0.8 SVG remains visualization-only.
 
 The complete synthesis is:
 
@@ -126,6 +143,101 @@ figures/generated/v0.8_method2_7_21_42.svg
 
 The SVG is visualization-only and does not feed back into model selection,
 calibration, or fitting.
+
+
+## v0.9 Exact Sevenfold Boundary and Minimal Cubic Extension
+
+The complete synthesis is:
+
+```text
+docs/geometry/v0.9_exact_sevenfold_boundary_and_extension_synthesis.md
+```
+
+The exact sevenfold target satisfies:
+
+```text
+y = 2*cos(2*pi/7)
+
+y^3 + y^2 - 2*y - 1 = 0
+```
+
+The irreducible cubic has degree three over `Q`, whereas ordinary Euclidean
+straightedge-and-compass coordinates lie in finite quadratic towers.
+
+Therefore:
+
+```text
+EUCLIDEAN_EXACT_SEVENFOLD_EXCLUDED
+```
+
+The frozen native-incidence census also found:
+
+```text
+4873 semantic candidates
+0 exact native candidates
+NO_NATIVE_EXACT_SEVENFOLD
+```
+
+After that boundary was frozen, one specific cubic-capable extension was
+preregistered.
+
+Using:
+
+```text
+R = 7
+D = 3
+u = R - 2D = 1
+v = 3*sqrt(3)
+H = 2*sqrt(7)
+```
+
+and exactly one:
+
+```text
+TRISECT_ANGLE
+```
+
+operation, the project reconstructs the exact regular heptagon.
+
+Result:
+
+```text
+ONE_TRISECTION_EXACT_HEPTAGON_CONFIRMED
+
+MINIMUM_ONE_CUBIC_CAPABLE_OPERATION_WITHIN_FROZEN_MODEL
+```
+
+This minimum refers only to the number of cubic-capable operations in the
+frozen project model. It is not a claim that angle trisection is uniquely
+simplest among all non-Euclidean construction technologies.
+
+The v0.9 comparison synthesis uses fixed north orientation with no rotational
+fitting or endpoint reassignment.
+
+Canonical visualization:
+
+```text
+figures/generated/v0.9_exact_heptagon_synthesis.svg
+```
+
+The figure compares:
+
+```text
+charcoal solid = exact {7/2}
+blue dashed    = Method-1 scaffold {7/2}
+vermillion dot = affine Figure 14 source endpoints
+```
+
+The Figure 14 comparison is source-consistency synthesis rather than
+statistically independent validation.
+
+Reproduce the v0.9 analyses with:
+
+```bash
+python scripts/analyze_v0_9_exact_sevenfold_boundary.py
+python scripts/analyze_v0_9_one_trisection_heptagon.py
+python scripts/generate_v0_9_exact_heptagon_synthesis.py
+```
 
 ## Author
 

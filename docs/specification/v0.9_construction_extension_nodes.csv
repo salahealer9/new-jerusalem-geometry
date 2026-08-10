@@ -1,0 +1,4 @@
+node_id,label,node_type,implementation_reference,claim_ids,notes
+EXACT_SEVENFOLD_BOUNDARY,Exact sevenfold Euclidean constructibility boundary,validation_result,exact_sevenfold_boundary,,Project theorem result: the degree-3 regular-heptagon target is excluded from the frozen ordinary Euclidean closure
+TRISECT_ANGLE_EXTENSION,One-trisection cubic-capable project extension,construction,one_trisection_heptagon,,Project extension using one registered TRISECT_ANGLE operation anchored by native dimensions 7 and 3 plus equilateral geometry
+EXACT_HEPTAGON_7,Exact regular heptagon on the radius-7 construction circle,derived_geometry,one_trisection_heptagon,,Exact project result after one trisection; not attributed to Michell or Sommerville
