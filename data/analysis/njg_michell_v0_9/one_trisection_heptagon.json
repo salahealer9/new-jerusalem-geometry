@@ -1,0 +1,202 @@
+{
+  "construction": {
+    "anchor": {
+      "construction_radius": 7.0,
+      "cosine_theta": 0.1889822365046136,
+      "equilateral_height_double": 5.196152422706632,
+      "moon_diameter": 3.0,
+      "recovered_unit": 1.0,
+      "right_triangle_hypotenuse": 5.291502622129181,
+      "theta_degrees": 79.1066053508691,
+      "theta_radians": 1.38067072344843
+    },
+    "cubic": {
+      "c": 0.6234898018587336,
+      "depressed_cubic_coefficients_low_to_high": [
+        "-7/27",
+        "-7/3",
+        "0",
+        "1"
+      ],
+      "phi_degrees": 26.3688684502897,
+      "phi_radians": 0.46022357448281,
+      "s_positive": 0.7818314824680298,
+      "target_cubic_coefficients_low_to_high": [
+        "-1",
+        "-2",
+        "1",
+        "1"
+      ],
+      "trisection_call_count": 1,
+      "y": 1.2469796037174672,
+      "z": 1.5803129370508004
+    },
+    "heptagon": {
+      "radius": 7.0,
+      "side_lengths": [
+        6.074372347645814,
+        6.074372347645814,
+        6.074372347645815,
+        6.074372347645814,
+        6.074372347645815,
+        6.074372347645816,
+        6.0743723476458165
+      ],
+      "vertices": [
+        [
+          7.0,
+          0.0
+        ],
+        [
+          4.364428613011135,
+          5.472820377276209
+        ],
+        [
+          -1.5576465376942,
+          6.824495385272766
+        ],
+        [
+          -6.306782075316934,
+          3.0371861738229082
+        ],
+        [
+          -6.306782075316936,
+          -3.0371861738229056
+        ],
+        [
+          -1.5576465376942035,
+          -6.824495385272766
+        ],
+        [
+          4.364428613011134,
+          -5.472820377276212
+        ]
+      ]
+    }
+  },
+  "criteria": [
+    {
+      "criterion_id": "C1",
+      "description": "native unit identity R-2D=1",
+      "diagnostic": "7 - 2*3 = 1",
+      "passed": true,
+      "proof_kind": "exact rational arithmetic"
+    },
+    {
+      "criterion_id": "C2",
+      "description": "native anchor identity u^2+v^2=28",
+      "diagnostic": "1 + 27 = 28; H=2*sqrt(7)",
+      "passed": true,
+      "proof_kind": "exact rational/radical arithmetic"
+    },
+    {
+      "criterion_id": "C3",
+      "description": "anchor cosine identity",
+      "diagnostic": "cos(Theta)^2=1/28 and cos(Theta)>0",
+      "passed": true,
+      "proof_kind": "exact positive square identity"
+    },
+    {
+      "criterion_id": "C4",
+      "description": "exactly one non-Euclidean operation",
+      "diagnostic": "TRISECT_ANGLE calls=1",
+      "passed": true,
+      "proof_kind": "operation counter"
+    },
+    {
+      "criterion_id": "C5",
+      "description": "trisection identity 3*phi=Theta",
+      "diagnostic": "numeric residual=0.0",
+      "passed": true,
+      "proof_kind": "registered primitive contract"
+    },
+    {
+      "criterion_id": "C6",
+      "description": "depressed cubic identity",
+      "diagnostic": "coefficients=('-7/27', '-7/3', '0', '1')",
+      "passed": true,
+      "proof_kind": "exact Fraction coefficient derivation"
+    },
+    {
+      "criterion_id": "C7",
+      "description": "frozen target cubic identity",
+      "diagnostic": "coefficients=('-1', '-2', '1', '1')",
+      "passed": true,
+      "proof_kind": "exact Fraction polynomial shift"
+    },
+    {
+      "criterion_id": "C8",
+      "description": "root-selection interval 1<y<2",
+      "diagnostic": "21>16 and 28<49",
+      "passed": true,
+      "proof_kind": "exact squared-integer inequalities"
+    },
+    {
+      "criterion_id": "C9",
+      "description": "target-root uniqueness on [1,2]",
+      "diagnostic": "f'(1)=3 and f''(y)=6y+2>0 on [1,2]",
+      "passed": true,
+      "proof_kind": "exact derivative monotonicity"
+    },
+    {
+      "criterion_id": "C10",
+      "description": "constructed y equals unique Phase 9B target root",
+      "diagnostic": "numeric y-target residual=0.0",
+      "passed": true,
+      "proof_kind": "same exact cubic plus unique registered interval"
+    },
+    {
+      "criterion_id": "C11",
+      "description": "radius condition for all seven vertices",
+      "diagnostic": "max numeric radius residual=1.7763568394002505e-15",
+      "passed": true,
+      "proof_kind": "exact rotation invariance after C10"
+    },
+    {
+      "criterion_id": "C12",
+      "description": "equal-chord condition for all seven sides",
+      "diagnostic": "numeric side-length range=2.6645352591003757e-15",
+      "passed": true,
+      "proof_kind": "exact equal rotation after C10"
+    },
+    {
+      "criterion_id": "C13",
+      "description": "seven-step closure on the circle",
+      "diagnostic": "numeric closure residual=3.580361673049448e-15",
+      "passed": true,
+      "proof_kind": "exact 7*(2*pi/7)=2*pi after C10"
+    },
+    {
+      "criterion_id": "C14",
+      "description": "zero target injection in the builder",
+      "diagnostic": "forbidden target/reference tokens absent=True",
+      "passed": true,
+      "proof_kind": "builder source audit"
+    }
+  ],
+  "degrees_of_freedom": {
+    "anchor_search_parameters": 0,
+    "angle_search_parameters": 0,
+    "continuous_fitted_parameters": 0,
+    "numerical_exactness_tolerances": 0,
+    "post_hoc_candidate_substitutions": 0,
+    "root_branch_choices_after_result": 0,
+    "scale_fitted_parameters": 0,
+    "target_based_candidate_choices": 0
+  },
+  "exact_target_identification": true,
+  "interpretation_boundary": "A confirmed result shows that the frozen New Jerusalem metric/construction vocabulary can host an exact regular heptagon after one registered cubic-capable angle-trisection operation. It does not establish Michell/Sommerville knowledge, historical intention, ancient provenance, or physical/metaphysical significance.",
+  "max_radius_residual": 1.7763568394002505e-15,
+  "minimality_status": "MINIMUM_ONE_CUBIC_CAPABLE_OPERATION_WITHIN_FROZEN_MODEL",
+  "non_euclidean_operation_count": 1,
+  "non_euclidean_operation_type": "TRISECT_ANGLE",
+  "phase": "9D",
+  "phase9c_commit": "83dba523f9097b162e5dde45ebd68089cbc3972a",
+  "phase9c_protocol_sha256": "d125a37b1764c6dee558b36279dc45cfa10b2df6627d76ebecfba6b727fe629c",
+  "schema": "njg_michell_v0_9_one_trisection_exact_heptagon",
+  "seven_step_closure_residual": 3.580361673049448e-15,
+  "side_length_range": 2.6645352591003757e-15,
+  "stopping_status": "ONE_TRISECTION_EXACT_HEPTAGON_CONFIRMED",
+  "target_angle_residual_radians": 0.0,
+  "target_numeric_residual": 0.0
+}
