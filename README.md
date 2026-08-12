@@ -1,110 +1,161 @@
 # New Jerusalem Geometry
 
-A reproducible Euclidean constraint specification and computational analysis of
-John Michell's New Jerusalem Diagram.
+**A reproducible computational and historical audit of John Michell's New
+Jerusalem geometry.**
 
-## Project objective
+New Jerusalem Geometry turns a visually and historically complex diagram into
+an explicit system of Euclidean constructions, source-calibrated comparisons,
+deterministic numerical reconstructions, and provenance-labelled claims.
 
-This project formalises the New Jerusalem Diagram as a geometric constraint
-system. Its goals are to:
+The project is designed around a simple rule:
 
-- reconstruct the diagram from explicit Euclidean definitions;
-- distinguish exact constructions from historical approximations;
-- generate reproducible coordinates and vector graphics;
-- verify incidences, tangencies, symmetries, ratios, and other invariants;
-- compare alternative interpretations of the construction;
-- provide a rigorous mathematical foundation for later historical, symbolic,
-  harmonic, graph-theoretic, and information-theoretic analysis.
+> Historical source statements, project reconstructions, exact mathematical
+> results, approximate constructions, and interpretive claims must remain
+> distinguishable from one another.
 
-## Geometric model distinctions
+Version 1.0 consolidates the full geometry audit developed through the v0.x
+checkpoints and adds a frozen historical/numerical reconstruction of Michell's
+interpretation of Plato's eight whorls.
 
-The project keeps visually similar but mathematically distinct constructions
-separate.
+![The Spindle of Necessity — Plato's Eight Whorls](figures/generated/v1.0_plato_michell_whorl_capstone.svg)
 
-For the twelve Moon circles:
+## What v1.0 establishes
 
-- `NJG_INC`: source-supported exact square-circle incidence model;
-- `NJG_28`: exact regular 28-fold angular idealisation;
-- `NJG_SVG`: reproduction of the independent 2008 Wikimedia SVG;
-- `NJG_MICHELL_28`: Michell's approximate 28-point scaffold construction.
+The v1.0 scientific boundary contains five main results.
 
-For the Figure 12 outer wall:
+### 1. A deterministic New Jerusalem geometry
 
-- `RADIAL_SUPPORT`: historical project inference;
-- `REGULAR_DIRECTION_TANGENT`: fixed regular-direction tangent comparison;
-- `POLAR_PIVOT_TANGENT`: current preferred source-supported reconstruction.
+The repository contains an executable `NJG_MICHELL` forward composite built
+from explicit construction rules rather than from free placement of graphical
+elements.
 
-The preferred wall model is selected from combined source-plate and historical
-dimensional evidence; it is not claimed to be an explicitly stated construction
-algorithm in Michell's text.
+Its frozen generative layer includes:
 
-## Repository status
+- the normalized Earth–Moon core;
+- the exact-incidence `NJG_INC` Moon system;
+- Michell's four groups of three Moon circles;
+- the preferred polar-pivot reconstruction of the Figure 12 outer wall;
+- Michell's approximate Method-1 sevenfold construction;
+- the reciprocal fourteenfold construction;
+- the four-triangle 28-point scaffold;
+- a scaffold-derived `{7/2}` Figure 14 candidate.
 
-Version `v0.9.0` is the **Exact Sevenfold Boundary and Minimal Cubic
-Extension** checkpoint.
+The integrated composite accepts only the overall scale unit as a
+caller-supplied geometric quantity. Source-plate calibration and measured
+source landmarks remain downstream of the generative model.
 
-The v0.9 audit proves that the exact regular-heptagon target has algebraic
-degree three and is therefore excluded from the frozen ordinary
-straightedge-and-compass closure.
+### 2. Source-calibrated Figures 12 and 14
 
-A preregistered project extension then admits exactly one cubic-capable
-operation, `TRISECT_ANGLE`, anchored by the native dimensions `7` and `3`
-together with equilateral-triangle geometry. The resulting construction
-recovers the exact regular heptagon.
+The project directly audits Michell's printed geometry rather than assuming
+that a visually plausible reconstruction is historically correct.
 
-Within the frozen operation-count model:
+For Figure 12, three outer-wall rules were compared against the
+affine-calibrated source wall. The preferred `POLAR_PIVOT_TANGENT`
+reconstruction gives the best wall-direction agreement while also reproducing
+Michell's later dimensional values closely.
+
+Frozen Figure 12 diagnostics include:
 
 ```text
-zero cubic-capable operations: impossible
-one cubic-capable operation:   sufficient
+wall-normal angular RMS           1.019836 deg
+wall-support RMS                  0.038999 u
+wall-vertex RMS                   0.100022 u
+perimeter difference              -0.379134%
+area difference                   -0.709332%
 ```
 
-The exact construction is a project mathematical result. It is not attributed
-to Michell, Sommerville, or an ancient source.
+The support-distance metric alone favours another comparator, so the
+polar-pivot wall is described as a **source-supported project reconstruction**,
+not as a uniquely established historical construction.
 
-## v0.8 Figure 194 dual-method audit
+For Figure 14, independent printed-stroke tracing supports the `{7/2}`
+heptagram topology over the earlier provisional `{7/3}` interpretation.
 
-Version `v0.8.0` remains the historical Figure 194 dual-method construction checkpoint.
+The fixed scaffold-derived `{7/2}` candidate modestly improves on a fixed
+canonical regular comparator, but this is source-consistency synthesis rather
+than statistically independent validation.
 
-Its frozen source-described branches are:
+### 3. The sevenfold constructibility boundary
+
+The exact regular sevenfold target can be written as:
+
+```text
+y = 2*cos(2*pi/7)
+```
+
+with irreducible minimal polynomial:
+
+```text
+y^3 + y^2 - 2*y - 1 = 0
+```
+
+Because the target has algebraic degree three over `Q`, it is excluded from the
+frozen ordinary straightedge-and-compass quadratic closure.
+
+The project then preregistered one specific cubic-capable extension using
+exactly one:
+
+```text
+TRISECT_ANGLE
+```
+
+operation.
+
+Within that frozen operation-count model:
+
+```text
+0 cubic-capable operations: impossible
+1 cubic-capable operation:  sufficient
+```
+
+This is a project mathematical result. It is **not** attributed to Michell,
+Sommerville, Plato, or an ancient source.
+
+Canonical figure:
+
+![Exact sevenfold synthesis](figures/generated/v0.9_exact_heptagon_synthesis.svg)
+
+### 4. Michell's two approximate sevenfold methods
+
+Michell's Figure 194 describes two distinct approximate branches:
 
 ```text
 Method 1: 7 -> 14 -> 28
 Method 2: 7 -> 21 -> 42
 ```
 
-The project-derived Method 2 local identity remains:
+The frozen local steps are:
+
+```text
+exact 360/7       51.42857142857143 deg
+Method 1          51.47070143243995 deg
+Method 2          51.31781254651057 deg
+```
+
+so:
+
+```text
+Method 2 < exact < Method 1
+```
+
+Method 1 is locally more accurate.
+
+For Method 2, the project derives:
 
 ```text
 alpha_2 = acos(5/8)
 ```
 
-The symbolic gap derivation remains explicitly post-result explanatory work,
-and the canonical v0.8 SVG remains visualization-only.
-
-The complete synthesis is:
-
-```text
-docs/geometry/v0.8_figure194_dual_method_synthesis.md
-```
-
-The two local approximate steps are:
-
-```text
-exact 360/7:  51.42857142857143 deg
-Method 1:     51.47070143243995 deg
-Method 2:     51.31781254651057 deg
-```
-
-so the exact regular step lies between the two approximations. Method 1 is the
-more accurate local construction.
-
-Method 2 propagates through the source-described `7 -> 21 -> 42` branch. Its
-entire nonuniformity is explained by:
+and shows that the complete 21- and 42-point nonuniformity follows exactly from
+the single local deficit:
 
 ```text
 delta = 2*pi/7 - alpha_2
+```
 
+with:
+
+```text
 RMS_21   = sqrt(10)*delta
 MAX_21   = 5*delta
 RANGE_21 = 7*delta
@@ -114,140 +165,127 @@ MAX_42   = 6*delta
 RANGE_42 = 7*delta
 ```
 
-The exact cross-relations are:
+The reciprocal stage lowers raw RMS while increasing worst-case and normalized
+RMS, so it is not assigned a single unqualified "more regular" or "less
+regular" label.
+
+Canonical figure:
+
+![Michell Method 2 propagation](figures/generated/v0.8_method2_7_21_42.svg)
+
+### 5. Plato's eight whorls and Michell's numerical interpretation
+
+The v1.0 historical audit separates three provenance layers:
 
 ```text
-RMS_42 / RMS_21 = sqrt(3/5)
-MAX_42 / MAX_21 = 6/5
-RANGE_42 / RANGE_21 = 1
+DIRECT_PLATO_TEXT
+MICHELL_EXPLICIT
+PROJECT_RECONSTRUCTION
 ```
 
-The reciprocal stage lowers raw RMS but raises worst-case error and normalized
-RMS, so it is not assigned an unqualified "more regular" or "less regular"
-label.
-
-Generate the v0.8 analyses and visualization with:
-
-```bash
-python scripts/analyze_v0_8_dual_method.py
-python scripts/analyze_v0_8_method2_propagation.py
-python scripts/analyze_v0_8_method2_symbolic_gap.py
-python scripts/generate_v0_8_method2_propagation_svg.py
-```
-
-Canonical visualization:
+The frozen Plato extraction establishes eight nested whorls and the ordinal
+rim-width order:
 
 ```text
-figures/generated/v0.8_method2_7_21_42.svg
+1 > 6 > 4 > 8 > 7 > 5 > 3 > 2
 ```
 
-The SVG is visualization-only and does not feed back into model selection,
-calibration, or fitting.
+The audited Plato passage does **not** provide numerical magnitudes or ratios
+for those widths.
 
-
-## v0.9 Exact Sevenfold Boundary and Minimal Cubic Extension
-
-The complete synthesis is:
+Michell preserves the same ordinal order and supplies the musical-number set:
 
 ```text
-docs/geometry/v0.9_exact_sevenfold_boundary_and_extension_synthesis.md
+6, 8, 9, 12, 18, 24, 27, 36
 ```
 
-The exact sevenfold target satisfies:
+Assigning those numbers by the frozen ordinal width ranking produces Michell's
+centre-out sequence:
 
 ```text
-y = 2*cos(2*pi/7)
-
-y^3 + y^2 - 2*y - 1 = 0
+18, 12, 27, 9, 24, 8, 6, 36
 ```
 
-The irreducible cubic has degree three over `Q`, whereas ordinary Euclidean
-straightedge-and-compass coordinates lie in finite quadratic towers.
-
-Therefore:
+Michell's shaft rule gives:
 
 ```text
-EUCLIDEAN_EXACT_SEVENFOLD_EXCLUDED
+6 * 2/3 = 4
 ```
 
-The frozen native-incidence census also found:
+and cumulative radii:
 
 ```text
-4873 semantic candidates
-0 exact native candidates
-NO_NATIVE_EXACT_SEVENFOLD
+4, 22, 34, 61, 70, 94, 102, 108, 144
 ```
 
-After that boundary was frozen, one specific cubic-capable extension was
-preregistered.
-
-Using:
+Under Michell's printed scale factor of `180`:
 
 ```text
-R = 7
-D = 3
-u = R - 2D = 1
-v = 3*sqrt(3)
-H = 2*sqrt(7)
+720, 3960, 6120, 10980, 12600,
+16920, 18360, 19440, 25920
 ```
 
-and exactly one:
+The reconstruction uses:
 
 ```text
-TRISECT_ANGLE
+free parameters          0
+nearest-match choices    0
+optimisations            0
+permutation searches     0
+scale fits               0
 ```
 
-operation, the project reconstructs the exact regular heptagon.
+It exactly reproduces Michell's printed `3960`, `6120`, and `2160`
+correspondence values from the frozen inputs.
 
-Result:
+That arithmetic result has a strict historical boundary:
+
+> Exact reproduction validates the internal numerical chain of Michell's
+> printed construction. It does not establish that Plato supplied Michell's
+> numerical widths, intended Michell's assignment, or transmitted the scheme
+> historically from antiquity.
+
+## Evidence and provenance boundaries
+
+The repository intentionally distinguishes the status of different claims.
+
+| Layer | Meaning |
+| --- | --- |
+| `DIRECT_PLATO_TEXT` | Literal information recoverable from the frozen Plato witnesses |
+| `MICHELL_EXPLICIT` | Numerical or construction statements explicitly supplied by Michell |
+| `PROJECT_RECONSTRUCTION` | Deterministic arithmetic or geometry carried out by this project |
+| source-calibrated comparison | Comparison against digitised printed source geometry |
+| exact mathematical result | Algebraic or Euclidean result proved independently of visual fit |
+| visualisation-only | Downstream rendering that does not feed back into model selection |
+| `ARCHIVAL_PENDING` | Historical lead not yet established from frozen primary material |
+| `INTERPRETIVE_EXCLUDED` | Material deliberately excluded from the v1.0 evidential layer |
+
+The canonical Plato/Michell claim matrix is:
 
 ```text
-ONE_TRISECTION_EXACT_HEPTAGON_CONFIRMED
-
-MINIMUM_ONE_CUBIC_CAPABLE_OPERATION_WITHIN_FROZEN_MODEL
+docs/sources/v1.0_plato_michell_claim_matrix.csv
 ```
 
-This minimum refers only to the number of cubic-capable operations in the
-frozen project model. It is not a claim that angle trisection is uniquely
-simplest among all non-Euclidean construction technologies.
+## What the project does not claim
 
-The v0.9 comparison synthesis uses fixed north orientation with no rotational
-fitting or endpoint reassignment.
+Version 1.0 does **not** establish:
 
-Canonical visualization:
+- that Plato encoded Michell's numerical whorl widths;
+- ancient transmission of Michell's numerical scheme;
+- that Michell knew the project's exact one-trisection construction;
+- that Sommerville knew the project's exact one-trisection construction;
+- intentional ancient encoding of the exact heptagon;
+- a physical or metaphysical mechanism behind the geometry;
+- statistically independent validation from source plates that informed model
+  development;
+- unique optimality of angle trisection among all cubic-capable construction
+  technologies.
 
-```text
-figures/generated/v0.9_exact_heptagon_synthesis.svg
-```
+Those boundaries are part of the result, not caveats added after the fact.
 
-The figure compares:
+## Reproducibility
 
-```text
-charcoal solid = exact {7/2}
-blue dashed    = Method-1 scaffold {7/2}
-vermillion dot = affine Figure 14 source endpoints
-```
-
-The Figure 14 comparison is source-consistency synthesis rather than
-statistically independent validation.
-
-Reproduce the v0.9 analyses with:
-
-```bash
-python scripts/analyze_v0_9_exact_sevenfold_boundary.py
-python scripts/analyze_v0_9_one_trisection_heptagon.py
-python scripts/generate_v0_9_exact_heptagon_synthesis.py
-```
-
-## Author
-
-Salah-Eddin Gherbi  
-Independent Researcher, United Kingdom  
-ORCID: 0009-0005-4017-1095
-
-## Development
-
-Create an isolated environment and install the package:
+Create an isolated environment:
 
 ```bash
 python3 -m venv .venv
@@ -256,418 +294,190 @@ python -m pip install --upgrade pip
 python -m pip install -e ".[dev]"
 ```
 
+Run the complete automated suite:
+
+```bash
+pytest
+```
+
+At the frozen v1.0 scientific checkpoint:
+
+```text
+806 passed
+15 skipped
+```
+
+The fifteen skipped tests are retained historical package-version sentinels.
+They do not represent failing applicable analytical or geometric tests.
+
 Run the core verification:
 
 ```bash
 python scripts/verify_core_geometry.py
 ```
 
-Run the automated tests:
-
-```bash
-pytest
-```
-
-The executable model now includes the normalized Earth-Moon core, competing
-oblique Moon-circle placements, Michell's approximate septenary construction,
-the reciprocal fourteenfold extension, the four-triangle 28-point scaffold,
-source-calibrated Figure 12 Moon and wall geometry, the preferred polar-pivot
-outer-wall reconstruction, the source-calibrated Figure 14 heptagram, and the
-integrated unit-only `NJG_MICHELL` forward composite.
-
-Competing constructions remain explicitly separated rather than being merged
-without evidential justification. The frozen validation layer is downstream of
-the composite and supplies no fitted parameters back into the generative model.
-
-## NJG_MICHELL integrated forward reconstruction
-
-The v0.5 `NJG_MICHELL` composite can be analysed with:
-
-```bash
-python scripts/analyze_michell_composite.py
-```
-
-`NJG_MICHELL` accepts only the scale unit as a caller-supplied geometric
-quantity. It deterministically combines:
-
-* the normalized Earth-Moon core;
-* the exact-incidence `NJG_INC` Moon system;
-* Michell's four groups of three Moon circles;
-* the preferred polar-pivot wall reconstruction;
-* the approximate Method-1 sevenfold construction;
-* the reciprocal fourteenfold construction;
-* the four-triangle 28-point scaffold;
-* a scaffold-derived `{7/2}` Figure 14 candidate.
-
-The independently formulated four-triangle construction and the role-labelled
-28-point scaffold coincide to floating-point precision, with a maximum angular
-mismatch of approximately `2.220e-16` radians.
-
-Plate calibration, digitisation, registration, and measured source landmarks
-are excluded from this generative composite.
-
-## v0.5 generative outputs and phase audit
-
-Generate the complete canonical `NJG_MICHELL` SVG:
+Generate the integrated Michell composite:
 
 ```bash
 python scripts/generate_michell_composite.py
 ```
 
-Generate the machine-readable geometry export:
+Generate the v1.0 Plato–Michell capstone:
 
 ```bash
-python scripts/generate_michell_geometry.py
+python scripts/generate_v1_0_plato_michell_whorl_capstone.py
 ```
 
-Generate the provenance manifest:
-
-```bash
-python scripts/generate_michell_provenance.py
-```
-
-Run the completed sevenfold phase-selection audit:
-
-```bash
-python scripts/audit_sevenfold_phase_selection_stage_b.py
-```
-
-The canonical geometry and provenance exports each contain 132 objects with
-the same ordered `(object_id, geometry_type)` identity. The SVG contains 59
-provenance-linked rendered objects.
-
-The Phase 5E generative-invariance audit passes at the registered scales
-`0.25`, `0.73`, `1.00`, `2.75`, and `8.00`.
-
-For the sevenfold phase question, Stage A remains
-`GRAMMAR_UNDERDETERMINED`: phases 0, 1, 2, and 3 all survive the grammar-only
-audit. Stage B then compares those frozen candidates to the promoted Figure
-14 endpoints with 14 discrete cyclic/orientation correspondences per phase
-and no continuous refitting. The descriptive source-consistency ranking is
-`[3, 0, 2, 1]`, with phase 3 preferred.
-
-That Stage B result is not an independent prediction and does not change the
-grammar-only conclusion.
-
-## Frozen forward validation (v0.4 validation layer)
-
-The preregistered no-refitting validation can be reproduced with:
-
-```bash
-python scripts/analyze_forward_validation.py
-```
-
-The predictor was frozen at commit
-`43096326d5c1862fc7e33f9d90eb1df861c3b642` before the validation metrics were
-calculated.
-
-For Figure 12, the frozen polar-pivot wall gives:
-
-* wall-normal angular RMS: approximately `1.019836` degrees;
-* wall-support RMS: approximately `0.038999 u`;
-* wall-vertex RMS: approximately `0.100022 u`;
-* perimeter difference from the affine-calibrated source wall: `-0.379134%`;
-* area difference: `-0.709332%`.
-
-The global dimensions are therefore close while measurable local
-line, vertex, and side-length discrepancies remain.
-
-For Figure 14, the fixed scaffold-derived candidate gives:
-
-| Metric        | Scaffold candidate | Canonical regular |
-| ------------- | -----------------: | ----------------: |
-| Point RMS     |    `0.031023606 u` |   `0.031953847 u` |
-| Point maximum |    `0.049325681 u` |   `0.059258803 u` |
-| Angular RMS   |  `0.215205853 deg` | `0.224058789 deg` |
-
-The scaffold candidate modestly improves on the fixed canonical regular
-comparator without refitting. The difference remains within the source
-registration uncertainty and does not establish that Michell historically
-derived Figure 14 from the 28-point scaffold.
-
-This is described as **frozen forward validation with no refitting**, not as a
-statistically independent hold-out experiment, because the source plates had
-already informed earlier model-development stages.
-
-The complete report is:
+The frozen capstone SHA-256 is:
 
 ```text
-data/validation/njg_michell_v0_4/forward_validation_report.md
+379bcbecf524890a055b3aa8cc926f54320cd8fffd8adacf29f63fdc68bf81d9
 ```
 
-## Generate the verified core diagram
+## Canonical visualizations
 
-Generate the standalone SVG:
+| Figure | Artifact |
+| --- | --- |
+| Normalized Earth–Moon core | `figures/generated/cardinal_core.svg` |
+| Oblique Moon-model comparison | `figures/generated/oblique_models_comparison.svg` |
+| Michell 28-point scaffold | `figures/generated/michell_28_point_scaffold.svg` |
+| Figure 14 heptagram comparison | `figures/generated/michell_figure14_heptagram.svg` |
+| Integrated `NJG_MICHELL` composite | `figures/generated/njg_michell_composite.svg` |
+| Sommerville dodecagon dimensional audit | `figures/generated/sommerville_dodecagon_dimensional_audit.svg` |
+| Figure 194 Method-2 propagation | `figures/generated/v0.8_method2_7_21_42.svg` |
+| Exact sevenfold synthesis | `figures/generated/v0.9_exact_heptagon_synthesis.svg` |
+| Plato–Michell eight-whorl capstone | `figures/generated/v1.0_plato_michell_whorl_capstone.svg` |
 
-```bash
-python scripts/generate_core_diagram.py
-```
+Generated figures are downstream of the tested geometry. Canonical tracked SVGs
+are retained for reproducibility.
 
-The default output is:
+## Repository guide
+
+The main project layers are organised as:
 
 ```text
-figures/generated/cardinal_core.svg
+src/new_jerusalem_geometry/    executable geometry and verification
+scripts/                       deterministic analysis/generation entry points
+tests/                         automated verification
+data/analysis/                 frozen numerical analysis outputs
+data/geometry/                 machine-readable geometry exports
+data/provenance/               provenance manifests
+data/sources/                  frozen source inputs and source-freeze records
+docs/checkpoints/              signed-version scientific checkpoints
+docs/geometry/                 result syntheses and release-readiness records
+docs/sources/                  source audits and claim matrices
+docs/specification/            preregistered protocols and construction grammar
+figures/generated/             canonical generated SVG artifacts
 ```
 
-The graphic is generated directly from the same coordinate objects used by the
-verification and test suite. It introduces no manually positioned elements.
+## Historical checkpoints
 
-A different scale or output path may be selected without changing the
-scale-free geometry:
+The v0.x checkpoints are preserved as an auditable development history rather
+than rewritten into the current narrative.
 
-```bash
-python scripts/generate_core_diagram.py \
-  --unit 720 \
-  --output figures/generated/cardinal_core_u720.svg
-```
-
-## Compare the oblique Moon models
-
-Generate the three-panel model comparison:
-
-```bash
-python scripts/generate_oblique_comparison.py
-```
-
-The default output is:
+Key checkpoints include:
 
 ```text
-figures/generated/oblique_models_comparison.svg
+v0.1.0  initial architectural reconstruction
+v0.2.0  Figure 14 source calibration
+v0.3.0  Figure 12 source calibration
+v0.4.0  frozen forward validation
+v0.5.0  integrated generative composite and provenance
+v0.6.0  historical metrology and prediction-status audit
+v0.7.0  Sommerville dodecagon vertex-radius audit
+v0.8.0  Figure 194 dual-method sevenfold audit
+v0.9.0  exact sevenfold constructibility boundary and cubic extension
+v1.0.0  Plato–Michell historical/numerical synthesis and scientific freeze
 ```
 
-The figure compares:
-
-* `NJG_INC`: exact square-circle incidence;
-* `NJG_28`: exact 28-fold angular division;
-* `NJG_SVG`: the 2008 Wikimedia reconstruction.
-
-Each panel contains the same verified Earth-Moon core. Only the placement rule
-for the eight oblique Moon circles changes. The residual bars use a common
-scale across all three panels.
-
-## Figure 12 outer-wall evidence comparison
-
-Generate the three-model source comparison:
-
-```bash
-python scripts/generate_figure12_wall_evidence.py
-```
-
-The default SVG output is:
+Detailed checkpoint records are under:
 
 ```text
-figures/generated/figure12_wall_evidence_comparison.svg
+docs/checkpoints/
 ```
 
-The comparison holds the exact `NJG_INC` Moon geometry fixed and tests three
-outer-wall rules against the affine-calibrated Figure 12 wall:
+### Frozen v0.8/v0.9 checkpoint wording
 
-| Wall model                  |    Angle RMS | Support RMS |
-| --------------------------- | -----------: | ----------: |
-| `POLAR_PIVOT_TANGENT`       | 1.019836 deg |  0.038999 u |
-| `REGULAR_DIRECTION_TANGENT` | 1.458882 deg |  0.036819 u |
-| `RADIAL_SUPPORT`            | 4.755396 deg |  0.032822 u |
+The following statements are retained explicitly because they are part of the
+signed historical release boundary.
 
-The angular ranking is reproduced across all three independent Figure 12
-digitisation passes.
+Version `v0.8.0` remains the historical Figure 194 dual-method construction
+checkpoint.
 
-`POLAR_PIVOT_TANGENT` is the current preferred combined reconstruction because
-it gives the best wall-direction agreement and independently reproduces
-Michell's later Sommerville dimensions:
-
-* four polar sides: approximately 3279.698 ft versus 3280 ft;
-* eight oblique sides: approximately 3271.121 ft versus 3270 ft;
-* area: approximately 120,002,600 ft^2 versus 120,000,000 ft^2;
-* old-English-foot perimeter: approximately 36,013.8 ft versus 36,000 ft.
-
-The support-distance metric by itself instead favours `RADIAL_SUPPORT`. This
-counter-evidence is retained explicitly; the polar-pivot construction is
-therefore described as a source-supported project reconstruction rather than
-as a uniquely established historical construction.
-
-### Historical radial-support artifact
-
-The earlier figure remains preserved at:
+Its frozen branches are:
 
 ```text
-figures/generated/michell_outer_wall.svg
+Method 1: 7 -> 14 -> 28
+Method 2: 7 -> 21 -> 42
 ```
 
-and can still be regenerated with:
-
-```bash
-python scripts/generate_michell_outer_wall.py
-```
-
-It records the project's earlier radial-support inference and is retained for
-reproducibility. It is no longer the preferred Figure 12 wall reconstruction.
-
-## Analyse Michell's approximate 28-point scaffold
-
-Run:
-
-```bash
-python scripts/analyze_septenary_scaffold.py
-```
-
-This reconstructs the approximate sevenfold step described in Figure 194,
-repeats it through four quadrants to obtain twenty-eight points, classifies the
-points into Michell's stated 12 + 8 + 8 roles, and compares the resulting Moon
-centres with the exact-incidence `NJG_INC` model.
-
-## Visualise Michell's approximate 28-point scaffold
-
-Generate the comparison SVG:
-
-```bash
-python scripts/generate_michell_28_point_scaffold.py
-```
-
-The default output is:
+The project-derived local identity is:
 
 ```text
-figures/generated/michell_28_point_scaffold.svg
+alpha_2 = acos(5/8)
 ```
 
-The figure shows:
+The symbolic gap derivation is **post-result explanatory** work, and the
+canonical v0.8 SVG remains **visualization-only**.
 
-* the twenty-eight approximate scaffold points;
-* Michell's 12 + 8 + 8 role classification;
-* twelve Moon circles positioned by the scaffold;
-* the source-supported `NJG_INC` Moon circles;
-* the displacement between the two centre systems;
-* the eight square-circle incidence points;
-* a magnified oblique-centre displacement inset;
-* the exact circumference accounting under the pi = 22/7 convention.
+Version `v0.9.0` is the **Exact Sevenfold Boundary and Minimal Cubic Extension** checkpoint.
 
-The SVG background is transparent. The inset magnification may be changed with:
-
-```bash
-python scripts/generate_michell_28_point_scaffold.py \
-  --displacement-magnification 60
-```
-
-## Analyse Michell's Figure 14 heptagram
-
-Run:
-
-```bash
-python scripts/analyze_figure14_heptagram.py
-```
-
-The analysis reconstructs the seven endpoint roles visible in Figure 14,
-compares exact-regular, Michell-28-point, and Figure-14-aligned vertex systems,
-and uses the source-supported heptagram `{7/2}` traversal.
-
-Five endpoints are supported by Michell's text and printed plate. The two
-inter-Moon-gap endpoints remain explicitly labelled as plate-based project
-inferences.
-
-Three independent near-endpoint line-tracing passes sampled 42 printed-stroke
-directions. The `{7/2}` candidate won all 21 endpoint/pass comparisons, with an
-angular RMS residual of 1.248033670 degrees, compared with 24.993300526 degrees
-for `{7/3}`.
-
-The full calibration result is documented in
-[`docs/geometry/figure14_source_calibration_results.md`](docs/geometry/figure14_source_calibration_results.md).
-
-## Visualise Michell's Figure 14 heptagram candidates
-
-Generate the three-panel comparison SVG:
-
-```bash
-python scripts/generate_michell_figure14_heptagram.py
-```
-
-The default output is:
+Its frozen terminal classifications include:
 
 ```text
-figures/generated/michell_figure14_heptagram.svg
+EUCLIDEAN_EXACT_SEVENFOLD_EXCLUDED
+
+ONE_TRISECTION_EXACT_HEPTAGON_CONFIRMED
+
+MINIMUM_ONE_CUBIC_CAPABLE_OPERATION_WITHIN_FROZEN_MODEL
 ```
 
-The figure compares:
+The exact construction is a project mathematical result and is **not attributed**
+to Michell, Sommerville, Plato, or an ancient source.
 
-* an exact regular `{7/2}` heptagram;
-* a `{7/2}` heptagram selected from Michell's approximate 28-point scaffold;
-* a Figure-14-aligned `{7/2}` heptagram.
+The Figure 14 comparison remains **source-consistency synthesis**, not
+statistically independent validation.
 
-Black circular markers identify the five text-and-plate anchors. Open orange
-diamonds identify the two inter-Moon-gap anchors inferred from the printed
-plate. Dashed orange segments show candidate-to-anchor residuals.
-
-The SVG is a transparent-background computational reconstruction and is not
-a facsimile of Michell's printed plate.
-
-## v0.6.0 — Historical metrology and prediction-status audit
-
-v0.6.0 keeps the v0.5 `NJG_MICHELL` geometry frozen and audits the historical
-dimensional/metrological layer around it.
+The frozen v1.0 release-readiness record is:
 
 ```text
-24 registered metrology records accounted for
-6 development-used targets
-0 frozen-unused targets
-0 independent forward predictions
-7 numerical comparison rows:
-    6 retrospective
-    1 descriptive
+docs/geometry/v1.0_release_readiness_result.md
 ```
 
-The later Sommerville wall dimensions are reproduced very closely by the frozen
-polar-pivot wall:
+## Licensing
+
+Original project software is released under the MIT License.
+
+See:
 
 ```text
-polar side                  -0.00920%
-oblique side                +0.03427%
-wall area                   +0.002166%
-old-English-foot perimeter  +0.03827%
+LICENSE
 ```
 
-These are reported as retrospective agreements, not blind predictions, because
-the historical dimensions were available during model development.
+The repository also includes two frozen Perseus Digital Library Plato XML
+witnesses used by the v1.0 historical audit. They remain subject to their
+upstream CC BY-SA 4.0 licensing and are not relicensed under MIT.
 
-The earlier Figure 12 mean-side/perimeter layer differs by about +0.305754%.
-No aggregate score, ranking, post-hoc tolerance, or inferred historical
-uncertainty is introduced.
-
-See `docs/checkpoints/v0.6.0.md` and
-`docs/geometry/v0.6_historical_residual_sensitivity_report.md`.
-
-## v0.7.0 — Sommerville dodecagon vertex-radius audit
-
-v0.7.0 resolves the Figure 30 radius problem without adding a new polygon or
-refitting the frozen v0.5 geometry.
-
-The source prose says `decagon`, but source inspection shows that the marked
-6336/6300 radii refer to vertices of the irregular outer dodecagon. v0.7
-preserves the literal wording in provenance while treating the operational
-geometric referent as `dodecagon_vertex_radii`.
-
-The frozen polar-pivot wall already contains exactly two semantically defined
-radius classes:
+See:
 
 ```text
-8 polar-adjacent vertices   r = 8.79984753348571 u
-4 oblique-pair vertices     r = 8.75294593972281 u
+THIRD_PARTY_NOTICES.md
+data/sources/v1_0/plato/README.md
 ```
 
-The eight polar-adjacent vertices lie on the parameter-free regular-dodecagon
-baseline; the four oblique-pair vertices are displaced inward by
-`0.0469015937628932 u`.
+## Citation
 
-Under the already-frozen `720 current ft/u` scale:
+Citation metadata is provided in:
 
 ```text
-long radius   6335.8902241097 ft   vs 6336 ft   (-0.001732574%)
-short radius  6302.1210766004 ft   vs 6300 ft   (+0.033667883%)
-class ratio   1.0053583780919       vs 176/175   (-0.035388542%)
+CITATION.cff
 ```
 
-These are retrospective no-refit source-consistency results, not independent
-forward predictions. `31680/5` is equivalent to the 6336-ft row, and `176/175`
-is derived from the same long/short historical pair, so the four registered
-rows are not four independent numerical matches.
+The archival DOI will be propagated to the citation surfaces after the public
+v1.0.0 archival release is created.
 
-See `docs/checkpoints/v0.7.0.md` and
-`docs/geometry/v0.7_dodecagon_dimensional_audit_report.md`.
+## Author
 
+**Salah-Eddin Gherbi**<br>
+Independent Researcher, United Kingdom<br>
+ORCID: `0009-0005-4017-1095`
