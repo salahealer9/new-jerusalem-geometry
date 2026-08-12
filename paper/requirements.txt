@@ -1,0 +1,3 @@
+# Publication-only dependency.
+# Not part of the New Jerusalem Geometry scientific/runtime package.
+CairoSVG==2.9.0

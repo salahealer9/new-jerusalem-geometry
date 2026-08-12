@@ -1,0 +1,554 @@
+\ifdefined\pdfsuppresswarningpagegroup%
+  \pdfsuppresswarningpagegroup=1
+\fi
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+
+\newcommand{\NJG}{\texttt{NJG\_MICHELL}}
+\newcommand{\ProjectRecon}{\texttt{PROJECT\_RECONSTRUCTION}}
+\newcommand{\DirectPlato}{\texttt{DIRECT\_PLATO\_TEXT}}
+\newcommand{\MichellExplicit}{\texttt{MICHELL\_EXPLICIT}}
+\newcommand{\ArchivePending}{\texttt{ARCHIVAL\_PENDING}}
+
+% Publication figures are frozen first as white-background SVGs.
+% The manuscript remains compilable before PDF derivatives exist.
+\newcommand{\PaperFigure}[4]{%
+  \begin{figure}[htbp]
+    \centering
+    \IfFileExists{#1}{%
+      \includegraphics[width=#2\linewidth]{#1}%
+    }{%
+      \fbox{%
+        \parbox[c][0.28\textheight][c]{0.90\linewidth}{%
+          \centering
+          \textbf{Publication figure placeholder}\\[0.7em]
+          \texttt{\detokenize{#1}}\\[0.7em]
+          The frozen white-background SVG exists in
+          \texttt{paper/figures/}; a PDF derivative will be inserted at
+          manuscript-assembly time.
+        }%
+      }%
+    }
+    \caption{#3}%
+    \label{#4}
+  \end{figure}
+}
+
+\title{\textbf{Reconstructing John Michell's New Jerusalem Geometry}\\
+\large A Reproducible Audit of Euclidean Structure, Sevenfold Constructibility,
+and the Plato\textendash{} Michell Whorl Interpretation}
+
+\author{
+Salah-Eddin Gherbi\\
+Independent Researcher, United Kingdom\\
+ORCID\@: \mbox{0009\mbox{-}0005\mbox{-}4017\mbox{-}1095}
+}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We present a reproducible computational and historical audit of John Michell's
+New Jerusalem geometry.  The analysis separates source statements, project
+reconstructions, exact mathematical results, approximate historical
+constructions, source-calibrated comparisons, and downstream visualisation.
+A unit-only generative model reconstructs the principal Earth\textendash{} Moon,
+twelve-circle, outer-wall, sevenfold, and 28-point components without feeding
+measured source-plate coordinates back into the geometric builder.  Direct
+calibration of Michell's printed figures supports a near-regular
+$\{7/2\}$ topology for Figure~14 and a polar-pivot project reconstruction for
+the Figure~12 outer wall, while preserving the distinction between
+source-consistency and independent prediction.  Michell's two approximate
+sevenfold procedures are reconstructed separately; their local steps bracket
+the exact $2\pi/7$ angle, and the second method has the exact project-derived
+form $\alpha_2=\arccos(5/8)$.  Algebraically,
+$y=2\cos(2\pi/7)$ satisfies the irreducible cubic
+$y^3+y^2-2y-1=0$, excluding exact regular sevenfold construction from the
+frozen ordinary straightedge-and-compass closure.  Within the registered
+operation-count model, zero cubic-capable operations are impossible and one
+angle trisection is sufficient.  Finally, a source audit of Plato's
+\emph{Republic} and Michell's later numerical interpretation of the eight
+whorls reproduces Michell's printed arithmetic with zero fitted parameters,
+without attributing his numerical widths to Plato or inferring historical
+transmission from antiquity.
+\end{abstract}
+
+\section{Introduction}
+
+John Michell's New Jerusalem diagrams combine a scale-free geometric core with
+historical metrology, approximate polygonal constructions, and later numerical
+interpretation \citep{michell1973city,michell2009world}.  Their visual
+complexity makes several logically different questions easy to conflate:
+what Michell explicitly states, what a printed plate actually depicts, what can
+be reconstructed from explicit Euclidean rules, what is mathematically exact,
+and what remains interpretive.
+
+The present work treats those questions as separate evidential layers.
+Rather than fitting a single picture until it resembles a source image, the
+project freezes construction rules, source witnesses, calibration protocols,
+and downstream comparisons at explicit checkpoints.  The resulting
+\NJG{} composite is generated from the model scale alone; source digitisation
+is used for evaluation rather than as a hidden geometric input.
+
+The paper has four principal aims.  First, it records the deterministic
+New Jerusalem reconstruction and the source-calibration boundary for
+Figures~12 and~14.  Second, it compares Michell's two approximate sevenfold
+methods without combining or optimising them.  Third, it identifies the exact
+algebraic constructibility boundary of the sevenfold layer and a minimal
+one-cubic-operation extension within the frozen project grammar.  Fourth, it
+separates Plato's ordinal description of the eight whorls from Michell's
+numerical assignment and reproduces Michell's arithmetic without back-projecting
+those numbers into Plato.
+
+\section{Sources and methods}
+
+\subsection{Evidence hierarchy}
+
+The analysis uses explicit provenance classes rather than a single undifferentiated
+notion of ``agreement''.  Table~\ref{tab:provenance} summarises the principal
+classes used in the manuscript.
+
+\begin{table}[ht]
+\centering
+\caption{Evidence and provenance classes used throughout the audit.}%
+\label{tab:provenance}
+\begin{tabularx}{\linewidth}{>{\ttfamily}l X}
+\toprule
+Class & Meaning \\
+\midrule
+DIRECT\_PLATO\_TEXT &
+Literal information recoverable from the frozen Plato witnesses. \\
+MICHELL\_EXPLICIT &
+Numerical or construction statements explicitly supplied by Michell. \\
+PROJECT\_RECONSTRUCTION &
+Deterministic geometry or arithmetic carried out by the project. \\
+source-calibrated comparison &
+Comparison against digitised printed source geometry. \\
+exact mathematical result &
+Algebraic or Euclidean result established independently of visual fit. \\
+ARCHIVAL\_PENDING &
+Historical lead not established from a frozen primary witness. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Historical witnesses}
+
+The core Michell source plate used for Figures~12 and~14 is the 1973 Abacus
+edition of \emph{City of Revelation} \citep{michell1973city}.  Figure~194 and
+the later Sommerville-attributed dimensional discussion are audited from
+\emph{How the World Is Made} \citep{michell2009world}.  Michell's numerical
+interpretation of Plato's eight whorls is taken from the purchased 2008 digital
+edition of \emph{The Dimensions of Paradise} \citep{michell2008dimensions}.
+
+For Plato, the project freezes both English and Greek Perseus TEI witnesses
+for \emph{Republic}~616d--617b.  The underlying English translation is Shorey's
+Loeb edition \citep{plato1935republic}; the Greek text derives from Burnet's
+Oxford edition \citep{plato1902republic}.  The exact project XML files are
+pinned to one upstream Perseus commit and hashed independently
+\citep{perseusRepublicWitnesses}.  The digital-witness identity is therefore
+kept separate from the bibliographic identity of the underlying print
+editions.
+
+The external 2008 Wikimedia diagram is included only as a reproducible
+historical computational comparator, \texttt{NJG\_SVG}; it is not treated as
+a Michell primary source \citep{anonmoos2008newjerusalem}.
+
+\subsection{Normalized geometry and deterministic generation}
+
+The normalized cardinal core uses Earth radius $5.5$, Moon radius $1.5$,
+construction-circle radius $7$, and Earth-square side $11$.  The complete
+\NJG{} model adds the twelve-Moon system, the preferred outer-wall project
+reconstruction, Michell's approximate Method-1 sevenfold construction,
+the reciprocal fourteenfold construction, the four-triangle 28-point
+scaffold, and the scaffold-derived Figure~14 candidate.
+
+Only the overall scale unit is caller supplied.  The source-calibration
+modules remain downstream of the generative builder, so measured plate
+coordinates do not refit the model.
+
+\subsection{Source-plate calibration}
+
+Printed source geometry is treated as measured historical evidence rather
+than an exact Euclidean object.  Repeated landmark digitisation is followed
+by registration-model comparison and frozen no-refit candidate evaluation.
+For Figure~14, edge topology is tested independently from endpoint location
+because regular $\{7/2\}$ and $\{7/3\}$ heptagrams share the same seven-vertex
+set.
+
+\subsection{Exact constructibility analysis}
+
+The exact sevenfold target is represented algebraically by
+\begin{equation}
+y=2\cos\left(\frac{2\pi}{7}\right),
+\end{equation}
+whose minimal polynomial is
+\begin{equation}
+y^3+y^2-2y-1=0.
+\end{equation}
+The degree-three obstruction is compared with the quadratic-extension closure
+of ordinary straightedge-and-compass constructions.  A separate,
+preregistered project extension then permits exactly one cubic-capable
+\texttt{TRISECT\_ANGLE} operation.
+
+\section{Core New Jerusalem reconstruction}
+
+\PaperFigure{figures/pdf/figure01_njg_michell_composite.pdf}
+  {0.76}
+  {Integrated unit-only \NJG{} reconstruction.  The publication derivative is
+  downstream of the frozen generative composite; source calibration does not
+  feed geometric coordinates back into the builder.}
+  {fig:njg-composite}
+
+Figure~\ref{fig:njg-composite} summarises the integrated construction.
+The distinction between the generative object and the later evidence layers is
+central: source consistency can evaluate a frozen candidate without becoming
+a hidden fitting channel.
+
+\subsection{Figure 12 outer wall}
+
+Three wall rules were compared against the affine-calibrated Figure~12 plate.
+The preferred \texttt{POLAR\_PIVOT\_TANGENT} reconstruction gives the best
+wall-direction agreement among the registered candidates, but the
+support-distance metric alone favours another comparator.  It is therefore
+described as a source-supported project reconstruction rather than a uniquely
+established historical construction.
+
+\begin{table}[ht]
+\centering
+\caption{Selected frozen Figure~12 diagnostics for the preferred polar-pivot
+wall reconstruction.}%
+\label{tab:figure12}
+\begin{tabular}{lr}
+\toprule
+Metric & Frozen value \\
+\midrule
+Wall-normal angular RMS & $1.019836^\circ$ \\
+Wall-support RMS & $0.038999\,u$ \\
+Wall-vertex RMS & $0.100022\,u$ \\
+Perimeter difference & $-0.379134\%$ \\
+Area difference & $-0.709332\%$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+
+\section{Source-calibrated sevenfold geometry}
+
+\subsection{Figure 14 topology}
+
+Repeated endpoint and stroke tracing supports a near-regular
+$\{7/2\}$ heptagram topology in Michell's Figure~14
+\citep{michell1973city}.  This supersedes the project's provisional
+$\{7/3\}$ interpretation.  Figure~\ref{fig:figure14} presents the frozen
+source-calibrated comparison.
+
+\PaperFigure{figures/pdf/figure02_figure14_heptagram.pdf}
+  {0.95}
+  {Source-calibrated Figure~14 comparison.  Endpoint regularity and printed
+  stroke topology are treated as separate evidence channels; the calibrated
+  topology supports $\{7/2\}$.}
+  {fig:figure14}
+
+\subsection{Michell Method 1: \texorpdfstring{\(7\rightarrow14\rightarrow28\)}{7 to 14 to 28}}
+
+Michell's first Figure~194 branch generates an approximate sevenfold step,
+its reciprocal fourteenfold construction, and the four-triangle 28-point
+scaffold \citep{michell2009world}.  Figure~\ref{fig:method1} shows the frozen
+Method~1 scaffold used by the integrated construction.
+
+\PaperFigure{figures/pdf/figure03_method1_28_point_scaffold.pdf}
+  {0.95}
+  {Michell Method~1 and the frozen 28-point scaffold used in the integrated
+  construction.}
+  {fig:method1}
+
+\subsection{Michell Method 2: \texorpdfstring{\(7\rightarrow21\rightarrow42\)}{7 to 21 to 42}}
+
+The second Figure~194 branch is kept distinct.  From the source-described
+equilateral-triangle and side-bisecting-arc construction, the project derives
+\begin{equation}
+\alpha_2=\arccos\left(\frac{5}{8}\right).
+\end{equation}
+The complete 21- and 42-point nonuniformity follows from the local deficit
+\begin{equation}
+\delta=\frac{2\pi}{7}-\alpha_2.
+\end{equation}
+The symbolic gap identities are post-result explanatory derivations rather
+than preregistered confirmations.  Figure~\ref{fig:method2} summarizes the
+registered Method~2 local construction and its deterministic 21- and
+42-point propagation.
+
+\PaperFigure{figures/pdf/figure04_method2_7_21_42.pdf}
+  {0.98}
+  {Michell Method~2: local seven-mark construction and deterministic
+  propagation to 21 and 42 points.}
+  {fig:method2}
+
+\begin{table}[ht]
+\centering
+\caption{Exact sevenfold step and Michell's two frozen approximations.}%
+\label{tab:sevenfold-comparison}
+\begin{tabular}{lrrr}
+\toprule
+Construction & Step (deg) & Signed error (deg) & Seven-step closure (deg) \\
+\midrule
+Exact & 51.428571428571 & 0 & 0 \\
+Method 1 & 51.470701432440 & +0.042130003869 & +0.294910027080 \\
+Method 2 & 51.317812546511 & -0.110758882061 & -0.775312174426 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Thus the two source-described approximations bracket the exact value:
+\[
+\text{Method 2}<\text{exact}<\text{Method 1}.
+\]
+
+\section{Exact sevenfold boundary}
+
+Because the target coordinate has algebraic degree three over
+$\mathbb{Q}$, the exact regular sevenfold is excluded from the frozen ordinary
+straightedge-and-compass closure.  This conclusion is theorem-level and does
+not depend on failure to find a sufficiently accurate numerical candidate.
+
+After that boundary was frozen, the project registered one cubic-capable
+operation.  With the native dimensions $R=7$ and $D=3$,
+\[
+u=R-2D=1,\qquad
+v=D\sqrt{3}=3\sqrt{3},\qquad
+H=2\sqrt{7}.
+\]
+For the resulting anchor angle $\Theta$,
+\[
+\cos\Theta=\frac{1}{2\sqrt{7}}.
+\]
+One angle trisection sets $\phi=\Theta/3$.  Defining
+\[
+z=\frac{2\sqrt{7}}{3}\cos\phi
+\]
+and applying the triple-angle identity gives
+\[
+z^3-\frac73z-\frac7{27}=0.
+\]
+With $y=z-\frac13$, this becomes exactly
+\[
+y^3+y^2-2y-1=0.
+\]
+
+Within the frozen operation-count model, the combined result is therefore
+\[
+0\ \text{cubic-capable operations: impossible},\qquad
+1\ \text{cubic-capable operation: sufficient}.
+\]
+This result is a project construction and is not attributed to Michell,
+Sommerville, Plato, or an ancient source.  Figure~\ref{fig:exact-heptagon}
+places the exact construction beside the frozen Method~1 and Figure~14
+comparators without rotational refitting.
+
+\PaperFigure{figures/pdf/figure05_exact_heptagon_synthesis.pdf}
+  {0.98}
+  {Exact-heptagon comparison and one-trisection synthesis.  The exact
+  construction is shown alongside the frozen Method~1 and Figure~14
+  comparators without rotational fitting or endpoint reassignment.}
+  {fig:exact-heptagon}
+
+\clearpage
+
+\section{Historical metrology and Sommerville-attributed comparisons}
+
+Historical dimensional agreement is classified according to whether a source
+quantity was a construction input, a development-used target, a retrospective
+comparison, a derived relation, or an unevaluated archival claim.  Development
+targets are not later relabelled as independent predictions.
+
+Michell reports dimensional results attributed to Ian Sommerville in
+\emph{How the World Is Made} \citep{michell2009world}.  The underlying 1974
+primary item has not been frozen in the present project and remains
+\ArchivePending{}.
+
+\begin{table}[ht]
+\centering
+\caption{Frozen no-refit dodecagon dimensional comparisons.  Derived and
+equivalent rows are not additional independent observations.}%
+\label{tab:sommerville}
+\begin{tabular}{lrrr}
+\toprule
+Quantity & Historical value & Frozen value & Residual \\
+\midrule
+Long radius & 6336 ft & 6335.8902241097 ft & $-0.001732574\%$ \\
+Short radius & 6300 ft & 6302.1210766004 ft & $+0.033667883\%$ \\
+Class ratio & $176/175$ & 1.0053583780919 & $-0.035388542\%$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These values are retrospective source-consistency checks.  They do not
+establish independent verification of the unresolved 1974 primary paper,
+statistical significance, ancient intentionality, or physical law.
+
+\section{Plato's eight whorls and Michell's numerical interpretation}
+
+\subsection{Literal Plato layer}
+
+The frozen \emph{Republic} passage describes eight nested whorls and gives
+their rim widths in the ordinal order
+\[
+1>6>4>8>7>5>3>2
+\]
+\citep{plato1935republic,plato1902republic,perseusRepublicWitnesses}.
+The audited passage supplies no numerical magnitudes or ratios for those rim
+widths.  Its speed ordering is a separate textual attribute and is not used as
+a substitute for the rim-width order.
+
+\subsection{Michell's numerical layer}
+
+Michell preserves the same ordinal width ordering but supplies the musical
+number set
+\[
+6,\ 8,\ 9,\ 12,\ 18,\ 24,\ 27,\ 36
+\]
+together with the shaft rule, the centre-out ring ordering, and a scale factor
+of $180$ \citep{michell2008dimensions}.  Assigning the distinct numerical
+values according to the frozen ordinal ranking produces the centre-out widths
+\[
+18,\ 12,\ 27,\ 9,\ 24,\ 8,\ 6,\ 36.
+\]
+
+The shaft rule gives
+\[
+6\times\frac23=4,
+\]
+and successive addition gives cumulative radii
+\[
+4,\ 22,\ 34,\ 61,\ 70,\ 94,\ 102,\ 108,\ 144.
+\]
+Scaling by $180$ yields
+\[
+720,\ 3960,\ 6120,\ 10980,\ 12600,\ 16920,\ 18360,\ 19440,\ 25920.
+\]
+
+\begin{table}[ht]
+\centering
+\caption{Frozen centre-out Plato\textendash{} Michell whorl reconstruction.}%
+\label{tab:whorls}
+\begin{tabular}{rrrr}
+\toprule
+Centre-out whorl & Width & Cumulative radius & Scaled radius \\
+\midrule
+shaft & \textemdash{} & 4 & 720 \\
+8 & 18 & 22 & 3960 \\
+7 & 12 & 34 & 6120 \\
+6 & 27 & 61 & 10980 \\
+5 & 9  & 70 & 12600 \\
+4 & 24 & 94 & 16920 \\
+3 & 8  & 102 & 18360 \\
+2 & 6  & 108 & 19440 \\
+1 & 36 & 144 & 25920 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The reconstruction uses zero free parameters, zero permutation searches, zero
+scale fits, zero optimisations, and zero nearest-match choices.  Exact
+reproduction validates the internal numerical chain of Michell's printed
+construction.  It does not establish that Plato supplied those numerical
+widths, intended Michell's assignment, or transmitted the scheme historically
+from antiquity.  Figure~\ref{fig:whorls} summarizes the radial construction
+while keeping the Plato, Michell, and project provenance layers explicit.
+
+\PaperFigure{figures/pdf/figure06_plato_michell_whorls.pdf}
+  {0.98}
+  {The Spindle of Necessity---Plato's Eight Whorls.  The figure separates
+  Plato's ordinal information, Michell's numerical interpretation, and the
+  project's deterministic arithmetic reconstruction.}
+  {fig:whorls}
+
+\clearpage
+
+\section{Discussion}
+
+The audit produces three different kinds of positive result that should not be
+collapsed into one another.
+
+First, deterministic reconstruction establishes that a large part of the New
+Jerusalem diagram can be generated from explicit geometric rules with only an
+overall scale parameter.  Second, source calibration establishes which frozen
+project candidates are more consistent with particular printed plates, but
+does not transform those source-dependent comparisons into statistically
+independent predictions.  Third, the exact sevenfold result is mathematical:
+the degree-three obstruction and the one-trisection construction do not depend
+on the quality of the historical plate reproductions.
+
+The historical analysis is similarly bounded.  Plato supplies an ordinal
+eight-whorl structure; Michell supplies a later numerical interpretation; and
+the project can reconstruct the latter exactly.  Numerical reproducibility is
+not evidence for ancient transmission.
+
+Several limitations remain.  Printed-source calibration is subject to
+reproduction quality, line thickness, manual digitisation, and registration
+uncertainty.  Historical metrology includes quantities that entered model
+development and therefore cannot be recycled as independent validation.
+The Sommerville 1974 primary source remains archival-pending.  Finally, the
+one-trisection result establishes minimality only in the number of
+cubic-capable operations within the frozen project grammar; it does not show
+that trisection is uniquely simplest among all non-Euclidean construction
+technologies.
+
+\section{Conclusion}
+
+A provenance-aware computational treatment makes it possible to separate what
+Michell states, what his printed figures support, what the project reconstructs,
+and what exact mathematics establishes.  The resulting New Jerusalem model is
+reproducible and source-auditable while retaining explicit boundaries around
+historical interpretation.  The same framework resolves the topology of the
+Figure~14 heptagram, characterises Michell's two approximate sevenfold methods,
+identifies the exact constructibility boundary and a one-trisection extension,
+and reconstructs Michell's Plato-whorl arithmetic without attributing his
+numerical scheme to Plato.
+
+\section*{Data and code availability}
+
+The complete computational record, frozen numerical outputs, source-provenance
+manifests, deterministic figure generators, and automated tests are maintained
+in the \emph{New Jerusalem Geometry} repository.
+
+\textbf{Release-boundary note.}
+The manuscript is being prepared while the package metadata deliberately
+remains at version \texttt{0.9.0}.  The final public repository reference,
+version \texttt{1.0.0}, archival Zenodo DOI, and corresponding software
+bibliography entry will be inserted only after the controlled public release.
+
+Copyrighted Michell source scans and purchased ebook screenshots are not
+redistributed.  Their identities are preserved by local source manifests and
+cryptographic hashes.  The frozen Perseus XML witnesses retain their upstream
+third-party licensing boundary.
+
+\begingroup
+\raggedright{}
+\bibliographystyle{plainnat}
+\bibliography{references}
+\endgroup
+
+\end{document}
