@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid meet" role="img" shape-rendering="geometricPrecision">
+<rect id="paper-background" x="0" y="0" width="1400" height="900" fill="#ffffff" />
+  <title>Michell approximate 28-point scaffold</title>
+  <desc>Michell's approximate twenty-eight-point septenary framework compared with the exact-incidence placement of the twelve New Jerusalem Moon circles.</desc>
+  <metadata>
+    Project: New Jerusalem Geometry
+    Source construction: How the World Is Made, Figure 194
+    Scaffold role classification: 12 + 8 + 8
+    Comparison model: NJG_INC
+    Background: transparent
+  </metadata>
+  <style>
+    text {
+      font-family: system-ui, sans-serif;
+      fill: #171717;
+    }
+    .title {
+      font-size: 25px;
+      font-weight: 600;
+      text-anchor: middle;
+    }
+    .subtitle {
+      font-size: 14px;
+      text-anchor: middle;
+      fill: #555555;
+    }
+    .geometry {
+      fill: none;
+      vector-effect: non-scaling-stroke;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .construction-circle {
+      stroke: #777777;
+      stroke-width: 1.25;
+    }
+    .earth-square {
+      stroke: #3e3e3e;
+      stroke-width: 1.35;
+    }
+    .earth-circle {
+      stroke: #111111;
+      stroke-width: 1.8;
+    }
+    .scaffold-ray {
+      stroke: #b3b3b3;
+      stroke-width: 0.75;
+      opacity: 0.56;
+    }
+    .incidence-moon {
+      stroke: #686868;
+      stroke-width: 1.15;
+      fill: none;
+      opacity: 0.7;
+    }
+    .scaffold-moon {
+      stroke: #1769aa;
+      stroke-width: 1.35;
+      stroke-dasharray: 4 3;
+      fill: none;
+      opacity: 0.9;
+    }
+    .displacement {
+      stroke: #b24b18;
+      stroke-width: 1.8;
+    }
+    .incidence-centre-mark {
+      stroke: #111111;
+      stroke-width: 1.25;
+    }
+    .square-circle-point {
+      fill: #111111;
+      stroke: none;
+    }
+    .scaffold-marker {
+      vector-effect: non-scaling-stroke;
+      stroke-width: 1;
+    }
+    .moon-role {
+      fill: #1769aa;
+      stroke: #ffffff;
+    }
+    .gap-role {
+      fill: #b45f06;
+      stroke: #ffffff;
+    }
+    .intersection-role {
+      fill: #6a3d9a;
+      stroke: #ffffff;
+    }
+    .panel-rule {
+      stroke: #d0d0d0;
+      stroke-width: 1;
+    }
+    .panel-heading {
+      font-size: 17px;
+      font-weight: 600;
+    }
+    .metric-label {
+      font-size: 13px;
+      fill: #555555;
+    }
+    .metric-value {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .note {
+      font-size: 12px;
+      fill: #555555;
+    }
+    .legend-text {
+      font-size: 12px;
+    }
+    .inset-frame {
+      fill: none;
+      stroke: #c8c8c8;
+      stroke-width: 1;
+    }
+    .inset-origin {
+      fill: #1769aa;
+      stroke: none;
+    }
+    .inset-target {
+      fill: #111111;
+      stroke: none;
+    }
+    .inset-vector {
+      stroke: #b24b18;
+      stroke-width: 2;
+    }
+    .status-box {
+      fill: #f4f7fa;
+      fill-opacity: 0.75;
+      stroke: #cad4de;
+      stroke-width: 1;
+    }
+  </style>
+  <text class="title" x="700" y="31">Michell approximate 28-point scaffold</text>
+  <text class="subtitle" x="700" y="53">Approximate septenary framework compared with source-supported exact incidence</text>
+  <line class="panel-rule" x1="950" y1="72" x2="950" y2="872" />
+  <g id="scaffold-geometry" transform="translate(478 458) scale(42.1195652174,-42.1195652174)">
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="7" y2="0" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="6.82219730873" y2="1.56768105201" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="6.31346652053" y2="3.02326652715" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="5.47602809361" y2="4.36040322883" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="4.36040322883" y2="5.47602809361" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="3.02326652715" y2="6.31346652053" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="1.56768105201" y2="6.82219730873" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="0" y2="7" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="-1.56768105201" y2="6.82219730873" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="-3.02326652715" y2="6.31346652053" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="-4.36040322883" y2="5.47602809361" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="-5.47602809361" y2="4.36040322883" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="-6.31346652053" y2="3.02326652715" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="-6.82219730873" y2="1.56768105201" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="-7" y2="0" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="-6.82219730873" y2="-1.56768105201" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="-6.31346652053" y2="-3.02326652715" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="-5.47602809361" y2="-4.36040322883" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="-4.36040322883" y2="-5.47602809361" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="-3.02326652715" y2="-6.31346652053" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="-1.56768105201" y2="-6.82219730873" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="-1.2858791391e-15" y2="-7" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="1.56768105201" y2="-6.82219730873" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="3.02326652715" y2="-6.31346652053" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="4.36040322883" y2="-5.47602809361" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="5.47602809361" y2="-4.36040322883" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="6.31346652053" y2="-3.02326652715" />
+    <line class="geometry scaffold-ray" x1="0" y1="0" x2="6.82219730873" y2="-1.56768105201" />
+    <circle class="geometry construction-circle" cx="0" cy="0" r="7" />
+    <rect class="geometry earth-square" x="-5.5" y="-5.5" width="11" height="11" />
+    <circle class="geometry earth-circle" cx="0" cy="0" r="5.5" />
+    <circle id="incidence-moon-00" class="geometry incidence-moon" cx="7" cy="0" r="1.5" />
+    <circle id="incidence-moon-01" class="geometry incidence-moon" cx="6.29626761106" cy="3.05892369468" r="1.5" />
+    <circle id="incidence-moon-02" class="geometry incidence-moon" cx="3.05892369468" cy="6.29626761106" r="1.5" />
+    <circle id="incidence-moon-03" class="geometry incidence-moon" cx="0" cy="7" r="1.5" />
+    <circle id="incidence-moon-04" class="geometry incidence-moon" cx="-3.05892369468" cy="6.29626761106" r="1.5" />
+    <circle id="incidence-moon-05" class="geometry incidence-moon" cx="-6.29626761106" cy="3.05892369468" r="1.5" />
+    <circle id="incidence-moon-06" class="geometry incidence-moon" cx="-7" cy="0" r="1.5" />
+    <circle id="incidence-moon-07" class="geometry incidence-moon" cx="-6.29626761106" cy="-3.05892369468" r="1.5" />
+    <circle id="incidence-moon-08" class="geometry incidence-moon" cx="-3.05892369468" cy="-6.29626761106" r="1.5" />
+    <circle id="incidence-moon-09" class="geometry incidence-moon" cx="0" cy="-7" r="1.5" />
+    <circle id="incidence-moon-10" class="geometry incidence-moon" cx="3.05892369468" cy="-6.29626761106" r="1.5" />
+    <circle id="incidence-moon-11" class="geometry incidence-moon" cx="6.29626761106" cy="-3.05892369468" r="1.5" />
+    <circle id="scaffold-moon-00" class="geometry scaffold-moon" cx="7" cy="0" r="1.5" />
+    <circle id="scaffold-moon-01" class="geometry scaffold-moon" cx="6.31346652053" cy="3.02326652715" r="1.5" />
+    <circle id="scaffold-moon-02" class="geometry scaffold-moon" cx="3.02326652715" cy="6.31346652053" r="1.5" />
+    <circle id="scaffold-moon-03" class="geometry scaffold-moon" cx="0" cy="7" r="1.5" />
+    <circle id="scaffold-moon-04" class="geometry scaffold-moon" cx="-3.02326652715" cy="6.31346652053" r="1.5" />
+    <circle id="scaffold-moon-05" class="geometry scaffold-moon" cx="-6.31346652053" cy="3.02326652715" r="1.5" />
+    <circle id="scaffold-moon-06" class="geometry scaffold-moon" cx="-7" cy="0" r="1.5" />
+    <circle id="scaffold-moon-07" class="geometry scaffold-moon" cx="-6.31346652053" cy="-3.02326652715" r="1.5" />
+    <circle id="scaffold-moon-08" class="geometry scaffold-moon" cx="-3.02326652715" cy="-6.31346652053" r="1.5" />
+    <circle id="scaffold-moon-09" class="geometry scaffold-moon" cx="-1.2858791391e-15" cy="-7" r="1.5" />
+    <circle id="scaffold-moon-10" class="geometry scaffold-moon" cx="3.02326652715" cy="-6.31346652053" r="1.5" />
+    <circle id="scaffold-moon-11" class="geometry scaffold-moon" cx="6.31346652053" cy="-3.02326652715" r="1.5" />
+    <line class="geometry displacement" data-displacement-index="0" x1="7" y1="0" x2="7" y2="0" />
+    <line class="geometry incidence-centre-mark" x1="6.905" y1="0" x2="7.095" y2="0" />
+    <line class="geometry incidence-centre-mark" x1="7" y1="-0.095" x2="7" y2="0.095" />
+    <line class="geometry displacement" data-displacement-index="1" x1="6.31346652053" y1="3.02326652715" x2="6.29626761106" y2="3.05892369468" />
+    <line class="geometry incidence-centre-mark" x1="6.20126761106" y1="3.05892369468" x2="6.39126761106" y2="3.05892369468" />
+    <line class="geometry incidence-centre-mark" x1="6.29626761106" y1="2.96392369468" x2="6.29626761106" y2="3.15392369468" />
+    <line class="geometry displacement" data-displacement-index="2" x1="3.02326652715" y1="6.31346652053" x2="3.05892369468" y2="6.29626761106" />
+    <line class="geometry incidence-centre-mark" x1="2.96392369468" y1="6.29626761106" x2="3.15392369468" y2="6.29626761106" />
+    <line class="geometry incidence-centre-mark" x1="3.05892369468" y1="6.20126761106" x2="3.05892369468" y2="6.39126761106" />
+    <line class="geometry displacement" data-displacement-index="3" x1="0" y1="7" x2="0" y2="7" />
+    <line class="geometry incidence-centre-mark" x1="-0.095" y1="7" x2="0.095" y2="7" />
+    <line class="geometry incidence-centre-mark" x1="0" y1="6.905" x2="0" y2="7.095" />
+    <line class="geometry displacement" data-displacement-index="4" x1="-3.02326652715" y1="6.31346652053" x2="-3.05892369468" y2="6.29626761106" />
+    <line class="geometry incidence-centre-mark" x1="-3.15392369468" y1="6.29626761106" x2="-2.96392369468" y2="6.29626761106" />
+    <line class="geometry incidence-centre-mark" x1="-3.05892369468" y1="6.20126761106" x2="-3.05892369468" y2="6.39126761106" />
+    <line class="geometry displacement" data-displacement-index="5" x1="-6.31346652053" y1="3.02326652715" x2="-6.29626761106" y2="3.05892369468" />
+    <line class="geometry incidence-centre-mark" x1="-6.39126761106" y1="3.05892369468" x2="-6.20126761106" y2="3.05892369468" />
+    <line class="geometry incidence-centre-mark" x1="-6.29626761106" y1="2.96392369468" x2="-6.29626761106" y2="3.15392369468" />
+    <line class="geometry displacement" data-displacement-index="6" x1="-7" y1="0" x2="-7" y2="0" />
+    <line class="geometry incidence-centre-mark" x1="-7.095" y1="0" x2="-6.905" y2="0" />
+    <line class="geometry incidence-centre-mark" x1="-7" y1="-0.095" x2="-7" y2="0.095" />
+    <line class="geometry displacement" data-displacement-index="7" x1="-6.31346652053" y1="-3.02326652715" x2="-6.29626761106" y2="-3.05892369468" />
+    <line class="geometry incidence-centre-mark" x1="-6.39126761106" y1="-3.05892369468" x2="-6.20126761106" y2="-3.05892369468" />
+    <line class="geometry incidence-centre-mark" x1="-6.29626761106" y1="-3.15392369468" x2="-6.29626761106" y2="-2.96392369468" />
+    <line class="geometry displacement" data-displacement-index="8" x1="-3.02326652715" y1="-6.31346652053" x2="-3.05892369468" y2="-6.29626761106" />
+    <line class="geometry incidence-centre-mark" x1="-3.15392369468" y1="-6.29626761106" x2="-2.96392369468" y2="-6.29626761106" />
+    <line class="geometry incidence-centre-mark" x1="-3.05892369468" y1="-6.39126761106" x2="-3.05892369468" y2="-6.20126761106" />
+    <line class="geometry displacement" data-displacement-index="9" x1="-1.2858791391e-15" y1="-7" x2="0" y2="-7" />
+    <line class="geometry incidence-centre-mark" x1="-0.095" y1="-7" x2="0.095" y2="-7" />
+    <line class="geometry incidence-centre-mark" x1="0" y1="-7.095" x2="0" y2="-6.905" />
+    <line class="geometry displacement" data-displacement-index="10" x1="3.02326652715" y1="-6.31346652053" x2="3.05892369468" y2="-6.29626761106" />
+    <line class="geometry incidence-centre-mark" x1="2.96392369468" y1="-6.29626761106" x2="3.15392369468" y2="-6.29626761106" />
+    <line class="geometry incidence-centre-mark" x1="3.05892369468" y1="-6.39126761106" x2="3.05892369468" y2="-6.20126761106" />
+    <line class="geometry displacement" data-displacement-index="11" x1="6.31346652053" y1="-3.02326652715" x2="6.29626761106" y2="-3.05892369468" />
+    <line class="geometry incidence-centre-mark" x1="6.20126761106" y1="-3.05892369468" x2="6.39126761106" y2="-3.05892369468" />
+    <line class="geometry incidence-centre-mark" x1="6.29626761106" y1="-3.15392369468" x2="6.29626761106" y2="-2.96392369468" />
+    <circle class="square-circle-point" cx="5.5" cy="4.33012701892" r="0.075" />
+    <circle class="square-circle-point" cx="4.33012701892" cy="5.5" r="0.075" />
+    <circle class="square-circle-point" cx="-4.33012701892" cy="5.5" r="0.075" />
+    <circle class="square-circle-point" cx="-5.5" cy="4.33012701892" r="0.075" />
+    <circle class="square-circle-point" cx="-5.5" cy="-4.33012701892" r="0.075" />
+    <circle class="square-circle-point" cx="-4.33012701892" cy="-5.5" r="0.075" />
+    <circle class="square-circle-point" cx="4.33012701892" cy="-5.5" r="0.075" />
+    <circle class="square-circle-point" cx="5.5" cy="-4.33012701892" r="0.075" />
+    <circle class="scaffold-marker moon-role" data-scaffold-index="0" data-role="moon_centre" cx="7" cy="0" r="0.115" />
+    <rect class="scaffold-marker gap-role" data-scaffold-index="1" data-role="inter_moon_gap" x="6.71719730873" y="1.46268105201" width="0.21" height="0.21" />
+    <circle class="scaffold-marker moon-role" data-scaffold-index="2" data-role="moon_centre" cx="6.31346652053" cy="3.02326652715" r="0.115" />
+    <polygon class="scaffold-marker intersection-role" data-scaffold-index="3" data-role="intersection_positioner" points="5.47602809361,4.50040322883 5.61602809361,4.36040322883 5.47602809361,4.22040322883 5.33602809361,4.36040322883" />
+    <polygon class="scaffold-marker intersection-role" data-scaffold-index="4" data-role="intersection_positioner" points="4.36040322883,5.61602809361 4.50040322883,5.47602809361 4.36040322883,5.33602809361 4.22040322883,5.47602809361" />
+    <circle class="scaffold-marker moon-role" data-scaffold-index="5" data-role="moon_centre" cx="3.02326652715" cy="6.31346652053" r="0.115" />
+    <rect class="scaffold-marker gap-role" data-scaffold-index="6" data-role="inter_moon_gap" x="1.46268105201" y="6.71719730873" width="0.21" height="0.21" />
+    <circle class="scaffold-marker moon-role" data-scaffold-index="7" data-role="moon_centre" cx="0" cy="7" r="0.115" />
+    <rect class="scaffold-marker gap-role" data-scaffold-index="8" data-role="inter_moon_gap" x="-1.67268105201" y="6.71719730873" width="0.21" height="0.21" />
+    <circle class="scaffold-marker moon-role" data-scaffold-index="9" data-role="moon_centre" cx="-3.02326652715" cy="6.31346652053" r="0.115" />
+    <polygon class="scaffold-marker intersection-role" data-scaffold-index="10" data-role="intersection_positioner" points="-4.36040322883,5.61602809361 -4.22040322883,5.47602809361 -4.36040322883,5.33602809361 -4.50040322883,5.47602809361" />
+    <polygon class="scaffold-marker intersection-role" data-scaffold-index="11" data-role="intersection_positioner" points="-5.47602809361,4.50040322883 -5.33602809361,4.36040322883 -5.47602809361,4.22040322883 -5.61602809361,4.36040322883" />
+    <circle class="scaffold-marker moon-role" data-scaffold-index="12" data-role="moon_centre" cx="-6.31346652053" cy="3.02326652715" r="0.115" />
+    <rect class="scaffold-marker gap-role" data-scaffold-index="13" data-role="inter_moon_gap" x="-6.92719730873" y="1.46268105201" width="0.21" height="0.21" />
+    <circle class="scaffold-marker moon-role" data-scaffold-index="14" data-role="moon_centre" cx="-7" cy="0" r="0.115" />
+    <rect class="scaffold-marker gap-role" data-scaffold-index="15" data-role="inter_moon_gap" x="-6.92719730873" y="-1.67268105201" width="0.21" height="0.21" />
+    <circle class="scaffold-marker moon-role" data-scaffold-index="16" data-role="moon_centre" cx="-6.31346652053" cy="-3.02326652715" r="0.115" />
+    <polygon class="scaffold-marker intersection-role" data-scaffold-index="17" data-role="intersection_positioner" points="-5.47602809361,-4.22040322883 -5.33602809361,-4.36040322883 -5.47602809361,-4.50040322883 -5.61602809361,-4.36040322883" />
+    <polygon class="scaffold-marker intersection-role" data-scaffold-index="18" data-role="intersection_positioner" points="-4.36040322883,-5.33602809361 -4.22040322883,-5.47602809361 -4.36040322883,-5.61602809361 -4.50040322883,-5.47602809361" />
+    <circle class="scaffold-marker moon-role" data-scaffold-index="19" data-role="moon_centre" cx="-3.02326652715" cy="-6.31346652053" r="0.115" />
+    <rect class="scaffold-marker gap-role" data-scaffold-index="20" data-role="inter_moon_gap" x="-1.67268105201" y="-6.92719730873" width="0.21" height="0.21" />
+    <circle class="scaffold-marker moon-role" data-scaffold-index="21" data-role="moon_centre" cx="-1.2858791391e-15" cy="-7" r="0.115" />
+    <rect class="scaffold-marker gap-role" data-scaffold-index="22" data-role="inter_moon_gap" x="1.46268105201" y="-6.92719730873" width="0.21" height="0.21" />
+    <circle class="scaffold-marker moon-role" data-scaffold-index="23" data-role="moon_centre" cx="3.02326652715" cy="-6.31346652053" r="0.115" />
+    <polygon class="scaffold-marker intersection-role" data-scaffold-index="24" data-role="intersection_positioner" points="4.36040322883,-5.33602809361 4.50040322883,-5.47602809361 4.36040322883,-5.61602809361 4.22040322883,-5.47602809361" />
+    <polygon class="scaffold-marker intersection-role" data-scaffold-index="25" data-role="intersection_positioner" points="5.47602809361,-4.22040322883 5.61602809361,-4.36040322883 5.47602809361,-4.50040322883 5.33602809361,-4.36040322883" />
+    <circle class="scaffold-marker moon-role" data-scaffold-index="26" data-role="moon_centre" cx="6.31346652053" cy="-3.02326652715" r="0.115" />
+    <rect class="scaffold-marker gap-role" data-scaffold-index="27" data-role="inter_moon_gap" x="6.71719730873" y="-1.67268105201" width="0.21" height="0.21" />
+  </g>
+  <g id="role-legend">
+    <circle class="moon-role" cx="48" cy="858" r="5" />
+    <text class="legend-text" x="60" y="862">12 Moon-centre points</text>
+    <rect class="gap-role" x="220" y="853" width="10" height="10" />
+    <text class="legend-text" x="238" y="862">8 inter-Moon gaps</text>
+    <polygon class="intersection-role" points="413,852 419,858 413,864 407,858" />
+    <text class="legend-text" x="428" y="862">8 intersection positioners</text>
+    <line class="displacement" x1="658" y1="858" x2="678" y2="858" />
+    <text class="legend-text" x="688" y="862">scaffold → NJG_INC</text>
+  </g>
+  <g id="information-panel" transform="translate(970 91)">
+    <text class="panel-heading" x="0" y="0">Septenary approximation</text>
+    <text class="metric-label" x="0" y="31">Michell step α</text>
+    <text class="metric-value" x="0" y="51">51.470701432440°</text>
+    <text class="metric-label" x="0" y="80">Exact 360°/7 step</text>
+    <text class="metric-value" x="0" y="100">51.428571428571°</text>
+    <text class="metric-label" x="0" y="129">Difference</text>
+    <text class="metric-value" x="0" y="149">+0.042130003869°</text>
+    <text class="metric-value" x="0" y="174">Relative error: 0.081919452%</text>
+    <line class="panel-rule" x1="0" y1="199" x2="402" y2="199" />
+    <text class="panel-heading" x="0" y="231">Moon-centre comparison</text>
+    <text class="metric-label" x="0" y="262">Scaffold β</text>
+    <text class="metric-value" x="0" y="282">25.587895702680°</text>
+    <text class="metric-label" x="0" y="311">NJG_INC β</text>
+    <text class="metric-value" x="0" y="331">25.911931045856°</text>
+    <text class="metric-label" x="0" y="360">Angular difference</text>
+    <text class="metric-value" x="0" y="380">-0.324035343176°</text>
+    <text class="metric-label" x="0" y="409">Maximum centre displacement</text>
+    <text class="metric-value" x="0" y="429">0.039588332660 u</text>
+    <text class="metric-label" x="0" y="458">Incidence residual</text>
+    <text class="metric-value" x="0" y="478">0.039354450727 u</text>
+    <line class="panel-rule" x1="0" y1="503" x2="402" y2="503" />
+    <text class="panel-heading" x="0" y="535">Figure 28 arithmetic</text>
+    <text class="metric-value" x="0" y="566">36 + 6.666667 + 1.333333 = 44</text>
+    <text class="note" x="0" y="590">12 Moon diameters + 4 large gaps</text>
+    <text class="note" x="0" y="609">+ 8 small gaps</text>
+  </g>
+  <g id="displacement-inset" data-magnification="40">
+    <rect class="inset-frame" x="970" y="710" width="402" height="90" rx="7" />
+    <text class="panel-heading" x="984" y="733">Oblique displacement inset</text>
+    <text class="note" x="984" y="753">One centre shift magnified 40×</text>
+    <line class="inset-vector" x1="1340" y1="785" x2="1311.02357645" y2="724.925424274" />
+    <circle class="inset-origin" cx="1340" cy="785" r="5" />
+    <circle class="inset-target" cx="1311.02357645" cy="724.925424274" r="5" />
+    <text class="note" x="984" y="783">blue = scaffold; black = NJG_INC</text>
+  </g>
+  <rect class="status-box" x="970" y="815" width="402" height="56" rx="7" />
+  <text class="note" x="983" y="838">Angular scaffold: approximate.</text>
+  <text class="note" x="983" y="858">Circumference arithmetic: exact under π = 22/7.</text>
+</svg>

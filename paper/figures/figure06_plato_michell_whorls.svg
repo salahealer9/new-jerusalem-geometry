@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1080" viewBox="0 0 1800 1080" data-upstream-audit-phase="10E" data-provenance-class="PROJECT_RECONSTRUCTION" data-free-parameters="0">
+<title>The Spindle of Necessity — Plato's Eight Whorls</title>
+<desc>Deterministic reconstruction from Plato's ordinal ranking and Michell's musical-number interpretation. Eight concentric whorls and a central shaft show the cumulative radial construction, with the first two New Jerusalem correspondences and the outer boundary highlighted. The provenance boundary distinguishes Plato's ordinal information, Michell's numerical interpretation, and the project's arithmetic reconstruction.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#17212b;}.title{font-size:34px;font-weight:700;}.subtitle{font-size:18px;fill:#5d6771;}.section{font-size:20px;font-weight:700;}.body{font-size:16px;}.small{font-size:14px;fill:#5d6771;}.tiny{font-size:12px;fill:#5d6771;}.table-head{font-size:14px;font-weight:700;fill:#5d6771;}.table-text{font-size:15px;}.ring-label{font-size:14px;font-weight:700;}.callout{font-size:15px;font-weight:700;}</style>
+<rect x="0" y="0" width="1800" height="1080" fill="#ffffff" />
+<text x="60.00" y="62.00" class="title">The Spindle of Necessity — Plato&#x27;s Eight Whorls</text>
+<text x="60.00" y="94.00" class="subtitle">Deterministic reconstruction from Plato&#x27;s ordinal ranking and Michell&#x27;s musical-number interpretation</text>
+<g id="whorl-geometry">
+<circle id="whorl-8" cx="470.00" cy="560.00" r="34.31" fill="none" stroke="#e8edf0" stroke-width="47.50" data-whorl="8" data-width="18" data-inner-radius="4" data-outer-radius="22" data-scaled-outer-radius="3960" />
+<circle id="whorl-7" cx="470.00" cy="560.00" r="73.89" fill="none" stroke="#dce5e9" stroke-width="31.67" data-whorl="7" data-width="12" data-inner-radius="22" data-outer-radius="34" data-scaled-outer-radius="6120" />
+<circle id="whorl-6" cx="470.00" cy="560.00" r="125.35" fill="none" stroke="#e9e5ef" stroke-width="71.25" data-whorl="6" data-width="27" data-inner-radius="34" data-outer-radius="61" data-scaled-outer-radius="10980" />
+<circle id="whorl-5" cx="470.00" cy="560.00" r="172.85" fill="none" stroke="#e7ebdf" stroke-width="23.75" data-whorl="5" data-width="9" data-inner-radius="61" data-outer-radius="70" data-scaled-outer-radius="12600" />
+<circle id="whorl-4" cx="470.00" cy="560.00" r="216.39" fill="none" stroke="#eee5dd" stroke-width="63.33" data-whorl="4" data-width="24" data-inner-radius="70" data-outer-radius="94" data-scaled-outer-radius="16920" />
+<circle id="whorl-3" cx="470.00" cy="560.00" r="258.61" fill="none" stroke="#dde9e4" stroke-width="21.11" data-whorl="3" data-width="8" data-inner-radius="94" data-outer-radius="102" data-scaled-outer-radius="18360" />
+<circle id="whorl-2" cx="470.00" cy="560.00" r="277.08" fill="none" stroke="#e8e2dc" stroke-width="15.83" data-whorl="2" data-width="6" data-inner-radius="102" data-outer-radius="108" data-scaled-outer-radius="19440" />
+<circle id="whorl-1" cx="470.00" cy="560.00" r="332.50" fill="none" stroke="#dfe3ea" stroke-width="95.00" data-whorl="1" data-width="36" data-inner-radius="108" data-outer-radius="144" data-scaled-outer-radius="25920" />
+<circle id="shaft" cx="470.00" cy="560.00" r="10.56" fill="#17212b" stroke="#17212b" stroke-width="1.00" data-radius="4" data-scaled-radius="720" />
+<g id="cumulative-boundaries">
+<circle id="boundary-1" cx="470.00" cy="560.00" r="58.06" fill="none" stroke="#aab3bb" stroke-width="1.20" data-cumulative-index="1" data-radius="22" data-scaled-radius="3960" />
+<circle id="boundary-2" cx="470.00" cy="560.00" r="89.72" fill="none" stroke="#aab3bb" stroke-width="1.20" data-cumulative-index="2" data-radius="34" data-scaled-radius="6120" />
+<circle id="boundary-3" cx="470.00" cy="560.00" r="160.97" fill="none" stroke="#aab3bb" stroke-width="1.20" data-cumulative-index="3" data-radius="61" data-scaled-radius="10980" />
+<circle id="boundary-4" cx="470.00" cy="560.00" r="184.72" fill="none" stroke="#aab3bb" stroke-width="1.20" data-cumulative-index="4" data-radius="70" data-scaled-radius="12600" />
+<circle id="boundary-5" cx="470.00" cy="560.00" r="248.06" fill="none" stroke="#aab3bb" stroke-width="1.20" data-cumulative-index="5" data-radius="94" data-scaled-radius="16920" />
+<circle id="boundary-6" cx="470.00" cy="560.00" r="269.17" fill="none" stroke="#aab3bb" stroke-width="1.20" data-cumulative-index="6" data-radius="102" data-scaled-radius="18360" />
+<circle id="boundary-7" cx="470.00" cy="560.00" r="285.00" fill="none" stroke="#aab3bb" stroke-width="1.20" data-cumulative-index="7" data-radius="108" data-scaled-radius="19440" />
+<circle id="boundary-8" cx="470.00" cy="560.00" r="380.00" fill="none" stroke="#aab3bb" stroke-width="1.20" data-cumulative-index="8" data-radius="144" data-scaled-radius="25920" />
+</g>
+<g id="key-correspondences">
+<circle id="first-cumulative-correspondence" cx="470.00" cy="560.00" r="58.06" fill="none" stroke="#b8860b" stroke-width="4.00" data-radius="22" data-scaled-radius="3960" data-label="Earth-radius / Magnesia correspondence" />
+<circle id="second-cumulative-correspondence" cx="470.00" cy="560.00" r="89.72" fill="none" stroke="#255c99" stroke-width="4.00" data-radius="34" data-scaled-radius="6120" data-label="New Jerusalem outer-circle correspondence" />
+<circle id="outer-boundary-correspondence" cx="470.00" cy="560.00" r="380.00" fill="none" stroke="#7a3f32" stroke-width="5.00" data-radius="144" data-scaled-radius="25920" data-label="Michell precessional correspondence" />
+</g>
+<text x="501.81" y="547.15" class="ring-label" text-anchor="middle">W8</text>
+<text x="537.50" y="590.05" class="ring-label" text-anchor="middle">W7</text>
+<text x="520.98" y="674.51" class="ring-label" text-anchor="middle">W6</text>
+<text x="416.59" y="724.39" class="ring-label" text-anchor="middle">W5</text>
+<text x="282.60" y="668.19" class="ring-label" text-anchor="middle">W4</text>
+<text x="217.04" y="506.23" class="ring-label" text-anchor="middle">W3</text>
+<text x="307.13" y="335.83" class="ring-label" text-anchor="middle">W2</text>
+<text x="504.76" y="229.32" class="ring-label" text-anchor="middle">W1</text>
+<text x="470.00" y="565.00" class="tiny" text-anchor="middle">4</text>
+</g>
+<text x="72.00" y="986.00" class="small">Exact radial geometry: shaft r=4; outer r=144; scale ×180</text>
+<rect x="900" y="135" width="830" height="845" rx="14" fill="#f1f3f4" stroke="#d2d7db" stroke-width="1.5" />
+<text x="930.00" y="178.00" class="section">Provenance boundary</text>
+<rect x="932" y="199" width="18" height="18" rx="3" fill="#72538a" />
+<text x="962.00" y="214.00" class="body">PLATO: ordinal rim-width order only</text>
+<rect x="932" y="229" width="18" height="18" rx="3" fill="#ad6b19" />
+<text x="962.00" y="244.00" class="body">MICHELL: musical numbers, shaft rule, and scale ×180</text>
+<rect x="932" y="259" width="18" height="18" rx="3" fill="#35636f" />
+<text x="962.00" y="274.00" class="body">PROJECT: exact cumulative reconstruction; 0 free parameters</text>
+<text x="930.00" y="325.00" class="section">Whorl construction</text>
+<text x="932.00" y="356.00" class="table-head">Layer</text>
+<text x="1030.00" y="356.00" class="table-head">Whorl</text>
+<text x="1130.00" y="356.00" class="table-head">Width</text>
+<text x="1280.00" y="356.00" class="table-head">Cum. radius</text>
+<text x="1455.00" y="356.00" class="table-head">×180</text>
+<line x1="930.00" y1="366.00" x2="1695.00" y2="366.00" stroke="#c2c8cd" stroke-width="1.00" />
+<rect x="924" y="373" width="780" height="31" rx="5" fill="#ffffff" opacity="0.92" />
+<text x="932.00" y="395.00" class="table-text">Shaft</text>
+<text x="1030.00" y="395.00" class="table-text">—</text>
+<text x="1130.00" y="395.00" class="table-text">—</text>
+<text x="1280.00" y="395.00" class="table-text">4</text>
+<text x="1455.00" y="395.00" class="table-text">720</text>
+<rect x="924" y="407" width="780" height="31" rx="5" fill="#f6edcf" opacity="0.92" />
+<text x="932.00" y="429.00" class="table-text">Whorl 8</text>
+<text x="1030.00" y="429.00" class="table-text">8</text>
+<text x="1130.00" y="429.00" class="table-text">18</text>
+<text x="1280.00" y="429.00" class="table-text">22</text>
+<text x="1455.00" y="429.00" class="table-text">3960</text>
+<rect x="924" y="441" width="780" height="31" rx="5" fill="#dfeaf7" opacity="0.92" />
+<text x="932.00" y="463.00" class="table-text">Whorl 7</text>
+<text x="1030.00" y="463.00" class="table-text">7</text>
+<text x="1130.00" y="463.00" class="table-text">12</text>
+<text x="1280.00" y="463.00" class="table-text">34</text>
+<text x="1455.00" y="463.00" class="table-text">6120</text>
+<rect x="924" y="475" width="780" height="31" rx="5" fill="#ffffff" opacity="0.92" />
+<text x="932.00" y="497.00" class="table-text">Whorl 6</text>
+<text x="1030.00" y="497.00" class="table-text">6</text>
+<text x="1130.00" y="497.00" class="table-text">27</text>
+<text x="1280.00" y="497.00" class="table-text">61</text>
+<text x="1455.00" y="497.00" class="table-text">10980</text>
+<rect x="924" y="509" width="780" height="31" rx="5" fill="#ffffff" opacity="0.92" />
+<text x="932.00" y="531.00" class="table-text">Whorl 5</text>
+<text x="1030.00" y="531.00" class="table-text">5</text>
+<text x="1130.00" y="531.00" class="table-text">9</text>
+<text x="1280.00" y="531.00" class="table-text">70</text>
+<text x="1455.00" y="531.00" class="table-text">12600</text>
+<rect x="924" y="543" width="780" height="31" rx="5" fill="#ffffff" opacity="0.92" />
+<text x="932.00" y="565.00" class="table-text">Whorl 4</text>
+<text x="1030.00" y="565.00" class="table-text">4</text>
+<text x="1130.00" y="565.00" class="table-text">24</text>
+<text x="1280.00" y="565.00" class="table-text">94</text>
+<text x="1455.00" y="565.00" class="table-text">16920</text>
+<rect x="924" y="577" width="780" height="31" rx="5" fill="#ffffff" opacity="0.92" />
+<text x="932.00" y="599.00" class="table-text">Whorl 3</text>
+<text x="1030.00" y="599.00" class="table-text">3</text>
+<text x="1130.00" y="599.00" class="table-text">8</text>
+<text x="1280.00" y="599.00" class="table-text">102</text>
+<text x="1455.00" y="599.00" class="table-text">18360</text>
+<rect x="924" y="611" width="780" height="31" rx="5" fill="#ffffff" opacity="0.92" />
+<text x="932.00" y="633.00" class="table-text">Whorl 2</text>
+<text x="1030.00" y="633.00" class="table-text">2</text>
+<text x="1130.00" y="633.00" class="table-text">6</text>
+<text x="1280.00" y="633.00" class="table-text">108</text>
+<text x="1455.00" y="633.00" class="table-text">19440</text>
+<rect x="924" y="645" width="780" height="31" rx="5" fill="#eee2dd" opacity="0.92" />
+<text x="932.00" y="667.00" class="table-text">Whorl 1</text>
+<text x="1030.00" y="667.00" class="table-text">1</text>
+<text x="1130.00" y="667.00" class="table-text">36</text>
+<text x="1280.00" y="667.00" class="table-text">144</text>
+<text x="1455.00" y="667.00" class="table-text">25920</text>
+<text x="930.00" y="726.00" class="section">Deterministic chain</text>
+<text x="930.00" y="758.00" class="body">Michell musical sequence: 6, 8, 9, 12, 18, 24, 27, 36</text>
+<text x="930.00" y="788.00" class="body">Plato = Michell width order: 1, 6, 4, 8, 7, 5, 3, 2</text>
+<text x="930.00" y="818.00" class="body">Centre-out widths: 18, 12, 27, 9, 24, 8, 6, 36</text>
+<text x="930.00" y="848.00" class="body">Cumulative radii: 4, 22, 34, 61, 70, 94, 102, 108, 144</text>
+<text x="930.00" y="891.00" class="section">Key highlighted boundaries</text>
+<circle cx="942" cy="915" r="6" fill="#b8860b" />
+<text x="958.00" y="920.00" class="callout">Earth-radius / Magnesia correspondence: r=22 → 3960</text>
+<circle cx="942" cy="942" r="6" fill="#255c99" />
+<text x="958.00" y="947.00" class="callout">New Jerusalem outer-circle correspondence: r=34 → 6120</text>
+<circle cx="942" cy="969" r="6" fill="#7a3f32" />
+<text x="958.00" y="974.00" class="callout">Michell precessional correspondence: r=144 → 25920</text>
+<text x="60.00" y="1010.00" class="tiny">Exact arithmetic reproduction validates the internal numerical chain of Michell&#x27;s printed construction.</text>
+<text x="60.00" y="1028.00" class="tiny">It does not establish that Plato intended Michell&#x27;s numerical assignment.</text>
+<metadata id="phase-10g-metadata"><upstream-audit-phase>10E</upstream-audit-phase><upstream-status>MICHELL_PLATO_NUMERICAL_RECONSTRUCTION_COMPLETE</upstream-status><provenance-class>PROJECT_RECONSTRUCTION</provenance-class><scale-factor>180</scale-factor><plato-width-order>1,6,4,8,7,5,3,2</plato-width-order><michell-width-order>1,6,4,8,7,5,3,2</michell-width-order><free-parameters>0</free-parameters></metadata>
+</svg>
