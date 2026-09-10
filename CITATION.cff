@@ -4,6 +4,13 @@ title: "New Jerusalem Geometry"
 type: software
 version: "1.0.0"
 date-released: "2026-09-10"
+identifiers:
+  - description: "Concept DOI for all versions of New Jerusalem Geometry."
+    type: doi
+    value: "10.5281/zenodo.22686968"
+  - description: "Version DOI for New Jerusalem Geometry v1.0.0."
+    type: doi
+    value: "10.5281/zenodo.22686969"
 authors:
   - family-names: "Gherbi"
     given-names: "Salah-Eddin"

@@ -483,8 +483,23 @@ Citation metadata is provided in:
 CITATION.cff
 ```
 
-The archival DOI will be propagated to the citation surfaces after the public
-v1.0.0 archival release is created.
+The frozen `v1.0.0` software release is archived on Zenodo.
+
+```text
+Version DOI:  10.5281/zenodo.22686969
+Concept DOI:  10.5281/zenodo.22686968
+Record:       https://zenodo.org/records/22686969
+```
+
+For reproducibility, cite the version-specific DOI `10.5281/zenodo.22686969`.
+The concept DOI `10.5281/zenodo.22686968` resolves the collection of all versions.
+
+Preferred software citation:
+
+```text
+Gherbi, Salah-Eddin (2026). New Jerusalem Geometry, v1.0.0.
+DOI: 10.5281/zenodo.22686969
+```
 
 ## Author
 
