@@ -222,3 +222,27 @@ Current package state while this manuscript layer is being prepared:
 
 The final software/archive reference is deliberately omitted from
 `references.bib` until the controlled `v1.0.0` release and Zenodo DOI exist.
+
+## Post-freeze Sommerville archival search
+
+A targeted reproduction request to Thompson Library Special Collections,
+The Ohio State University, covered the William S. Burroughs Papers
+(`SPEC.RARE.0087`), box 30, folders 253--254.
+
+The supplied research-use-only files were:
+
+- `SPEC-RARE-CMS-0087-b30-f253.pdf` — 12 PDF pages —
+  SHA-256 `56450ebbae8706125898df2816f57969c4d31d8f4727449b834655946dacdf61`
+- `SPEC-RARE-CMS-0087-b30-f254.pdf` — 38 PDF pages —
+  SHA-256 `2df9a4d351ce3cc1c5ecce087b92e28f0da1f60cf00fd65c78f72164401497a0`
+
+The supplied folders contain no direct witness to the reported 1974
+Sommerville geometric work and no project-relevant dodecagon derivation.
+The primary item therefore remains `ARCHIVAL_PENDING`.
+
+The archive originally quoted 58 scans/pages, whereas the two supplied PDFs
+contain 50 PDF pages.  Clarification was requested on 2026-09-02 and remained
+unconfirmed at this checkpoint.  This is recorded as a scan-count/PDF-page
+discrepancy, not as proof that eight pages are missing.
+
+The scans themselves are not redistributed.
