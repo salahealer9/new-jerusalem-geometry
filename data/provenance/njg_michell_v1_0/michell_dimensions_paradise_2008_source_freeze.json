@@ -1,0 +1,115 @@
+{
+  "audit_phase": "10B2",
+  "bibliographic_identity": {
+    "author": "John Michell",
+    "copyright_years_shown": [
+      1971,
+      1988,
+      2008
+    ],
+    "edition": "Second U.S. edition",
+    "edition_history_shown": [
+      "Originally published in the United Kingdom in 1971 by Garnstone Press under the title City of Revelation",
+      "Revised and expanded edition published in the United Kingdom in 1988 by Thames and Hudson under the title The Dimensions of Paradise",
+      "First U.S. edition published in 1988 by Harper & Row",
+      "Second U.S. edition published in 2008 by Inner Traditions"
+    ],
+    "isbn_13": "978-1-59477-773-8",
+    "publication_year": 2008,
+    "publisher": "Inner Traditions",
+    "subtitle": "Sacred Geometry, Ancient Science, and the Heavenly Order on Earth",
+    "title": "The Dimensions of Paradise"
+  },
+  "chapter_archive": {
+    "filename": "the_dimensions_of_paradise_v2008_chapter_4_plato.zip",
+    "member_count": 79,
+    "sha256": "d0f722a81df4f91165ed529460c4e5f7c00682e75feb16f20cb85915c2d6bb92"
+  },
+  "chapter_scope": {
+    "chapter_number": 4,
+    "chapter_screenshot_count": 79,
+    "chapter_title": "The Cities of Plato",
+    "ebook_page_range": "121-193 of 248",
+    "frontmatter_screenshot_count": 9,
+    "total_screenshot_count": 88
+  },
+  "claim_boundary": {
+    "allowed": [
+      "SOURCE_IDENTITY",
+      "SOURCE_PROVENANCE",
+      "SOURCE_SCOPE"
+    ],
+    "deferred": [
+      "MICHELL_LITERAL_EXTRACTION",
+      "PROJECT_RECONSTRUCTION",
+      "PLATO_TO_MICHELL_SYNTHESIS"
+    ],
+    "note": "Phase 10B2 freezes the Michell witness. Claims about what Michell states are extracted only in a later additive phase."
+  },
+  "frontmatter": [
+    {
+      "filename": "Screenshot 2026-08-12 12.21.12.png",
+      "role": "cover",
+      "sha256": "4810b401ea0aefe7b551a73df3c2dba869cbe1e9f05e88eeba5746a415488852",
+      "size_bytes": 730583
+    },
+    {
+      "filename": "Screenshot 2026-08-12 12.21.19.png",
+      "role": "title_page",
+      "sha256": "5fd23ab4caf292d447da344a520f112b14e3666fa5378706996518fd1d00b984",
+      "size_bytes": 66368
+    },
+    {
+      "filename": "Screenshot 2026-08-12 12.21.24.png",
+      "role": "publisher_imprint",
+      "sha256": "57ee813288b60ea5ccf7745e24e9a1c612c147ba2cb87784d82052eb519e7b9d",
+      "size_bytes": 45963
+    },
+    {
+      "filename": "Screenshot 2026-08-12 12.21.31.png",
+      "role": "contents_1",
+      "sha256": "37eecb4e75358345ea2db092efb39315b0b1de56c9155eed4f4cfc5529e2d918",
+      "size_bytes": 102793
+    },
+    {
+      "filename": "Screenshot 2026-08-12 12.21.36.png",
+      "role": "contents_2_chapter_4",
+      "sha256": "c4ea59f13c9a28501029e721eeccac66a6b88b944c60d71f36cb575b36ed3cf0",
+      "size_bytes": 124561
+    },
+    {
+      "filename": "Screenshot 2026-08-12 12.21.41.png",
+      "role": "contents_3",
+      "sha256": "1efcda60a02c06cf5046c50a454b2279e66bcb9d4b30180f1a79695c30e543cb",
+      "size_bytes": 130873
+    },
+    {
+      "filename": "Screenshot 2026-08-12 12.21.50.png",
+      "role": "copyright_and_cip",
+      "sha256": "669623adfc95e1dccb7319186e8b31081729e3c6d732ad4283951c7d3342f6a8",
+      "size_bytes": 174824
+    },
+    {
+      "filename": "Screenshot 2026-08-12 12.22.16.png",
+      "role": "about_publisher",
+      "sha256": "95aabe8a197167a5cd7ee11060d50b49a945ba70b4c86ad845abe2c521cf8aa0",
+      "size_bytes": 207149
+    },
+    {
+      "filename": "Screenshot 2026-08-12 12.22.23.png",
+      "role": "about_author",
+      "sha256": "c58009baec176b53bf5700a37f0cd3d0276d03fa3084cc9702705c2866202642",
+      "size_bytes": 86992
+    }
+  ],
+  "provenance_class": "MICHELL_EXPLICIT",
+  "source_id": "MICHELL_DIMENSIONS_OF_PARADISE",
+  "source_storage": {
+    "bundle_manifest_sha256": "ed60002c9afd98db27e615198c1429dea6f70d6b2cc7d02377d032f779d9746c",
+    "bundle_sha256": "f662aa6221a4ceb232025569fc501ca6613ebbdc6b44394d6631eec7e5a7137d",
+    "local_reference": ".local_sources/v1_0/michell_dimensions_paradise_2008_v1_source_bundle.zip",
+    "reason": "Purchased copyrighted ebook screenshots are kept outside Git; the repository stores cryptographic provenance and verification logic.",
+    "repository_contains_source_bytes": false
+  },
+  "status": "MICHELL_2008_CHAPTER4_SOURCE_WITNESS_FROZEN"
+}

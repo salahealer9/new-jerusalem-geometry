@@ -1,0 +1,15 @@
+New Jerusalem Geometry — paper PDF export environment
+
+Python: 3.11.2
+Platform: Linux-6.6.119-09283-g9c138e0af8c3-x86_64-with-glibc2.36
+CairoSVG: 2.9.0
+Cairo: 1.16.0
+
+Font resolution:
+sans-serif: Noto Sans|Regular|/usr/share/fonts/chromeos/noto/NotoSans-Regular.ttf
+system-ui: Noto Sans|Regular|/usr/share/fonts/chromeos/noto/NotoSans-Regular.ttf
+Arial: Arimo|Regular|/usr/share/fonts/truetype/croscore/Arimo-Regular.ttf
+Helvetica: Nimbus Sans|Regular|/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf
+
+All six repeated PDF renders were byte-identical.
+Scientific content changed: false

@@ -10,8 +10,8 @@ import new_jerusalem_geometry as njg
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def test_v090_version_metadata_is_consistent() -> None:
-    expected = "0.9.0"
+def test_v100_version_metadata_is_consistent() -> None:
+    expected = "1.0.0"
 
     assert njg.__version__ == expected
 
@@ -46,10 +46,10 @@ def test_v090_version_metadata_is_consistent() -> None:
     assert match is not None
     assert match.group(1) == expected
 
-    assert (
-        'date-released: "2026-08-10"'
-        in citation
-    )
+    # The v0.9 release date must not survive the v1.0 metadata bump.
+    # The actual v1.0 date is inserted only in the final signed release
+    # commit on main, immediately before the signed v1.0.0 tag.
+    assert 'date-released: "2026-08-10"' not in citation
 
 
 def test_v040_checkpoint_records_frozen_validation_boundary() -> None:

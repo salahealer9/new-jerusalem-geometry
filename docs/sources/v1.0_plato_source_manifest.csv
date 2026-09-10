@@ -1,0 +1,8 @@
+source_id,source_role,required_for_v1,current_status,allowed_claim_scope,notes
+PLATO_REPUBLIC_MYTH_OF_ER,primary_text,yes,pending_freeze,DIRECT_PLATO_TEXT,"Exact edition/witness must be frozen before textual claims."
+MICHELL_DIMENSIONS_OF_PARADISE,primary_michell,yes,pending_freeze,MICHELL_EXPLICIT,"Required for Michell's Plato/whorl numerical construction."
+MICHELL_CITY_OF_REVELATION,primary_michell_supporting,no,existing_project_source,MICHELL_EXPLICIT,"Supporting New Jerusalem cross-check only."
+MICHELL_HOW_THE_WORLD_IS_MADE,primary_michell_supporting,no,existing_project_source,MICHELL_EXPLICIT,"Supporting construction context only."
+ROBERTS_GLASTONBURY_ADDENDUM_166,contextual_primary,no,existing_contextual_source,SUPPORTING_HISTORICAL_CONTEXT,"Context only; not proof of Plato's numerical content."
+SOMMERVILLE_1974_NOTE,archival_lead,no,archival_pending,ARCHIVAL_PENDING,"Non-gating archival thread until primary material is obtained and frozen."
+USER_INTERPRETIVE_FRAMEWORK,interpretive,no,deferred,INTERPRETIVE_EXCLUDED,"Excluded from the v1.0 historical evidential layer."

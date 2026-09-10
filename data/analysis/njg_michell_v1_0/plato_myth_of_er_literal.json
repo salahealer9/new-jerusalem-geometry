@@ -1,0 +1,112 @@
+{
+  "audit_phase": "10C",
+  "interpretive_boundary": {
+    "historical_transmission_claim_made": false,
+    "michell_material_used": false,
+    "note": "Phase 10C records only literal content of Republic 10, Stephanus 616d-617b from the frozen Plato witnesses.",
+    "project_reconstruction_used": false
+  },
+  "literal_findings": {
+    "acoustic_structure": {
+      "combined_result": "single harmony",
+      "one_tone_each": true,
+      "siren_count_implied_by_rims": 8,
+      "siren_on_each_rim": true
+    },
+    "appearance": {
+      "whorl_1": "spangled",
+      "whorl_3": "whitest",
+      "whorl_4": "slightly ruddy",
+      "whorl_6": "second in whiteness",
+      "whorl_7": "brightest",
+      "whorl_8": "takes its color from whorl 7",
+      "whorls_2_and_5": "similar to one another and more yellow than the two previously described"
+    },
+    "motion": {
+      "inner_circle_count": 7,
+      "inner_circles_relative_direction": "opposite to the whole",
+      "speed_groups_fastest_to_slowest": [
+        [
+          8
+        ],
+        [
+          7,
+          6,
+          5
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "speed_order_is_separate_from_width_order": true,
+      "whole_spindle": "turns as a whole with one movement"
+    },
+    "rim_widths": {
+      "numerical_magnitudes_or_ratios_stated": false,
+      "order_broadest_to_narrowest_by_whorl_number": [
+        1,
+        6,
+        4,
+        8,
+        7,
+        5,
+        3,
+        2
+      ],
+      "statement_type": "ordinal ranking only"
+    },
+    "whorl_structure": {
+      "first_whorl_explicitly_outermost": true,
+      "nested_within_one_another": true,
+      "shaft_passes_through_middle_of_eighth": true,
+      "total_whorls": 8
+    }
+  },
+  "negative_findings": {
+    "central_shaft_radius_value": false,
+    "explicit_numeric_rim_width_ratios": false,
+    "explicit_numeric_rim_width_values": false,
+    "michell_musical_width_sequence": false,
+    "new_jerusalem_dimensional_correspondence": false,
+    "scale_factor_180": false
+  },
+  "provenance_class": "DIRECT_PLATO_TEXT",
+  "source_boundary": {
+    "english_sha256": "36826064d30be3b40d20b820f4904ed170d375e41dd3f450cbe4eb733054766d",
+    "greek_sha256": "da2bfcf943497bb147fc49ae4b47bf0919e1db790bcf7de830dc259e76379d4f",
+    "normalized_section_sha256": {
+      "616d": {
+        "english_normalized_sha256": "7d28c794f7facf18448c33a5c9c61abfbfc606c5566dab82a2215ade7c31686b",
+        "greek_normalized_sha256": "cd2f08a891368c4734dd927df6eb703f8710b06db2e541c84f2ecbb7233643ef"
+      },
+      "616e": {
+        "english_normalized_sha256": "216c7110851c1bcdeda55538a82d0c901d7df80b0a7d79945e0e24468d1e8a3a",
+        "greek_normalized_sha256": "dd3ef29e55182e1798938c2ac37e12de88e17044242e01651ea0b4d513e0e84a"
+      },
+      "617a": {
+        "english_normalized_sha256": "8468d82da5a81578ec03300fffeecfba498a8943844e6ea0c4f5ff74bd8e24c3",
+        "greek_normalized_sha256": "118c5b05eab4d9a9e600b95df10c9f347ba937fabe14a69f9e9302b8869f2759"
+      },
+      "617b": {
+        "english_normalized_sha256": "398a45f3b81422f7ef005042e54e3507b8059d0ae73ae206bbb4d4aacb4d11ec",
+        "greek_normalized_sha256": "c0c2a0af077f2b7a5b1f5f3a960ae30276059c3c1e7cfee3189a156a988934b1"
+      }
+    },
+    "notes_excluded_from_section_text": true,
+    "stephanus_sections": [
+      "616d",
+      "616e",
+      "617a",
+      "617b"
+    ],
+    "upstream_commit": "790c84289edbdbe289dd7b752bfea29f0af4299d",
+    "work_urn": "urn:cts:greekLit:tlg0059.tlg030"
+  },
+  "status": "PLATO_MYTH_OF_ER_LITERAL_EXTRACTION_COMPLETE"
+}

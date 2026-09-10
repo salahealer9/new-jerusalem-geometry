@@ -1,0 +1,49 @@
+{
+  "collection": {
+    "collection_identifier": "SPEC.RARE.0087",
+    "collection_name": "William S. Burroughs Papers",
+    "repository": "Thompson Library Special Collections, The Ohio State University",
+    "requested_location": "box 30, folders 253-254"
+  },
+  "contextual_evidence": {
+    "interpretive_limit": "The supplied-folder negative result therefore cannot establish that the reported primary item never existed.",
+    "relevant": true,
+    "summary": "Posthumous 1978 correspondence from Edith Sommerville records that Ian Sommerville's papers/property had been tampered with and that material was missing; it also records that John Michell had been contacted about material belonging to Ian."
+  },
+  "delivery": {
+    "completeness_clarification_requested_date": "2026-09-02",
+    "completeness_confirmation_received": false,
+    "files_finalized_and_link_supplied_date": "2026-09-02",
+    "interpretation": "The difference is recorded as an unresolved scan-count versus PDF-page-count issue; it is not classified as eight missing pages.",
+    "page_count_difference": 8,
+    "quoted_scan_count": 58,
+    "supplied_pdf_page_count": 50
+  },
+  "release_interpretation": "The targeted archival branch is complete for the materials supplied. No direct witness was recovered.  The scientific and mathematical results are unchanged, and ARCHIVAL_PENDING is retained.",
+  "research_target": "Direct primary witness to the Ian Sommerville geometric work reported by John Michell and associated in the project with a 1974 source.",
+  "review_outcome": {
+    "classification": "BOUNDED_NEGATIVE_ARCHIVAL_EVIDENCE",
+    "direct_1974_geometric_witness_found": false,
+    "dodecagon_derivation_found": false,
+    "primary_source_status_after_review": "ARCHIVAL_PENDING",
+    "project_relevant_numeric_source_found": false
+  },
+  "scientific_content_reopened": false,
+  "status": "V1_0_SOMMERVILLE_ARCHIVAL_SEARCH_SUPPLIED_MATERIALS_REVIEWED",
+  "supplied_files": [
+    {
+      "access_boundary": "research-use-only archival reproduction",
+      "filename": "SPEC-RARE-CMS-0087-b30-f253.pdf",
+      "pdf_pages": 12,
+      "redistribution": "NO",
+      "sha256": "56450ebbae8706125898df2816f57969c4d31d8f4727449b834655946dacdf61"
+    },
+    {
+      "access_boundary": "research-use-only archival reproduction",
+      "filename": "SPEC-RARE-CMS-0087-b30-f254.pdf",
+      "pdf_pages": 38,
+      "redistribution": "NO",
+      "sha256": "2df9a4d351ce3cc1c5ecce087b92e28f0da1f60cf00fd65c78f72164401497a0"
+    }
+  ]
+}

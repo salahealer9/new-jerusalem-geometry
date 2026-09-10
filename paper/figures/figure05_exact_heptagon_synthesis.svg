@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="820" viewBox="0 0 1480 820">
+<rect id="paper-background" x="0" y="0" width="1480" height="820" fill="#ffffff" />
+<title>Exact-heptagon synthesis</title>
+<desc>Fixed-orientation comparison of the Phase 9D exact heptagon with the frozen Method-1 scaffold and affine-calibrated Figure 14 endpoints, with the one-trisection anchor geometry.</desc>
+<style>
+text { font-family: sans-serif; fill: #111; }
+.title { font-size: 24px; font-weight: 700; }
+.subtitle { font-size: 15px; font-weight: 600; }
+.label { font-size: 12px; }
+.small { font-size: 10px; }
+.legend-exact { fill: #111111; font-weight: 600; }
+.legend-scaffold { fill: #0072B2; font-weight: 600; }
+.legend-plate { fill: #D55E00; font-weight: 600; }
+.context { fill: none; stroke: #999; stroke-width: 1.1; }
+.wall { fill: none; stroke: #aaa; stroke-width: 1.4; }
+.exact { fill: none; stroke: #111111; stroke-width: 1.35; }
+.scaffold { fill: none; stroke: #0072B2; stroke-width: 2.2; stroke-dasharray: 12 7; }
+.plate { fill: none; stroke: #D55E00; stroke-width: 2.4; stroke-dasharray: 1 6; stroke-linecap: round; }
+.exact-point { fill: #fff; stroke: #111111; stroke-width: 1.8; }
+.scaffold-point { fill: #0072B2; stroke: #fff; stroke-width: 0.8; }
+.plate-point { fill: #fff; stroke: #D55E00; stroke-width: 1.8; }
+.moon-centre { fill: #999; stroke: none; }
+.junction { fill: #fff; stroke: #999; stroke-width: 1.2; }
+.anchor { fill: none; stroke: #111; stroke-width: 2; }
+.ray { fill: none; stroke: #666; stroke-width: 1.3; stroke-dasharray: 5 4; }
+</style>
+<text class="title" x="40" y="42">Exact-heptagon comparison and one-trisection synthesis</text>
+<text class="subtitle" x="40" y="70">Fixed north orientation; no rotational fitting or endpoint reassignment</text>
+<text class="subtitle" x="420" y="88" text-anchor="middle">Exact sevenfold within the New Jerusalem architecture</text>
+<polyline class="wall" points="734.500000,335.729979 649.002895,190.997105 504.270021,105.500000 335.729979,105.500000 190.997105,190.997105 105.500000,335.729979 105.500000,504.270021 190.997105,649.002895 335.729979,734.500000 504.270021,734.500000 649.002895,649.002895 734.500000,504.270021 734.500000,335.729979" />
+<circle class="context" cx="420.000000" cy="420.000000" r="259.000000" />
+<rect class="context" x="216.500000" y="216.500000" width="407.000000" height="407.000000" />
+<circle class="moon-centre" cx="679.000000" cy="420.000000" r="2.7" />
+<circle class="moon-centre" cx="652.961902" cy="306.819823" r="2.7" />
+<circle class="moon-centre" cx="533.180177" cy="187.038098" r="2.7" />
+<circle class="moon-centre" cx="420.000000" cy="161.000000" r="2.7" />
+<circle class="moon-centre" cx="306.819823" cy="187.038098" r="2.7" />
+<circle class="moon-centre" cx="187.038098" cy="306.819823" r="2.7" />
+<circle class="moon-centre" cx="161.000000" cy="420.000000" r="2.7" />
+<circle class="moon-centre" cx="187.038098" cy="533.180177" r="2.7" />
+<circle class="moon-centre" cx="306.819823" cy="652.961902" r="2.7" />
+<circle class="moon-centre" cx="420.000000" cy="679.000000" r="2.7" />
+<circle class="moon-centre" cx="533.180177" cy="652.961902" r="2.7" />
+<circle class="moon-centre" cx="652.961902" cy="533.180177" r="2.7" />
+<rect class="junction" x="620.500000" y="256.785300" width="6" height="6" />
+<rect class="junction" x="577.214700" y="213.500000" width="6" height="6" />
+<rect class="junction" x="256.785300" y="213.500000" width="6" height="6" />
+<rect class="junction" x="213.500000" y="256.785300" width="6" height="6" />
+<rect class="junction" x="213.500000" y="577.214700" width="6" height="6" />
+<rect class="junction" x="256.785300" y="620.500000" width="6" height="6" />
+<rect class="junction" x="577.214700" y="620.500000" width="6" height="6" />
+<rect class="junction" x="620.500000" y="577.214700" width="6" height="6" />
+<polyline class="exact" points="420.000000,161.000000 167.493671,477.632922 532.375888,653.350937 622.494354,258.516141 217.505646,258.516141 307.624112,653.350937 672.506329,477.632922 420.000000,161.000000" />
+<polyline class="scaffold" points="420.000000,161.000000 167.578700,478.004199 531.860862,653.598261 622.613039,258.665081 217.386961,258.665081 308.139138,653.598261 672.421300,478.004199 420.000000,161.000000" />
+<polyline class="plate" points="419.467225,161.276885 167.457079,479.825192 532.858825,653.415448 623.024764,258.105178 217.208427,258.730399 307.940477,654.926439 672.960085,476.629551 419.467225,161.276885" />
+<circle class="exact-point" cx="420.000000" cy="161.000000" r="5" />
+<circle class="scaffold-point" cx="420.000000" cy="161.000000" r="3.2" />
+<circle class="plate-point" cx="419.467225" cy="161.276885" r="3.8" />
+<text class="small" x="427.000000" y="154.000000">0</text>
+<circle class="exact-point" cx="217.505646" cy="258.516141" r="5" />
+<circle class="scaffold-point" cx="217.386961" cy="258.665081" r="3.2" />
+<circle class="plate-point" cx="217.208427" cy="258.730399" r="3.8" />
+<text class="small" x="224.505646" y="251.516141">1</text>
+<circle class="exact-point" cx="167.493671" cy="477.632922" r="5" />
+<circle class="scaffold-point" cx="167.578700" cy="478.004199" r="3.2" />
+<circle class="plate-point" cx="167.457079" cy="479.825192" r="3.8" />
+<text class="small" x="174.493671" y="470.632922">2</text>
+<circle class="exact-point" cx="307.624112" cy="653.350937" r="5" />
+<circle class="scaffold-point" cx="308.139138" cy="653.598261" r="3.2" />
+<circle class="plate-point" cx="307.940477" cy="654.926439" r="3.8" />
+<text class="small" x="314.624112" y="646.350937">3</text>
+<circle class="exact-point" cx="532.375888" cy="653.350937" r="5" />
+<circle class="scaffold-point" cx="531.860862" cy="653.598261" r="3.2" />
+<circle class="plate-point" cx="532.858825" cy="653.415448" r="3.8" />
+<text class="small" x="539.375888" y="646.350937">4</text>
+<circle class="exact-point" cx="672.506329" cy="477.632922" r="5" />
+<circle class="scaffold-point" cx="672.421300" cy="478.004199" r="3.2" />
+<circle class="plate-point" cx="672.960085" cy="476.629551" r="3.8" />
+<text class="small" x="679.506329" y="470.632922">5</text>
+<circle class="exact-point" cx="622.494354" cy="258.516141" r="5" />
+<circle class="scaffold-point" cx="622.613039" cy="258.665081" r="3.2" />
+<circle class="plate-point" cx="623.024764" cy="258.105178" r="3.8" />
+<text class="small" x="629.494354" y="251.516141">6</text>
+<text class="small legend-exact" x="105" y="748">solid: exact {7/2}</text>
+<text class="small legend-scaffold" x="275" y="748">dashed: Method-1 scaffold {7/2}</text>
+<text class="small legend-plate" x="510" y="748">dotted: affine Figure 14 plate endpoints</text>
+<text class="small" x="105" y="766">outer wall / Moon centres / square-circle junctions: context only</text>
+<text class="subtitle" x="900" y="105">Native anchor and the single cubic-capable operation</text>
+<line class="anchor" x1="1000.000000" y1="555.000000" x2="1062.000000" y2="555.000000" />
+<line class="anchor" x1="1062.000000" y1="555.000000" x2="1062.000000" y2="232.838550" />
+<line class="anchor" x1="1000.000000" y1="555.000000" x2="1062.000000" y2="232.838550" />
+<text class="label" x="1031.000000" y="577.000000">u = 7 - 2×3 = 1</text>
+<text class="label" x="1072.000000" y="393.919275">v = 3√3</text>
+<text class="label" x="936.000000" y="385.919275">H = 2√7</text>
+<line class="ray" x1="1000.000000" y1="555.000000" x2="1138.872749" y2="486.156993" />
+<text class="small" x="1143.872749" y="486.156993">φ</text>
+<line class="ray" x1="1000.000000" y1="555.000000" x2="1093.846973" y2="431.639773" />
+<text class="small" x="1098.846973" y="431.639773">2φ</text>
+<line class="anchor" x1="1000.000000" y1="555.000000" x2="1029.292247" y2="402.793022" />
+<text class="small" x="1034.292247" y="402.793022">Θ=3φ</text>
+<text class="label" x="900" y="615">Exactly one operation: TRISECT_ANGLE(Θ) → φ</text>
+<text class="label" x="900" y="640">z = (2√7/3) cos φ;   y = z − 1/3</text>
+<text class="label" x="900" y="663">y³ + y² − 2y − 1 = 0</text>
+<text class="label" x="900" y="686">unique root 1&lt;y&lt;2 → y = 2 cos(2π/7)</text>
+<text class="small" x="900" y="725">Method-1 angular RMS vs exact: 0.084260°</text>
+<text class="small" x="900" y="744">Figure 14 plate angular RMS vs exact: 0.224059°</text>
+<text class="small" x="900" y="763">Source consistency only; no refit and not independent validation.</text>
+</svg>

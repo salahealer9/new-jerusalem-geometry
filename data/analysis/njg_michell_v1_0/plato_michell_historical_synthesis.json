@@ -1,0 +1,91 @@
+{
+  "audit_phase": "10F",
+  "claim_count": 13,
+  "comparative_findings": {
+    "michell_numeric_sequence_is_direct_plato_text": false,
+    "numerical_magnitudes_added_in_michell_layer": true,
+    "numerical_reproducibility_implies_historical_transmission": false,
+    "ordinal_continuity_plato_to_michell": true,
+    "project_arithmetic_requires_fit": false
+  },
+  "established": {
+    "michell": {
+      "center_out_widths": [
+        18,
+        12,
+        27,
+        9,
+        24,
+        8,
+        6,
+        36
+      ],
+      "musical_number_sequence": [
+        6,
+        8,
+        9,
+        12,
+        18,
+        24,
+        27,
+        36
+      ],
+      "same_ordinal_width_order": true,
+      "scale_factor": 180,
+      "shaft_radius": 4
+    },
+    "plato": {
+      "numeric_width_values_stated": false,
+      "total_whorls": 8,
+      "width_order_broadest_to_narrowest": [
+        1,
+        6,
+        4,
+        8,
+        7,
+        5,
+        3,
+        2
+      ]
+    },
+    "project_reconstruction": {
+      "all_printed_values_reproduced_exactly": true,
+      "free_parameters": 0,
+      "permutation_searches": 0,
+      "scaled_cumulative_radii": [
+        720,
+        3960,
+        6120,
+        10980,
+        12600,
+        16920,
+        18360,
+        19440,
+        25920
+      ]
+    }
+  },
+  "frozen_inputs": {
+    "manifest": "a1a2e4f62126d11853372ae26949393d55f7bec75e37a0f640179dfdf7553d79",
+    "michell_literal": "ef6e17b7d9de47157025a2bf3aa9812d79859a5cc3b7bbe44185a67bacc99807",
+    "plato_literal": "42edbe735c6d91bc180198702f411889e05ea503989c24b0d44a134362a63f3c",
+    "protocol": "5890ff8aca969eff96a227be1a2be9ad2ac420c64b6b9739404f34750127bed5",
+    "reconstruction": "9a17ad61347c6f1892adeed5b510c39949d7412b61100095ab07f25036f20217"
+  },
+  "historical_boundary": {
+    "ancient_transmission_established": false,
+    "interpretive_framework_status": "deferred",
+    "michell_internal_arithmetic_reproduced": true,
+    "michell_numerical_interpretation_documented": true,
+    "plato_numeric_intention_established": false,
+    "sommerville_archival_status": "archival_pending"
+  },
+  "provenance_layers": {
+    "later_interpretation": "INTERPRETIVE_EXCLUDED",
+    "michell": "MICHELL_EXPLICIT",
+    "plato": "DIRECT_PLATO_TEXT",
+    "reconstruction": "PROJECT_RECONSTRUCTION",
+    "sommerville": "ARCHIVAL_PENDING"
+  },
+  "status": "PLATO_MICHELL_HISTORICAL_SYNTHESIS_COMPLETE"
+}

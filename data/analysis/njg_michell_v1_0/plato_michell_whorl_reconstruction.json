@@ -1,0 +1,181 @@
+{
+  "audit_phase": "10E",
+  "deterministic_algorithm": {
+    "free_parameters": 0,
+    "nearest_match_choices": 0,
+    "optimizations": 0,
+    "permutation_searches": 0,
+    "scale_fits": 0,
+    "step_1": "Verify Plato's ordinal rim-width order equals Michell's printed whorl table.",
+    "step_2": "Sort Michell's eight distinct musical numbers from largest to smallest and assign them in the broadest-to-narrowest whorl order.",
+    "step_3": "Read the resulting whorl widths in Michell's printed center-out whorl order 8,7,6,5,4,3,2,1.",
+    "step_4": "Compute the shaft radius exactly as 6 multiplied by 2/3.",
+    "step_5": "Form cumulative radii by exact integer addition from the shaft outward.",
+    "step_6": "Multiply the shaft radius, ring widths, and cumulative radii by Michell's printed scale factor 180."
+  },
+  "exact_validation_against_michell_printed_values": {
+    "center_out_ring_widths_reproduced": true,
+    "full_radius_reproduced": true,
+    "musical_interval_ratios_reproduced": true,
+    "plato_order_equals_michell_table": true,
+    "scaled_outer_radius_reproduced": true,
+    "scaled_ring_widths_reproduced": true,
+    "scaled_shaft_radius_reproduced": true,
+    "scaled_total_whorl_width_reproduced": true,
+    "shaft_radius_reproduced": true
+  },
+  "frozen_inputs": {
+    "michell_literal_sha256": "ef6e17b7d9de47157025a2bf3aa9812d79859a5cc3b7bbe44185a67bacc99807",
+    "plato_literal_sha256": "42edbe735c6d91bc180198702f411889e05ea503989c24b0d44a134362a63f3c"
+  },
+  "historical_boundary": {
+    "historical_transmission_established": false,
+    "michell_supplies_numeric_interpretation": true,
+    "note": "Exact arithmetic reproduction validates the internal numerical chain of Michell's printed construction. It does not establish that Plato intended Michell's numerical assignment.",
+    "plato_intention_established": false,
+    "plato_supplies_numeric_widths": false,
+    "project_arithmetic_reproduces_michell": true
+  },
+  "printed_correspondence_value_checks": {
+    "central_spindle_radius_720": true,
+    "first_cumulative_radius_3960": true,
+    "second_cumulative_radius_6120": true,
+    "second_ring_width_2160": true
+  },
+  "provenance_class": "PROJECT_RECONSTRUCTION",
+  "reconstructed": {
+    "center_out_ring_widths": [
+      18,
+      12,
+      27,
+      9,
+      24,
+      8,
+      6,
+      36
+    ],
+    "center_out_whorls": [
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1
+    ],
+    "cumulative_radii_including_shaft": [
+      4,
+      22,
+      34,
+      61,
+      70,
+      94,
+      102,
+      108,
+      144
+    ],
+    "descending_numbers_assigned_by_width_rank": [
+      36,
+      27,
+      24,
+      18,
+      12,
+      9,
+      8,
+      6
+    ],
+    "full_radius": 144,
+    "scale_factor": 180,
+    "scaled_cumulative_radii_including_shaft": [
+      720,
+      3960,
+      6120,
+      10980,
+      12600,
+      16920,
+      18360,
+      19440,
+      25920
+    ],
+    "scaled_outer_radius": 25920,
+    "scaled_ring_widths": [
+      3240,
+      2160,
+      4860,
+      1620,
+      4320,
+      1440,
+      1080,
+      6480
+    ],
+    "scaled_shaft_radius": 720,
+    "scaled_total_whorl_width": 25200,
+    "shaft_radius": 4,
+    "successive_interval_ratios": [
+      "4/3",
+      "9/8",
+      "4/3",
+      "3/2",
+      "4/3",
+      "9/8",
+      "4/3"
+    ],
+    "width_by_whorl": {
+      "1": 36,
+      "2": 6,
+      "3": 8,
+      "4": 24,
+      "5": 9,
+      "6": 27,
+      "7": 12,
+      "8": 18
+    }
+  },
+  "source_inputs": {
+    "michell_base_sequence": [
+      6,
+      8,
+      9,
+      12,
+      18,
+      24,
+      27,
+      36
+    ],
+    "michell_center_out_whorls": [
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1
+    ],
+    "michell_scale_factor": 180,
+    "michell_shaft_factor": "2/3",
+    "michell_shaft_first_sequence_number": 6,
+    "michell_width_order_broadest_to_narrowest": [
+      1,
+      6,
+      4,
+      8,
+      7,
+      5,
+      3,
+      2
+    ],
+    "plato_width_order_broadest_to_narrowest": [
+      1,
+      6,
+      4,
+      8,
+      7,
+      5,
+      3,
+      2
+    ]
+  },
+  "status": "MICHELL_PLATO_NUMERICAL_RECONSTRUCTION_COMPLETE"
+}

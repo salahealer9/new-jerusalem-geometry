@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="-9.1 -9.1 18.2 18.2" preserveAspectRatio="xMidYMid meet" role="img" shape-rendering="geometricPrecision">
+<rect id="paper-background" x="-9.1" y="-9.1" width="18.2" height="18.2" fill="#ffffff" />
+  <title>NJG_MICHELL complete generative reconstruction</title>
+  <desc>Unit-only generative New Jerusalem reconstruction containing the Earth-square-circle core, twelve incidence Moon circles, polar-pivot wall, approximate 28-point scaffold, and scaffold-derived {7/2} heptagram candidate.</desc>
+  <metadata>
+    Project: New Jerusalem Geometry
+    Model: NJG_MICHELL
+    Geometry source: supplied MichellComposite
+    Caller-supplied geometric quantity: scale unit only
+    Plate-calibration inputs: none
+    Rendering background: transparent
+  </metadata>
+  <style>
+    .geometry {
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .wall {
+      stroke: #111111;
+      stroke-width: 0.055;
+    }
+    .construction-circle {
+      stroke: #777777;
+      stroke-width: 0.04;
+      stroke-dasharray: 0.18 0.12;
+    }
+    .earth-square {
+      stroke: #333333;
+      stroke-width: 0.04;
+    }
+    .earth-circle {
+      stroke: #111111;
+      stroke-width: 0.055;
+    }
+    .moon-circle {
+      stroke: #555555;
+      stroke-width: 0.04;
+    }
+    .scaffold-marker {
+      stroke: #777777;
+      stroke-width: 0.025;
+      fill: #ffffff;
+      fill-opacity: 0.85;
+    }
+    .scaffold-gap {
+      fill: #b8b8b8;
+    }
+    .scaffold-intersection {
+      fill: #777777;
+    }
+    .heptagram-edge {
+      stroke: #111111;
+      stroke-width: 0.055;
+    }
+    .heptagram-vertex {
+      stroke: #111111;
+      stroke-width: 0.025;
+      fill: #111111;
+    }
+  </style>
+
+  <g id="njg-michell-composite" transform="scale(1,-1)" data-model="NJG_MICHELL" data-provenance-id="njg-michell-composite">
+    <g id="wall" data-grammar-node="POLAR_PIVOT_WALL">
+      <polygon id="polar-pivot-wall" class="geometry wall" data-provenance-id="polar-pivot-wall" points="8.5,2.27756813566 6.18926742934,6.18926742934 2.27756813566,8.5 -2.27756813566,8.5 -6.18926742934,6.18926742934 -8.5,2.27756813566 -8.5,-2.27756813566 -6.18926742934,-6.18926742934 -2.27756813566,-8.5 2.27756813566,-8.5 6.18926742934,-6.18926742934 8.5,-2.27756813566" />
+    </g>
+
+    <g id="construction-circle-layer" data-grammar-node="CONSTRUCTION_CIRCLE">
+      <circle id="construction-circle" class="geometry construction-circle" data-provenance-id="construction-circle" cx="0" cy="0" r="7" />
+    </g>
+
+    <g id="earth-square-layer" data-grammar-node="EARTH_SQUARE">
+      <rect id="earth-square" class="geometry earth-square" data-provenance-id="earth-square" x="-5.5" y="-5.5" width="11" height="11" />
+    </g>
+
+    <g id="earth-circle-layer" data-grammar-node="EARTH_CIRCLE">
+      <circle id="earth-circle" class="geometry earth-circle" data-provenance-id="earth-circle" cx="0" cy="0" r="5.5" />
+    </g>
+
+    <g id="moon-system" data-grammar-node="MOON_GROUPS_4X3">
+      <circle id="moon-east" class="geometry moon-circle" data-provenance-id="moon-east" data-moon="moon-east" cx="7" cy="0" r="1.5" />
+      <circle id="moon-q1-a" class="geometry moon-circle" data-provenance-id="moon-q1-a" data-moon="moon-q1-a" cx="6.29626761106" cy="3.05892369468" r="1.5" />
+      <circle id="moon-q1-b" class="geometry moon-circle" data-provenance-id="moon-q1-b" data-moon="moon-q1-b" cx="3.05892369468" cy="6.29626761106" r="1.5" />
+      <circle id="moon-north" class="geometry moon-circle" data-provenance-id="moon-north" data-moon="moon-north" cx="0" cy="7" r="1.5" />
+      <circle id="moon-q2-a" class="geometry moon-circle" data-provenance-id="moon-q2-a" data-moon="moon-q2-a" cx="-3.05892369468" cy="6.29626761106" r="1.5" />
+      <circle id="moon-q2-b" class="geometry moon-circle" data-provenance-id="moon-q2-b" data-moon="moon-q2-b" cx="-6.29626761106" cy="3.05892369468" r="1.5" />
+      <circle id="moon-west" class="geometry moon-circle" data-provenance-id="moon-west" data-moon="moon-west" cx="-7" cy="0" r="1.5" />
+      <circle id="moon-q3-a" class="geometry moon-circle" data-provenance-id="moon-q3-a" data-moon="moon-q3-a" cx="-6.29626761106" cy="-3.05892369468" r="1.5" />
+      <circle id="moon-q3-b" class="geometry moon-circle" data-provenance-id="moon-q3-b" data-moon="moon-q3-b" cx="-3.05892369468" cy="-6.29626761106" r="1.5" />
+      <circle id="moon-south" class="geometry moon-circle" data-provenance-id="moon-south" data-moon="moon-south" cx="0" cy="-7" r="1.5" />
+      <circle id="moon-q4-a" class="geometry moon-circle" data-provenance-id="moon-q4-a" data-moon="moon-q4-a" cx="3.05892369468" cy="-6.29626761106" r="1.5" />
+      <circle id="moon-q4-b" class="geometry moon-circle" data-provenance-id="moon-q4-b" data-moon="moon-q4-b" cx="6.29626761106" cy="-3.05892369468" r="1.5" />
+    </g>
+
+    <g id="scaffold" data-grammar-node="SCAFFOLD_28">
+      <circle id="scaffold-point-00" class="scaffold-marker scaffold-moon-centre" data-provenance-id="scaffold-point-00" data-scaffold-index="0" data-role="moon_centre" cx="7" cy="0" r="0.085" />
+      <rect id="scaffold-point-01" class="scaffold-marker scaffold-gap" data-provenance-id="scaffold-point-01" data-scaffold-index="1" data-role="inter_moon_gap" x="6.75719730873" y="1.50268105201" width="0.13" height="0.13" />
+      <circle id="scaffold-point-02" class="scaffold-marker scaffold-moon-centre" data-provenance-id="scaffold-point-02" data-scaffold-index="2" data-role="moon_centre" cx="6.31346652053" cy="3.02326652715" r="0.085" />
+      <polygon id="scaffold-point-03" class="scaffold-marker scaffold-intersection" data-provenance-id="scaffold-point-03" data-scaffold-index="3" data-role="intersection_positioner" points="5.47602809361,4.45540322883 5.57102809361,4.36040322883 5.47602809361,4.26540322883 5.38102809361,4.36040322883" />
+      <polygon id="scaffold-point-04" class="scaffold-marker scaffold-intersection" data-provenance-id="scaffold-point-04" data-scaffold-index="4" data-role="intersection_positioner" points="4.36040322883,5.57102809361 4.45540322883,5.47602809361 4.36040322883,5.38102809361 4.26540322883,5.47602809361" />
+      <circle id="scaffold-point-05" class="scaffold-marker scaffold-moon-centre" data-provenance-id="scaffold-point-05" data-scaffold-index="5" data-role="moon_centre" cx="3.02326652715" cy="6.31346652053" r="0.085" />
+      <rect id="scaffold-point-06" class="scaffold-marker scaffold-gap" data-provenance-id="scaffold-point-06" data-scaffold-index="6" data-role="inter_moon_gap" x="1.50268105201" y="6.75719730873" width="0.13" height="0.13" />
+      <circle id="scaffold-point-07" class="scaffold-marker scaffold-moon-centre" data-provenance-id="scaffold-point-07" data-scaffold-index="7" data-role="moon_centre" cx="0" cy="7" r="0.085" />
+      <rect id="scaffold-point-08" class="scaffold-marker scaffold-gap" data-provenance-id="scaffold-point-08" data-scaffold-index="8" data-role="inter_moon_gap" x="-1.63268105201" y="6.75719730873" width="0.13" height="0.13" />
+      <circle id="scaffold-point-09" class="scaffold-marker scaffold-moon-centre" data-provenance-id="scaffold-point-09" data-scaffold-index="9" data-role="moon_centre" cx="-3.02326652715" cy="6.31346652053" r="0.085" />
+      <polygon id="scaffold-point-10" class="scaffold-marker scaffold-intersection" data-provenance-id="scaffold-point-10" data-scaffold-index="10" data-role="intersection_positioner" points="-4.36040322883,5.57102809361 -4.26540322883,5.47602809361 -4.36040322883,5.38102809361 -4.45540322883,5.47602809361" />
+      <polygon id="scaffold-point-11" class="scaffold-marker scaffold-intersection" data-provenance-id="scaffold-point-11" data-scaffold-index="11" data-role="intersection_positioner" points="-5.47602809361,4.45540322883 -5.38102809361,4.36040322883 -5.47602809361,4.26540322883 -5.57102809361,4.36040322883" />
+      <circle id="scaffold-point-12" class="scaffold-marker scaffold-moon-centre" data-provenance-id="scaffold-point-12" data-scaffold-index="12" data-role="moon_centre" cx="-6.31346652053" cy="3.02326652715" r="0.085" />
+      <rect id="scaffold-point-13" class="scaffold-marker scaffold-gap" data-provenance-id="scaffold-point-13" data-scaffold-index="13" data-role="inter_moon_gap" x="-6.88719730873" y="1.50268105201" width="0.13" height="0.13" />
+      <circle id="scaffold-point-14" class="scaffold-marker scaffold-moon-centre" data-provenance-id="scaffold-point-14" data-scaffold-index="14" data-role="moon_centre" cx="-7" cy="0" r="0.085" />
+      <rect id="scaffold-point-15" class="scaffold-marker scaffold-gap" data-provenance-id="scaffold-point-15" data-scaffold-index="15" data-role="inter_moon_gap" x="-6.88719730873" y="-1.63268105201" width="0.13" height="0.13" />
+      <circle id="scaffold-point-16" class="scaffold-marker scaffold-moon-centre" data-provenance-id="scaffold-point-16" data-scaffold-index="16" data-role="moon_centre" cx="-6.31346652053" cy="-3.02326652715" r="0.085" />
+      <polygon id="scaffold-point-17" class="scaffold-marker scaffold-intersection" data-provenance-id="scaffold-point-17" data-scaffold-index="17" data-role="intersection_positioner" points="-5.47602809361,-4.26540322883 -5.38102809361,-4.36040322883 -5.47602809361,-4.45540322883 -5.57102809361,-4.36040322883" />
+      <polygon id="scaffold-point-18" class="scaffold-marker scaffold-intersection" data-provenance-id="scaffold-point-18" data-scaffold-index="18" data-role="intersection_positioner" points="-4.36040322883,-5.38102809361 -4.26540322883,-5.47602809361 -4.36040322883,-5.57102809361 -4.45540322883,-5.47602809361" />
+      <circle id="scaffold-point-19" class="scaffold-marker scaffold-moon-centre" data-provenance-id="scaffold-point-19" data-scaffold-index="19" data-role="moon_centre" cx="-3.02326652715" cy="-6.31346652053" r="0.085" />
+      <rect id="scaffold-point-20" class="scaffold-marker scaffold-gap" data-provenance-id="scaffold-point-20" data-scaffold-index="20" data-role="inter_moon_gap" x="-1.63268105201" y="-6.88719730873" width="0.13" height="0.13" />
+      <circle id="scaffold-point-21" class="scaffold-marker scaffold-moon-centre" data-provenance-id="scaffold-point-21" data-scaffold-index="21" data-role="moon_centre" cx="-1.2858791391e-15" cy="-7" r="0.085" />
+      <rect id="scaffold-point-22" class="scaffold-marker scaffold-gap" data-provenance-id="scaffold-point-22" data-scaffold-index="22" data-role="inter_moon_gap" x="1.50268105201" y="-6.88719730873" width="0.13" height="0.13" />
+      <circle id="scaffold-point-23" class="scaffold-marker scaffold-moon-centre" data-provenance-id="scaffold-point-23" data-scaffold-index="23" data-role="moon_centre" cx="3.02326652715" cy="-6.31346652053" r="0.085" />
+      <polygon id="scaffold-point-24" class="scaffold-marker scaffold-intersection" data-provenance-id="scaffold-point-24" data-scaffold-index="24" data-role="intersection_positioner" points="4.36040322883,-5.38102809361 4.45540322883,-5.47602809361 4.36040322883,-5.57102809361 4.26540322883,-5.47602809361" />
+      <polygon id="scaffold-point-25" class="scaffold-marker scaffold-intersection" data-provenance-id="scaffold-point-25" data-scaffold-index="25" data-role="intersection_positioner" points="5.47602809361,-4.26540322883 5.57102809361,-4.36040322883 5.47602809361,-4.45540322883 5.38102809361,-4.36040322883" />
+      <circle id="scaffold-point-26" class="scaffold-marker scaffold-moon-centre" data-provenance-id="scaffold-point-26" data-scaffold-index="26" data-role="moon_centre" cx="6.31346652053" cy="-3.02326652715" r="0.085" />
+      <rect id="scaffold-point-27" class="scaffold-marker scaffold-gap" data-provenance-id="scaffold-point-27" data-scaffold-index="27" data-role="inter_moon_gap" x="6.75719730873" y="-1.63268105201" width="0.13" height="0.13" />
+    </g>
+
+    <g id="heptagram" data-grammar-node="FIG14_HEPTAGRAM_7_2" data-vertex-source="FIG14_SCAFFOLD_VERTICES">
+      <line id="heptagram-edge-00" class="geometry heptagram-edge" data-provenance-id="heptagram-edge-00" data-start-index="0" data-end-index="2" x1="0" y1="7" x2="-6.82219730873" y2="-1.56768105201" />
+      <line id="heptagram-edge-01" class="geometry heptagram-edge" data-provenance-id="heptagram-edge-01" data-start-index="2" data-end-index="4" x1="-6.82219730873" y1="-1.56768105201" x2="3.02326652715" y2="-6.31346652053" />
+      <line id="heptagram-edge-02" class="geometry heptagram-edge" data-provenance-id="heptagram-edge-02" data-start-index="4" data-end-index="6" x1="3.02326652715" y1="-6.31346652053" x2="5.47602809361" y2="4.36040322883" />
+      <line id="heptagram-edge-03" class="geometry heptagram-edge" data-provenance-id="heptagram-edge-03" data-start-index="6" data-end-index="1" x1="5.47602809361" y1="4.36040322883" x2="-5.47602809361" y2="4.36040322883" />
+      <line id="heptagram-edge-04" class="geometry heptagram-edge" data-provenance-id="heptagram-edge-04" data-start-index="1" data-end-index="3" x1="-5.47602809361" y1="4.36040322883" x2="-3.02326652715" y2="-6.31346652053" />
+      <line id="heptagram-edge-05" class="geometry heptagram-edge" data-provenance-id="heptagram-edge-05" data-start-index="3" data-end-index="5" x1="-3.02326652715" y1="-6.31346652053" x2="6.82219730873" y2="-1.56768105201" />
+      <line id="heptagram-edge-06" class="geometry heptagram-edge" data-provenance-id="heptagram-edge-06" data-start-index="5" data-end-index="0" x1="6.82219730873" y1="-1.56768105201" x2="0" y2="7" />
+      <circle id="heptagram-vertex-00" class="heptagram-vertex" data-provenance-id="heptagram-vertex-00" data-vertex-index="0" cx="0" cy="7" r="0.06" />
+      <circle id="heptagram-vertex-01" class="heptagram-vertex" data-provenance-id="heptagram-vertex-01" data-vertex-index="1" cx="-5.47602809361" cy="4.36040322883" r="0.06" />
+      <circle id="heptagram-vertex-02" class="heptagram-vertex" data-provenance-id="heptagram-vertex-02" data-vertex-index="2" cx="-6.82219730873" cy="-1.56768105201" r="0.06" />
+      <circle id="heptagram-vertex-03" class="heptagram-vertex" data-provenance-id="heptagram-vertex-03" data-vertex-index="3" cx="-3.02326652715" cy="-6.31346652053" r="0.06" />
+      <circle id="heptagram-vertex-04" class="heptagram-vertex" data-provenance-id="heptagram-vertex-04" data-vertex-index="4" cx="3.02326652715" cy="-6.31346652053" r="0.06" />
+      <circle id="heptagram-vertex-05" class="heptagram-vertex" data-provenance-id="heptagram-vertex-05" data-vertex-index="5" cx="6.82219730873" cy="-1.56768105201" r="0.06" />
+      <circle id="heptagram-vertex-06" class="heptagram-vertex" data-provenance-id="heptagram-vertex-06" data-vertex-index="6" cx="5.47602809361" cy="4.36040322883" r="0.06" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+<rect id="paper-background" x="0" y="0" width="1200" height="500" fill="#ffffff" />
+<title id="title">Michell Figure 194 Method 2: 7 to 21 to 42</title>
+<desc id="desc">Transparent three-panel deterministic rendering of the frozen Method 2 construction. The first panel shows the local seven-mark completion, the second the original-triangle twenty-one marks, and the third the original plus reciprocal forty-two marks.</desc>
+<defs>
+<style><![CDATA[
+text { font-family: sans-serif; fill: #111; }
+.panel-title { font-size: 18px; font-weight: 700; text-anchor: middle; }
+.panel-subtitle { font-size: 12px; text-anchor: middle; }
+.formula { font-size: 11px; text-anchor: middle; }
+.outer { fill: none; stroke: #111; stroke-width: 1.6; }
+.triangle-original { fill: none; stroke: #555; stroke-width: 1.25; }
+.triangle-reciprocal { fill: none; stroke: #777; stroke-width: 1.25; stroke-dasharray: 5 4; }
+.arc-original { fill: none; stroke: #999; stroke-width: 1.0; }
+.arc-reciprocal { fill: none; stroke: #aaa; stroke-width: 1.0; stroke-dasharray: 3 3; }
+.mark { fill: #111; stroke: none; }
+.carrier { fill: none; stroke: #111; stroke-width: 1.4; }
+.reciprocal-carrier { stroke-dasharray: 2 1; }
+.small-gap-marker { fill: none; stroke: #111; stroke-width: 1.2; }
+.legend { font-size: 10.5px; }
+]]></style>
+<clipPath id="clip-0"><circle cx="200" cy="236" r="142"/></clipPath>
+<circle class="outer" cx="200" cy="236" r="142"/>
+<clipPath id="clip-1"><circle cx="600" cy="236" r="142"/></clipPath>
+<circle class="outer" cx="600" cy="236" r="142"/>
+<clipPath id="clip-2"><circle cx="1000" cy="236" r="142"/></clipPath>
+<circle class="outer" cx="1000" cy="236" r="142"/>
+</defs>
+<text class="panel-title" x="200" y="32">Method 2 local step</text>
+<text class="panel-subtitle" x="200" y="51">7-mark operational completion</text>
+<polyline class="triangle-original" points="200,94 77.024393,307 322.975607,307 200,94"/>
+<g clip-path="url(#clip-0)">
+<circle class="arc-original" cx="200" cy="94" r="122.975607"/>
+</g>
+<circle class="mark" cx="310.848714" cy="147.25" r="4"/>
+<circle class="carrier" cx="200" cy="94" r="4.6"/>
+<circle class="mark" cx="89.151286" cy="147.25" r="4"/>
+<circle class="mark" cx="61.439107" cy="267.0625" r="4"/>
+<circle class="mark" cx="137.647598" cy="363.578125" r="4"/>
+<circle class="mark" cx="262.352402" cy="363.578125" r="4"/>
+<circle class="mark" cx="338.560893" cy="267.0625" r="4"/>
+<text class="formula" x="200" y="420">alpha_2 = acos(5/8)</text>
+<text class="formula" x="200" y="438">k = -3,...,+3</text>
+<text class="panel-title" x="600" y="32">Original triangle</text>
+<text class="panel-subtitle" x="600" y="51">3 carriers x 7 = 21 semantic marks</text>
+<polyline class="triangle-original" points="600,94 477.024393,307 722.975607,307 600,94"/>
+<g clip-path="url(#clip-1)">
+<circle class="arc-original" cx="600" cy="94" r="122.975607"/>
+<circle class="arc-original" cx="477.024393" cy="307" r="122.975607"/>
+<circle class="arc-original" cx="722.975607" cy="307" r="122.975607"/>
+</g>
+<circle class="mark" cx="741.662098" cy="226.209702" r="3.1"/>
+<circle class="mark" cx="732.284112" cy="184.377197" r="3.1"/>
+<circle class="mark" cx="710.848714" cy="147.25" r="3.1"/>
+<circle class="mark" cx="679.309696" cy="118.212173" r="3.1"/>
+<circle class="mark" cx="642.379532" cy="100.471497" r="3.1"/>
+<circle class="carrier" cx="600" cy="94" r="3.565"/>
+<circle class="mark" cx="557.620468" cy="100.471497" r="3.1"/>
+<circle class="mark" cx="520.690304" cy="118.212173" r="3.1"/>
+<circle class="mark" cx="489.151286" cy="147.25" r="3.1"/>
+<circle class="mark" cx="467.715888" cy="184.377197" r="3.1"/>
+<circle class="mark" cx="458.337902" cy="226.209702" r="3.1"/>
+<circle class="mark" cx="461.439107" cy="267.0625" r="3.1"/>
+<circle class="carrier" cx="477.024393" cy="307" r="3.565"/>
+<circle class="mark" cx="503.818639" cy="340.466003" r="3.1"/>
+<circle class="mark" cx="537.647598" cy="363.578125" r="3.1"/>
+<circle class="mark" cx="578.564603" cy="376.372803" r="3.1"/>
+<circle class="mark" cx="621.435397" cy="376.372803" r="3.1"/>
+<circle class="mark" cx="662.352402" cy="363.578125" r="3.1"/>
+<circle class="mark" cx="696.181361" cy="340.466003" r="3.1"/>
+<circle class="carrier" cx="722.975607" cy="307" r="3.565"/>
+<circle class="mark" cx="738.560893" cy="267.0625" r="3.1"/>
+<circle class="small-gap-marker" cx="666.683956" cy="97.186276" r="3.2"/>
+<circle class="small-gap-marker" cx="533.316044" cy="97.186276" r="3.2"/>
+<circle class="small-gap-marker" cx="446.44181" cy="247.656862" r="3.2"/>
+<circle class="small-gap-marker" cx="513.125767" cy="363.156862" r="3.2"/>
+<circle class="small-gap-marker" cx="686.874233" cy="363.156862" r="3.2"/>
+<circle class="small-gap-marker" cx="753.55819" cy="247.656862" r="3.2"/>
+<text class="formula" x="600" y="420">15 L : 6 S   |   RMS = sqrt(10) delta</text>
+<text class="formula" x="600" y="438">open outer markers identify the 6 S gaps</text>
+<text class="panel-title" x="1000" y="32">Original + reciprocal</text>
+<text class="panel-subtitle" x="1000" y="51">6 carriers x 7 = 42 semantic marks</text>
+<polyline class="triangle-original" points="1000,94 877.024393,307 1122.975607,307 1000,94"/>
+<polyline class="triangle-reciprocal" points="877.024393,165 1000,378 1122.975607,165 877.024393,165"/>
+<g clip-path="url(#clip-2)">
+<circle class="arc-original" cx="1000" cy="94" r="122.975607"/>
+<circle class="arc-original" cx="877.024393" cy="307" r="122.975607"/>
+<circle class="arc-original" cx="1122.975607" cy="307" r="122.975607"/>
+</g>
+<g clip-path="url(#clip-2)">
+<circle class="arc-reciprocal" cx="877.024393" cy="165" r="122.975607"/>
+<circle class="arc-reciprocal" cx="1000" cy="378" r="122.975607"/>
+<circle class="arc-reciprocal" cx="1122.975607" cy="165" r="122.975607"/>
+</g>
+<circle class="mark" cx="1141.662098" cy="226.209702" r="2.45"/>
+<circle class="mark" cx="1138.560893" cy="204.9375" r="2.45"/>
+<circle class="mark" cx="1132.284112" cy="184.377197" r="2.45"/>
+<rect class="carrier reciprocal-carrier" x="1120.525607" y="162.55" width="4.9" height="4.9"/>
+<circle class="mark" cx="1110.848714" cy="147.25" r="2.45"/>
+<circle class="mark" cx="1096.181361" cy="131.533997" r="2.45"/>
+<circle class="mark" cx="1079.309696" cy="118.212173" r="2.45"/>
+<circle class="mark" cx="1062.352402" cy="108.421875" r="2.45"/>
+<circle class="mark" cx="1042.379532" cy="100.471497" r="2.45"/>
+<circle class="mark" cx="1021.435397" cy="95.627197" r="2.45"/>
+<circle class="carrier" cx="1000" cy="94" r="2.8175"/>
+<circle class="mark" cx="978.564603" cy="95.627197" r="2.45"/>
+<circle class="mark" cx="957.620468" cy="100.471497" r="2.45"/>
+<circle class="mark" cx="937.647598" cy="108.421875" r="2.45"/>
+<circle class="mark" cx="920.690304" cy="118.212173" r="2.45"/>
+<circle class="mark" cx="903.818639" cy="131.533997" r="2.45"/>
+<circle class="mark" cx="889.151286" cy="147.25" r="2.45"/>
+<rect class="carrier reciprocal-carrier" x="874.574393" y="162.55" width="4.9" height="4.9"/>
+<circle class="mark" cx="867.715888" cy="184.377197" r="2.45"/>
+<circle class="mark" cx="861.439107" cy="204.9375" r="2.45"/>
+<circle class="mark" cx="858.337902" cy="226.209702" r="2.45"/>
+<circle class="mark" cx="858.337902" cy="245.790298" r="2.45"/>
+<circle class="mark" cx="861.439107" cy="267.0625" r="2.45"/>
+<circle class="mark" cx="867.715888" cy="287.622803" r="2.45"/>
+<circle class="carrier" cx="877.024393" cy="307" r="2.8175"/>
+<circle class="mark" cx="889.151286" cy="324.75" r="2.45"/>
+<circle class="mark" cx="903.818639" cy="340.466003" r="2.45"/>
+<circle class="mark" cx="920.690304" cy="353.787827" r="2.45"/>
+<circle class="mark" cx="937.647598" cy="363.578125" r="2.45"/>
+<circle class="mark" cx="957.620468" cy="371.528503" r="2.45"/>
+<circle class="mark" cx="978.564603" cy="376.372803" r="2.45"/>
+<rect class="carrier reciprocal-carrier" x="997.55" y="375.55" width="4.9" height="4.9"/>
+<circle class="mark" cx="1021.435397" cy="376.372803" r="2.45"/>
+<circle class="mark" cx="1042.379532" cy="371.528503" r="2.45"/>
+<circle class="mark" cx="1062.352402" cy="363.578125" r="2.45"/>
+<circle class="mark" cx="1079.309696" cy="353.787827" r="2.45"/>
+<circle class="mark" cx="1096.181361" cy="340.466003" r="2.45"/>
+<circle class="mark" cx="1110.848714" cy="324.75" r="2.45"/>
+<circle class="carrier" cx="1122.975607" cy="307" r="2.8175"/>
+<circle class="mark" cx="1132.284112" cy="287.622803" r="2.45"/>
+<circle class="mark" cx="1138.560893" cy="267.0625" r="2.45"/>
+<circle class="mark" cx="1141.662098" cy="245.790298" r="2.45"/>
+<circle class="small-gap-marker" cx="1077" cy="102.632088" r="3.2"/>
+<circle class="small-gap-marker" cx="923" cy="102.632088" r="3.2"/>
+<circle class="small-gap-marker" cx="846" cy="236" r="3.2"/>
+<circle class="small-gap-marker" cx="923" cy="369.367912" r="3.2"/>
+<circle class="small-gap-marker" cx="1077" cy="369.367912" r="3.2"/>
+<circle class="small-gap-marker" cx="1154" cy="236" r="3.2"/>
+<text class="formula" x="1000" y="420">36 L : 6 S   |   RMS = sqrt(6) delta</text>
+<text class="formula" x="1000" y="438">solid triangle = original; dashed = reciprocal</text>
+<text class="legend" x="600" y="478">Visualization only — geometry and symbolic classes are read from frozen Phase 8E/8F artifacts.</text>
+</svg>

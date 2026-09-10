@@ -1,0 +1,14 @@
+# LaTeX transient build products
+manuscript.aux
+manuscript.bbl
+manuscript.blg
+manuscript.fdb_latexmk
+manuscript.fls
+manuscript.log
+manuscript.out
+manuscript.synctex.gz
+manuscript.toc
+
+# QA manuscript PDF is generated locally.
+# Final archival PDF policy will be decided at the release boundary.
+manuscript.pdf

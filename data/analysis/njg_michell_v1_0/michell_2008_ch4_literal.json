@@ -1,0 +1,190 @@
+{
+  "audit_phase": "10D",
+  "extraction_method": {
+    "chapter_archive_sha256": "d0f722a81df4f91165ed529460c4e5f7c00682e75feb16f20cb85915c2d6bb92",
+    "manual_visual_extraction": true,
+    "ocr_used": false,
+    "source_bundle_sha256": "f662aa6221a4ceb232025569fc501ca6613ebbdc6b44394d6631eec7e5a7137d",
+    "source_bytes_committed_to_git": false,
+    "source_captures": [
+      {
+        "ebook_page": 164,
+        "filename": "Screenshot 2026-08-12 12.00.38.png",
+        "observation_id": "M08-P164-WHORL-TABLE",
+        "role": "whorl_order_table",
+        "sha256": "857036985aefd737dd9a034a61b4d6a527cf20126010fdc1d0a8d41099a2bf6c"
+      },
+      {
+        "ebook_page": 165,
+        "filename": "Screenshot 2026-08-12 12.00.42.png",
+        "observation_id": "M08-P165-MUSICAL-SEQUENCE",
+        "role": "musical_argument_and_base_sequence",
+        "sha256": "92905f19098445d37bfa721174938ffd75ae0791ee5fbc63ae17d6769699752a"
+      },
+      {
+        "ebook_page": 167,
+        "filename": "Screenshot 2026-08-12 12.00.49.png",
+        "observation_id": "M08-P167-CONSTRUCTION-A",
+        "role": "shaft_and_unscaled_whorl_construction",
+        "sha256": "573922b187d816a96a1fa95c00e65c0af104d21997fcf21cca955de12d70cd7c"
+      },
+      {
+        "ebook_page": 167,
+        "filename": "Screenshot 2026-08-12 12.00.54.png",
+        "observation_id": "M08-P167-CONSTRUCTION-B",
+        "role": "scale_and_dimensional_correspondences",
+        "sha256": "745bc278e09a39ef08633da27129788246c9e555bac036f3ba1785fbd05942a5"
+      }
+    ],
+    "source_form": "user-purchased ebook screenshots"
+  },
+  "historical_boundary": {
+    "ancient_transmission_established": false,
+    "michell_claims_endorsed_as_historical_fact": false,
+    "new_jerusalem_correspondence_treated_as_michell_claim": true,
+    "plato_intention_established": false
+  },
+  "michell_explicit": {
+    "musical_argument": {
+      "base_sequence": [
+        6,
+        8,
+        9,
+        12,
+        18,
+        24,
+        27,
+        36
+      ],
+      "canonical_voice_range_used": "two octaves and a fifth",
+      "greek_musical_proportion_invoked": [
+        6,
+        8,
+        9,
+        12
+      ],
+      "octave_only_interpretation_described_as_not_stated_or_implied_by_plato": true,
+      "source_pages": [
+        165,
+        167
+      ],
+      "successive_interval_ratios": [
+        "4/3",
+        "9/8",
+        "4/3",
+        "3/2",
+        "4/3",
+        "9/8",
+        "4/3"
+      ]
+    },
+    "plato_whorl_table": {
+      "broadest_to_narrowest_whorl_order": [
+        1,
+        6,
+        4,
+        8,
+        7,
+        5,
+        3,
+        2
+      ],
+      "source_page": 164,
+      "width_rank_by_whorl": {
+        "1": 1,
+        "2": 8,
+        "3": 7,
+        "4": 3,
+        "5": 6,
+        "6": 2,
+        "7": 5,
+        "8": 4
+      }
+    },
+    "printed_dimensional_correspondences": [
+      {
+        "label": "central spindle radius",
+        "source_page": 167,
+        "unit_as_printed": "feet",
+        "value": 720
+      },
+      {
+        "calculation_as_printed": "720 + 3240 = 3960",
+        "interpretations_as_printed": [
+          "earth radius 3960 miles",
+          "cultivated land radius 3960 feet in Magnesia"
+        ],
+        "label": "first cumulative radius",
+        "source_page": 167,
+        "value": 3960
+      },
+      {
+        "calculation_as_printed": "3960 + 2160 = 6120",
+        "interpretation_as_printed": "same numerical radius as the outer circle in the New Jerusalem",
+        "label": "second cumulative radius",
+        "source_page": 167,
+        "value": 6120
+      },
+      {
+        "interpretation_as_printed": "contains the circle of the moon, diameter 2160 miles",
+        "label": "second ring width",
+        "source_page": 167,
+        "value": 2160
+      }
+    ],
+    "scaled_construction": {
+      "center_out_ring_widths": [
+        3240,
+        2160,
+        4860,
+        1620,
+        4320,
+        1440,
+        1080,
+        6480
+      ],
+      "outer_radius_including_shaft": 25920,
+      "scale_factor": 180,
+      "shaft_radius": 720,
+      "source_page": 167,
+      "total_eight_whorl_width": 25200
+    },
+    "unscaled_construction": {
+      "center_out_ring_widths": [
+        18,
+        12,
+        27,
+        9,
+        24,
+        8,
+        6,
+        36
+      ],
+      "center_out_whorl_numbers": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "full_radius": 144,
+      "michell_states_arranged_in_platos_order": true,
+      "shaft_first_sequence_number": 6,
+      "shaft_musical_factor": "2/3",
+      "shaft_radius": 4,
+      "source_page": 167
+    }
+  },
+  "provenance_class": "MICHELL_EXPLICIT",
+  "source_relationship": {
+    "base_sequence_presented_after_musical_theory_argument": true,
+    "michell_applies_musical_numbers_to_plato_ordinal_order": true,
+    "note": "Phase 10D records Michell's printed numerical construction and dimensional correspondences. It does not yet test or rederive the arithmetic.",
+    "numeric_width_sequence_presented_as_direct_quote_from_plato": false,
+    "project_reconstruction_used": false
+  },
+  "status": "MICHELL_2008_CH4_LITERAL_NUMERICAL_EXTRACTION_COMPLETE"
+}

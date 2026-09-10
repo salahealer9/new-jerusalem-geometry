@@ -1,0 +1,36 @@
+{
+  "audit_phase": "10B1",
+  "claim_boundary": {
+    "allowed": [
+      "DIRECT_PLATO_TEXT"
+    ],
+    "not_yet_allowed": [
+      "MICHELL_EXPLICIT",
+      "PROJECT_RECONSTRUCTION"
+    ],
+    "note": "Phase 10B1 freezes source witnesses only. Literal Plato extraction is deferred to Phase 10C."
+  },
+  "retrieved_date": "2026-08-12",
+  "status": "PLATO_PRIMARY_WITNESSES_FROZEN",
+  "upstream_commit": "790c84289edbdbe289dd7b752bfea29f0af4299d",
+  "upstream_repository": "https://github.com/PerseusDL/canonical-greekLit",
+  "witnesses": [
+    {
+      "bibliographic_identity": "Plato, Republic; Paul Shorey translation; Perseus canonical Greek literature witness",
+      "cts_urn": "urn:cts:greekLit:tlg0059.tlg030.perseus-eng2",
+      "local_path": "data/sources/v1_0/plato/tlg0059.tlg030.perseus-eng2.xml",
+      "role": "english_translation",
+      "sha256": "36826064d30be3b40d20b820f4904ed170d375e41dd3f450cbe4eb733054766d",
+      "upstream_url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/790c84289edbdbe289dd7b752bfea29f0af4299d/data/tlg0059/tlg030/tlg0059.tlg030.perseus-eng2.xml"
+    },
+    {
+      "bibliographic_identity": "Plato, Republic; John Burnet Greek edition; Perseus canonical Greek literature witness",
+      "cts_urn": "urn:cts:greekLit:tlg0059.tlg030.perseus-grc2",
+      "local_path": "data/sources/v1_0/plato/tlg0059.tlg030.perseus-grc2.xml",
+      "role": "greek_edition",
+      "sha256": "da2bfcf943497bb147fc49ae4b47bf0919e1db790bcf7de830dc259e76379d4f",
+      "upstream_url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/790c84289edbdbe289dd7b752bfea29f0af4299d/data/tlg0059/tlg030/tlg0059.tlg030.perseus-grc2.xml"
+    }
+  ],
+  "work_urn": "urn:cts:greekLit:tlg0059.tlg030"
+}
