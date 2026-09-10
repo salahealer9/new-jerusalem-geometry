@@ -19,16 +19,15 @@ interpretation of Plato's eight whorls.
 
 ![The Spindle of Necessity — Plato's Eight Whorls](figures/generated/v1.0_plato_michell_whorl_capstone.svg)
 
-## v1.0.0 release candidate
+## v1.0.0 stable release
 
-The active package metadata is prepared at version `1.0.0` for the first
-stable public release. The scientific content remains frozen: this boundary
-changes release-facing metadata and current-version tests only.
+Version `1.0.0` is the first stable software release of **New Jerusalem
+Geometry**. The scientific content remains frozen; the final release boundary
+changes release-state metadata only.
 
-The repository remains private until the release candidate is merged into
-`main` and the final public-safety verification passes. The signed `v1.0.0`
-tag, GitHub Release, Zenodo archive, DOI, and final DOI propagation are
-separate downstream release gates.
+The signed `v1.0.0` tag identifies this software-release boundary. Repository
+publication, the GitHub Release, Zenodo archival DOI, and final DOI propagation
+are controlled downstream publication gates.
 
 ## What v1.0 establishes
 

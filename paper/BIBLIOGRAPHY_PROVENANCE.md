@@ -214,15 +214,15 @@ underlying 1974 primary item has not been independently frozen.
 
 ## New Jerusalem Geometry software
 
-Current package state at the release-candidate metadata boundary:
+Current package state at the v1.0.0 software-release boundary:
 
 ```text
 1.0.0
 ```
 
 The scientific content remains frozen.  The final software/archive reference
-is deliberately omitted from `references.bib` until the controlled public
-`v1.0.0` release and Zenodo DOI exist.
+is deliberately omitted from `references.bib` until the public GitHub/Zenodo
+archival release and DOI exist.
 
 ## Post-freeze Sommerville archival search
 
