@@ -19,6 +19,17 @@ interpretation of Plato's eight whorls.
 
 ![The Spindle of Necessity — Plato's Eight Whorls](figures/generated/v1.0_plato_michell_whorl_capstone.svg)
 
+## v1.0.0 release candidate
+
+The active package metadata is prepared at version `1.0.0` for the first
+stable public release. The scientific content remains frozen: this boundary
+changes release-facing metadata and current-version tests only.
+
+The repository remains private until the release candidate is merged into
+`main` and the final public-safety verification passes. The signed `v1.0.0`
+tag, GitHub Release, Zenodo archive, DOI, and final DOI propagation are
+separate downstream release gates.
+
 ## What v1.0 establishes
 
 The v1.0 scientific boundary contains five main results.

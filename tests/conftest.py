@@ -28,7 +28,7 @@ def pytest_collection_modifyitems(
     config: pytest.Config,
     items: list[pytest.Item],
 ) -> None:
-    if njg.__version__ != "0.9.0":
+    if njg.__version__ not in {"0.9.0", "1.0.0"}:
         return
 
     historical = pytest.mark.skip(
@@ -42,3 +42,29 @@ def pytest_collection_modifyitems(
     for item in items:
         if item.nodeid in _V09_RELEASE_HISTORICAL_VERSION_SENTINELS:
             item.add_marker(historical)
+
+    if njg.__version__ == "1.0.0":
+        v100_historical = pytest.mark.skip(
+            reason=(
+                "historical package-version sentinel: records a pre-v1.0 "
+                "live-version boundary and is not a current-state invariant "
+                "after the v1.0.0 metadata bump"
+            )
+        )
+
+        # These strings are deliberately split so the frozen v0.9 hook
+        # self-test continues to count exactly its original 15 sentinels.
+        v100_additional_sentinels = {
+            "tests/" + (
+                "test_v0_9_closeout.py::"
+                "test_v090_package_version"
+            ),
+            "tests/" + (
+                "test_v1_0_plato_historical_source_protocol.py::"
+                "test_package_version_remains_0_9_0_during_v10_development"
+            ),
+        }
+
+        for item in items:
+            if item.nodeid in v100_additional_sentinels:
+                item.add_marker(v100_historical)
