@@ -12,3 +12,7 @@ manuscript.toc
 # QA manuscript PDF is generated locally.
 # Final archival PDF policy will be decided at the release boundary.
 manuscript.pdf
+
+# Local estate-licensed historical plates: approved for journal use only.
+# Never put these files in the public repository.
+figures/licensed_historical/

@@ -77,8 +77,8 @@
 }
 
 \title{\textbf{Reconstructing John Michell's New Jerusalem Geometry}\\
-\large A Reproducible Audit of Euclidean Structure, Sevenfold Constructibility,
-and the Plato\textendash{} Michell Whorl Interpretation}
+\large A Reproducible Analysis of Euclidean Structure, Sevenfold Constructibility,
+and Historical Interpretation}
 
 \author{
 Salah-Eddin Gherbi\\
@@ -93,87 +93,19 @@ ORCID\@: \mbox{0009\mbox{-}0005\mbox{-}4017\mbox{-}1095}
 \maketitle
 
 \begin{abstract}
-John Michell's New Jerusalem diagrams combine Euclidean construction,
-approximate sevenfold geometry, historical metrology, and later numerical
-interpretation, but these evidential layers are not equivalent. We present a
-reproducible computational and historical audit that keeps source statements,
-project reconstructions, source-calibrated comparisons, and exact mathematical
-results explicitly distinct. A deterministic unit-only model reconstructs
-the principal Earth--Moon, twelve-circle, outer-wall, sevenfold, and 28-point
-components without using measured source-plate coordinates as fitting inputs.
-Calibration against Michell's printed figures supports a near-regular
-$\{7/2\}$ topology for Figure~14. For Figure~12, the polar-pivot wall gives
-the best registered wall-direction agreement, although a different comparator
-performs better under support distance alone; the wall is therefore retained
-as a source-supported project reconstruction rather than a uniquely recovered
-historical construction. Michell's two approximate sevenfold methods are
-reconstructed separately. Their local steps,
-$51.470701432440^\circ$ and $51.317812546511^\circ$, bracket the exact
-$360^\circ/7$ value, with the second satisfying the project-derived identity
-$\alpha_2=\arccos(5/8)$. Exact sevenfold geometry requires the cubic
-coordinate $y=2\cos(2\pi/7)$, whose irreducible polynomial
-$y^3+y^2-2y-1=0$ excludes construction within the ordinary
-straightedge-and-compass quadratic closure. Within the frozen project
-operation-count model, zero cubic-capable operations cannot suffice and one
-angle trisection is sufficient. Finally, Michell's numerical interpretation
-of Plato's eight whorls is reproduced exactly with zero fitted parameters.
-That reproduction establishes the internal consistency of Michell's printed
-arithmetic, not that Plato supplied the numerical widths or that the scheme
-was transmitted historically from antiquity.
+John Michell's New Jerusalem drawings combine interlocking circles, a square, an enclosing twelve-sided figure and seven-pointed figures within a designed visual composition. Although their wider interpretations belong to Michell's esoteric writings, the drawings invite a separate mathematics-and-arts question: which visible relationships follow from explicit geometric rules, which approximate ideal figures, and what can be inferred from the printed artefacts? We examine the historical diagrams as designed objects, generating a normalized Earth--Moon construction independently of source-plate measurements before making calibrated comparisons. Its twelve Moon-circle centres are constrained by tangency and circle--square incidence, rather than assumed to be evenly spaced. Michell's printed Figure~12 is consistent with a nonregular outer wall, although different residual measures do not uniquely identify a construction rule; source tracing of Figure~14 supports a near-regular $\{7/2\}$ star topology. Two later sevenfold procedures described by Michell yield approximate steps of $51.470701^\circ$ and $51.317813^\circ$, respectively, bracketing the exact $360^\circ/7$ value. The classical Gauss--Wantzel obstruction establishes that a regular heptagon is not constructible with an unmarked straightedge and compass; a separately specified, nonclassical single-trisection exercise illustrates the boundary within a restricted operation-count model. The contribution is not a new nonconstructibility theorem or validation of Michell's symbolic claims, but a reproducible analysis of the relationship between a historical visual artefact, mathematical construction and evidential interpretation.
 \end{abstract}
 
-\section{Introduction}
+\section{Introduction: a historical visual construction as an object of analysis}
+John Michell's New Jerusalem diagrams combine a squared Earth circle, twelve surrounding Moon circles, a twelve-sided enclosure and intersecting star polygons in a single visually intricate composition \citep{michell1973city}. These images have often been read alongside Michell's interpretations of cosmology, number and sacred geography. Such interpretations cannot, by themselves, establish the mathematical properties of the drawings. Yet a historically printed diagram can be studied as a visual design even when its author's wider claims are disputed: its circular incidences, symmetries, line connections and departures from regularity are concrete features that can be measured and compared.
 
-John Michell's New Jerusalem geometry occupies an unusual boundary between
-explicit Euclidean construction, historical metrology, approximate polygonal
-methods, and symbolic interpretation
-\citep{michell1973city,michell2009world,michell2008dimensions}. The diagrams
-are sufficiently intricate that visual agreement alone can obscure the status
-of a claim. A feature may be stated directly by Michell, inferred from a
-printed plate, reconstructed from a geometric rule, obtained only
-approximately, or established independently as an exact mathematical result.
-Those categories require different standards of evidence.
+The question addressed here is therefore neither whether Michell's metaphysical interpretation is true nor whether its numerical motifs are aesthetically persuasive. It is whether a specific published design can be reconstructed from stated geometric constraints without silently adjusting the result to match its printed appearance, and how much of the resulting agreement can reasonably be attributed to the historical source. That question connects this article to mathematical analyses of artistic and historical geometric designs, rather than to a claim that Michell belonged to an established school of architectural scholarship. In particular, the approach of Costa and Freitas to geometrical artworks distinguishes exact constructions, approximations and computer-based reconstruction in a way that supplies a useful disciplinary precedent \citep{costa2015canon}.
 
-The central methodological problem is therefore not simply whether a modern
-drawing can be made to resemble Michell's figures. It is whether the
-construction can be decomposed into explicit, reproducible claims while
-preventing measured source geometry from being fed back into the model as an
-unreported fit. In the present audit, the generative geometry is built from
-registered rules and a single overall scale unit. Source plates are
-digitised and calibrated downstream, after candidate constructions have been
-defined, so that plate agreement remains an evaluation of a frozen candidate
-rather than a mechanism for silently determining it.
+The analysis begins with the visual artefact. Michell's Figure~12, titled ``The New Jerusalem'' in the 1973 Abacus edition (p.~63), presents the twelve-circle geometry and enclosing wall; his Figure~14, ``The 12 gates and 7 hills'' (p.~67), contains a seven-pointed star. Their printed appearance matters: in particular, the connection order of seven vertices cannot be determined from their positions alone. The historical source plates are reproduced here with permission from the estate of John Michell, while the explanatory diagrams are independent mathematical visualisations rather than facsimiles. Their distinct evidential roles are maintained throughout the analysis.
 
-This separation produces four main results. First, the principal New
-Jerusalem geometry can be generated deterministically, including the
-Earth--Moon core, twelve-Moon system, outer-wall candidate, reciprocal
-fourteenfold construction, 28-point scaffold, and Figure~14 heptagram
-candidate. Source calibration supports a near-regular $\{7/2\}$ topology for
-Figure~14, while the Figure~12 wall remains a source-supported project
-reconstruction because different registered residual metrics do not select the
-same comparator. Second, Michell's two Figure~194 sevenfold procedures can be
-reconstructed as distinct approximate constructions: Method~1 gives
-$51.470701432440^\circ$, Method~2 gives
-$51.317812546511^\circ$, and the exact step
-$360^\circ/7=51.428571428571^\circ$ lies between them. Third, the exact
-sevenfold target has algebraic degree three, placing it outside ordinary
-straightedge-and-compass constructibility; within the project's registered
-operation-count model, one angle trisection supplies a sufficient cubic-capable
-extension. Fourth, a separate source audit of Plato's \emph{Republic} and
-Michell's later treatment of the eight whorls reproduces Michell's numerical
-chain exactly while preserving the boundary between Plato's ordinal
-description and Michell's numerical assignment.
+Our method separates (i) historical source statements; (ii) fixed generative reconstructions; (iii) calibrated measurement of printed artefacts; and (iv) independent mathematical consequences. Source coordinates are reserved for evaluating candidate geometry and do not silently alter the generator. The resulting claim is therefore source consistency under specified comparisons, not independent statistical validation of a design already informed by that source.
 
-These results do not constitute a single claim of historical validation.
-Source-calibrated agreement is not treated as independent prediction;
-development-used quantities are not recycled as confirmatory evidence; the
-exact trisection construction is a project mathematical result rather than a
-historical attribution; and the Plato--Michell numerical reconstruction does
-not establish ancient transmission. The purpose of the audit is narrower:
-to determine which parts of the New Jerusalem system are reproducibly
-constructible, which historical figures are consistent with those
-reconstructions, which sevenfold relations are approximate or exact, and where
-the surviving sources no longer support a stronger conclusion.
+The central examples illuminate complementary limitations of visual evidence: the nonuniform twelve-circle arrangement is deduced from explicit incidences; the Figure~12 wall cannot be uniquely inferred across all residual metrics; Figure~14's stroke connectivity favours a $\{7/2\}$ over a $\{7/3\}$ heptagram; and the two later sevenfold approximation procedures must be considered in light of classical constructibility. A brief closing discussion of dimensional and Platonic-number interpretations shows why geometric agreement is not the same thing as historical transmission.
 
 \section{Sources and methods}
 
@@ -236,9 +168,11 @@ fixed upstream Perseus revision and verifies them cryptographically
 \citep{perseusRepublicWitnesses}.  Bibliographic identity and digital-witness
 identity are therefore recorded separately.
 
-Copyrighted Michell scans and purchased ebook screenshots are not redistributed
-with the repository.  Their use is instead anchored by local source manifests,
-page-level records where applicable, and SHA-256 hashes.  The 2008 Wikimedia
+Only Michell's two selected historical drawings reproduced in this article
+are included under written permission from the estate; the complete source
+book scan and purchased ebook screenshots are not redistributed with the
+repository. Source identities and measurements remain anchored by local
+manifests, page-level records and SHA-256 hashes.  The 2008 Wikimedia
 diagram is treated only as an external computational reconstruction,
 \texttt{NJG\_SVG}, rather than as a Michell primary source
 \citep{anonmoos2008newjerusalem}.  The unresolved Sommerville 1974 primary
@@ -324,6 +258,49 @@ construction technologies.
 
 \section{Core New Jerusalem reconstruction}
 
+\subsection{Circles, square and the nonuniform twelve-centre arrangement}
+The original published arrangement is shown in Figure~\ref{fig:michell12-original}. Our mathematically generated construction below distinguishes source incidence from measured plate coordinates.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.58\linewidth]{figures/licensed_historical/Michell1973_Figure12_ORIGINAL_CROP.pdf}
+\caption{John Michell's historical Figure~12, ``The New Jerusalem'', reproduced from \emph{City of Revelation} (Abacus, 1973), p.~63. The original printed design is the artefact evaluated in the present source-calibrated analysis; it is not a project reconstruction. Reproduced by permission. \textcopyright{} The estate of John Michell.}
+\label{fig:michell12-original}
+\end{figure}
+
+Let $O=(0,0)$ be the common centre, and measure lengths in units $u$ of 720 miles. In Michell's stated proportional scheme, the Earth radius is $3960$ miles and the Moon radius is $1080$ miles. The normalized quantities are
+\begin{equation}\label{eq:basic}
+ a=5.5\,u,\qquad r=1.5\,u,\qquad R=a+r=7\,u.
+\end{equation}
+The Earth circle has radius $a$. The square about it has side $2a=11\,u$ and boundaries $x=\pm a$ and $y=\pm a$. The construction circle of Moon centres has radius $R$. Each Moon circle has radius $r$ and its centre $M$ obeys $|OM|=R=a+r$, so it is externally tangent to the Earth circle. Four centres lie on the axes at $(\pm R,0)$ and $(0,\pm R)$.
+
+The remaining eight centres are \emph{not} placed at equally spaced $30^\circ$ intervals. For the first-quadrant centre next to the positive horizontal axis, let the point $Q$ be where the right square edge meets the circle of centres:
+\begin{equation}\label{eq:q}
+ Q=\left(a,\sqrt{R^2-a^2}\right),\qquad |OQ|=R.
+\end{equation}
+The historical incidence description requires the Moon circle about the oblique centre $M$ to pass through $Q$. Consequently, $|OM|=|OQ|=R$ and $|MQ|=r$. Define the direction of $OQ$ from the positive horizontal ray by $\psi$, and the angular separation of $OM$ and $OQ$ by $\gamma$. The isosceles triangle $OMQ$ then yields
+\begin{align}
+\psi&=\operatorname{atan2}\left(\sqrt{R^2-a^2},a\right)
+       =38.213210701738^\circ,\\
+\gamma&=2\arcsin\left(\frac{r}{2R}\right)
+       =12.301279655882^\circ,\\
+\beta&=\psi-\gamma
+       =25.911931045856^\circ.\label{eq:beta}
+\end{align}
+Here $\beta$ is explicitly measured \emph{from the positive horizontal ray through $O$ to the ray $OM$}. It is \emph{not} the smaller angle $\angle QOM=\gamma$. By quarter-turns and reflections, the complete set of twelve centre directions is
+\begin{equation}\label{eq:centres}
+ \big\{k\cdot90^\circ,\quad k\cdot90^\circ-\beta,\quad k\cdot90^\circ+\beta\big\},\qquad k=0,1,2,3.
+\end{equation}
+Thus the geometry has four groups of three circles, quarter-turn and reflection symmetry, but not equal angular spacing. Figure~\ref{fig:twelve} gives both the full arrangement and an enlarged construction of $\beta$.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/pdf/jmaa_a02_twelve_circle_beta.pdf}
+\caption{Independent analytic reconstruction of the twelve-circle arrangement (A) and an enlarged oblique-centre construction (B). The angle $\beta=\angle XOM$ is measured from the positive horizontal reference $OX$. The conditions $|OQ|=|OM|=7\,u$ and $|MQ|=1.5\,u$ determine its value. This is a mathematical explanatory figure, \emph{not} a facsimile of Michell's Figure~12.}\label{fig:twelve}
+\end{figure}
+
+Michell's square-perimeter and circle-circumference comparison uses the historical approximation $\pi=22/7$: the square perimeter is $4(11\,u)=44\,u$, and the circle of radius $7\,u$ has circumference $14\pi\,u$, only conventionally $44\,u$ under that approximation. The exact Euclidean incidence construction in Eqs.~\eqref{eq:q}--\eqref{eq:centres} must not be confused with that separate approximate identity. Moreover, $\beta$ is distinct from the $25.587895702680^\circ$ Moon-centre angle generated by the later approximate 28-point scaffold.
+
+
+
 \subsection{Integrated deterministic geometry}
 
 The normalized construction described in Section~2 generates a single
@@ -389,6 +366,25 @@ metrological analysis.
 
 
 \section{Source-calibrated sevenfold geometry}
+
+\subsection{Why identical vertices do not establish printed topology}
+The printed visual artefact is reproduced in Figure~\ref{fig:michell14-original}; the independent comparator in Figure~\ref{fig:topology} will distinguish vertex positions from stroke connections.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.58\linewidth]{figures/licensed_historical/Michell1973_Figure14_ORIGINAL_CROP.pdf}
+\caption{John Michell's historical Figure~14, ``The 12 gates and 7 hills'', reproduced from \emph{City of Revelation} (Abacus, 1973), p.~67. This printed star is the object of the independent endpoint-and-stroke tracing. Reproduced by permission. \textcopyright{} The estate of John Michell.}
+\label{fig:michell14-original}
+\end{figure}
+
+An ideal regular heptagram is described by its vertex set \emph{and} its edge traversal. A $\{7/2\}$ star connects every second point; a $\{7/3\}$ star connects every third. Both use precisely the same seven points, as shown in Figure~\ref{fig:topology}. Therefore a small point-coordinate residual cannot, by itself, establish which star was printed.
+\begin{figure}[htbp]\centering
+\includegraphics[width=.94\linewidth]{figures/pdf/jmaa_a02_heptagram_topology.pdf}
+\caption{Independent mathematical comparison of two exact heptagram connection orders on the same seven vertices. The $\{7/2\}$ and $\{7/3\}$ alternatives differ in edges, not vertex coordinates. This schematic is \emph{not} Michell's original Figure~14 or a tracing of it.}\label{fig:topology}
+\end{figure}
+
+The frozen Figure~14 audit made three repeated stroke-tracing passes near the registered endpoints and favoured $\{7/2\}$, superseding an earlier provisional $\{7/3\}$ interpretation. It identified five endpoints directly supported by the source's text/plate context; two positions in inter-Moon gaps remain project inferences. The conclusion is a \emph{near-regular $\{7/2\}$ topology}, not exact geometrical regularity of the printed artwork. In particular, the source-observed edge traversal and the modeled exact idealization are separate layers of evidence.
+
+
 
 \subsection{Figure 14 topology}
 
@@ -517,32 +513,16 @@ comparison.  The purpose of the comparison is to characterise Michell's two
 source-described procedures as they stand, not to combine them into a third
 construction.
 
-\clearpage
+% A04: removed unnecessary forced page break to improve continuity
 
 \section{Exact sevenfold boundary}
 
-\subsection{Algebraic obstruction}
-
-The two Michell constructions in Section~4 are close approximations to a
-regular sevenfold division, but exact regular sevenfold geometry has a
-different algebraic status.  Let
-\[
-y=2\cos\left(\frac{2\pi}{7}\right).
-\]
-Then
-\[
-y^3+y^2-2y-1=0,
-\]
-and this cubic is irreducible over $\mathbb{Q}$.  Hence $y$ has algebraic
-degree three.
-
-Coordinates obtainable by ordinary straightedge-and-compass construction lie
-in towers of quadratic extensions of $\mathbb{Q}$.  Their degrees over
-$\mathbb{Q}$ are therefore powers of two.  The degree-three coordinate $y$
-cannot belong to that closure, so an exact regular heptagon is excluded from
-the frozen ordinary Euclidean construction grammar.  This conclusion is
-theorem-level: it does not depend on whether a numerical search happens to
-find a sufficiently close approximation.
+\subsection{Classical Gauss--Wantzel obstruction and its relevance to Michell}
+The inability to construct a regular heptagon with an unmarked straightedge and compass is an established result of classical mathematics, encompassed by the Gauss--Wantzel criterion; it is not first discovered in this paper \citep{wantzel1837,mathworldHeptagon}. Its relevance is specifically to the status of Michell's approximate sevenfold divisions. With
+\begin{equation}\label{eq:cubic}
+ y=2\cos\left(\frac{2\pi}{7}\right),\qquad y^3+y^2-2y-1=0,
+\end{equation}
+the displayed cubic is irreducible over $\mathbb{Q}$ (it has no rational root $\pm 1$). Thus $[\mathbb{Q}(y):\mathbb{Q}]=3$. A number constructible from rational lengths by ordinary unmarked straightedge and compass has algebraic degree a power of two; hence the exact regular-sevenfold coordinate cannot be constructed by those means. This is a theorem-level obstruction, not a computational non-detection.
 
 \subsection{Frozen native-incidence census}
 
@@ -559,6 +539,10 @@ rather, it confirms that no exact sevenfold construction is hidden inside the
 registered Euclidean grammar after the preregistered exclusions are applied.
 
 \subsection{One-trisection cubic extension}
+
+The preceding obstruction explains why a classical approximation cannot simply be upgraded to exact sevenfold geometry within the same rules. The following construction asks a different, explicitly counterfactual question: what happens when precisely one nonclassical cubic-capable operation is admitted? It is not a claim that Michell used trisection, nor a claim that general nonclassical heptagon constructions are novel.\par
+
+
 
 After the ordinary Euclidean boundary was frozen, the project introduced one
 explicitly cubic-capable operation, \texttt{TRISECT\_ANGLE}.  The construction
@@ -625,7 +609,7 @@ endpoint reassignment.
 The exact construction is a project mathematical result.  It is not
 attributed to Michell, Sommerville, Plato, or any ancient source.
 
-\clearpage
+% A04: removed unnecessary forced page break to improve continuity
 
 \section{Historical metrology and Sommerville-attributed comparisons}
 
@@ -788,7 +772,7 @@ transmitted the scheme historically from antiquity.  The numerical
 reconstruction is therefore a verification of Michell's arithmetic, not a
 demonstration of ancient transmission.
 
-\clearpage
+% A04: removed unnecessary forced page break to improve continuity
 
 \section{Discussion}
 
@@ -862,6 +846,10 @@ possess.
 
 \subsection{Limitations and reproducibility}
 
+The explanatory figures are independently generated geometric drawings; they do not reproduce the line weights, drafting details or printed textures of Michell's original Figures~12 and~14 (1973, pp.~63 and~67). The calibrated historical comparisons are based on the identified source witnesses and remain distinct from these mathematical visualisations.\par
+
+
+
 Several limitations remain.  Historical plate measurements are affected by
 printing, scanning, line thickness, manual digitisation, and registration
 uncertainty.  Some historical quantities entered model development and are
@@ -933,8 +921,9 @@ archived on Zenodo under DOI
 \citep{gherbi2026newjerusalemgeometry}.  The corresponding concept DOI for
 the collection of all versions is \texttt{10.5281/zenodo.22686968}.
 
-Copyrighted Michell source scans and purchased ebook screenshots are not
-redistributed.  Their identities and use are preserved through local
+The two historical figures are reproduced with the permission of the
+estate of John Michell. Complete copyrighted book scans and purchased ebook
+screenshots are not redistributed. Source witnesses retain their local
 provenance records and cryptographic hashes.  The frozen Perseus XML witnesses
 retain their upstream third-party licensing boundary.
 
@@ -973,15 +962,17 @@ at \url{https://github.com/salahealer9/new-jerusalem-geometry} and the correspon
 \item \textbf{Materials availability}
 
 Public third-party source witnesses are identified in the provenance record.
-Copyrighted Michell source scans and purchased ebook screenshots are not
+The two reproduced Michell historical figures are authorised by the estate;
+complete copyrighted source scans and purchased ebook screenshots are not
 redistributed.
 
 \item \textbf{Code availability}
 
 The deterministic geometry, calibration, exact-sevenfold, historical
-reconstruction, validation, and publication-generation code will be available
-through the public v1.0 repository and archival release.  The final repository
-URL and DOI will be added before manuscript submission.
+reconstruction, validation, and publication-generation code are available
+through the public v1.0.0 repository at
+\url{https://github.com/salahealer9/new-jerusalem-geometry} and the
+frozen Zenodo release (DOI: \texttt{10.5281/zenodo.22686969}).
 
 \item \textbf{Author contribution}
 
