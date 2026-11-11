@@ -14,7 +14,7 @@
 \usepackage{array}
 \usepackage{graphicx}
 \usepackage{caption}
-\usepackage[numbers,sort&compress]{natbib}
+\usepackage[authoryear,round,sort]{natbib}
 \usepackage[hidelinks]{hyperref}
 \usepackage{xcolor}
 
@@ -278,7 +278,7 @@ The original published arrangement is shown in Figure~\ref{fig:michell12-origina
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.58\linewidth]{figures/licensed_historical/Michell1973_Figure12_ORIGINAL_CROP.pdf}
-\caption{John Michell's historical Figure~12, ``The New Jerusalem'', reproduced from \emph{City of Revelation} (Abacus, 1973), p.~63. The original printed design is the artefact evaluated in the present source-calibrated analysis; it is not a project reconstruction. Reproduced by permission. \textcopyright{} The estate of John Michell.}
+\caption{John Michell's historical Figure~12, ``The New Jerusalem'', reproduced from the Abacus edition of \emph{City of Revelation} \citep[p.~63]{michell1973city}. The original printed design is the artefact evaluated in the present source-calibrated analysis; it is not a project reconstruction. Reproduced by permission. \textcopyright{} The estate of John Michell.}
 \label{fig:michell12-original}
 \end{figure}
 
@@ -387,7 +387,7 @@ The printed visual artefact is reproduced in Figure~\ref{fig:michell14-original}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.58\linewidth]{figures/licensed_historical/Michell1973_Figure14_ORIGINAL_CROP.pdf}
-\caption{John Michell's historical Figure~14, ``The 12 gates and 7 hills'', reproduced from \emph{City of Revelation} (Abacus, 1973), p.~67. This printed star is the object of the independent endpoint-and-stroke tracing. Reproduced by permission. \textcopyright{} The estate of John Michell.}
+\caption{John Michell's historical Figure~14, ``The 12 gates and 7 hills'', reproduced from the Abacus edition of \emph{City of Revelation} \citep[p.~67]{michell1973city}. This printed star is the object of the independent endpoint-and-stroke tracing. Reproduced by permission. \textcopyright{} The estate of John Michell.}
 \label{fig:michell14-original}
 \end{figure}
 
@@ -1031,8 +1031,7 @@ work is acknowledged as the historical subject of the present audit.
 
 \begingroup
 \raggedright{}
-\bibliographystyle{tfs}
-\bibliography{references}
+\input{references_apa7.tex}
 \endgroup
 
 \end{document}
